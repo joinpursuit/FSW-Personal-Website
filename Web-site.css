@@ -8,8 +8,30 @@ h1{
     text-align: center;
     font-size: 30px;
 }
+
 div {
+    border: 7px solid black;
     text-align: center;
-    color: black;
-    font-style: normal black;
+    font-style: italic;
+    box-shadow: inset;
+}
+div p{
+    border: 6px solid green;
+    border-radius: 6px;
+    text-shadow: 0 0 5px black;
+    color: aliceblue;
+    margin: 1px;
+    width: 100px;
+    transition: all 1.2s
+   
+}
+p{
+    display: inline;
+    font-size: 20px;
+    
+}
+.play{
+    transform: scale(2.1);
+    border-color: blue;
+    box-shadow: 0 0 9px yellow;
 }

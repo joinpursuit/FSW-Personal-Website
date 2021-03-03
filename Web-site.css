@@ -35,3 +35,7 @@ p{
     border-color: blue;
     box-shadow: 0 0 9px yellow;
 }
+img{
+    border-radius: 3px;
+    width: 20%;
+}

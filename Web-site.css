@@ -10,32 +10,42 @@ h1{
 }
 
 div {
-    border: 7px solid black;
-    text-align: center;
-    font-style: italic;
-    box-shadow: inset;
-}
-div p{
+    display: flex;
     border: 6px solid green;
-    border-radius: 6px;
     text-shadow: 0 0 5px black;
     color: aliceblue;
-    margin: 1px;
-    width: 100px;
-    transition: all 1.2s
-   
+    flex-direction: row;
+    padding: 5px;
+    height: 35px;
+    transition: all 3.0s;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(0, 255, 255, 0.577);
 }
-p{
-    display: inline;
-    font-size: 20px;
-    
+
+button{
+    font-style: oblique;
+    font-size: 60%;
+     transform: scale(1.5) ; 
+     transition: all 1.0s;
+     border: 1px solid black;
+     opacity: 1;
+     border-radius: 60%;
 }
-.play{
-    transform: scale(2.1);
-    border-color: blue;
-    box-shadow: 0 0 9px yellow;
-}
+
+
 img{
-    border-radius: 3px;
-    width: 20%;
+    margin-top: 15px;
+    margin-left: 25px;
+    border-radius: 45%;
+    border: 3px solid black;
+    width: 25%;
+
+}
+
+@media screen and(max-width:800px){
+    button{
+        width: 100%;
+    }
+   
 }

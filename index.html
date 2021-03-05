@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <title>Coreen Cooper</title>
+<script src="https://kit.fontawesome.com/2a80938f62.js" crossorigin="anonymous"></script>
 <script src="./index.js" defer></script>
 <link rel="stylesheet" href="./index.css">
 
@@ -15,28 +16,31 @@
         </ul>
     </nav>
 
-    <section id="home">
-        <p></p>
-    </section>
+    <main id="home">
+        <p></p> <!-- h1 with name animation - should each letter be it's own separate element? -->
+        <p>full stack software engineer</p>
+        <p></p> <!-- empty div just for coloring - should this be a p tag? -->
+    </main>
     
     <section id="about">
-        <img src="" alt="">
-        <p></p>
+        <img src="./coreen.jpg" alt="Coreen Cooper">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nihil voluptatum consequuntur non quod recusandae error corrupti commodi cumque necessitatibus inventore, earum voluptates ipsum ab, quidem illo eveniet ad, odit expedita consequatur adipisci dicta quae nulla? Quibusdam maxime ducimus ipsum ad esse, suscipit aperiam voluptates ut corrupti autem molestiae vel laboriosam ex. Eveniet quidem quibusdam id laudantium, magnam minima assumenda pariatur, voluptates consequuntur, cupiditate ratione culpa aspernatur libero? Error molestiae adipisci itaque exercitationem similique! Cupiditate porro inventore itaque ea delectus.</p>
     </section>
 
     <section id="projects">
-        <img src="" alt="">
-        <p></p>
-        <img src="" alt="">
-        <p></p>
+        <img id="project1" class="project-block" src="snowman.gif" alt="snowman-game">
+        <p id="project1-summary" class="project-block" >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio illum libero est saepe hic, officiis debitis quae dignissimos aspernatur non!</p>
+        <img id="project2" class="project-block" src="emojiStory.gif" alt="emoji-story-app">
+        <p id="project2-summary" class="project-block" >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi nostrum sunt minus dolorum aliquam similique corporis in, illo minima error.</p>
     </section>
 
     <footer>
-        <ul>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
+        <ul id="footer-links">
+            <li id="copyright">&#169; Coreen Cooper</li>
+            <li id="back-to-top" class="icons"><a href="#home"><i class="fas fa-angle-double-up"></i></a></li>
+            <li id="linkedin" class="icons"><a href="" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+            <li id="github" class="icons"><a href="" target="_blank"><i class="fab fa-github-square"></i></a></li>
+            <li id="email" class="icons"><a href="mail.to:coreencooper@pursuit.org" target="_blank"><i class="fas fa-envelope"></i></a></li>
         </ul>
     </footer>
 </body>

@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
       
      const tre = document.querySelector('tre')
      const aboutMe = document.getElementById('Aboutme')
-     aboutMe.addEventListener('click', (e)=>{
-       tre = e.target.tre
-     })
+    //  aboutMe.addEventListener('click', (e)=>{
+    //    tre = e.target.tre
+    //  })
 })

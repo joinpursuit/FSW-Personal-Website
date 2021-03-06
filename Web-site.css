@@ -3,10 +3,18 @@ body{
     
 }
 h1{
+    display: grid;
     font-family: 'Engravers Old English';
     color: blue;
     text-align: center;
     font-size: 30px;
+    grid-column: 1 / 2;
+}
+.Hpage{
+    height: 30px;
+    border-radius: 50%;
+    justify-content: start;
+    grid-column: 1 / 2;
 }
 .one{
     height: 30px;
@@ -15,6 +23,10 @@ h1{
 .two{
     height: 30px;
     border-radius: 50%;  
+}
+.tree{
+    height: 30px;
+    border-radius: 50%;
 }
 .image{
     display: flex;
@@ -65,7 +77,6 @@ p{
     border-radius: 45%;
     border: 3px solid black;
     width: 100%;
-
 }
 
 .prueba{

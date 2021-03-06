@@ -6,9 +6,10 @@ document.addEventListener('DOMContentLoaded', ()=>{
             e.target.style.color= "blue"; 
         })
       })
-      let div = document.querySelector('home')
-     img.addEventListener('click',(e)=>{
-       
+      
+     const tre = document.querySelector('tre')
+     const aboutMe = document.getElementById('Aboutme')
+     aboutMe.addEventListener('click', (e)=>{
+       tre = e.target.tre
      })
-     
 })

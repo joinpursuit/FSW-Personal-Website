@@ -9,38 +9,66 @@
 
     <nav>
         <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#home-section">Home</a></li>
+            <li><a href="#about-section">About</a></li>
+            <li><a href="#projects-section">Projects</a></li>
+            <li><a href="#contact-section">Contact</a></li>
         </ul>
     </nav>
 
-    <main id="home">
-        <p></p> <!-- h1 with name animation - should each letter be it's own separate element? -->
-        <p>full stack software engineer</p>
+    <main id="home-section">
+        <h1 id="name">Coreen Cooper</h1>
+        <!-- h1 with name animation - should each letter be it's own separate element? -->
+        <p>Fullstack Engineer</p>
         <p></p> <!-- empty div just for coloring - should this be a p tag? -->
+        <button id="about-btn" type="button">About me</button>
     </main>
-    
-    <section id="about">
+
+    <section id="about-section">
+        <h2 id="">About me</h2>
         <img src="./coreen.jpg" alt="Coreen Cooper">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nihil voluptatum consequuntur non quod recusandae error corrupti commodi cumque necessitatibus inventore, earum voluptates ipsum ab, quidem illo eveniet ad, odit expedita consequatur adipisci dicta quae nulla? Quibusdam maxime ducimus ipsum ad esse, suscipit aperiam voluptates ut corrupti autem molestiae vel laboriosam ex. Eveniet quidem quibusdam id laudantium, magnam minima assumenda pariatur, voluptates consequuntur, cupiditate ratione culpa aspernatur libero? Error molestiae adipisci itaque exercitationem similique! Cupiditate porro inventore itaque ea delectus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nihil voluptatum consequuntur non quod
+            recusandae error corrupti commodi cumque necessitatibus inventore, earum voluptates ipsum ab, quidem illo
+            eveniet ad, odit expedita consequatur adipisci dicta quae nulla? Quibusdam maxime ducimus ipsum ad esse,
+            suscipit aperiam voluptates ut corrupti autem molestiae vel laboriosam ex. Eveniet quidem quibusdam id
+            laudantium, magnam minima assumenda pariatur, voluptates consequuntur, cupiditate ratione culpa aspernatur
+            libero? Error molestiae adipisci itaque exercitationem similique! Cupiditate porro inventore itaque ea
+            delectus.</p>
+        <button id="project-btn" type="button">Projects</button>
     </section>
 
-    <section id="projects">
+    <section id="projects-section">
+        <h2 id="">Projects</h2>
         <img id="project1" class="project-block" src="snowman.gif" alt="snowman-game">
-        <p id="project1-summary" class="project-block" >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio illum libero est saepe hic, officiis debitis quae dignissimos aspernatur non!</p>
+        <p id="project1-summary" class="project-block">A text-based word guessing game that allows users to guess one
+            letter at a time. Each mystery letter is represented by a dash until the user guesses correctly.
+        </p>
         <img id="project2" class="project-block" src="emojiStory.gif" alt="emoji-story-app">
-        <p id="project2-summary" class="project-block" >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi nostrum sunt minus dolorum aliquam similique corporis in, illo minima error.</p>
+        <p id="project2-summary" class="project-block">A web app that allows users to select the number of randomly
+            generated emojis. Users can submit a story about the emojis. A numeric value is displayed of the total
+            stories created and the
+            past stories populated in list-style.</p>
+        <button id="contact-btn" type="button">Contact me</button>
+    </section>
+
+    <section id="contact-section">
+        <h2>Get in touch</h2>
+        <ul id="contact-links">
+            <li id="linkedin" class="icons"><a href="https://www.linkedin.com/in/coreenmcooper/" target="_blank"><i
+                        class="fab fa-linkedin"></i></a></li>
+            <li id="github" class="icons"><a href="https://github.com/CoreenCooper" target="_blank"><i
+                        class="fab fa-github-square"></i></a></li>
+            <li id="email" class="icons"><a href="mailto:coreencooper@pursuit.org" target="_blank"><i
+                        class="fas fa-envelope"></i></a></li>
+        </ul>
+        <p>Feel free to contact me</p>
     </section>
 
     <footer>
         <ul id="footer-links">
             <li id="copyright">&#169; Coreen Cooper</li>
-            <li id="back-to-top" class="icons"><a href="#home"><i class="fas fa-angle-double-up"></i></a></li>
-            <li id="linkedin" class="icons"><a href="" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-            <li id="github" class="icons"><a href="" target="_blank"><i class="fab fa-github-square"></i></a></li>
-            <li id="email" class="icons"><a href="mail.to:coreencooper@pursuit.org" target="_blank"><i class="fas fa-envelope"></i></a></li>
+            <li id="back-to-top" class="icons"><a href="#home-section"><i class="fas fa-angle-double-up"></i></a></li>
+            <li>Thank you for visiting!</li>
         </ul>
     </footer>
 </body>

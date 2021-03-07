@@ -1,0 +1,58 @@
+body {
+    background-color: rgb(85,125,205);
+}
+
+nav{
+    background-color: lightblue;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0px;
+    margin: 8px;
+}
+
+nav ul li {
+    margin: 0px 14px 0 14px;
+}
+
+.nav-button {
+    border: 0px;
+    background: none;
+}
+
+section {
+    margin-top: 35px;
+}
+
+#intro {
+    display: flex;
+}
+
+#terCursor {
+    color: white;
+    height: 21px;
+}
+
+#about {
+    display: flex;
+}
+
+#skills {
+    display: flex;
+}
+
+#projects {
+    display: flex;
+}
+
+#contact {
+    display: flex;
+}

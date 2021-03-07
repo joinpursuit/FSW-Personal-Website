@@ -6,10 +6,27 @@ document.addEventListener('DOMContentLoaded', ()=>{
             e.target.style.color= "blue"; 
         })
       })
-      
-     const tre = document.querySelector('tre')
+      const home = document.querySelector('home')
+      home.addEventListener("click", (e)=>{
+        home.textContent = e.target.change.visible;
+
+        
+      })
+      function change(){
+        let img = document.querySelector('img');
+        if(img.src !== "images/alex.jpg"){
+         img.src = "images/alex.jpg"
+        }
+      else{
+        img.src = "https://i.imgur.com/4qMZueg.jpg"
+       }
+      }
+     
+     img.addEventListener("click", change())
+
      const aboutMe = document.getElementById('Aboutme')
     //  aboutMe.addEventListener('click', (e)=>{
     //    tre = e.target.tre
     //  })
+      
 })

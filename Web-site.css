@@ -8,9 +8,7 @@ body{
 #camPro{
     background-image: url(https://thumbs.gfycat.com/BlankThoughtfulAlpaca-size_restricted.gif)
 }
-.child{
-    visibility: ;
-}
+
 h1{
     display: grid;
     font-family: 'Engravers Old English';
@@ -43,6 +41,9 @@ h1{
 .image{
     display: flex;
     justify-content: flex-end;
+}
+.child{
+    visibility: hidden;
 }
 
 .home {

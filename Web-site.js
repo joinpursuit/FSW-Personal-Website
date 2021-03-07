@@ -1,32 +1,22 @@
 document.addEventListener('DOMContentLoaded', ()=>{
       let h1 = document.querySelector('h1')
       h1.addEventListener("mouseover", (e)=>{
-          e.target.style.color= "green";
-          h1.addEventListener("mouseover", (e)=>{
-            e.target.style.color= "blue"; 
-        })
-      })
-      const home = document.querySelector('home')
-      home.addEventListener("click", (e)=>{
-        home.textContent = e.target.change.visible;
-
-        
-      })
-      function change(){
-        let img = document.querySelector('img');
-        if(img.src !== "images/alex.jpg"){
-         img.src = "images/alex.jpg"
+        if(e.target.style.color !== "green"){
+          e.target.style.color = "green"
+        }else{
+          e.target.style.color= "blue"
         }
-      else{
+      })
+      
+      function change(){
+        let img = document.querySelector('#img');
+        if(img.src !== "https://i.imgur.com/8Ba9n5K.jpg"){
+         img.src = "https://i.imgur.com/8Ba9n5K.jpg"
+        }else{
         img.src = "https://i.imgur.com/4qMZueg.jpg"
        }
       }
-     
-     img.addEventListener("click", change())
+     img.addEventListener("mouseover", ()=>{change()})
 
-     const aboutMe = document.getElementById('Aboutme')
-    //  aboutMe.addEventListener('click', (e)=>{
-    //    tre = e.target.tre
-    //  })
       
 })

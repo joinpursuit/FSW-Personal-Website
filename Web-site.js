@@ -18,5 +18,15 @@ document.addEventListener('DOMContentLoaded', ()=>{
       }
      img.addEventListener("mouseover", ()=>{change()})
 
+     let bullet = document.querySelector('.bullet')
+      bullet.addEventListener("click", (e)=>{
+        if(e.document.style.background !== "green"){
+          e.document.style.background = "green"
+        }else{
+          e.document.style.background = "red"
+        }
+      })
+     
+
       
 })

@@ -1,12 +1,46 @@
 body{
-    background-color: rgba(255, 0, 0, 0.886);
-    
+    background-color:rgba(255, 0, 0, 0.886);
+   transform: perspective();
+}
+body:hover{
+    background-color: floralwhite;
+    -webkit-transition-duration: 2s;
+   
 }
 #cambio{
     background-image: url(https://media3.giphy.com/media/xTiTnxpQ3ghPiB2Hp6/source.gif);
 }
 #camPro{
     background-image: url(https://thumbs.gfycat.com/BlankThoughtfulAlpaca-size_restricted.gif)
+}
+.lastskills{
+    display: grid;
+    padding: 15px;
+    grid-template-columns: repeat(7, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    gap: 5px;
+    height: 15px;
+
+}
+#skills{
+    display: grid;
+    color: aliceblue;
+    font-size: 30px;
+    font-style:oblique;
+    grid-column: 2/ 2;
+    grid-row: 1/ 2;
+}
+.white{
+    display: grid;
+    color: white;
+    font-size: 20px;
+}
+.roble{
+    grid-column: 2/ 4;
+    grid-row: 2/ 3;
+    justify-content: space-evenly;
+    font-size: 55x;
+    
 }
 
 h1{
@@ -42,9 +76,7 @@ h1{
     display: flex;
     justify-content: flex-end;
 }
-.child{
-    visibility: hidden;
-}
+
 
 .home {
     display: flex;
@@ -93,7 +125,7 @@ p{
 }
 
 .prueba{
-    font-size: 20px;
+    font-size: 27px;
     text-align: center;
 
 }

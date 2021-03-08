@@ -1,0 +1,53 @@
+body {
+    color: #003566;
+}
+li {
+    list-style: none;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #003566;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+nav {
+    border: navy solid 1px;
+}
+
+#home-section {
+    border: orange solid 1px;
+
+}
+
+#about-section {
+    border: green solid 1px;
+
+}
+
+#projects-section {
+    border: black solid 1px;
+
+}
+
+#contact-section {
+    border: purple solid 1px;
+
+}
+
+footer {
+    border: navy solid 1px;
+
+} 
+
+
+
+

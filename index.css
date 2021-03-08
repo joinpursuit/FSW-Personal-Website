@@ -1,6 +1,7 @@
 body {
     color: #003566;
 }
+
 li {
     list-style: none;
 }
@@ -16,11 +17,20 @@ a:visited {
 ul {
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
+    padding: 0;
+    
+}
+
+.nav-li {
+    padding-right: 5%;
 }
 
 nav {
     border: navy solid 1px;
+}
+
+body > section, main {
+    height: 100vh;
 }
 
 #home-section {
@@ -33,9 +43,17 @@ nav {
 
 }
 
+#portrait {
+    width: 40vw;
+}
+
 #projects-section {
     border: black solid 1px;
 
+}
+
+#emoji-gif, #snowman-gif {
+    width: 40vw;
 }
 
 #contact-section {
@@ -43,9 +61,12 @@ nav {
 
 }
 
+footer > ul {
+    justify-content: space-evenly;
+}
+
 footer {
     border: navy solid 1px;
-
 } 
 
 

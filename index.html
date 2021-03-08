@@ -6,27 +6,27 @@
 <link rel="stylesheet" href="./index.css">
 
 <body>
-
-    <nav>
-        <ul>
-            <li><a href="#home-section">Home</a></li>
-            <li><a href="#about-section">About</a></li>
-            <li><a href="#projects-section">Projects</a></li>
-            <li><a href="#contact-section">Contact</a></li>
-        </ul>
-    </nav>
-
     <main id="home-section">
-        <h1 id="name">Coreen Cooper</h1>
-        <!-- h1 with name animation - should each letter be it's own separate element? -->
-        <p>Fullstack Engineer</p>
-        <p></p> <!-- empty div just for coloring - should this be a p tag? -->
-        <button id="about-btn" type="button">About me</button>
+        <nav>
+            <ul>
+                <li class="nav-li"><a href="#home-section">Home</a></li>
+                <li class="nav-li"><a href="#about-section">About</a></li>
+                <li class="nav-li"><a href="#projects-section">Projects</a></li>
+                <li class="nav-li"><a href="#contact-section">Contact</a></li>
+            </ul>
+        </nav>
+        <section>
+            <h1 id="name">Coreen Cooper</h1>
+            <!-- h1 with name animation - should each letter be it's own separate element? -->
+            <p>Fullstack Engineer</p>
+            <p></p> <!-- empty div just for coloring - should this be a p tag? -->
+            <button id="about-btn" type="button">About me</button>
+        </section>
     </main>
 
     <section id="about-section">
         <h2 id="">About me</h2>
-        <img src="./coreen.jpg" alt="Coreen Cooper">
+        <img id="portrait" src="./coreen.jpg" alt="Coreen Cooper">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nihil voluptatum consequuntur non quod
             recusandae error corrupti commodi cumque necessitatibus inventore, earum voluptates ipsum ab, quidem illo
             eveniet ad, odit expedita consequatur adipisci dicta quae nulla? Quibusdam maxime ducimus ipsum ad esse,
@@ -39,20 +39,24 @@
 
     <section id="projects-section">
         <h2 id="">Projects</h2>
-        
+
         <section id="snowman-section">
-            <img id="snowman-project" class="project-block project-gif" src="snowman.gif" alt="snowman-game">
-            <p id="snowman-summary" class="project-block project-summary">A text-based word guessing game that allows users to guess
+            <img id="snowman-gif" class="project-block project-gif" src="snowman.gif" alt="snowman-game">
+            <p id="snowman-summary" class="project-block project-summary">A text-based word guessing game that allows
+                users to guess
                 one letter at a time. Each mystery letter is represented by a dash until the user guesses correctly.</p>
-            <a class="project-repo-link" href="https://github.com/CoreenCooper/Snowman-Game" target="_blank">Check out repo</a>
+            <a class="project-repo-link" href="https://github.com/CoreenCooper/Snowman-Game" target="_blank">Check out
+                repo</a>
         </section>
 
         <section id="emoji-section">
-            <img id="emoji-project" class="project-block project-gif" src="emojiStory.gif" alt="emoji-story-app">
-            <p id="emoji--summary" class="project-block project-summary">A web app that allows users to select the number of randomly
+            <img id="emoji-gif" class="project-block project-gif" src="emojiStory.gif" alt="emoji-story-app">
+            <p id="emoji--summary" class="project-block project-summary">A web app that allows users to select the
+                number of randomly
                 generated emojis. Users can submit a story about the emojis. A numeric value is displayed of the total
                 stories created and the past stories populated in list-style.</p>
-            <a class="project-repo-link" href="https://github.com/CoreenCooper/emojiStoryApp" target="_blank">Check out repo</a><!-- should me link be a button? -->
+            <a class="project-repo-link" href="https://github.com/CoreenCooper/emojiStoryApp" target="_blank">Check out
+                repo</a><!-- should me link be a button? -->
         </section>
 
         <button id="contact-btn" type="button">Contact me</button>

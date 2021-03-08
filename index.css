@@ -1,6 +1,10 @@
+/* Universal styling */
+
 body {
     color: #003566;
+    font-family: Verdana, sans-serif;
 }
+
 
 li {
     list-style: none;
@@ -21,8 +25,34 @@ ul {
     
 }
 
+/* Home Section */
+
 .nav-li {
     padding-right: 5%;
+}
+
+h1 {
+    font-size: 64pt;
+}
+
+
+.home-rectangle {
+    width: 60vw;
+    height: 15vh;
+}
+
+.home-rec-grey {
+
+    background-color:#C4C4C4;
+}
+.home-rec-yellow {
+
+    background-color: #FFC300;
+}
+.home-rec-navy {
+    text-align: center;
+    color: white;
+    background-color: #003566;
 }
 
 nav {
@@ -37,6 +67,8 @@ body > section, main {
     border: orange solid 1px;
 
 }
+
+/* About Me Section */
 
 #about-section {
     border: green solid 1px;

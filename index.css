@@ -13,6 +13,7 @@ nav{
 
 nav ul {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     list-style-type: none;
     padding: 0px;
@@ -29,11 +30,12 @@ nav ul li {
 }
 
 section {
-    margin-top: 35px;
+    /* margin-top: 35px; */
 }
 
 #intro {
-    display: flex;
+    position: absolute;
+    top: 40%;
 }
 
 #terCursor {
@@ -41,18 +43,55 @@ section {
     height: 21px;
 }
 
-#about {
+#about, #skills, #projects, #contact {
+    position: absolute;
+    top: 10%;
+    padding: 0px;
     display: flex;
+    justify-content: center;
 }
 
-#skills {
-    display: flex;
-}
+@media screen and (max-width: 645px){
+    #intro {
+        left: 3%;
+    }
+    nav ul {
+        justify-content: space-evenly;
+    }
+    #about-container {
+        width: 80%;
+    }
+    #profile-container {
+        text-align: center;
+        grid-area: 1/1;
+    }
+    #profile-container:hover {
+        order: 2;
+    }
 
-#projects {
-    display: flex;
-}
-
-#contact {
-    display: flex;
+    #profile {
+        width: 75%;
+        border-radius: 65px 65px 45px 45px;
+    }
+    #profile-overlay {
+        background-color: rgba(85,125,205,.4);
+        grid-area: 1/1;
+        order: 1;
+    }
+    #msg1 {
+        font-size: 20px;
+        margin: 0px;
+    }
+    #msg2 {
+        font-size: 40px;
+        margin: 2px;
+    }
+    #msg3 {
+        font-size: 30px;
+        margin: 0px;
+    }
+    #msg5 {
+        margin-top: 40px;
+        display: grid;
+    }
 }

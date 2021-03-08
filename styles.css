@@ -1,0 +1,146 @@
+body{
+    background-color: white;
+    position: relative;
+
+}
+.homepage-div{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+}
+.homepage-div h1{
+    padding:30px;
+    color: rgb(3, 0, 0);
+    font-weight: bold;
+    height: 550px;
+    width: 500px;
+    /* position: relative; */
+    background-size: cover;
+    background-image: url("jeffrey.jpg");
+    text-align: center;
+    filter: brightness(100%);
+
+}
+#AboutMe{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#Photo-and-Heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+h2{
+    color: black;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+#MyPhoto{
+    margin-top: 100px;
+    margin-left: 100px;
+    height: 200px;
+    width:  200px;
+
+}
+#AboutMe p{
+    padding: 30px;
+    background-color: lightskyblue;
+    color:black;
+    height: 200px;
+    width: 1000px;
+    font-size: 18px;
+    display: inline;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    font-family: 'Times New Roman', Times, serif;
+
+
+    
+}
+
+nav{
+    font-size: 25px;
+    background-color: lightskyblue;
+    height: 60px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: 'Times New Roman', Times, serif;
+}
+ nav a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+ }
+
+#skills-heading{
+    padding: 10px
+}
+
+.Skills-Container {
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    grid-auto-rows: minmax(50px, auto);
+
+
+}
+
+.Skills-Container img {
+    border-radius: 10px;
+    padding: 30px;
+    height: 100px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+
+}
+
+form{
+    font-size: 20px;
+
+}
+
+.Parent-div-for-contact-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+.Contact-Info {
+    color: black;
+    padding: 50px;
+    border: solid transparent;
+    background-color: lightskyblue;
+    height: 500px;
+    width: 500px;
+    
+}
+.Contact-Info h1{
+    text-align: center;
+}
+
+.Contact-Info p  {
+    font-size: 20px;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.Contact-Info p a{
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+

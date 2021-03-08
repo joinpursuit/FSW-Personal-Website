@@ -1,5 +1,5 @@
 body{
-    background-color: white;
+    background-color: rgb(36, 34, 34);
     position: relative;
 
 }
@@ -11,7 +11,7 @@ body{
 }
 .homepage-div h1{
     padding:30px;
-    color: rgb(3, 0, 0);
+    color: white;
     font-weight: bold;
     height: 550px;
     width: 500px;
@@ -34,7 +34,7 @@ body{
     justify-content: space-evenly;
 }
 h2{
-    color: black;
+    color: white;
     text-align: center;
     font-size: 40px;
     font-family: 'Times New Roman', Times, serif;
@@ -50,7 +50,7 @@ h2{
 #AboutMe p{
     padding: 30px;
     background-color: lightskyblue;
-    color:black;
+    color: white;
     height: 200px;
     width: 1000px;
     font-size: 18px;
@@ -76,7 +76,7 @@ nav{
 }
  nav a{
     text-decoration: none;
-    color: black;
+    color: white;
     font-weight: bold;
  }
 
@@ -118,7 +118,7 @@ form{
     padding: 50px;
 }
 .Contact-Info {
-    color: black;
+    color: white;
     padding: 50px;
     border: solid transparent;
     background-color: lightskyblue;
@@ -132,15 +132,41 @@ form{
 
 .Contact-Info p  {
     font-size: 20px;
-    color: black;
+    color: white;
     font-family: 'Times New Roman', Times, serif;
 }
 
 .Contact-Info p a{
     font-size: 20px;
     text-decoration: none;
-    color: black;
+    color: white;
     font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
 }
 
+.Projects {
+    color: white;
+    padding: 30px;
+}
+
+.text-adventure-container{
+    margin-top: -80px;
+    color: white;
+    padding: 50px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.Snowman-img{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+    margin-bottom: 20px;
+    
+}
+.Snowman-img img {
+    height: 200px;
+    width: 250px;
+}

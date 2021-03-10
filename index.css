@@ -1,106 +1,113 @@
 /* Universal styling */
 
 body {
-    color: #003566;
-    font-family: Verdana, sans-serif;
-}
-
-
-li {
-    list-style: none;
-}
-
-a:link {
-    text-decoration: none;
-}
-
-a:visited {
-    color: #003566;
+  color: #003566;
+  font-family: Verdana, sans-serif;
 }
 
 ul {
-    display: flex;
-    flex-direction: row;
-    padding: 0;
-    
+  display: flex;
+  flex-direction: row;
 }
+
+button {
+  color: #ffffff;
+  background-color: #003566;
+  padding: 1%;
+}
+
+.icons {
+    font-size: 32px;
+}
+
+.icon-links {
+    font-size: 64px;
+}
+
+
 
 /* Home Section */
 
 .nav-li {
-    padding-right: 5%;
+  padding-right: 1%;
 }
 
 h1 {
-    font-size: 64pt;
+  font-size: 64px;
 }
 
+h2 {
+    font-size: 32px;
+    font-weight:bold;
+}
 
 .home-rectangle {
-    width: 60vw;
-    height: 15vh;
+  width: 60vw;
+  height: 10vh;
 }
 
 .home-rec-grey {
-
-    background-color:#C4C4C4;
+  background-color: #c4c4c4;
 }
+
 .home-rec-yellow {
-
-    background-color: #FFC300;
+  background-color: #ffc300;
 }
+
 .home-rec-navy {
-    text-align: center;
-    color: white;
-    background-color: #003566;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #003566;
 }
 
 nav {
-    border: navy solid 1px;
+  border: navy solid 1px;
 }
 
-body > section, main {
-    height: 100vh;
+body > section {
+  height: 100vh;
 }
 
 #home-section {
-    border: orange solid 1px;
-
+  border: orange solid 1px;
 }
 
 /* About Me Section */
 
 #about-section {
-    border: green solid 1px;
-
+  border: green solid 1px;
 }
 
 #portrait {
-    width: 40vw;
+  width: 40vw;
 }
+
+/* Style Projects Setion */
 
 #projects-section {
-    border: black solid 1px;
-
+  border: black solid 1px;
 }
 
-#emoji-gif, #snowman-gif {
-    width: 40vw;
+#emoji-gif,
+#snowman-gif {
+  width: 40vw;
 }
+
+/* Style Contact Section */
 
 #contact-section {
-    border: purple solid 1px;
-
+  border: purple solid 1px;
 }
 
+/* /style footer */
+
 footer > ul {
-    justify-content: space-evenly;
+  justify-content: space-evenly;
 }
 
 footer {
-    border: navy solid 1px;
-} 
-
-
-
-
+  background-color: #ffc300;
+  border: navy solid 1px;
+}

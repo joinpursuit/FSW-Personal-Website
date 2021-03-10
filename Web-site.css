@@ -8,10 +8,12 @@ body{
    
 } */
 #cambio{
-    background-image: url(https://media3.giphy.com/media/xTiTnxpQ3ghPiB2Hp6/source.gif);
+    background-image: url(images/gif/a2b20cad9728d2ea8fb07e1e0a8b00c8.gif) ;
 }
+
 #camPro{
-    background-image: url(https://thumbs.gfycat.com/BlankThoughtfulAlpaca-size_restricted.gif)
+    background-image: url(images/gif/204314074cdff584f32a03e5aac3ebb9.gif)
+   
 }
 .lastskills{
     display: grid;
@@ -194,7 +196,18 @@ p{
     border: 3px solid black;
     width: 100%;
 }
-
+#paraskills{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    gap: 10px;
+}
+.imgone{
+    
+    height: 150px;
+    border-radius: 10%;
+    
+}
 @media screen and(max-width:800px){
     body{
         width: 100%;
@@ -203,7 +216,7 @@ p{
     }
     #cambio{
         width: 100%;
-        min-width: 200px;
+        min-width: 100px;
         max-width: 300px;
     }
     #camPro{

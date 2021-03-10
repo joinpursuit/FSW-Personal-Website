@@ -10,24 +10,34 @@ ul {
   flex-direction: row;
 }
 
-.btn {
+.btn,
+#about-summary,
+.home-rec-navy,
+#contact-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: #ffffff;
   background-color: #003566;
   padding: 1%;
 }
 
+#about-rec-yellow, .home-rec-yellow {
+    background-color: #ffc300;
+}
+
 .icons {
-    font-size: 32px;
+  font-size: 32px;
 }
 
 .icon-links {
-    font-size: 84px;
+  font-size: 84px;
 }
 
 body > section {
-    display: grid;
-    grid-template-rows: repeat(24, 1fr);
-    grid-template-columns: repeat(25, 1fr);
+  display: grid;
+  grid-template-rows: repeat(24, 1fr);
+  grid-template-columns: repeat(25, 1fr);
 }
 
 /* Home Section */
@@ -44,8 +54,8 @@ h1 {
 }
 
 h2 {
-    font-size: 32px;
-    font-weight:bold;
+  font-size: 32px;
+  font-weight: bold;
 }
 
 .home-rec-grey {
@@ -55,18 +65,12 @@ h2 {
 }
 
 .home-rec-yellow {
-  background-color: #ffc300;
   grid-column: 7/13;
   grid-row: 10/13;
   z-index: 1;
 }
 
 .home-rec-navy {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  background-color: #003566;
   grid-column: 12/19;
   grid-row: 9/11;
   font-size: 24px;
@@ -74,12 +78,9 @@ h2 {
 }
 
 .about-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    grid-column: 9/11;
-    grid-row: 11/12;
-    z-index: 2;
+  grid-column: 9/11;
+  grid-row: 11/12;
+  z-index: 2;
 }
 
 nav {
@@ -100,8 +101,31 @@ body > section {
   border: green solid 1px;
 }
 
+#about-title {
+  grid-column: 8/12;
+  grid-row: 6/7;
+}
+
 #portrait {
-  width: 40vw;
+  /* width: 40vw; */
+  grid-column: 6/12;
+  grid-row: 8/11;
+}
+
+#about-summary {
+  grid-column: 14/20;
+  grid-row: 6/15;
+}
+
+#about-rec-yellow {
+  grid-column: 15/21;
+  grid-row: 11/20;
+  z-index: -1;
+}
+
+#project-btn {
+  grid-column: 8/10;
+  grid-row: 20/21;
 }
 
 /* Style Projects Setion */
@@ -110,9 +134,25 @@ body > section {
   border: black solid 1px;
 }
 
-#emoji-gif,
-#snowman-gif {
-  width: 40vw;
+#project-header {
+    grid-column: 12/15;
+    grid-row: 3/5;
+}
+
+#snowman-section{
+    grid-column: 6/13;
+    grid-row: 7/13;
+}
+
+
+#emoji-section {
+    grid-column: 14/21;
+    grid-row: 7/13;
+}
+
+#contact-btn {
+    grid-column: 12/15;
+    grid-row: 20/21;
 }
 
 /* Style Contact Section */
@@ -122,23 +162,28 @@ body > section {
 }
 
 #contact-title {
-    grid-column: 11/15;
-    grid-row: 6/8;
+  grid-column: 11/15;
+  grid-row: 6/8;
 }
 
-#linkedin{
-    grid-column: 15/17;
-    grid-row: 9/11;
+#linkedin {
+  grid-column: 15/17;
+  grid-row: 9/11;
 }
 
 #github {
-    grid-column: 10/13;
-    grid-row: 9/11;
+  grid-column: 10/13;
+  grid-row: 9/11;
 }
 
 #email {
-    grid-column: 12/14;
-    grid-row: 9/11;
+  grid-column: 12/14;
+  grid-row: 9/11;
+}
+
+#contact-msg {
+  grid-column: 11/15;
+  grid-row: 15/16;
 }
 
 /* /style footer */

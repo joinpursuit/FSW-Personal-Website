@@ -2,17 +2,22 @@ body {
     height: 100vh;
     /* grid-auto-rows: minmax(100vh, auto); */
     background-image: url("./jessy-smith-zFOm6KzA-7g-unsplash.jpg");
+    background-repeat: no-repeat;
     background-position: center;
 }
 
 section {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: repeat(18, 1fr);
+    grid-template-rows: repeat(17, 1fr);
+    /* height: 100vh; */
 }
 
 nav {
     grid-column: 1/8;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 ul {
@@ -38,45 +43,54 @@ ul li {
     grid-row: 10/11;
 }
 
-/* .about-me {
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(18, 1fr);
-} */
-
 .bio {
     font-family: 'Courier New', Courier, monospace;
     font-size: 75px;
     text-align: left;
-    /* font-weight: bold; */
+    align-self: end;
     color:rgba(255, 255, 255, 1);
-    grid-column: 3/6;
-    grid-row: 8/18;
+    grid-column: 3/5;
+    grid-row: 3/6;
 }
 
-/* .contact-page {
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-} */
+img {
+    grid-column: 5/6;
+    grid-row: 4/6;
+}
+
+.coming-soon {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 150px;
+    font-weight: bold;
+    color:rgba(89, 197, 7, 1);
+    text-align: center; 
+    grid-column: 3/6;
+    grid-row: 10/11;
+}
 
 .contact-me {
     font-family: 'Courier New', Courier, monospace;
     font-size: 75px;
-    text-align: center;
-    /* font-weight: bold; */
-    /* color:rgba(255, 255, 255, 1); */
+    text-align: left;
     color:rgba(255, 255, 255, 1);
-    /* color: red; */
     grid-column: 3/6;
-    grid-row: 8/11;
+    grid-row: 7/10;
 }
 
 .lets-connect {
-    font-size: 90px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 150px;
+    font-weight: bold;
     color:rgba(89, 197, 7, 1);
     text-align: center; 
     grid-column: 3/6;
     grid-row: 12/13;
 }
 
+.copyright {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 60px;
+    font-weight: bold;
+    grid-column: 5/8;
+    grid-row: 15/16;
+}

@@ -85,6 +85,8 @@ h2 {
 
 nav {
   border: navy solid 1px;
+  grid-column: 1/7;
+  grid-row: 1/2;
 }
 
 body > section {

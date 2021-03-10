@@ -1,6 +1,6 @@
 body {
   margin: 1px;
-  padding: 5px 40px 5px 30px;
+  padding: 5px 60px 5px 40px;
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: max-content;
@@ -76,7 +76,7 @@ h2{
   padding: 10px;
 }
 
-#contact-me {
+#contact-me{
   display: flex;
   padding:20px;
   font-size: 20px;
@@ -158,15 +158,72 @@ h2{
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 60px;
+  
+  
 }
 
-.gitlive{
-  background-color: rgba(127, 211, 214, 0.719);
+/* .gitlive{
   color:cornsilk;
+  
   font-size: 18px;
   
+    display: flex;
+    justify-self: center;
+    text-align: center;
+    align-self: center;
+} */
+
+#gitHubSpan{
+  margin-right: 10px;
+  padding: 14px;
   text-align: center;
+  font-size: 20px;
+  color:white;
+  border: solid 1px #2afeb7;
+  background-color: #234E70;
+  border-radius: 10px;
+
+  box-shadow:
+  0 6.7px 5.3px rgba(0, 0, 0, 0.48),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.287),
+  0 100px 80px rgba(0, 0, 0, 0.194)
+ ;
+ 
+ 
 }
+
+#gitHubSpan:hover{
+  background-color: #2afeb721;
+  box-shadow: none;
+  color:#2afeb7 ;
+}
+
+#gitLive{
+  margin-left: 10px;
+  padding: 14px;
+  text-align: center;
+  font-size: 20px;
+  color:white;
+  border: solid 1px #2afeb7;
+  background-color: #234E70;
+  border-radius: 10px;
+
+  box-shadow:
+  0 6.7px 5.3px rgba(0, 0, 0, 0.48),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.287),
+  0 100px 80px rgba(0, 0, 0, 0.194)
+ ;
+ 
+ 
+}
+
+
+#gitLive:hover{
+  background-color: #2afeb721;
+  box-shadow: none;
+  color:#2afeb7 ;
+}
+
 
 #skills {
   margin-top: 60px;

@@ -6,12 +6,12 @@ const displayLetters = () => {
   const nameArray = name.textContent.split("");
   name.textContent = "";
   for (let i = 0; i < nameArray.length; i++) {
-      const div = document.createElement("div");
-      div.setAttribute("id", "letter" + i);
-      div.classList.add("letters");
-      div.textContent = nameArray[i];
-      name.appendChild(div);
-  }
+          const div = document.createElement("div");
+          div.setAttribute("id", "letter" + i);
+          div.classList.add("letters");
+          div.textContent = nameArray[i];
+          name.appendChild(div);
+    }
   return name;
 };
 
@@ -46,6 +46,14 @@ contactBtn.addEventListener("click", () => {
 //
 
 
+
+// aboutBtn.addEventListener("click", () => {
+//     aboutSection.scrollIntoView(true);
+// })
+
+// name animation
+
+// document.onload()
 
 // generate nav to each section
 // const homeSection = document.querySelector("#home-section");

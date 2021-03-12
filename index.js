@@ -25,6 +25,28 @@ contactBtn.addEventListener("click", () => {
     jumpToSection(contactSection);
 })
 
+// 
+
+
+
+// name animation
+
+const displayLetters = () => {
+    const name = document.querySelector("#name");
+    const nameArray = name.textContent.split("");
+    name.textContent = "";
+    for (let i = 0; i < nameArray.length; i++) {
+        const div = document.createElement("div");
+        div.setAttribute("id", "letter" + i);
+        div.classList.add("letters");
+        div.textContent = nameArray[i];
+        name.appendChild(div);
+    }
+    return name;
+}
+
+document.addEventListener("load", displayLetters);
+
 
 
 

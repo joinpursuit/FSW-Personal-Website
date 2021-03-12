@@ -1,19 +1,18 @@
 // why doesn't page go back to the top when refreshed?
 
 // split name into array
-const coreenStr = "Coreen Cooper";
 
 const displayLetters = () => {
-    const name = document.querySelector("#name");
-    const coreenInAnArray = coreenStr.split("");
+    const coreenInAnArray = ["C","o","r","e","e","n","","C","o","o","p","e","r"];
+    const header = document.querySelector("header");
     for (let i = 0; i < coreenInAnArray.length; i++) {
         const div = document.createElement("div");
         div.setAttribute("id", "letter" + i);
         div.classList.add("letters");
         div.textContent = coreenInAnArray[i];
-        name.appendChild(div);
+        header.appendChild(div);
     }
-  return name;
+  return header;
 };
 
 window.addEventListener("load", displayLetters);
@@ -44,19 +43,33 @@ contactBtn.addEventListener("click", () => {
   jumpToSection(contactSection);
 });
 
-//
-
-
-
 // aboutBtn.addEventListener("click", () => {
 //     aboutSection.scrollIntoView(true);
 // })
 
-// name animation
-
-// document.onload()
-
 // generate nav to each section
+
+// const navLinks = 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // const homeSection = document.querySelector("#home-section");
 
 // const createNav = (section) => {

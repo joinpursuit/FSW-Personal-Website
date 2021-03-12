@@ -9,15 +9,15 @@ document.addEventListener('DOMContentLoaded', ()=>{
   // })
       
 
-  // function change(){
-  //   let img = document.querySelector('#img');
-  //     if(img.src !== "https://i.imgur.com/8Ba9n5K.jpg"){
-  //       img.src = "https://i.imgur.com/8Ba9n5K.jpg"
-  //     }else{
-  //     img.src = "https://i.imgur.com/4qMZueg.jpg"
-  //     }
-  // }
-  // img.addEventListener("mouseover", ()=>{change()})
+  function change(){
+    let img = document.querySelector('#img');
+      if(img.src !== "https://i.imgur.com/8Ba9n5K.jpg"){
+        img.src = "https://i.imgur.com/8Ba9n5K.jpg"
+      }else{
+      img.src = "https://i.imgur.com/4qMZueg.jpg"
+      }
+  }
+  img.addEventListener("mouseover", ()=>{change()})
 
 
 
@@ -31,36 +31,31 @@ document.addEventListener('DOMContentLoaded', ()=>{
   // })
 
   let skills = document.getElementById('skills2');
+  const paraskills = document.getElementById('paraskills')
+  const forms = document.createElement('div')
+  forms.className = 'cardAll'
   skills.addEventListener('click', ()=>{
-    let kill = document.querySelector('.all');
-    console.log(kill)
-    console.log('estamos adentro')
     if(skills.value === 'all'){
-      console.log('lo logramos')
-      const paraskills = document.getElementById('paraskills')
-      const forms = document.createElement('div')
-      forms.className = 'cardAll'
       forms.innerHTML = `<img src= "images/react js.png">,<img src= "images/css.png">,
       <img src= "images/html.png">,<img src= "images/node .png">,<img src= "images/postgresql.jpeg">, 
       <img src= "images/javascript.png">, <img src= "images/auditio.png">,<img src= "images/photoshow.png">,
       <img src="images/gif/premierpro.jpeg"> `
       paraskills.appendChild(forms)
-     
     }else if(skills.value === 'front'){
-      console.log('otro mas')
+      forms.innerHTML = `<img src= "images/react js.png">,<img src= "images/css.png">,
+      <img src= "images/html.png">`
+      paraskills.appendChild(forms)
     }else if(skills.value === 'back'){
-      console.log('otro masgtsjsfjy')
+      forms.innerHTML = `<img src= "images/node .png">,<img src= "images/postgresql.jpeg">, 
+      <img src= "images/javascript.png">`
+      paraskills.appendChild(forms)
     }else if(skills.value === 'others'){
-      console.log('otro mas,,,,,,,,,,')
+      forms.innerHTML = `<img src= "images/auditio.png">,<img src= "images/photoshow.png">,
+      <img src="images/gif/premierpro.jpeg">`
+      paraskills.appendChild(forms)
     }else{
-      skills.value = 'none'
+      skills.value = ''
     }
     });
     
-
-//   function scroll(){
-//     window.scrollTo(300, 500);
-// }
-// container.addEventListener("mouseover", ()=> {scroll()})
-  
 })

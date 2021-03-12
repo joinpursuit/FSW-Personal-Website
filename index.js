@@ -1,3 +1,4 @@
+// const homeSection = document.querySelector("#home-section");
 const aboutSection = document.querySelector("#about-section");
 const projectsSection = document.querySelector("#projects-section");
 const contactSection = document.querySelector("#contact-section");
@@ -7,10 +8,11 @@ const projectBtn = document.querySelector("#project-btn");
 const contactBtn = document.querySelector("#contact-btn");
 
 // why doesn't page go back to the top when refreshed?
+// I saw innerHTML being used to create tags // EXAMPLE: section.innerHTML = "<span>" + "hello" + "</span>" // which is industry standard?
 
 //// ***FUNCTIONS*** //////////////////////////////////////////
 
-// Create divs with letters for my name
+// create divs with letters for my name
 const displayLetters = () => {
   const coreenInAnArray = [
     "C",
@@ -39,21 +41,33 @@ const displayLetters = () => {
 };
 
 // create navbar
+// how could I make this cleaner?
+// use map or object
 const displayNavBar = () => {
     const navItems = ["Home", "About", "Projects", "Contact"];
-    const navBar = document.querySelector("nav > ul");
+    const hrefValues = ["#home-section", "#about-section", "#projects-section", "#contact-section"];
+    const section = document.querySelector("body > section");
+    const nav = document.createElement("nav");
+    const ul = document.createElement("ul");
+    section.prepend(nav);
+    nav.appendChild(ul);
     for (let i = 0; i < navItems.length; i++) {
       const li = document.createElement("li");
+      const a = document.createElement("a");
       li.classList.add("nav-li");
-      li.textContent = navItems[i];
-      navBar.appendChild(li);
+      a.setAttribute("href", hrefValues[i]);
+      li.textContent = a[i];
+      a.textContent = navItems[i];
+      ul.appendChild(li);
+      li.appendChild(a);
     }
-    return navBar;
+    return navItems;
   };
 
+
 // move to next section
-const jumpToSection = (location) => {
-    location.scrollIntoView(true);
+const jumpToSection = (section) => {
+    section.scrollIntoView(true);
 };
 
 
@@ -67,11 +81,14 @@ window.addEventListener("load", () => {
 
 // move to section and display navbar with button
 aboutBtn.addEventListener("click", () => {
+    displayNavBar();
   jumpToSection(aboutSection);
 });
 projectBtn.addEventListener("click", () => {
+    displayNavBar();
   jumpToSection(projectsSection);
 });
 contactBtn.addEventListener("click", () => {
+    displayNavBar();
   jumpToSection(contactSection);
 });

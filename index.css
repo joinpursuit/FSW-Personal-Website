@@ -12,19 +12,35 @@ ul {
 }
 
 .btn,
-#about-summary,
 .home-rec-navy,
+#about-summary,
 #contact-btn {
   display: flex;
   align-items: center;
   justify-content: center;
   color: #ffffff;
-  background-color: #003566;
   padding: 1%;
 }
 
-#about-rec-yellow, .home-rec-yellow {
-    background-color: #ffc300;
+/* set background color */
+
+.btn,
+.footer-rec-navy,
+.home-rec-navy,
+#about-summary,
+#contact-btn {
+  background-color: #003566;
+}
+
+footer,
+.home-rec-yellow,
+#about-rec-yellow {
+  background-color: #ffc300;
+}
+
+.home-rec-grey,
+.footer-rec-grey {
+  background-color: #c4c4c4;
 }
 
 .icons {
@@ -36,58 +52,16 @@ ul {
 }
 
 body > section {
+  height: 100vh;
   display: grid;
   grid-template-rows: repeat(24, 1fr);
   grid-template-columns: repeat(25, 1fr);
 }
 
-/* Home Section */
-
-
-#letter6 {
-  /* border: black solid 1px; */
-  width: 18px;
-}
-
-.letters {
-  /* display: unset; */
-  transform: translateX(980px);/*starting position for animation*/
-  /* animation-name: roll;
-  animation-duration: 3s; */
-  /*animation-fill-mode: forwards;*//*returns element to orignal position of 0px*/
-  /* animation-timing-function: ease-out; */
-  /*animation: roll 3s ease-out forwards;*/ /* animation shorthand*/
-  
-}
-
-#letter0, #letter7 {
-  animation: roll .5s linear forwards;
-}
-#letter1, #letter8 {
-  animation: roll 1s linear forwards;
-}
-#letter2, #letter9 {
-  animation: roll 1.5s linear forwards;
-}
-#letter3, #letter10 {
-  animation: roll 2s linear forwards;
-}
-#letter4, #letter11 {
-  animation: roll 2.5s linear forwards;
-}
-#letter5, #letter12 {
-  animation: roll 3s linear forwards;
-}
-
-
-
-@keyframes roll {
-  from {
-    transform: translateX(980px) rotateZ(0deg);
-  }
-  to {
-    transform: translateX(0px) rotateZ(-360deg);
-  }
+/*** Home Section ***/
+nav {
+  grid-column: 1/8;
+  grid-row: 1/2;
 }
 
 .nav-li {
@@ -102,13 +76,52 @@ h1 {
   grid-column: 9/19;
 }
 
+/* add spacing between first and last name */
+#letter6 {
+  width: 18px;
+}
+
+/* set differnt animation times */
+#letter0,
+#letter7 {
+  animation: roll 0.5s linear forwards;
+}
+#letter1,
+#letter8 {
+  animation: roll 1s linear forwards;
+}
+#letter2,
+#letter9 {
+  animation: roll 1.5s linear forwards;
+}
+#letter3,
+#letter10 {
+  animation: roll 2s linear forwards;
+}
+#letter4,
+#letter11 {
+  animation: roll 2.5s linear forwards;
+}
+#letter5,
+#letter12 {
+  animation: roll 3s linear forwards;
+}
+
+@keyframes roll {
+  from {
+    transform: translateX(980px) rotateZ(0deg);
+  }
+  to {
+    transform: translateX(0px) rotateZ(-360deg);
+  }
+}
+
 h2 {
   font-size: 32px;
   font-weight: bold;
 }
 
 .home-rec-grey {
-  background-color: #c4c4c4;
   grid-row: 12/14;
   grid-column: 10/17;
 }
@@ -121,10 +134,12 @@ h2 {
 
 .home-rec-navy {
   grid-column: 12/19;
-  grid-row:13/15;
+  grid-row: 13/15;
   font-size: 24px;
   z-index: 2;
 }
+
+
 
 .about-btn {
   grid-column: 9/11;
@@ -132,22 +147,15 @@ h2 {
   z-index: 2;
 }
 
-nav {
-  grid-column: 1/8;
-  grid-row: 1/2;
-}
-
-body > section {
-  height: 100vh;
-}
-
 #home-section {
+  /* for formatting only */
   border: orange solid 1px;
 }
 
 /* About Me Section */
 
 #about-section {
+  /* for formatting only */
   border: green solid 1px;
 }
 
@@ -184,34 +192,40 @@ body > section {
 /* Style Projects Setion */
 
 #projects-section {
+  /* for formatting only */
   border: black solid 1px;
 }
 
 #project-header {
-    grid-column: 12/15;
-    grid-row: 3/5;
+  grid-column: 12/15;
+  grid-row: 3/5;
 }
 
-#snowman-section{
-    grid-column: 6/13;
-    grid-row: 7/13;
+#snowman-section {
+  grid-column: 6/13;
+  grid-row: 7/13;
 }
-
 
 #emoji-section {
-    grid-column: 14/21;
-    grid-row: 7/13;
+  grid-column: 14/21;
+  grid-row: 7/13;
 }
 
 #contact-btn {
-    grid-column: 12/15;
-    grid-row: 20/21;
+  grid-column: 12/15;
+  grid-row: 20/21;
 }
 
 /* Style Contact Section */
 
 #contact-section {
+  /* for formatting only */
   border: purple solid 1px;
+}
+
+.icon-links:hover {
+  color: #ffc300;
+  text-shadow: 6px 6px 3px #003566;
 }
 
 #contact-title {
@@ -243,12 +257,20 @@ body > section {
 }
 
 /* /style footer */
+footer {
+  grid-column: 1/26;
+  grid-row: 24/26;
+}
+
+.footer-rec-grey {
+  height: 3vh;
+}
+
+.footer-rec-navy {
+  height: 1vh;
+}
 
 footer > ul {
   justify-content: space-between;
-}
-
-footer {
-  background-color: #ffc300;
-  border: navy solid 1px;
+  align-items: center;
 }

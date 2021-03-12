@@ -52,19 +52,13 @@ const hrefValues = [
 ];
 // const section = document.querySelectorAll("body > section");
 
-const createNav = (section) => {
-  const nav = document.createElement("nav");
-  section.prepend(nav);
-};
-
 const createUl = () => {
-  const nav = document.querySelector("nav");
+  const nav = document.querySelector(section); // keeps appending to this nav. how to select different nav
   const ul = document.createElement("ul");
   nav.appendChild(ul);
 };
 
 const displayNavBar = () => {
-  createUl();
   const ul = document.querySelector("ul");
   for (let i = 0; i < navItems.length; i++) {
     const li = document.createElement("li");
@@ -76,8 +70,15 @@ const displayNavBar = () => {
     ul.appendChild(li);
     li.appendChild(a);
   }
-//   debugger;
   return navItems;
+};
+
+const createNav = () => {
+  const section = document.querySelectorAll("section");
+  const nav = document.createElement("nav");
+  section.prepend(nav);
+  createUl();
+  displayNavBar();
 };
 
 // move to next section
@@ -90,23 +91,20 @@ const jumpToSection = (section) => {
 // display header and navbar on page load
 window.addEventListener("load", () => {
   createNav(homeSection);
-  displayNavBar();
   displayLetters();
 });
 
 // move to section and display navbar with button
+// nav not created in about section?
 aboutBtn.addEventListener("click", () => {
   createNav(aboutSection);
-  displayNavBar();
   jumpToSection(aboutSection);
 });
 projectBtn.addEventListener("click", () => {
   createNav(projectsSection);
-  displayNavBar();
   jumpToSection(projectsSection);
 });
 contactBtn.addEventListener("click", () => {
   createNav(contactSection);
-  displayNavBar();
   jumpToSection(contactSection);
 });

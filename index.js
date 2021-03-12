@@ -1,4 +1,4 @@
-// const homeSection = document.querySelector("#home-section");
+const homeSection = document.querySelector("#home-section");
 const aboutSection = document.querySelector("#about-section");
 const projectsSection = document.querySelector("#projects-section");
 const contactSection = document.querySelector("#contact-section");
@@ -43,52 +43,70 @@ const displayLetters = () => {
 // create navbar
 // how could I make this cleaner?
 // use map or object
-const displayNavBar = () => {
-    const navItems = ["Home", "About", "Projects", "Contact"];
-    const hrefValues = ["#home-section", "#about-section", "#projects-section", "#contact-section"];
-    const section = document.querySelector("body > section");
-    const nav = document.createElement("nav");
-    const ul = document.createElement("ul");
-    section.prepend(nav);
-    nav.appendChild(ul);
-    for (let i = 0; i < navItems.length; i++) {
-      const li = document.createElement("li");
-      const a = document.createElement("a");
-      li.classList.add("nav-li");
-      a.setAttribute("href", hrefValues[i]);
-      li.textContent = a[i];
-      a.textContent = navItems[i];
-      ul.appendChild(li);
-      li.appendChild(a);
-    }
-    return navItems;
-  };
+const navItems = ["Home", "About", "Projects", "Contact"];
+const hrefValues = [
+  "#home-section",
+  "#about-section",
+  "#projects-section",
+  "#contact-section",
+];
+// const section = document.querySelectorAll("body > section");
 
+const createNav = (section) => {
+  const nav = document.createElement("nav");
+  section.prepend(nav);
+};
+
+const createUl = () => {
+  const nav = document.querySelector("nav");
+  const ul = document.createElement("ul");
+  nav.appendChild(ul);
+};
+
+const displayNavBar = () => {
+  createUl();
+  const ul = document.querySelector("ul");
+  for (let i = 0; i < navItems.length; i++) {
+    const li = document.createElement("li");
+    const a = document.createElement("a");
+    li.classList.add("nav-li");
+    a.setAttribute("href", hrefValues[i]);
+    li.textContent = a[i];
+    a.textContent = navItems[i];
+    ul.appendChild(li);
+    li.appendChild(a);
+  }
+//   debugger;
+  return navItems;
+};
 
 // move to next section
 const jumpToSection = (section) => {
-    section.scrollIntoView(true);
+  section.scrollIntoView(true);
 };
-
 
 //// ***EVENT LISTENERS*** ////////////////////////////////////////////////////
 
 // display header and navbar on page load
 window.addEventListener("load", () => {
-    displayNavBar();
-    displayLetters();
+  createNav(homeSection);
+  displayNavBar();
+  displayLetters();
 });
 
 // move to section and display navbar with button
 aboutBtn.addEventListener("click", () => {
-    displayNavBar();
+  createNav(aboutSection);
+  displayNavBar();
   jumpToSection(aboutSection);
 });
 projectBtn.addEventListener("click", () => {
-    displayNavBar();
+  createNav(projectsSection);
+  displayNavBar();
   jumpToSection(projectsSection);
 });
 contactBtn.addEventListener("click", () => {
-    displayNavBar();
+  createNav(contactSection);
+  displayNavBar();
   jumpToSection(contactSection);
 });

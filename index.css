@@ -44,15 +44,46 @@ body > section {
 /* Home Section */
 
 
+#letter6 {
+  /* border: black solid 1px; */
+  width: 18px;
+}
+
 .letters {
-  display: none;
-  border: black solid 1px;
+  /* display: unset; */
+  transform: translateX(980px);/*starting position for animation*/
+  /* animation-name: roll;
+  animation-duration: 3s; */
+  /*animation-fill-mode: forwards;*//*returns element to orignal position of 0px*/
+  /* animation-timing-function: ease-out; */
+  animation: roll 3s ease-out forwards; /* animation shorthand*/
 }
 
-#letter0 {
-  display: unset;
+@keyframes roll {
+  from {
+    transform: translateX(980px) rotateZ(0deg);
+    
+  }
+
+  to {
+    transform: translateX(0px) rotateZ(-360deg);
+  }
 }
 
+
+@keyframes bounce {
+  0% {
+    transform: translateX(980px);
+  }
+
+  50% {
+    
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
 
 
 

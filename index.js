@@ -1,161 +1,49 @@
-// point button to next section
+// why doesn't page go back to the top when refreshed?
 
+// split name into array
+const displayLetters = () => {
+  const name = document.querySelector("#name");
+  const nameArray = name.textContent.split("");
+  name.textContent = "";
+  for (let i = 0; i < nameArray.length; i++) {
+      const div = document.createElement("div");
+      div.setAttribute("id", "letter" + i);
+      div.classList.add("letters");
+      div.textContent = nameArray[i];
+      name.appendChild(div);
+  }
+  return name;
+};
+
+window.addEventListener("load", displayLetters);
+
+// point button to next section
 const jumpToSection = (location) => {
-    location.scrollIntoView(true);
-}
+  location.scrollIntoView(true);
+};
 
 const aboutBtn = document.querySelector(".about-btn");
 const aboutSection = document.querySelector("#about-section");
 
 aboutBtn.addEventListener("click", () => {
-    jumpToSection(aboutSection);
+  jumpToSection(aboutSection);
 });
 
 const projectBtn = document.querySelector("#project-btn");
 const projectsSection = document.querySelector("#projects-section");
 
 projectBtn.addEventListener("click", () => {
-    jumpToSection(projectsSection);
+  jumpToSection(projectsSection);
 });
 
 const contactBtn = document.querySelector("#contact-btn");
 const contactSection = document.querySelector("#contact-section");
 
 contactBtn.addEventListener("click", () => {
-    jumpToSection(contactSection);
-})
+  jumpToSection(contactSection);
+});
 
-// 
-
-
-
-// name animation
-
-const displayLetters = () => {
-    const name = document.querySelector("#name");
-    const nameArray = name.textContent.split("");
-    name.textContent = "";
-    for (let i = 0; i < nameArray.length; i++) {
-        const div = document.createElement("div");
-        div.setAttribute("id", "letter" + i);
-        div.classList.add("letters");
-        div.textContent = nameArray[i];
-        name.appendChild(div);
-    }
-    return name;
-}
-
-document.addEventListener("load", displayLetters);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// aboutBtn.addEventListener("click", () => {
-//     aboutSection.scrollIntoView(true);
-// })
-
-
-
-// name animation
-
-// document.onload()
-
-
-
-
-
-
-
-
-
+//
 
 
 
@@ -179,7 +67,3 @@ document.addEventListener("load", displayLetters);
 // const setLiAttribute = (id) => {
 //     li.setAttribute("href", id);
 // }
-
-
-
-

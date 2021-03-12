@@ -11,6 +11,11 @@ ul {
   justify-content: space-evenly;
 }
 
+.btn, .rectangle, .project-gif, .portrait {
+  /* border: orangered solid 1px; */
+  border-radius: 5px;
+}
+
 .btn,
 .home-rec-navy,
 #about-summary,
@@ -176,12 +181,21 @@ h2 {
   grid-row: 7/16;
   line-height: 26px;
   text-align: center;
+  z-index: 2;
 }
 
 #about-rec-yellow {
   grid-column: 15/21;
   grid-row: 10/19;
-  z-index: -1;
+}
+
+
+#about-summary:hover {
+  transform: scale(1.25);
+}
+
+#about-rec-yellow:hover {
+  transform: translate(50px, 50px);
 }
 
 #project-btn {
@@ -209,6 +223,10 @@ h2 {
 #emoji-section {
   grid-column: 14/21;
   grid-row: 7/13;
+}
+
+#snowman-gif:hover, #emoji-gif:hover {
+  transform: scale(1.25);
 }
 
 #contact-btn {

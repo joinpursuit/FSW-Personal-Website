@@ -17,22 +17,21 @@
                 <li class="nav-li"><a href="#contact-section">Contact</a></li>
             </ul>
         </nav>
-        <h1 id="name">Coreen Cooper</h1>
-        <!-- h1 with name animation - should each letter be it's own separate element? -->
-        <p class="rectangle home-rec-navy">Fullstack Engineer</p>
-        <div class="rectangle home-rec-grey"></div> <!-- empty div just for coloring - should this be a p tag? -->
-        <div class="rectangle home-rec-yellow"></div>
-        <button class="btn about-btn" type="button">About me</button>
+        <header id="name"></header>
+        <p id="home-rec-navy" class="rectangle">Fullstack Engineer</p>
+        <div id="home-rec-grey" class="rectangle"></div> <!-- empty div just for coloring - should this be a p tag? -->
+        <div id="home-rec-yellow" class="rectangle"></div>
+        <button id="about-btn" class="btn" type="button">About me</button>
     </section>
 
     <section id="about-section">
         <h2 id="about-title">About me</h2>
         <img id="portrait" src="./coreen.jpg" alt="Coreen Cooper">
-        <p id="about-summary">Client-focused, community-minded software developer who is with a passion
+        <p class="rectangle" id="about-summary">Client-focused, community-minded software developer who is with a passion
             for developing applications to improve user accessibility. Outside of coding, I am active in my community in
             youth and young adult development. My love for traveling allows me to appreciate the differences in humanity and how I
             can add value to my community.</p>
-        <div id="about-rec-yellow"></div>
+        <p class="rectangle" id="about-rec-yellow"></p>
         <button class="btn" id="project-btn" type="button">Projects</button>
     </section>
 
@@ -57,7 +56,7 @@
                 repo</a><!-- should me link be a button? -->
         </section>
 
-        <button id="contact-btn" type="button">Contact me</button>
+        <button class="btn" id="contact-btn" type="button">Contact me</button>
     </section>
 
     <section id="contact-section">

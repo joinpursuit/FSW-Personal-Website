@@ -117,7 +117,7 @@ window.addEventListener("load", () => {
 
 // move to section and display navbar with button
 aboutBtn.addEventListener("click", () => {
-  createNav(aboutSection);
+  createNav(aboutSection, "about");
   createUl(aboutSection); // ul created
   // displayNavBar();
   jumpToSection(aboutSection);
@@ -125,12 +125,12 @@ aboutBtn.addEventListener("click", () => {
 projectBtn.addEventListener("click", () => {
   // createUl();
   // displayNavBar();
-  createNav(projectsSection);
+  createNav(projectsSection, "projects");
   jumpToSection(projectsSection);
 });
 contactBtn.addEventListener("click", () => {
   // createUl();
   // displayNavBar();
-  createNav(contactSection);
+  createNav(contactSection, "contact");
   jumpToSection(contactSection);
 });

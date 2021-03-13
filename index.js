@@ -50,10 +50,36 @@ const hrefValues = [
   "#projects-section",
   "#contact-section",
 ];
+
+const hrefValue2 = {
+  homeSection: "#home-nav",
+  aboutSection: "#about-nav",
+  projectsSection: "#projects-nav",
+  contactSection: "#contact-nav",
+};
+
+const tags = {
+  home: {nav: "#home-nav", ul: "#home-ul"},
+  about: {nav: "#about-nav", ul: "#about-ul"},
+  projects: {nav: "#projects-nav", ul: "#projects-ul"},
+  contact: {nav: "#contact-nav", ul: "#contact-ul"},
+};
 // const section = document.querySelectorAll("body > section");
 
+// nav is created in the correct section
+// but ul does not know where to append ***appending ul to home only***
+// create id to grab nav in the correct section
+// then repeat for ul
+
+const createNav = (grabTag, key) => {
+  const nav = document.createElement("nav");
+  nav.setAttribute("id", tags[key]["nav"]);
+  grabTag.prepend(nav);
+};
+
 const createUl = () => {
-  const nav = document.querySelector(section); // keeps appending to this nav. how to select different nav
+  // ***** the problem starts here *****////
+  const nav = document.querySelector("nav");
   const ul = document.createElement("ul");
   nav.appendChild(ul);
 };
@@ -70,15 +96,8 @@ const displayNavBar = () => {
     ul.appendChild(li);
     li.appendChild(a);
   }
+  debugger;
   return navItems;
-};
-
-const createNav = () => {
-  const section = document.querySelectorAll("section");
-  const nav = document.createElement("nav");
-  section.prepend(nav);
-  createUl();
-  displayNavBar();
 };
 
 // move to next section
@@ -90,21 +109,28 @@ const jumpToSection = (section) => {
 
 // display header and navbar on page load
 window.addEventListener("load", () => {
-  createNav(homeSection);
+  createNav(homeSection, "home");
+  createUl();
+  displayNavBar();
   displayLetters();
 });
 
 // move to section and display navbar with button
-// nav not created in about section?
 aboutBtn.addEventListener("click", () => {
   createNav(aboutSection);
+  createUl(aboutSection); // ul created
+  // displayNavBar();
   jumpToSection(aboutSection);
 });
 projectBtn.addEventListener("click", () => {
+  // createUl();
+  // displayNavBar();
   createNav(projectsSection);
   jumpToSection(projectsSection);
 });
 contactBtn.addEventListener("click", () => {
+  // createUl();
+  // displayNavBar();
   createNav(contactSection);
   jumpToSection(contactSection);
 });

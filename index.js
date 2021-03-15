@@ -36,13 +36,27 @@ const displayLetters = () => {
     div.classList.add("letters");
     div.textContent = letter;
     name.appendChild(div);
-  })
+  });
 };
 
+const navListItems = ["Home", "About", "Projects", "Contact"];
+
+const createNavbar = (section) => {
+  const nav = document.createElement("nav");
+  const ul = document.createElement("ul");
+  section.prepend(nav);
+  nav.appendChild(ul);
+  navListItems.forEach((listItem) => {
+    const li = document.createElement("li");
+    const a = document.createElement("a");
+    a.textContent = listItem;
+    ul.appendChild(li);
+    li.appendChild(a);
+  });
+};
 // // create navbar
 // // how could I make this cleaner?
 // // use map or object
-// const navItems = ["Home", "About", "Projects", "Contact"];
 // const hrefValues = [
 //   "#home-section",
 //   "#about-section",
@@ -75,8 +89,6 @@ const displayLetters = () => {
 //   nav.setAttribute("id", tags[key]["nav"]);
 //   grabTag.prepend(nav);
 // };
-
-
 
 // const createUl = () => {
 
@@ -117,7 +129,7 @@ const jumpToSection = (section) => {
 
 // display header and navbar on page load
 window.addEventListener("load", () => {
-  // createNav(homeSection, "home");
+  createNavbar(homeSection);
   // createUl();
   // displayNavBar();
   displayLetters();

@@ -13,103 +13,102 @@ const contactBtn = document.querySelector("#contact-btn");
 //// ***FUNCTIONS*** //////////////////////////////////////////
 
 // create divs with letters for my name
+const name = document.querySelector("#name");
+const coreenInAnArray = [
+  "C",
+  "o",
+  "r",
+  "e",
+  "e",
+  "n",
+  "",
+  "C",
+  "o",
+  "o",
+  "p",
+  "e",
+  "r",
+];
 const displayLetters = () => {
-  const coreenInAnArray = [
-    "C",
-    "o",
-    "r",
-    "e",
-    "e",
-    "n",
-    "",
-    "C",
-    "o",
-    "o",
-    "p",
-    "e",
-    "r",
-  ];
-  const header = document.querySelector("header");
-  for (let i = 0; i < coreenInAnArray.length; i++) {
+  coreenInAnArray.forEach((letter, i) => {
     const div = document.createElement("div");
     div.setAttribute("id", "letter" + i);
     div.classList.add("letters");
-    div.textContent = coreenInAnArray[i];
-    header.appendChild(div);
-  }
-  return header;
+    div.textContent = letter;
+    name.appendChild(div);
+  })
 };
 
-// create navbar
-// how could I make this cleaner?
-// use map or object
-const navItems = ["Home", "About", "Projects", "Contact"];
-const hrefValues = [
-  "#home-section",
-  "#about-section",
-  "#projects-section",
-  "#contact-section",
-];
+// // create navbar
+// // how could I make this cleaner?
+// // use map or object
+// const navItems = ["Home", "About", "Projects", "Contact"];
+// const hrefValues = [
+//   "#home-section",
+//   "#about-section",
+//   "#projects-section",
+//   "#contact-section",
+// ];
 
-// const hrefValue2 = {
-//   homeSection: "#home-nav",
-//   aboutSection: "#about-nav",
-//   projectsSection: "#projects-nav",
-//   contactSection: "#contact-nav",
+// // const hrefValue2 = {
+// //   homeSection: "#home-nav",
+// //   aboutSection: "#about-nav",
+// //   projectsSection: "#projects-nav",
+// //   contactSection: "#contact-nav",
+// // };
+
+// const tags = {
+//   home: {nav: "#home-nav", ul: "#home-ul"},
+//   about: {nav: "#about-nav", ul: "#about-ul"},
+//   projects: {nav: "#projects-nav", ul: "#projects-ul"},
+//   contact: {nav: "#contact-nav", ul: "#contact-ul"},
+// };
+// // const section = document.querySelectorAll("body > section");
+
+// // nav is created in the correct section
+// // but ul does not know where to append ***appending ul to home only***
+// // create id to grab nav in the correct section
+// // then repeat for ul
+
+// const createNav = (grabTag, key) => {
+//   const nav = document.createElement("nav");
+//   nav.setAttribute("id", tags[key]["nav"]);
+//   grabTag.prepend(nav);
 // };
 
-const tags = {
-  home: {nav: "#home-nav", ul: "#home-ul"},
-  about: {nav: "#about-nav", ul: "#about-ul"},
-  projects: {nav: "#projects-nav", ul: "#projects-ul"},
-  contact: {nav: "#contact-nav", ul: "#contact-ul"},
-};
-// const section = document.querySelectorAll("body > section");
-
-// nav is created in the correct section
-// but ul does not know where to append ***appending ul to home only***
-// create id to grab nav in the correct section
-// then repeat for ul
-
-const createNav = (grabTag, key) => {
-  const nav = document.createElement("nav");
-  nav.setAttribute("id", tags[key]["nav"]);
-  grabTag.prepend(nav);
-};
 
 
+// const createUl = () => {
 
-const createUl = () => {
+//   // we invoke function
+// // if  (jumpToSection(aboutSection)) {
+// // } then nav = document.querySelector("nav")
+// // else {
+// // }const nav = document.querySelector("nav")
 
-  // we invoke function
-// if  (jumpToSection(aboutSection)) {
-// } then nav = document.querySelector("nav")
-// else {
-// }const nav = document.querySelector("nav")
+//   const nav = document.querySelector("nav");
+//   // ***** the problem starts here *****////
+//   const ul = document.createElement("ul");
+//   nav.appendChild(ul);
+// };
 
-  const nav = document.querySelector("nav");
-  // ***** the problem starts here *****////
-  const ul = document.createElement("ul");
-  nav.appendChild(ul);
-};
+// const displayNavBar = () => {
+//   const ul = document.querySelector("ul");
+//   for (let i = 0; i < navItems.length; i++) {
+//     const li = document.createElement("li");
+//     const a = document.createElement("a");
+//     li.classList.add("nav-li");
+//     a.setAttribute("href", hrefValues[i]);
+//     li.textContent = a[i];
+//     a.textContent = navItems[i];
+//     ul.appendChild(li);
+//     li.appendChild(a);
+//   }
+//   debugger;
+//   return navItems;
+// };
 
-const displayNavBar = () => {
-  const ul = document.querySelector("ul");
-  for (let i = 0; i < navItems.length; i++) {
-    const li = document.createElement("li");
-    const a = document.createElement("a");
-    li.classList.add("nav-li");
-    a.setAttribute("href", hrefValues[i]);
-    li.textContent = a[i];
-    a.textContent = navItems[i];
-    ul.appendChild(li);
-    li.appendChild(a);
-  }
-  debugger;
-  return navItems;
-};
-
-// move to next section
+// move to next section ////////////////////////////////////////////////////////
 const jumpToSection = (section) => {
   section.scrollIntoView(true);
 };
@@ -118,28 +117,28 @@ const jumpToSection = (section) => {
 
 // display header and navbar on page load
 window.addEventListener("load", () => {
-  createNav(homeSection, "home");
-  createUl();
-  displayNavBar();
+  // createNav(homeSection, "home");
+  // createUl();
+  // displayNavBar();
   displayLetters();
 });
 
 // move to section and display navbar with button
 aboutBtn.addEventListener("click", () => {
-  createNav(aboutSection, "about");
-  createUl(aboutSection, ); // ul created
+  // createNav(aboutSection, "about");
+  // createUl(aboutSection, ); // ul created
   // displayNavBar();
   jumpToSection(aboutSection);
 });
 projectBtn.addEventListener("click", () => {
   // createUl();
   // displayNavBar();
-  createNav(projectsSection, "projects");
+  // createNav(projectsSection, "projects");
   jumpToSection(projectsSection);
 });
 contactBtn.addEventListener("click", () => {
   // createUl();
   // displayNavBar();
-  createNav(contactSection, "contact");
+  // createNav(contactSection, "contact");
   jumpToSection(contactSection);
 });

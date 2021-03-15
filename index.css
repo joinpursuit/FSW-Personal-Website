@@ -171,6 +171,7 @@ h2 {
 }
 
 #portrait {
+  width: 100%; /*per AnJu's website*/ 
   /* width: 40vw; */
   grid-column: 6/12;
   grid-row: 8/11;

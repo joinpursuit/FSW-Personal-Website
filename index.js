@@ -8,7 +8,7 @@ const projectBtn = document.querySelector("#project-btn");
 const contactBtn = document.querySelector("#contact-btn");
 
 // why doesn't page go back to the top when refreshed?
-// I saw innerHTML being used to create tags // EXAMPLE: section.innerHTML = "<span>" + "hello" + "</span>" // which is industry standard?
+// I saw innerHTML being used to create tags // EXAMPLE: section.innerHTML = "<span id="create">" + "hello" + "</span>" // which is industry standard?
 
 //// ***FUNCTIONS*** //////////////////////////////////////////
 
@@ -51,12 +51,12 @@ const hrefValues = [
   "#contact-section",
 ];
 
-const hrefValue2 = {
-  homeSection: "#home-nav",
-  aboutSection: "#about-nav",
-  projectsSection: "#projects-nav",
-  contactSection: "#contact-nav",
-};
+// const hrefValue2 = {
+//   homeSection: "#home-nav",
+//   aboutSection: "#about-nav",
+//   projectsSection: "#projects-nav",
+//   contactSection: "#contact-nav",
+// };
 
 const tags = {
   home: {nav: "#home-nav", ul: "#home-ul"},
@@ -77,9 +77,18 @@ const createNav = (grabTag, key) => {
   grabTag.prepend(nav);
 };
 
+
+
 const createUl = () => {
-  // ***** the problem starts here *****////
+
+  // we invoke function
+// if  (jumpToSection(aboutSection)) {
+// } then nav = document.querySelector("nav")
+// else {
+// }const nav = document.querySelector("nav")
+
   const nav = document.querySelector("nav");
+  // ***** the problem starts here *****////
   const ul = document.createElement("ul");
   nav.appendChild(ul);
 };
@@ -118,7 +127,7 @@ window.addEventListener("load", () => {
 // move to section and display navbar with button
 aboutBtn.addEventListener("click", () => {
   createNav(aboutSection, "about");
-  createUl(aboutSection); // ul created
+  createUl(aboutSection, ); // ul created
   // displayNavBar();
   jumpToSection(aboutSection);
 });

@@ -106,6 +106,9 @@ p{
     background-image: url(images/gif/204314074cdff584f32a03e5aac3ebb9.gif)
    
 }
+.projects{
+    display: inline;
+}
 #child-bullet{
     font-style: oblique;
     font-size: 75%;

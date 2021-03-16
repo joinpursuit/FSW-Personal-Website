@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
       <img src= "images/html.png">`
       paraskills.appendChild(forms)
     }else if(skills.value === 'back'){
-      forms.innerHTML = `<img src= "images/node .png">,<img src= "images/postgresql.jpeg">, 
+      forms.innerHTML = `<img src= "images/node .png"><img src= "images/Postgreesql.png"> 
       <img src= "images/javascript.png">`
       paraskills.appendChild(forms)
     }else if(skills.value === 'others'){

@@ -1,0 +1,98 @@
+@media screen and (max-width: 414px) {
+  @font-face {
+    font-family: Merriweather;
+    src: url("./Merriweather/Merriweather-Regular.ttf");
+    font-style: normal;
+    font-weight: 400;
+  }
+
+  @font-face {
+    font-family: Merriweather;
+    src: url("./Merriweather/Merriweather-Bold.ttf");
+    font-style: normal;
+    font-weight: 700;
+  }
+
+  @font-face {
+    font-family: Lato;
+    src: url("./Lato/Lato-Regular.ttf");
+  }
+
+  body,
+  html {
+    height: 896px;
+  }
+
+  html {
+    color: #ecebee;
+  }
+  
+  body {
+    margin: 0;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    gap: 30px;
+  }
+
+  .one {
+    grid-row: 1/2;
+    background-color: beige;
+    
+  }
+
+  .one img {
+    position: absolute;
+    width: 338px;
+    height: 333.59px;
+    left: 38px;
+    top: 56px;
+  }
+
+  .two {
+    grid-row: 2/3;
+    text-align: center;
+  }
+
+  .fullname {
+    font-family: Merriweather;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 35px;
+    padding-top: 0;
+    color: #0b0b0b;
+  }
+
+  .two h2 {
+    font-family: Lato;
+    font-size: 18px;
+    line-height: 22px;
+    color: #43553b;
+    padding-top: 15px;
+  }
+
+  .welcome {
+    font-family: Merriweather;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;
+    color: #0b0b0b;
+    padding-top: 60px;
+  }
+
+  button {
+    background-color: #EE964B;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    height: 45px;
+    line-height: 14px;
+    margin-top: 60px;
+    text-align: center;
+    width: 128px;
+  }
+}

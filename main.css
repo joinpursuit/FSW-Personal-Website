@@ -1,5 +1,5 @@
 html {
-  background-color: #f1f1f1;
+  background-color: #ecebee;
 }
 
 @font-face {
@@ -20,7 +20,7 @@ body {
 
 .header {
   overflow: hidden;
-  background-color: #f1f1f1;
+  background-color: #ecebee;
   padding: 30px 10px;
   margin: 0;
   position: fixed;

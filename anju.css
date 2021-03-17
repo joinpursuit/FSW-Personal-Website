@@ -109,6 +109,10 @@ ul li {
   grid-row: 9/10;
 }
 
+.lets-connect:hover {
+  color: white;
+}
+
 .copyright {
   font-family: "Courier New", Courier, monospace;
   font-size: 12px;
@@ -120,12 +124,10 @@ ul li {
 
 .devicon-linkedin-plain-wordmark{
   font-size: 60px;
-
 }
 
 .devicon-github-original-wordmark {
   font-size: 40px;
-
 }
 
 .icons {
@@ -135,3 +137,7 @@ ul li {
   justify-content: space-between;
   align-items: center;
 }
+
+ i:hover {
+  color: rgba(89, 197, 7, 1);
+ }

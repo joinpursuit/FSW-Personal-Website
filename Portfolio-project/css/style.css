@@ -1,0 +1,425 @@
+@import url(font-awesome.min.css);
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,900");
+/*----------------------------
+---------- RESET CSS ---------
+----------------------------*/
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    text-align: center;
+}
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0px;
+    font-size: 16px;
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    text-align: center;
+}
+p{
+    font-size: 16pt;
+    font-weight: 300;
+    line-height: 1.75;
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+}
+h1{
+    font-size: 50px;
+    color: #FFFFFF;
+}
+
+h2{
+    color: #585858;
+    font-size: 40px;
+}
+h3{
+    font-size: 23px;
+    color: #665757;
+}
+a,
+a:hover {
+    color: #25b6c2;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+a,
+a:hover,
+a:focus,
+a:active,
+button:focus {
+    text-decoration: none;
+    border: none;
+    outline: 0;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* social icon & footer staying right position*/
+.left{
+    float: left;
+}
+.fix{
+    overflow: hidden;
+}
+
+/*--------------------------------------
+-------- HEADER AREA CSS START --------
+---------------------------------------*/
+
+  
+  body {
+    margin: 0;
+    font-size: 20px;
+    margin: 0;
+    display: flex;
+    font-family: "Source Sans Pro", 'Times New Roman',  serif, sans-serif;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+  }
+  
+  nav {
+    display: grid;
+    height:80px;
+    width: 60px;
+    grid-template-columns: repeat(7, 1fr);
+    grid-auto-rows: auto;
+    border: 10px;
+    grid-gap: 1em;
+    align-items: center;
+    text-align: center;
+    border-bottom: 4px solid black;
+    background:rgb(28, 109, 138);
+    
+  }
+
+.container {
+    max-width: 1140px;
+}
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.logo img {
+    height: 60px;
+    width: 60px;
+    float: left;
+}
+body.dark-theme {
+    background-color: #222;
+    color: #fff;
+  }
+  #change-theme-btn {
+    font: inherit;
+    padding: 0.1em 0.25em;
+    border: 0;
+    border-radius: 15px;
+    outline: 0;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.15s ease-out;
+    position: relative;
+    background-color: transparent;
+    overflow: hidden;
+  }
+  #change-theme-btn::before, #change-theme-btn::after {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #222;
+    transition: all 0.15s ease-out;
+  }
+  #change-theme-btn::after {
+    background-color: #fff;
+    left: 100%;
+  }
+  #change-theme-btn:hover {
+    text-decoration: underline;
+  }
+  .dark-theme #change-theme-btn {
+    color: #222;
+  }
+  .dark-theme #change-theme-btn::before {
+    left: -100%;
+  }
+  .dark-theme #change-theme-btn::after {
+    left: 0;
+  }
+
+.header{
+padding-top: 50px;
+}
+
+.header_heading h1 {
+    color: #585858;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.sub_title {
+    padding: 40px 0px 15px;
+}
+
+ .single_img{
+    position: relative;
+    width: calc(33.3333333333% - 2.5em);
+    margin: 2.5em 0 0 2.5em;
+    float: left;
+    transition: .5s;
+} 
+
+.single_img .img{
+    position: relative;
+    display:flex;
+    width: 100%;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: .5s;
+} 
+ .single_img  .img:before {
+    pointer-events: none;
+    transition: background-color 0.5s ease, opacity 0.5s ease;
+    content: '';
+    display: flex;
+    position: absolute;
+     top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1.0;
+    z-index: 1;  
+    opacity: 0.8;
+}
+ 
+.single_img.style1  .img:before {
+    background-color: #f2849e;
+}
+.single_img.style2  .img:before {
+    background-color: #7ecaf6;
+}
+.single_img.style3  .img:before {
+    background-color: #7bd0c1;
+}
+.single_img.style4  .img:before {
+    background-color: #c75b9b;
+}
+.single_img.style5  .img:before {
+    background-color: #ae85ca;
+  
+}
+.single_img.style6  .img:before {
+    background-color: #8499e7;
+}
+
+
+.single_img   a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.5s ease, transform 0.5s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 1em;
+    border-radius: 4px;
+    border-bottom: 0;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    z-index: 3;
+}
+
+.single_img:hover .content {
+    max-height: 15em;
+    opacity: 1;
+}
+/* transform for image expand*/
+
+.single_img:hover  .img {
+    transform: scale(1.1);
+}
+.single_img:hover .img:before {
+    background-color: #333333;
+    opacity: 0.35;
+}
+.single_img  a:hover  h2{
+    color: #ffffff !important;
+}
+.single_img:hover  .img:after {
+    opacity: 0;
+}
+
+
+
+.section_heading h2 {
+    font-size: 2.75em;
+    font-weight: 700;
+    line-height: 1.3;
+    margin: 0 0 1em 0;
+    padding: 45px 15px;
+    letter-spacing: -0.035em;
+}
+/*    This is for about me (box image)*/
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    padding-bottom: 20px;
+    background-color: #25b6c2;
+}
+.box img{
+    width: 400px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+/* other single  page */
+.banner_image {
+    display: flex;
+    margin: 0 0 3em 0;
+    width: 100%;
+    /* border-radius: 78px; */
+    border: 0;
+}
+.banner_image img {
+   border-radius: 5px;
+    border: 0;
+    width: 100%;
+}
+
+.banner_image img {
+    height: 380px;
+    width: 100%;
+}
+/*--------------------------------------
+-------- Footer --------
+---------------------------------------*/
+.footer {
+    background-color: #f6f6f6;
+    padding: 5em 0 6em 0;
+    width: 100%;
+}
+
+.form_area {
+    width: 60%;
+    padding: 10px;
+}
+.footer-area{
+    width: 100%;
+    padding: 10px,5px, 10px, 4px;
+    margin-top: 10px;
+    font-size: 0.8em;
+    color: rgba(204, 65, 65, 0.5);
+    flex-direction: column;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+ ul li {
+    display:inline-flex;
+    justify-content: center;
+} 
+
+ul li a.icon {
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    display:flex;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid #0c0606;
+    text-align: center;
+    height: 35px;
+    width: 35px;
+    line-height: 40px;
+    font-size: 20px;
+    margin: 5px;
+    border-radius: 5px;
+    background:skyblue;
+    
+}
+ul li a.icon:hover{
+    border-radius: 0px;
+    color: #f2849e;
+    border-color: #f2849e;
+}
+.copy_right {
+    margin-top: 70px;
+}
+
+.copy_right {
+    width: 100%;
+    padding: 0;
+    margin-top: 5em;
+    list-style: none;
+    font-size: 0.8em;
+    color: rgba(88, 88, 88, 0.5);
+    text-align: center;
+}
+
+.copy_right span {
+    display: inline-block;
+    border-left: solid 1px rgba(88, 88, 88, 0.15);
+    line-height: 1;
+    padding: 0 0 0 1em;
+    margin: 0 0 0 1em;
+}
+
+
+/*form css for contact page*/
+form{
+    display: grid;
+    padding: 1em;
+    background: #b7ece3;
+    border:1px solid black ;
+    margin: 2rem auto 0 auto;
+    max-width: 600px;
+    padding: 1em;
+}
+input {
+    padding: 0.7em;
+    margin-bottom: 0.5rem;
+  }
+  button {
+    background-color: #b5bbb5;
+    border: none;
+    color: rgb(5, 86, 101);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  form input {
+    background: #fff;
+    border: 1px solid #9c9c9c;
+  }
+  input:focus {
+    outline: 3px solid gold;
+  }

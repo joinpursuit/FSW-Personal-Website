@@ -1,6 +1,8 @@
 "use strict";
 
+
 //////////////////// ***GLOBAL VARIABLES*** ///////////////////////////
+const navIds = ["#home-section", "#about-section", "#projects-section", "#contact-section"]
 const navListItems = ["Home", "About", "Projects", "Contact"];
 const homeSection = document.querySelector("#home-section");
 const name = document.querySelector("#name");
@@ -64,34 +66,37 @@ const createNavbar = (section) => {
   const ul = document.createElement("ul");
   section.prepend(nav);
   nav.appendChild(ul);
-  navListItems.forEach((listItem) => {
+  navListItems.forEach((listItem, i) => {
     const li = document.createElement("li");
     const a = document.createElement("a");
     a.textContent = listItem;
     ul.appendChild(li);
     li.appendChild(a);
+    a.href = navIds[i].toLowerCase() // can't figure out how to string interpolate
   });
 };
 
 // display summary //////////////////////////////////////////////////////////////
 
-const displaySummary = (section) => {
-  const p = document.createElement("p");
-  p.setAttribute("style", "display: none");
-  section.textContent = summarys["emoji"];
-  section.appendChild(p);
-}
+
+
+// const displaySummary = () => {
+//   const p = document.createElement("p");
+//   p.setAttribute("style", "display: none");
+//   p.textContent = summarys["emoji"];
+//   emojiSection.appendChild(p);
+// }
 
 // emojiSection
-emojiSection.addEventListener("click", (event) => {
-  displaySummary(emojiSection)
-  let displaySnowmanSummary = event.target.childNodes[0].style.display;
-  if (displaySnowmanSummary === "none") {
-    displaySnowmanSummary = "block";
-  } else {
-    displaySnowmanSummary = "none";
-  }
-});
+// emojiSection.addEventListener("click", () => {
+//   displaySummary()
+  // let displaySnowmanSummary = event.target.childNodes[0].style.display;
+  // if (displaySnowmanSummary === "none") {
+  //   displaySnowmanSummary = "block";
+  // } else {
+  //   displaySnowmanSummary = "none";
+  // }
+// });
 
 // move to next section ////////////////////////////////////////////////////////
 const jumpToSection = (section) => {
@@ -102,6 +107,7 @@ const jumpToSection = (section) => {
 
 // display header and navbar on page load
 window.addEventListener("load", () => {
+  window.scrollTo(0, 0);
   createNavbar(homeSection);
   displayLetters();
 });

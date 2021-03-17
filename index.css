@@ -12,12 +12,12 @@ ul {
 }
 
 .btn, .rectangle, .project-gif, .portrait {
-  border: orangered solid 1px;
+  /* border: orangered solid 1px; */
   border-radius: 5px;
 }
 
 .btn,
-.home-rec-navy,
+#home-rec-navy,
 #about-summary,
 #contact-btn {
   display: flex;
@@ -31,19 +31,19 @@ ul {
 
 .btn,
 .footer-rec-navy,
-.home-rec-navy,
+#home-rec-navy,
 #about-summary,
 #contact-btn {
   background-color: #003566;
 }
 
 footer,
-.home-rec-yellow,
+#home-rec-yellow,
 #about-rec-yellow {
   background-color: #ffc300;
 }
 
-.home-rec-grey,
+#home-rec-grey,
 .footer-rec-grey {
   background-color: #c4c4c4;
 }
@@ -58,15 +58,23 @@ footer,
 
 /* change the vh of footer and contact section */
 body > section {
-  height: 100vh;
+  /* height: 100vh; */
   display: grid;
-  grid-template-rows: repeat(24, 1fr);
-  grid-template-columns: repeat(25, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  grid-template-columns: repeat(12, 1fr);
 }
+
+/* #contact-section {
+  height: 90vh;
+} */
+
+/* footer {
+  height: 10vh;
+}  */
 
 /*** Home Section ***/
 nav {
-  grid-column: 1/8;
+  grid-column: 1/4;
   grid-row: 1/2;
 }
 
@@ -78,8 +86,8 @@ nav {
 header {
   display: flex;
   font-size: 64px;
-  grid-row: 10/11;
-  grid-column: 9/19;
+  grid-row: 4/6;
+  grid-column: 4/10;
 }
 
 /* add spacing between first and last name */
@@ -127,35 +135,43 @@ h2 {
   font-weight: bold;
 }
 
-.home-rec-grey {
-  grid-row: 12/14;
-  grid-column: 10/17;
+#home-rec-grey {
+  /* width: 40vw; */
+  /* height: 12vh; */
+  justify-self: center;
+  align-self: flex-end;
+  grid-row: 5/7;
+  grid-column: 5/9;
 }
 
-.home-rec-yellow {
-  grid-column: 7/13;
-  grid-row: 14/17;
+#home-rec-yellow {
+  /* height: ; */
+  grid-column: 4/7;
+  grid-row: 7/8;
   z-index: 1;
 }
 
-.home-rec-navy {
-  grid-column: 12/19;
-  grid-row: 13/15;
+#home-rec-navy {
+  /* height: 5vh; */
+  grid-column: 6/10;
+  grid-row: 6/7;
   font-size: 24px;
   z-index: 2;
 }
 
 
 
-.about-btn {
-  grid-column: 9/11;
-  grid-row: 15/16;
+#about-btn {
+  /* height: 5vh; */
+  grid-column: 4/5;
+  grid-row: 7/8;
   z-index: 2;
 }
 
 #home-section {
   /* for formatting only */
   border: orange solid 1px;
+  /* width: 100vw; */
 }
 
 /* About Me Section */
@@ -166,28 +182,28 @@ h2 {
 }
 
 #about-title {
-  grid-column: 7/11;
-  grid-row: 6/7;
+  grid-column: 3/6;
+  grid-row: 3/6;
   justify-self: center;
 }
 
 #portrait {
-  width: 100%; /*per AnJu's website*/ 
+  /*width: 100%; *//*per AnJu's website*/ 
   /* width: 40vw; */
-  grid-column: 6/12;
-  grid-row: 8/11;
+  grid-column: 3/6;
+  grid-row: 4/6;
 }
 
 #about-summary {
-  grid-column: 14/20;
-  grid-row: 7/16;
+  grid-column: 7/10;
+  grid-row:4/8;
   line-height: 26px;
   text-align: center;
   z-index: 2;
 }
 
 #about-rec-yellow {
-  grid-column: 15/21;
+  grid-column: 7/10;
   grid-row: 10/19;
 }
 
@@ -201,8 +217,8 @@ h2 {
 }
 
 #project-btn {
-  grid-column: 8/10;
-  grid-row: 20/21;
+  grid-column: 4/5;
+  grid-row: 10/11;
 }
 
 /* Style Projects Setion */
@@ -218,18 +234,18 @@ h2 {
 }
 
 #project-header {
-  grid-column: 12/15;
-  grid-row: 3/5;
+  grid-column: 6/8;
+  grid-row: 2/3;
 }
 
 #snowman-section {
-  grid-column: 6/13;
-  grid-row: 7/13;
+  grid-column: 3/7;
+  grid-row: 4/7;
 }
 
 #emoji-section {
-  grid-column: 14/21;
-  grid-row: 7/13;
+  grid-column: 7/11;
+  grid-row: 4/6;
 }
 
 #snowman-gif:hover, #emoji-gif:hover {
@@ -237,8 +253,8 @@ h2 {
 }
 
 #contact-btn {
-  grid-column: 12/15;
-  grid-row: 20/21;
+  grid-column: 6/8;
+  grid-row: 10/11;
 }
 
 /* Style Contact Section */
@@ -254,48 +270,53 @@ h2 {
 }
 
 #contact-title {
-  grid-column: 11/15;
-  grid-row: 6/8;
+  grid-column: 5/9;
+  grid-row: 3/4;
   justify-self: center;
 }
 
 #linkedin {
-  grid-column: 15/16;
-  grid-row: 9/11;
+  grid-column: 8/9;
+  grid-row: 4/6;
 }
 
 #github {
-  grid-column: 10/11;
-  grid-row: 9/11;
+  grid-column: 5/6;
+  grid-row: 4/6;
 }
 
 #email {
-  grid-column: 12/14;
-  grid-row: 9/11;
+  grid-column: 6/8;
+  grid-row: 4/6;
   justify-self: center;
 }
 
 #contact-msg {
-  grid-column: 11/15;
-  grid-row: 15/16;
+  grid-column: 5/9;
+  grid-row: 7/8;
   justify-self: center;
 }
 
 /* /style footer */
 footer {
-  grid-column: 1/26;
-  grid-row: 24/26;
+  grid-column: 1/12;
+  grid-row: 11/12;
 }
 
-.footer-rec-grey {
+/* .footer-rec-grey {
   height: 3vh;
-}
+} */
 
-.footer-rec-navy {
+/* .footer-rec-navy {
   height: 1vh;
-}
+} */
 
 footer > ul {
   justify-content: space-between;
   align-items: center;
+}
+
+
+@media screen and (min-width: 360px) {
+  
 }

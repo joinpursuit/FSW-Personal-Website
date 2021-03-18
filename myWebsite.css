@@ -20,3 +20,20 @@
     left: 0;
     right: 0; 
 }
+
+.nav-bar li:hover {
+    font-weight: bolder;
+    font-size: 20px;
+    transition: .1s ease-in;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    /* background-color: crimson; */
+    width: 60%;
+}

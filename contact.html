@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="Web-site.css">
-    <script src="contact.js"></script>
+    <script src="contact.js" defer></script>
 </head>
 <body id="pro">
     <a href="Web-site.html"><img src="images/home-button-for-interface.png" class="Hpage4" >
@@ -28,17 +28,25 @@
                 <a id="con-bullet" href="projects.html" placeholder="">Projects</a>
             </h3>
         </div>
-        <form  id="norm" method="POST" >
+        <form  id="norm" method="POST" action="https://formspree.io/f/xwkwggkp">
             <label id="form6">Contact:</label>
-            <input id="form1" type="text" placeholder="First name" required>
-            <input id="form2" type="text" placeholder="Last name" required>
-            <input id="form3" type="email" placeholder="E-mail" required>
-            <textarea id="form4" cols="40" rows="15" placeholder="Message:" required></textarea>
+            <label>
+                <input id="form1" type="text" name="first name" placeholder="First name" required="" >
+            </label>
+            <label >
+                <input id="form2" type="text" name="last name" placeholder="Last name" required="">
+            </label>
+            <label>
+                <input id="form3" type="email" name="_replyto" placeholder="E-mail" required=""> 
+            </label>
+            <label>
+                <textarea id="form4" cols="40" rows="15" name="Message" placeholder="Message:" required=""></textarea>
+            </label>
+            
             <button id="form5" type="submit" >Submit</button>
         </form>
         
         
     </div> 
-    <script src="https://smtpjs.com/v3/smtp.js"></script>  
 </body>
 </html>

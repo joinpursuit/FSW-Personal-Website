@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daniel Naranjo Dev at Pursuit 7.1</title>
+    <link rel="stylesheet" href="./portfolio.css" />
+    <link rel="icon" href="./images/dn-icon.svg" />
+    <script src="./portfolio.js" defer></script>
+  </head>
+
+  <body>
+    <div id="top">
+      <nav>
+        <div class="top-icon">
+          <img class="navigator" src="./images/Logo Daniel Naranjo.svg" />
+        </div>
+        <span class="nav"><h1>DANIEL NARANJO</h1></span>
+        <div class="top-icon"></div>
+
+        <span class="nav" href="about-me">ABOUT</span>
+        <span class="nav" href="projects">PROJECTS</span>
+        <span class="nav" href="skill">SKILLS</span>
+        <span class="nav" href="contacts">CONTACT</span>
+
+        <div class="top-icon">
+          <img class="navigator" src="./images/menu.svg" />
+        </div>
+      </nav>
+      <!-- About Me -->
+      <div class="active">
+        <div class="three">
+          <!-- <div id ='PompaDonpa'>
+                <img src="./images/DanielN.jpeg" alt="Daniel Naranjo" id='DN'>    
+          </div> -->
+        </div>
+
+        <div class="three section" id="about-me">
+          <h2>a FullStack Web Developer based in New York</h2>
+          <p id="description">
+            I'm a problem-solving, creative Engineer & Designer. With a focus on
+            blockchain, AI, and trading. I care about technology and economics
+            applied on the creation of functional applications. I prioritize
+            freedom, and self development. In contrast, I enjoy walking my dog,
+            lifting weigths and explaining difficult concepts.
+          </p>
+        </div>
+
+        <div class="three">
+          <button class="niceButton"><strong>Contact me</strong></button>
+          <div class="line"></div>
+        </div>
+      </div>
+
+      <!-- Projects -->
+
+      <div class="active">
+        <div class="three"></div>
+        <div class="three section" id="projects">
+          <h2>Projects</h2>
+          <section class="projects-div">
+            <div id="snowmanForm">
+              <img src="./images/snowman.gif" alt="" class="snowman" />
+            </div>
+            <div id="snowman-desc">
+              <div>
+                <p class="subTitle">Featured Project</p>
+                <h2 class="proTitle">Snowman</h2>
+                <p class="gameText">
+                  The classic game of Snowman in shell command
+                </p>
+              </div>
+              <div class="more-desc">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Tempora voluptate, recusandae dolor fugiat rem aliquam veniam
+                  neque distinctio, non quae magnam fugit delectus, tenetur
+                  dolores enim nemo dolorum nihil error?
+                </p>
+              </div>
+              <div class="lowLevel">
+                <span
+                  class="gitHubSpan"
+                  id="linkSnowman"
+                  href="https://github.com/PompaDonpa/Command-Line-Snowman"
+                  >GitHub</span
+                >
+                <span class="gitLive">Live site</span>
+              </div>
+            </div>
+          </section>
+
+          <br />
+          <div style="height: 80px"></div>
+          <br />
+
+          <section class="projects-divReverse" style="flex-flow: row-reverse">
+            <div id="snowman-desc" style="grid-area: 1 / 1 / 2 / 7">
+              <div>
+                <p class="subTitle" style="text-align: left">
+                  Featured Project
+                </p>
+                <h2 class="proTitle" style="text-align: left">Trader DOS</h2>
+                <p class="gameText" style="text-align: start">
+                  An adventure shell game, that simulates a broker terminal
+                </p>
+              </div>
+              <div class="more-desc">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Tempora voluptate, recusandae dolor fugiat rem aliquam veniam
+                  neque distinctio, non quae magnam fugit delectus, tenetur
+                  dolores enim nemo dolorum nihil error?
+                </p>
+              </div>
+              <div class="lowLevel" style="justify-content: flex-start">
+                <span
+                  class="gitHubSpan"
+                  id="linkTrader"
+                  href="https://github.com/PompaDonpa/Trader-DOS---Text-adventure-game"
+                  >GitHub</span
+                >
+                <span class="gitLive">Live site</span>
+              </div>
+            </div>
+            <div id="snowmanFormReverse">
+              <img src="./images/TraderDOS.gif" alt="" class="snowman" />
+            </div>
+          </section>
+
+          <br />
+          <div style="height: 80px"></div>
+          <br />
+
+          <button class="niceButton">
+            <strong id="show" >Show Less</strong>
+          </button>
+
+          <br />
+          <div style="height: 80px"></div>
+          <br />
+
+          <section id="moreGit">
+            <div class="more">A</div>
+            <div class="more">B</div>
+            <div class="more">C</div>
+            <div class="more">D</div>
+          </section>
+        </div>
+        <div class="three">
+          <div class="line section" id="skill"></div>
+        </div>
+      </div>
+
+      <!-- Skills -->
+      <div class="active">
+        <div class="three" id="skills">
+          <h2>Skills</h2>
+          <label id="category"
+            >Choose a category&ensp;&ensp;
+            <select name="" id="">
+              <option value="All">All</option>
+              <option value="FrontEnd">FrontEnd</option>
+              <option value="BackEnd">BackEnd</option>
+            </select></label
+          >
+        </div>
+
+        <div class="three">
+          <div>
+            <!-- <button class="horizontal"></button> -->
+            <div id="rolling-menu">
+              <img class="icon" src="./images/js.svg" />
+              <img class="icon" src="./images/html.svg" />
+              <img class="icon" src="./images/css.svg" />
+              <img class="icon" src="./images/redux.svg" />
+              <img class="icon" src="./images/nodejs.svg" />
+              <img class="icon" src="./images/react.svg" />
+              <img class="icon" src="./images/postgre.svg" />
+            </div>
+            <!-- <button class="horizontal"></button> -->
+          </div>
+        </div>
+
+        <div class="three">
+          <div class="line"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <!-- Footer -->
+
+  <footer id="footer">
+    <h2 class="section" id="contacts">Contact</h2>
+    <input
+      id="mailMe"
+      type="image"
+      src="./images/mail.svg"
+      alt="e-Mail"
+      class="footer-elem"
+      href="mailto:danielnaranjo@pursuit.org"
+    />
+    <input
+      id="twitter"
+      type="image"
+      src="./images/twitter.svg"
+      alt="Twitter"
+      class="footer-elem"
+      href="https://twitter.com/PompaDonpa"
+    />
+    <input
+      id="git"
+      type="image"
+      src="./images/github.svg"
+      alt="GitHub"
+      class="footer-elem"
+      href="https://github.com/PompaDonpa"
+    />
+    <input
+      id="linn"
+      type="image"
+      src="./images/linkedin.svg"
+      alt="LinkedIn"
+      class="footer-elem"
+      href="https://www.linkedin.com/in/dev-danielnaranjo/"
+    />
+    <p>made by Daniel Naranjo - 2021</p>
+  </footer>
+</html>

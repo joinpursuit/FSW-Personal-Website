@@ -1,98 +1,195 @@
-@media screen and (max-width: 414px) {
-  @font-face {
-    font-family: Merriweather;
-    src: url("./Merriweather/Merriweather-Regular.ttf");
-    font-style: normal;
-    font-weight: 400;
-  }
+@font-face {
+  font-family: Merriweather;
+  src: url("./Merriweather/Merriweather-Regular.ttf");
+  font-style: normal;
+  font-weight: 400;
+}
 
-  @font-face {
-    font-family: Merriweather;
-    src: url("./Merriweather/Merriweather-Bold.ttf");
-    font-style: normal;
-    font-weight: 700;
-  }
+@font-face {
+  font-family: Merriweather;
+  src: url("./Merriweather/Merriweather-Bold.ttf");
+  font-style: normal;
+  font-weight: 700;
+}
 
-  @font-face {
-    font-family: Lato;
-    src: url("./Lato/Lato-Regular.ttf");
-  }
+@font-face {
+  font-family: Lato;
+  src: url("./Lato/Lato-Regular.ttf");
+}
 
-  body,
-  html {
-    height: 896px;
-  }
+body,
+html {
+  height: 100vh;
+  background-image: url(./wetransfer-935d57/Jordan\ Background\ AZUL.jpg);
+}
 
-  html {
-    color: #ecebee;
+body {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 0.5fr 1.5fr 1.5fr 0.5fr;
+  grid-template-areas: "space sec1 sec2 space";
+}
+
+.one {
+  grid-column: 2/3;
+  background-color: beige;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile {
+  display: none;
+}
+
+.desktop {
+  object-fit: cover;
+  object-position: top;
+  max-width: 373px;
+  max-height: 368px;
+  width: 100%;
+  height: auto;
+  border-radius: 14px;
+  animation: appear2 ease-in 1s forwards;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
   }
-  
+  100% {
+    opacity: 1;
+  }
+}
+
+.two {
+  background-color: #ecebee;
+  grid-column: 3/4;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.fullname {
+  font-family: Merriweather;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 35px;
+  color: #0b0b0b;
+  animation: appear2 ease-in 1s forwards;
+}
+
+.two h2 {
+  font-family: Lato;
+  font-size: 18px;
+  line-height: 22px;
+  color: #43553b;
+  padding-top: 15px;
+  animation: appear2 1s ease-in forwards;
+}
+
+.welcome {
+  font-family: Merriweather;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 30px;
+  color: #0b0b0b;
+  padding-top: 60px;
+  animation: appear2 1s ease-in forwards;
+}
+
+button {
+  background-color: #ee964b;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-family: Lato;
+  font-size: 14px;
+  height: 45px;
+  line-height: 14px;
+  margin-top: 30px;
+  width: 228px;
+  animation: appear2 1s ease-in forwards;
+}
+
+button:hover {
+  background-color: white;
+  color: #ee964b;
+  transition: 0.3s ease-in;
+}
+
+@keyframes appear2 {
+  0% {
+    transform: translateY(0%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(10%);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 850px) {
   body {
-    margin: 0;
+    padding: 20px;
     display: grid;
-    grid-template-rows: 50% 50%;
-    gap: 30px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "sec1"
+      "sec2";
   }
 
   .one {
     grid-row: 1/2;
-    background-color: beige;
-    
+    grid-column: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
-  .one img {
-    position: absolute;
-    width: 338px;
-    height: 333.59px;
-    left: 38px;
-    top: 56px;
+  .mobile {
+    display: block;
+    width: 100%;
+    height: auto;
+    animation: appear 1s ease-in forwards;
+  }
+
+  .desktop {
+    display: none;
   }
 
   .two {
     grid-row: 2/3;
-    text-align: center;
+    grid-column: 1/2;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
   }
 
   .fullname {
-    font-family: Merriweather;
-    font-size: 28px;
-    font-weight: 700;
-    line-height: 35px;
-    padding-top: 0;
-    color: #0b0b0b;
+    background-color: rgba(236, 235, 238, 0.8);
+    font-size: 26px;
   }
 
   .two h2 {
-    font-family: Lato;
-    font-size: 18px;
-    line-height: 22px;
-    color: #43553b;
-    padding-top: 15px;
+    background-color: rgba(236, 235, 238, 0.8);
   }
 
   .welcome {
-    font-family: Merriweather;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 30px;
-    color: #0b0b0b;
-    padding-top: 60px;
+    background-color: rgba(236, 235, 238, 0.8);
   }
 
   button {
-    background-color: #EE964B;
-    border: none;
-    border-radius: 8px;
-    color: white;
-    font-family: Lato;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    height: 45px;
-    line-height: 14px;
-    margin-top: 60px;
-    text-align: center;
     width: 128px;
+    margin-bottom: 25px;
   }
 }

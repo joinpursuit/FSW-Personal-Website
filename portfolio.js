@@ -9,6 +9,11 @@ document.addEventListener('DOMContentLoaded', eve => {
     })
   })
 
+
+// ====================
+// | Show Less Button |
+// ====================
+
   const moreMore = document.getElementById('moreGit').innerHTML
 
   let showMore = document.getElementById('show')
@@ -23,6 +28,8 @@ document.addEventListener('DOMContentLoaded', eve => {
       document.getElementById('moreGit').innerHTML = moreMore
     }
   })
+
+
 
   let linkSnowman = document.getElementById('linkSnowman')
   linkSnowman.addEventListener('click', () => {
@@ -39,6 +46,27 @@ document.addEventListener('DOMContentLoaded', eve => {
   document.querySelectorAll('.footer-elem').forEach(contact => {
     contact.addEventListener('click', () => {
       window.open(contact.getAttribute('href'), '_blank')
+    })
+  })
+
+
+
+  let optionSelected = document.getElementById('option-selected')
+  // console.log(`option.value : ${optionSelected.value}`)
+  optionSelected.addEventListener('change', () => {
+    document.querySelectorAll('.icon').forEach(icon => {
+
+
+      if (optionSelected.value === 'All') {
+        icon.classList.remove('invisible')
+        icon.classList.remove('visible')
+      } else if (optionSelected.value === icon.classList[1]) {
+        icon.classList.remove('invisible')
+        icon.classList.add('visible')
+      } else {
+        icon.classList.add('invisible')
+        icon.classList.remove('visible')
+      }
     })
   })
 })

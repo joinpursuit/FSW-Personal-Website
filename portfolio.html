@@ -14,7 +14,7 @@
     <div id="top">
       <nav>
         <div class="top-icon">
-          <img class="navigator" src="./images/Logo Daniel Naranjo.svg" />
+          <!-- <img class="navigator" src="./images/DN.png" /> -->
         </div>
         <span class="nav"><h1>DANIEL NARANJO</h1></span>
         <div class="top-icon"></div>
@@ -34,6 +34,7 @@
           <!-- <div id ='PompaDonpa'>
                 <img src="./images/DanielN.jpeg" alt="Daniel Naranjo" id='DN'>    
           </div> -->
+      
         </div>
 
         <div class="three section" id="about-me">
@@ -72,7 +73,7 @@
                 </p>
               </div>
               <div class="more-desc">
-                <p>
+                <p class='shell'> 
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Tempora voluptate, recusandae dolor fugiat rem aliquam veniam
                   neque distinctio, non quae magnam fugit delectus, tenetur
@@ -97,7 +98,7 @@
 
           <section class="projects-divReverse" style="flex-flow: row-reverse">
             <div id="snowman-desc" style="grid-area: 1 / 1 / 2 / 7">
-              <div>
+              <div id='snowmanFormMedia'>
                 <p class="subTitle" style="text-align: left">
                   Featured Project
                 </p>
@@ -107,7 +108,7 @@
                 </p>
               </div>
               <div class="more-desc">
-                <p>
+                <p class='shell'>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Tempora voluptate, recusandae dolor fugiat rem aliquam veniam
                   neque distinctio, non quae magnam fugit delectus, tenetur
@@ -125,7 +126,7 @@
               </div>
             </div>
             <div id="snowmanFormReverse">
-              <img src="./images/TraderDOS.gif" alt="" class="snowman" />
+              <img src="./images/TraderDOS.gif" alt="" class="snowman" id='traderMedia' />
             </div>
           </section>
 
@@ -159,10 +160,10 @@
           <h2>Skills</h2>
           <label id="category"
             >Choose a category&ensp;&ensp;
-            <select name="" id="">
-              <option value="All">All</option>
-              <option value="FrontEnd">FrontEnd</option>
-              <option value="BackEnd">BackEnd</option>
+            <select name="" id="option-selected">
+              <option value="All" selected>All</option>
+              <option value="front-end">FrontEnd</option>
+              <option value="back-end">BackEnd</option>
             </select></label
           >
         </div>
@@ -171,13 +172,13 @@
           <div>
             <!-- <button class="horizontal"></button> -->
             <div id="rolling-menu">
-              <img class="icon" src="./images/js.svg" />
-              <img class="icon" src="./images/html.svg" />
-              <img class="icon" src="./images/css.svg" />
-              <img class="icon" src="./images/redux.svg" />
-              <img class="icon" src="./images/nodejs.svg" />
-              <img class="icon" src="./images/react.svg" />
-              <img class="icon" src="./images/postgre.svg" />
+              <img class="icon front-end" src="./images/js.svg" />
+              <img class="icon front-end" src="./images/html.svg" />
+              <img class="icon front-end" src="./images/css.svg" />
+              <img class="icon front-end" src="./images/nodejs.svg" />
+              <img class="icon back-end" src="./images/redux.svg" />
+              <img class="icon back-end" src="./images/react.svg" />
+              <img class="icon back-end" src="./images/postgre.svg" />
             </div>
             <!-- <button class="horizontal"></button> -->
           </div>
@@ -193,6 +194,7 @@
   <!-- Footer -->
 
   <footer id="footer">
+    <div id='divfooter'>
     <h2 class="section" id="contacts">Contact</h2>
     <input
       id="mailMe"
@@ -226,6 +228,7 @@
       class="footer-elem"
       href="https://www.linkedin.com/in/dev-danielnaranjo/"
     />
-    <p>made by Daniel Naranjo - 2021</p>
+    <p id='made'>made by Daniel Naranjo - 2021</p>
+  </div>
   </footer>
 </html>

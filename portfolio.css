@@ -6,7 +6,6 @@ body {
   padding: 5px 70px 5px 50px;
   background: #152d50;
   color: white;
-
   /* display: grid;
   grid-template-rows: auto; */
 }
@@ -17,26 +16,20 @@ body {
   grid-template-rows: 80px;
 }
 
-
-#DN{
+#DN {
   display: flex;
-  align-self:flex-end;
+  align-self: flex-end;
   position: relative;
   z-index: -1;
   border-radius: 50%;
   width: 300px;
   border-style: solid;
-  border-color:transparent;
+  border-color: transparent;
 
-  transform:
-  perspective(75em)
-  rotateX(15deg);
-box-shadow:
-  rgba(22, 31, 39, 0.42) 0px 60px 123px -25px,
-  rgba(19, 26, 32, 0.08) 0px 35px 75px -35px;
+  transform: perspective(75em) rotateX(15deg);
+  box-shadow: rgba(22, 31, 39, 0.42) 0px 60px 123px -25px,
+    rgba(19, 26, 32, 0.08) 0px 35px 75px -35px;
 }
-
-
 
 nav {
   margin-left: -50px;
@@ -88,7 +81,6 @@ h1 {
   align-items: center;
   margin: 4px 40px 4px 40px;
 }
-
 
 h2 {
   font-size: 42px;
@@ -354,128 +346,85 @@ h2 {
   transform: translate3d(0px, 0px, -250px);
 }
 
-
-.invisible{
+.invisible {
   display: none;
 }
-.visible{
+.visible {
   display: relative;
 }
 
-
-
-  /*  ===========================================================
+/*    ===========================================================
     ||                      MEDIA QUERIES                        ||
       ===========================================================         */
 
-
-
 @media only screen and (max-width: 375px) {
-
-
-  body{
+  body {
     display: inline-block;
     width: 375px;
-  
     padding: 5px 2px 5px 2px;
   }
 
-
-
-nav {
-  width: 375px;
-  margin-left: 0px;
-  margin-right: 0px;
-
-}
-
-.navigator{
-  display:flex;
-}
-
-
-.nav{
-display: none;
-}
-
-  .projects-div{
-    width: 345px;
+  nav {
+    width: 375px;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 
+  div#rolling-menu {
+    width: 345px;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .navigator {
+    display: flex;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .projects-div {
+    width: 345px;
+  }
 
   .projects-divReverse {
-
     width: 345px;
-
   }
 
-  .snowman{
+  .snowman {
     transform: translateY(20px);
     width: 345px;
     height: 265px;
   }
-
-  #traderMedia{
-    transform: translateY(-135px);
-  }
-
-#snowmanForm{
-  min-width: 345px;
-}
-#snowmanFormReverse{
-  grid-area: 1 / 1 / 2 / 11;
-}
-#snowman-desc{
-  grid-area: 1 / 1 / 2 / 11;
-}
-
-#snowmanFormMedia{
-  width: 345px;
- 
-}
-
-.three{
-  margin: 2px;
-  padding: 14px;
-}
-
-  #moreGit {
-    grid-template-columns: 345px;
-    grid-template-rows: repeat(4, minmax(auto, 400px));
-  }
-
   .more {
     width: 100%;
     height: 400px;
-
   }
-  /* p{
+
+  .three {
+    margin: 2px;
+    padding: 14px;
+  }
+
+  .shell {
     width: 305px;
     height: 156px;
-  } */
-.shell{
-
-  width: 305px;
-  height: 156px;
-}
-
-  #made{
-    font-size: 20px;
   }
 
-.gameText{
-  font-size: 18px;
-}
-  .active{
-    display:inline;
+  .gameText {
+    font-size: 18px;
+  }
+  .active {
+    display: inline;
     width: 345px;
   }
 
-  .three{
+  .three {
     width: 345px;
   }
 
-  .section{
+  .section {
     width: 345px;
   }
 
@@ -485,46 +434,67 @@ display: none;
   .proTitle {
     margin: 2px 12px 4px 2px;
   }
-  .gameText{
+  .gameText {
     margin: 2px 12px 4px 2px;
   }
 
-  .more-desc{
+  .more-desc {
     min-width: 325px;
     min-height: 216px;
   }
 
-  .gitLive{
+  .gitLive {
     min-width: 103.86px;
     max-height: 61px;
   }
 
-  div#rolling-menu{
-    width: 345px;
-    flex-direction: column;
-    justify-content: space-evenly;
-
+  .lowLevel {
+    margin: 12px;
   }
- .lowLevel{
-   margin: 12px;
- }
-  .icon{
-
+  .icon {
     width: 64px;
     height: 64px;
   }
 
-  #contacts{
-    /* width: 345; */
-        padding: 2px 2px 2px;
+  .footer-elem {
+    width: 64px;
+    height: 64px;
+    align-self: center;
   }
 
-.footer-elem{
-  width: 64px;
-  height: 64px;
-  align-self: center;
-}
-  #divfooter{
+  #traderMedia {
+    transform: translateY(-135px);
+  }
+
+  #snowmanForm {
+    min-width: 345px;
+  }
+  #snowmanFormReverse {
+    grid-area: 1 / 1 / 2 / 11;
+  }
+  #snowman-desc {
+    grid-area: 1 / 1 / 2 / 11;
+  }
+
+  #snowmanFormMedia {
+    width: 345px;
+  }
+
+  #moreGit {
+    grid-template-columns: 345px;
+    grid-template-rows: repeat(4, minmax(auto, 400px));
+  }
+
+  #made {
+    font-size: 20px;
+  }
+
+  #contacts {
+    /* width: 345; */
+    padding: 2px 2px 2px;
+  }
+
+  #divfooter {
     width: 345px;
     display: flex;
     flex-direction: column;

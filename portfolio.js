@@ -1,4 +1,7 @@
 document.addEventListener('DOMContentLoaded', eve => {
+//  ====================
+// |  Page Navigation   |
+//  ====================
   document.querySelectorAll('.nav').forEach(spaner => {
     spaner.addEventListener('click', evn => {
       document.querySelectorAll('.section').forEach(section => {
@@ -9,10 +12,9 @@ document.addEventListener('DOMContentLoaded', eve => {
     })
   })
 
-
-// ====================
-// | Show Less Button |
-// ====================
+//  ====================
+// |  Show Less Button  |
+//  ====================
 
   const moreMore = document.getElementById('moreGit').innerHTML
 
@@ -29,7 +31,9 @@ document.addEventListener('DOMContentLoaded', eve => {
     }
   })
 
-
+//  ====================
+// |   GitHub & Live    |
+//  ====================
 
   let linkSnowman = document.getElementById('linkSnowman')
   linkSnowman.addEventListener('click', () => {
@@ -43,20 +47,13 @@ document.addEventListener('DOMContentLoaded', eve => {
     window.open(location, '_blank')
   })
 
-  document.querySelectorAll('.footer-elem').forEach(contact => {
-    contact.addEventListener('click', () => {
-      window.open(contact.getAttribute('href'), '_blank')
-    })
-  })
-
-
+//  ====================
+// |  Skills Selection  |
+//  ====================
 
   let optionSelected = document.getElementById('option-selected')
-  // console.log(`option.value : ${optionSelected.value}`)
   optionSelected.addEventListener('change', () => {
     document.querySelectorAll('.icon').forEach(icon => {
-
-
       if (optionSelected.value === 'All') {
         icon.classList.remove('invisible')
         icon.classList.remove('visible')
@@ -69,4 +66,14 @@ document.addEventListener('DOMContentLoaded', eve => {
       }
     })
   })
+
+//  ====================
+// |  Footer Contact    |
+//  ====================
+
+document.querySelectorAll('.footer-elem').forEach(contact => {
+  contact.addEventListener('click', () => {
+    window.open(contact.getAttribute('href'), '_blank')
+  })
+})
 })

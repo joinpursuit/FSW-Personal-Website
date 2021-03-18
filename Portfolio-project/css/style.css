@@ -97,9 +97,20 @@ img {
     text-align: center;
     border-bottom: 4px solid black;
     background:rgb(28, 109, 138);
-    
   }
-
+  link{
+    transition: 0.4s;
+    color: #e2800e;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 0 10px;
+    margin: 0 10px;
+  }
+  .link:hover {
+    background-color: #dfb33a;
+    color: #EEA200;
+    padding: 24px 10px;
+  }
 .container {
     max-width: 1140px;
     

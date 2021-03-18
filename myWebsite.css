@@ -1,0 +1,22 @@
+#home {
+    background: url("https://i.postimg.cc/XNmY0kM0/raul-cacho-oses-r-Ws-H0jn-YSo-M-unsplash.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+#main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8vh;
+    color: whitesmoke;
+    background: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0; 
+}

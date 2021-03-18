@@ -19,25 +19,26 @@
     <div id="last">
         <div id="point">
             <h3>
-                <a  id="con bullet" href="aboutme.html" placeholder="">About Me</a>
+                <a  id="con-bullet" href="aboutme.html" placeholder="">About Me</a>
             </h3>
             <h3>
-                <a id="con bullet" href="skills.html" placeholder="">Skills</a>
+                <a id="con-bullet" href="skills.html" placeholder="">Skills</a>
             </h3>
             <h3>
-                <a id="con bullet" href="projects.html" placeholder="">Projects</a>
+                <a id="con-bullet" href="projects.html" placeholder="">Projects</a>
             </h3>
         </div>
-        <form  id="norm" method="post" action="mailto:alexander.larosa.perez@gmail.com" >
+        <form  id="norm" method="POST" >
             <label id="form6">Contact:</label>
-            <input id="form1" type="text" placeholder="First name" action="mailto:alexander.larosa.perez@gmail.com">
-            <input id="form2" type="text" placeholder="Last name">
-            <input id="form3" type="email" placeholder="E-mail">
-            <textarea name="" id="form4" cols="40" rows="15" placeholder="Message:"></textarea>
+            <input id="form1" type="text" placeholder="First name" required>
+            <input id="form2" type="text" placeholder="Last name" required>
+            <input id="form3" type="email" placeholder="E-mail" required>
+            <textarea id="form4" cols="40" rows="15" placeholder="Message:" required></textarea>
             <button id="form5" type="submit" >Submit</button>
         </form>
         
-    </div>
-    
+        
+    </div> 
+    <script src="https://smtpjs.com/v3/smtp.js"></script>  
 </body>
 </html>

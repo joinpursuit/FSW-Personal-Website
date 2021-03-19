@@ -1,9 +1,17 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    let button = document.querySelector('button')
+    let frontendButton = document.querySelector('#front')
+    let backendButton = document.querySelector('#back')
 
-    button.addEventListener("click", event => {
+    frontendButton.addEventListener("click", event => {
         event.preventDefault()
-        document.body.classList.toggle("darkMode")
+        
     })
+
+    backendButton.addEventListener("click", event => {
+        event.preventDefault()
+        
+    })
+
+
 })

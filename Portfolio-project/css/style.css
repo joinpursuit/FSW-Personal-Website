@@ -79,6 +79,7 @@ img {
     font-size: 20px;
     margin: 0;
     display: flex;
+    background-color:rgb(225, 230, 232);
     font-family: "Source Sans Pro", 'Times New Roman',  serif, sans-serif;
     justify-content: space-around;
     align-items: center;
@@ -92,7 +93,7 @@ img {
     grid-template-columns: repeat(7, 1fr);
     grid-auto-rows: auto;
     border: 10px;
-    grid-gap: 1em;
+    grid-gap: .4em;
     align-items: center;
     text-align: center;
     border-bottom: 4px solid black;
@@ -107,7 +108,7 @@ img {
     margin: 0 10px;
   }
   .link:hover {
-    background-color: #dfb33a;
+    background-color:#9f6060;
     color: #EEA200;
     padding: 24px 10px;
   }
@@ -128,42 +129,18 @@ img {
     float: left;
 }
 body.dark-theme {
-    background-color: #222;
-    color: #fff;
-  }
-  #change-theme-btn {
-    font: inherit;
-    padding: 0.1em 0.25em;
-    border: 0;
-    border-radius: 15px;
-    outline: 0;
-    color: #fff;
-    cursor: pointer;
-    transition: all 0.15s ease-out;
-    position: relative;
-    background-color: transparent;
-    overflow: hidden;
-  }
-  #change-theme-btn::before, #change-theme-btn::after {
-    content: '';
-    z-index: -1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #222;
-    transition: all 0.15s ease-out;
-  }
-  #change-theme-btn::after {
-    background-color: #fff;
-    left: 100%;
+    background: linear-gradient(
+        to left,
+        #23a6d5,
+        #ffe6e6,
+        #694a88,
+        #bf6464,
+        #d66192,
+        #bd3333,
+        #74bdd8
+      );
   }
   
-  .dark-theme #change-theme-btn::before {
-    left: -100%;
-  }
-
 .header{
 padding-top: 50px;
 }
@@ -328,7 +305,7 @@ padding-top: 50px;
 }
 .footer-area{
     width: 100%;
-    padding: 10px,5px, 10px, 4px;
+    padding: 40px;
     margin-top: 10px;
     font-size: 0.8em;
     color: rgba(204, 65, 65, 0.5);
@@ -366,6 +343,9 @@ ul li a.icon:hover{
 .copy_right {
     margin-top: 70px;
     text-align: center;
+}
+.fix{
+    padding-bottom: 30px;
 }
 
 .copy_right span {

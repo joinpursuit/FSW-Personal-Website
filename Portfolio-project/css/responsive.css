@@ -1,5 +1,10 @@
 
+@media only screen 
+and (min-device-width: 375px) 
+and (max-device-width: 667px) 
+and (-webkit-min-device-pixel-ratio: 2) { 
 
+}
 
 @media only screen and (max-width: 1199px){
     .header {
@@ -26,10 +31,24 @@
 
 
 }
-@media only screen and (max-width: 576px){
 
-    .nav {
-        width:100%;
+@media only screen and (max-width: 576px){
+    .logo {
+       
+        position: relative;
+        
+    } 
+    .navigation-area{
+        all:initial;
+        grid-template-columns: 100%; 
+        grid-template-rows:auto;
+       
+      }
+      .link{
+          text-align: center;
+      }
+      .nav{
+        grid-gap:.1em;
       }
     .header {
         padding: 0px 50px;
@@ -52,29 +71,18 @@
     line-height: 30px;
     padding-top: 20px;
 }
-.input_fields .field.half {
-    width: 100%;
-    margin: 0;
+.logo img {
+    padding-left: 30px;
+    height: 60px;
+    width: 60px;  
 }
-.form_area {
-    width: 100%;
-    padding: 0px 30px;
-}
-.social_area.left {
+.footer-area {
+    all: initial;
     width: 100%;
     text-align: center;
     padding-bottom: 30px;
     margin-top: 15px;
 }
-input.primary {
-    margin-left: 0px;
-}
-
-.nav {
-    width: 100%;
-    right: -100%;
-}
-
 
 .description {
     padding: 15px;

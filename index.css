@@ -26,7 +26,8 @@ nav {
   grid-row: 1/4;
 }
 
-h2 {
+h2 { 
+  /* not certain why h2 isn't automatically bold and why it is smaller than h3 */
   font-weight: bold;
 }
 
@@ -62,36 +63,7 @@ h2 {
 
 /* home section */
 
-/* #name {
-    font-size: 28px;
-    font-weight: bolder;
-    display: flex;
-    grid-column: 3/11;
-    grid-row: 4;
-    justify-content: center;
-    align-self: end;
-} */
 
-/* #home-rec-navy {
-    grid-column: 4/10;
-    grid-row: 5;
-    font-size: 16px;
-    justify-self: center;
-    align-self: center;
-    background-color: var(--myBlue);
-    color: white;
-    padding: 5px 15px;
-    height: 40%;
-} */
-
-/* #home-rec-grey {
-    position: relative;
-    height: 20%;
-    background-color: var(--myGrey);
-    grid-column: 3/11;
-    grid-row: 5;
-    z-index: -1;
-} */
 
 /* home section animation */
 
@@ -137,6 +109,8 @@ h2 {
 }
 
 /* projects section */
+
+
 
 /* contact section */
 #contact-section {
@@ -211,6 +185,15 @@ footer {
     font-size: 12px;
   }
 
+  p {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 14px;
+  }
+
   /* home section */
   #name {
     font-size: 28px;
@@ -264,11 +247,9 @@ footer {
   #about-summary {
     background-color: var(--myBlue);
     color: white;
-    font-size: 14px;
     grid-column: 2/12;
     grid-row: 6/11;
     align-self: center;
-    text-align: center;
     padding: 5%;
     margin-top: 10%;
   }
@@ -280,6 +261,41 @@ footer {
   }
 
   /* projects section */
+
+ #project-header,
+ #snowman-section,
+ #emoji-section,
+ #contact-btn {
+   grid-column: 1/13;
+ }
+
+ #project-header {
+   grid-row: 2;
+   justify-self: center;
+ }
+ #snowman-section {
+   grid-row: 4;
+ }
+ #emoji-section {
+   grid-row: 7;
+ }
+ #contact-btn {
+   grid-row: 10;
+ }
+
+ #snowman-section,
+ #emoji-section {
+   display: flex;
+   flex-direction: column;
+   /* justify-content: center; */
+   
+ }
+
+  .project-gif {
+    width: 50%;
+    align-self: center;
+  }
+
 
   /* contact section */
   #contact-title {

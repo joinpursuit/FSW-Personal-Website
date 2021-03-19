@@ -1,0 +1,124 @@
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: #a6714f;
+    padding: 0;
+    margin: 0;
+}
+
+#homepage{
+    background-image: url(https://media.allure.com/photos/5e46c3995993fc0009700fc4/16:9/w_2560%2Cc_limit/clouds.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50%;
+    margin-bottom: 50%;
+    color: rgb(82, 82, 82);
+}
+
+.nav{
+    display: flex;
+    float: right;
+    list-style-type: none;
+}
+
+a{
+    color: rgb(82, 82, 82);
+    text-decoration: none;
+    font-weight: bolder;
+    padding-right: 20px;
+}
+
+a:visited{
+    color: rgb(82, 82, 82);
+}
+
+a:hover{
+    color: #2c5e56;
+}
+
+
+
+.about{
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    text-align: center;
+    background-color: #a86060;
+    color: rgb(36, 34, 34);
+    font-weight: bold;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.contact{
+    background-image: url(media/IMG_1846.JPG);
+    background-size: cover;
+    background-position: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+
+.projectsSection{
+    background-color: #558CAF;
+    font: bold;
+    color: rgb(36, 34, 34);
+}
+
+#projectsHeading{
+    text-align: center;
+    padding-top: 25px;
+    margin-top: 0;
+}
+
+.contactInfo{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    font-weight: bold;
+    margin-bottom: 50%;
+    color: rgb(82, 82, 82)
+}
+
+#contactHeading{
+    color: rgb(82, 82, 82);
+    text-align: center;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+li img{
+    height: 50px;
+}
+
+footer{
+    text-align: center;
+    color: rgb(82, 82, 82);
+    background-color: #CBA6C6;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+@media (max-width: 800px) {
+   .nav{
+    display: none;
+   }
+
+   .contactInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+
+
+}

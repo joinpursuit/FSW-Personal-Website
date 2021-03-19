@@ -26,6 +26,10 @@ nav {
   grid-row: 1/4;
 }
 
+h2 {
+  font-weight: bold;
+}
+
 .btn {
   align-self: start;
   font-weight: bold;
@@ -135,6 +139,23 @@ nav {
 /* projects section */
 
 /* contact section */
+#contact-section {
+  grid-column: 1/13;
+  grid-row: 2/10;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.icon-links {
+  font-size: 48px;
+}
+
+.icon-links:hover {
+  color: #ffc300;
+  text-shadow: 6px 6px 3px #003566;
+}
 
 /* footer section */
 
@@ -170,12 +191,12 @@ footer {
 
 #copyright {
   order: 1;
-  font-size: 12px;
+  font-size: 10px;
 }
 
 #graditude {
+  font-size: 12px;
   order: 0;
-  font-weight: bold;
 }
 
 /* media queries (mobile first layout) */
@@ -233,7 +254,6 @@ footer {
     grid-row: 1;
     align-self: end;
     justify-self: center;
-    font-weight: bold;
   }
 
   #portrait {
@@ -262,6 +282,9 @@ footer {
   /* projects section */
 
   /* contact section */
+  #contact-title {
+    font-size: 24px;
+  }
 
   /* footer section */
   footer {

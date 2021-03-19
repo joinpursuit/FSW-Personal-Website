@@ -43,8 +43,6 @@ a:hover{
     color: #2c5e56;
 }
 
-
-
 .about{
     display: grid;
     grid-template-columns: 1fr, 1fr;
@@ -57,7 +55,7 @@ a:hover{
 }
 
 .contact{
-    background-image: url(media/IMG_1846.JPG);
+    background-image: url(assets/IMG_1846.JPG);
     background-size: cover;
     background-position: center;
     padding-top: 25px;

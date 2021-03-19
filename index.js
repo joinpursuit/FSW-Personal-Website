@@ -26,7 +26,7 @@ const aboutSection = document.querySelector("#about-section");
 const aboutBtn = document.querySelector("#about-btn");
 
 const projectsSection = document.querySelector("#projects-section");
-const projectBtn = document.querySelector("#project-btn");
+const projectsBtn = document.querySelector("#projects-btn");
 const summarys = {
   emoji:
     "A web app that allows users to select the number of randomly generated emojis. Users can submit a story about the emojis. A numeric value is displayed of the total stories created and the past stories populated in list-style.",
@@ -117,7 +117,7 @@ aboutBtn.addEventListener("click", () => {
   createNavbar(aboutSection);
   jumpToSection(aboutSection);
 });
-projectBtn.addEventListener("click", () => {
+projectsBtn.addEventListener("click", () => {
   createNavbar(projectsSection);
   jumpToSection(projectsSection);
 });

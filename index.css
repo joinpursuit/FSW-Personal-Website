@@ -26,7 +26,7 @@ nav {
   grid-row: 1/4;
 }
 
-h2 { 
+h2 {
   /* not certain why h2 isn't automatically bold and why it is smaller than h3 */
   font-weight: bold;
 }
@@ -62,8 +62,6 @@ h2 {
 }
 
 /* home section */
-
-
 
 /* home section animation */
 
@@ -109,8 +107,6 @@ h2 {
 }
 
 /* projects section */
-
-
 
 /* contact section */
 #contact-section {
@@ -262,40 +258,48 @@ footer {
 
   /* projects section */
 
- #project-header,
- #snowman-section,
- #emoji-section,
- #contact-btn {
-   grid-column: 1/13;
- }
+  #project-header,
+  #snowman-section,
+  #emoji-section,
+  #contact-btn {
+    grid-column: 2/12;
+  }
 
- #project-header {
-   grid-row: 2;
-   justify-self: center;
- }
- #snowman-section {
-   grid-row: 4;
- }
- #emoji-section {
-   grid-row: 7;
- }
- #contact-btn {
-   grid-row: 10;
- }
+  #project-header {
+    grid-row: 3;
+    justify-self: center;
+    align-self: end;
+  }
+  #snowman-section {
+    grid-row: 4;
+  }
+  #emoji-section {
+    grid-row: 8;
+  }
+  #contact-btn {
+    grid-row: 10;
+  }
 
- #snowman-section,
- #emoji-section {
-   display: flex;
-   flex-direction: column;
-   /* justify-content: center; */
-   
- }
+  #snowman-section,
+  #emoji-section {
+    display: flex;
+    flex-direction: column;
+  }
 
   .project-gif {
     width: 50%;
     align-self: center;
   }
 
+  .project-gif:hover {
+    transform: scale(1.25);
+  }
+
+  .project-summary {
+    padding: 3%;
+    background-color: var(--myBlue);
+    color: white;
+  }
 
   /* contact section */
   #contact-title {
@@ -305,15 +309,15 @@ footer {
   #linkedin {
     order: 3;
   }
-  
+
   #github {
     order: 1;
   }
-  
+
   #email {
     order: 2;
   }
-  
+
   #contact-msg {
     order: 4;
   }

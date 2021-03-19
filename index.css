@@ -43,6 +43,10 @@ nav {
   box-shadow: 6px 6px 3px var(--myYellow);
 }
 
+#back-to-top:hover {
+  transform: scale(2);
+}
+
 /* grid layout*/
 
 .grid {
@@ -126,6 +130,52 @@ nav {
   to {
     transform: translateX(0px) rotateZ(-360deg);
   }
+}
+
+/* projects section */
+
+/* contact section */
+
+/* footer section */
+
+footer {
+  grid-column: 1/13;
+  grid-row: 10/13;
+  align-self: end;
+
+  display: flex;
+  flex-direction: column;
+}
+
+#footer-rec-grey {
+  background-color: var(--myGrey);
+  height: 16px;
+}
+#footer-rec-navy {
+  background-color: var(--myBlue);
+  height: 7px;
+}
+
+#footer-links {
+  padding: 2px 0 10px 0;
+  display: flex;
+  background-color: var(--myYellow);
+  justify-content: space-between;
+}
+
+#back-to-top {
+  order: -1;
+  transform: scaleX(3);
+}
+
+#copyright {
+  order: 1;
+  font-size: 12px;
+}
+
+#graditude {
+  order: 0;
+  font-weight: bold;
 }
 
 /* media queries (mobile first layout) */
@@ -213,6 +263,29 @@ nav {
 
   /* contact section */
 
+  /* footer section */
+  footer {
+    text-align: center;
+  }
+
+  #footer-links {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #back-to-top {
+    order: -1;
+    padding: 5px 0;
+  }
+
+  #copyright {
+    order: 1;
+    padding-top: 2px;
+  }
+
+  #graditude {
+    order: 0;
+  }
 }
 
 @media screen and (min-width: 620px) {

@@ -120,7 +120,7 @@ button {
 button:hover {
   background-color: white;
   color: #ee964b;
-  transition: 0.3s ease-in;
+  transition: 0.3s ease-in-out;
 }
 
 @keyframes appear2 {

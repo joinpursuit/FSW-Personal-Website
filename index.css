@@ -149,6 +149,21 @@ nav {
 }
 
 @media screen and (min-width: 360px) {
+  nav {
+    display: none;
+  }
+  
+  .btn {
+    align-self: start;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 25px;
+    justify-self: center;
+    color: var(--myBlue);
+    background-color: var(--myYellow);
+  }
+
   #name {
     font-size: 28px;
     font-weight: bolder;
@@ -178,17 +193,6 @@ nav {
     grid-column: 3/11;
     grid-row: 5;
     z-index: -1;
-  }
-
-  .btn {
-    align-self: start;
-    font-size: 12px;
-    font-weight: bold;
-    padding: 10px;
-    border-radius: 25px;
-    justify-self: center;
-    color: var(--myBlue);
-    background-color: var(--myYellow);
   }
 
   #about-btn:hover {

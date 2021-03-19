@@ -286,6 +286,22 @@ footer {
     font-size: 24px;
   }
 
+  #linkedin {
+    order: 3;
+  }
+  
+  #github {
+    order: 1;
+  }
+  
+  #email {
+    order: 2;
+  }
+  
+  #contact-msg {
+    order: 4;
+  }
+
   /* footer section */
   footer {
     text-align: center;

@@ -5,36 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
+    <script src="PersonalSite.js" defer></script>
     <title>Skills</title>
 </head>
 <body>
     <nav>
-        <a href="HomePage.html" target="_self">Home</a>
-        <a href="AboutMe.html" target="_self">About Me</a>
-        <a href="Project.html" target="_self">Project</a>
-        <a href="Contact.html" target="_self">Contact</a>
-      </nav>
-    <h1 id="skills-heading">Skills</h1>
-    <form action="">Choose a Category: 
-        <select name="skills" id="skills">
-            <option value="">Front-end</option>
-            <option value="">Back-end</option>
-            <option value="">Other</option>
-            <option value="">All</option>
+        <a href="index.html" target="_self" id="nav1">Home</a>
+        <a href="Project.html" target="_self" id="nav2">Projects</a>
+        <a href="AboutMe.html" target="_self" id="nav3">About Me</a>
+        <a href="Contact.html" target="_self" id="nav4">Contact</a>
+        <button
+          onclick="darkMode()"
+          id="toDarkMode"
+          type="button"
+          value="Light Mode"
+        >
+          Light Mode
+        </button>
+    </nav>
+    <h1 class="skills-heading">Skills</h1>
+    <div>Choose a Category: 
+        <select  name="skills" id="skills">
+            <option disabled selected
+            value="">Select</option>
         </select>
-    </form>
+    </div>
     <div class="Skills-Container">
-        <img src="JavaScript.png" alt="">
-        <img src="CSS.png" alt="">
-        <img src="HTML.png" alt="">
-        <img src="Node JS.png" alt="">
-        <img src="express.jpeg" alt="">
-        <img src="Postgresql.png" alt="">
-        <img src="React and Redux.png" alt="">
-        <img src="agile.png" alt="">
-        <img src="code reviews.jpeg" alt="">
-        <img src="pair programming.png" alt="">
-        <img src="sprint.png" alt="">
     </div>
     
 </body>

@@ -9,19 +9,19 @@
 } */
 
 /* variables */
-:root {
+/* :root {
   --primary: #ffc636;
   --secondary: #0a0b5b;
   --myYellow: #ffc300;
   --myBlue: #003566;
   --myGrey: #c4c4c4;
-}
+} */
 
 /* universal styling */
-body {
+/* body {
   color: var(--myBlue);
   font-family: Verdana, sans-serif;
-}
+} */
 
 nav > ul {
   font-size: 24px;
@@ -35,7 +35,7 @@ h2 {
   font-weight: bold;
 }
 
-.btn {
+/* .btn {
   align-self: start;
   font-weight: bold;
   padding: 10px;
@@ -43,18 +43,18 @@ h2 {
   justify-self: center;
   color: var(--myBlue);
   background-color: var(--myYellow);
-}
+} */
 
-.btn:hover {
+/* .btn:hover {
   color: var(--myYellow);
   background-color: var(--myBlue);
   transform: scale(1);
   box-shadow: 6px 6px 3px var(--myYellow);
-}
+} */
 
-#back-to-top:hover {
+/* #back-to-top:hover {
   transform: scale(2);
-}
+} */
 
 /* grid layout*/
 
@@ -70,12 +70,12 @@ h2 {
 /* home section animation */
 
 /* add spacing between first and last name */
-#letter6 {
+/* #letter6 {
   width: 10px;
-}
+} */
 
 /* set different animation times */
-#letter0,
+/* #letter0,
 #letter7 {
   animation: roll 0.5s linear forwards;
 }
@@ -98,17 +98,17 @@ h2 {
 #letter5,
 #letter12 {
   animation: roll 3s linear forwards;
-}
+} */
 
 /* rolling movement */
-@keyframes roll {
+/* @keyframes roll {
   from {
     transform: translateX(980px) rotateZ(0deg);
   }
   to {
     transform: translateX(0px) rotateZ(-360deg);
   }
-}
+} */
 
 /* projects section */
 
@@ -176,12 +176,12 @@ footer {
 /* media queries (mobile first layout) ////////////////////////////////////////////////////////*/
 
 /* mobile layout */
-@media screen and (min-width: 360px) {
+/* @media screen and (min-width: 360px) {
   nav {
     display: none;
-  }
+  } */
   /* universal styling */
-  .btn {
+  /* .btn {
     font-size: 12px;
     
   }
@@ -193,10 +193,10 @@ footer {
 
   h3 {
     font-size: 14px;
-  }
+  } */
 
   /* home section */
-  #name {
+  /* #name {
     font-size: 28px;
     font-weight: bolder;
     display: flex;
@@ -259,7 +259,7 @@ footer {
     justify-self: center;
     grid-column: 5/9;
     grid-row: 11;
-  }
+  } */
 
   /* projects section */
 
@@ -357,10 +357,10 @@ footer {
   /* body {
     font-size: 16px;
   } */
-  nav > ul {
+  /* nav > ul {
     display: block;
     font-size: 24px;
-  }
+  } */
 /* **********  come back *************** */
   #about-rec-yellow {
     grid-column: 7/10;
@@ -383,11 +383,11 @@ footer {
     font-size: 84px;
   }
 
-  nav {
+  /* nav {
     display: block;
     grid-column: 1/5;
     grid-row: 1;
-  }
+  } */
 
   #name {
     font-size: 64px;

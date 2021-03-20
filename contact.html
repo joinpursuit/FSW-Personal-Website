@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio website</title>
+    <link  rel="stylesheet" type="text/css" href="reset.css" >
     <link id="test1" rel="stylesheet" type="text/css" href="light.css" >
     <script src="./index.js" defer></script>
 </head>
@@ -15,7 +16,7 @@
         <nav>
             <a href="./index.html"> Home!</a>
             <a href="./projects.html">Projects!</a>
-            <a href="./resume.html">Resume!</a>
+            <a href="./resume.html">Skills!</a>
             <a href="./contact.html">Contact!</a>
         </nav>
     </header>
@@ -31,7 +32,7 @@
               <label for="email-subject">Subject</label>
               <input type="text" name="_subject" id="email-subject" placeholder="Contact Form Submission">
               <label for="message">Message</label>
-              <input type="text" name="message" id="message" placeholder="Enter Message here." required=""></input>
+              <textarea rows="5" name="message" id="message" placeholder="Enter message here" required=""></textarea>
             </fieldset>
             <input type="submit" value="Submit">
           </form>

@@ -1,0 +1,6 @@
+display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 1rem;
+    border-bottom: 1px black dashed;
+  }

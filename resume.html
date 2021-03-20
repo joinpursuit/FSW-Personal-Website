@@ -4,29 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Resume</title>
+    <title>Skills & Projects</title>
     <link rel='stylesheet' href='./reset.css'/>
     <link rel='stylesheet' href='./style.css'/>
-    <script src="./index.js"></script>
+    <script src="./index.js" defer></script>
 </head>
 <body>
-    <header>
-        <nav id='main-nav'>
-            <div id='hamburger' onclick="smallMenu()">
-                <div class='ham-line'></div>
-                <div class='ham-line'></div>
-                <div class='ham-line'></div>
-            </div>
-            <ul id='navLinks'>
-                <a href="./index.html"><li>Home</li></a>
-                <a href="./about.html"><li>About Me</li></a>
-                <a href="./contact.html"><li>Contact Me</li></a>
-                <a href="./resume.html"><li>Resume</li></a>
-            </ul>
-        </nav>
-    </header>
-    <div>
-        My Resume
+    <div class='container'>
+        <div class="sub-container sub1">
+            <nav id='main-nav'>
+                <img id="menu-icon" src="./images/menu-icon.svg" onclick="smallMenu()">
+                <ul id='navLinks'>
+                    <a href="./index.html"><li>Home</li></a>
+                    <a href="./about.html"><li>About Me</li></a>
+                    <a href="./contact.html"><li>Contact Me</li></a>
+                    <a href="./resume.html"><li>Resume</li></a>
+                </ul>  
+            </nav>
+        </div>
+        <div class="sub-container sub2">
+            <div id='logo'>
+                <a href="./about.html"><h1>Joshua Mendez</h1></a>
+                <a href="./index.html">
+                    <label>
+                        Full Stuck Web Developer
+                    </label>
+                </a>
+            </div>  
+        </div>
+        <div class="sub-container sub3">
+            Resume
+        </div>
+        <div class="sub-container sub4">
+        </div>
     </div>
 </body>
 </html>

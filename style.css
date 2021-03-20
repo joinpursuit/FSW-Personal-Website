@@ -1,3 +1,10 @@
+h1 {
+    font-size: 20px;
+    font-weight: bold;
+}
+label {
+    font-size: 14px;
+}
 .container {
     display: grid;
     gap: .1rem;
@@ -6,9 +13,7 @@
 }
 .sub-container {
     height: auto;
-    background-color: yellow;
 }
-
 .sub1 {
     grid-column: 1/2;
     grid-row: 1/2;
@@ -32,7 +37,6 @@
 }
 #main-nav {
     overflow: visible;
-    background-color: springgreen;
     position: relative;
 }
 #main-nav #navLinks {
@@ -40,7 +44,6 @@
 }
 #main-nav ul {
     width: 120px;
-    background-color: steelblue;
     z-index: 1;
 }
 #main-nav li {
@@ -58,24 +61,43 @@
     top: 0;
 }
 .github {
-    background-color: darkorange;
+    text-align: center;
 }
 .project-header {
     display: grid;
     gap: .1rem;
     grid-template-columns: repeat(2, 1fr);
 }
+#project-title{
+    text-align: center;
+}
 .project-image {
     height: 150px;
 }
+.profile-image-container{
+    height: 300px;
+    width: 300px;
+    margin: auto;
+}
+#logo {
+    text-align: center;
+}
+#about-me {
+    padding: 10px;
+    margin: 25px;
+}
+.project-descrip{
+    padding: 25px;
+}
 
-@media screen 
-    and (orientation: landscape) {
-        .image-container {
-            width: 500px;
-            min-height: 300px;
-        }
-        .project-image {
-            height: auto;
-        }
+@media screen and (orientation: landscape) {
+    .image-container {
+        width: 500px;
+        min-height: 300px;
+        margin: auto;
+        padding: 10px;
+    }
+    .project-image {
+        height: auto;
+    }
 }

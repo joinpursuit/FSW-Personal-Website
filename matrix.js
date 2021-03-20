@@ -83,19 +83,21 @@ setTimeout(function () {
 
     let menuButton = document.getElementById("menu-button")
 
-    menuButton.addEventListener('click',(event)=>{
+    menuButton.addEventListener('mouseover',(event)=>{
       
         let bigMenu = document.getElementById("big-menu")
         let bigHome = document.getElementById("big-home")
         let bigAbout = document.getElementById("big-about")
         let bigProjects = document.getElementById("big-projects")
         let bigContact = document.getElementById("big-contact")
-        // bigMenu.style.visibility = 'visible'
+        //let bigX = document.getElementById("big-x")
+
         // menuButton.style.visibility = 'hidden'
 
 
 
         setTimeout(function () {
+          // bigX.style.visibility = 'visible'
             bigHome.style.visibility = "visible"
           }, 200);
         setTimeout(function () {
@@ -112,11 +114,21 @@ setTimeout(function () {
 
 
 
-        // setTimeout(function () {
-        //     bigMenu.style.visibility = 'hidden'
-        //     menuButton.style.visibility = 'visible'
+        setTimeout(function () {
+            bigHome.style.visibility = 'hidden'
+            // menuButton.style.visibility = 'visible'
+                }, 6000);
 
-        //         }, 4000);
+                setTimeout(function () {
+                  bigAbout.style.visibility = "hidden"
+                }, 6000);
+              setTimeout(function () {
+                 bigProjects.style.visibility = "hidden"
+                }, 6000);
+              setTimeout(function () {
+                  bigContact.style.visibility = "hidden"
+                }, 6000);
+            
         
     
     })

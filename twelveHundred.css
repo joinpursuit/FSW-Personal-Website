@@ -34,6 +34,9 @@
       grid-template-rows: repeat(60,1fr);
       height: 1000px;
       border: solid 3px;
+      padding-top: 0px;
+      padding-right: 0%;
+      margin-right: 0%;
   }
   
   #projects{
@@ -161,28 +164,38 @@
 
   #menu-button:hover{
     cursor: pointer;
+    color:greenyellow;
   }
   #big-menu{
-    grid-row: 1/16;
-    grid-column: 57/61;
+    margin-top:38%;
     font-size: 30px;
   visibility:hidden;
-float:right;
-  position: fixed;
-  right: 0;
+  /* position: fixed; */
   list-style: none;
-  width: 209px;
+  width: 309px;
   text-align: center;
+  grid-row: 3/33;
+  grid-column: 50/59;
+  padding-top: 5%;
+ 
   }
   
   #big-home,#big-about,#big-projects,#big-contact{
     border:white solid 3px;
-    margin-top:4%;
+    margin-bottom:4%;
     border-radius: 25%;
     margin-right:44%;
-    background-color: yellow;
+    background-color: black;
+    transition: height 4s;
+    color:white;
+ 
   }
+#big-x{
 
+  color: white;
+  visibility: hidden;
+ 
+}
 
   #big-menu:hover{
     cursor: pointer
@@ -190,7 +203,12 @@ float:right;
   }
   #big-home{
 
-    background-color: purple;
+    background-color:white;
+    color:black;
+    height: 44px;
+    margin-top:0px;
+    border:black solid 3px;
+    /* padding-top:6%; */
   }
 /* #big-home:hover{
     width:330px;
@@ -198,15 +216,24 @@ float:right;
 } */
 #big-about:hover{
 
-    background-color: purple;
+    background-color:white;
+    color:black;
+    height: 44px;
+    /* padding-top: 10%; */
 }
 #big-projects:hover{
 
-    background-color: purple;
+    background-color:white;
+    color:black;
+    height: 44px;
+    /* padding-top: 10%; */
 }
 #big-contact:hover{
  
-    background-color: purple;
+  background-color:white;
+  color:black;
+  height: 44px;
+  /* padding-top: 10%; */
 }
 
 
@@ -217,13 +244,13 @@ float:right;
 
 
   #big-x{
+    margin-top: 0px;
+    margin-bottom:0px;
     border-radius: 50%;
-    border:solid white 3px;
-    grid-row: 9/13;
-    grid-column: 54/59;
-    width: 65px;
-    padding-left:26px;
-    padding-bottom: 8px;
+    /* border:solid white 3px; */
+    width: 45px;
+    font-size: 12px;
+
     font-family: Arial, Helvetica, sans-serif;
   }
   #big-x:hover{
@@ -536,14 +563,24 @@ float:right;
 #navi{
   display: flex;
   justify-content: space-around;
-  width: 100%;
-  border: white solid 3px;
+  width: 98%;
+  border-top: white solid 3px;
+  border-bottom: white solid 3px;
 background-color: black;
+position: fixed;
+color:white;
 }
 
 
 
-
+#pursuit-big>a{
+  text-decoration: none;
+  color:white;
+}
+#pursuit-big>a:hover{
+  text-decoration: none;
+  color:lawngreen;
+}
 
 
   }

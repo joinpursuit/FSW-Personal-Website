@@ -3,19 +3,19 @@
 #container {
     display: grid;
     height: 100vh;
+    min-height: 100%;
     grid-template-columns: 1fr 3fr;
     grid-template-rows: 1.5fr 4fr 1fr;
     /* grid-gap: .1rem; */
+    background-color: #CAF0F8;
 }
 
 header {
     grid-column: 2/3;
     grid-row: 1/2;
-    background-color: #CAF0F8;
 }
 
 h1 {
-  background-color: #CAF0F8;
     margin: auto;
     border-radius: 60px;
     /* border: 13px solid black; */
@@ -144,13 +144,14 @@ nav a:hover {
 #skills-section{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: .3fr 1fr 1fr 1fr .1fr;
-  row-gap: 2em;
+  grid-template-rows: .3fr 1fr 1fr 1fr;
+  row-gap: 1.3em;
   justify-items: center;
   border: 3px solid black;
 }
 
 #skills-header{
+  margin-top: -3px;
   grid-column: 1/4;
     grid-row: 1/2;
 }
@@ -164,19 +165,46 @@ nav a:hover {
 }
 
 /* PROJECT Section */
+
+#project-section {
+  height: 66vh;
+  overflow: scroll;
+  margin: 10px;
+  border: 3px solid black;
+}
+
+#project-section::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+#project-section::-webkit-scrollbar-track {
+  background: #918d8d; 
+}
+ 
+/* Handle */
+#project-section::-webkit-scrollbar-thumb {
+  background: rgb(17, 6, 66); 
+}
+
+/* Handle on hover */
+#project-section::-webkit-scrollbar-thumb:hover {
+  background: rgb(128, 20, 20); 
+}
+
 .project-list{
   display: grid;
-  grid-template-columns: .7fr .3fr;
+  grid-template-columns: .7fr .3fr ;
   border: 3px solid black;
   margin-bottom: 10px;
 }
 
 
 
-.project-list img:hover{
+/* .project-list img:hover{
   transition: .5s;
   transform: scale(1.1)
-}
+} */
   
 h2{
     text-align: center;

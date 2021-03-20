@@ -4,6 +4,7 @@ const projectSection = document.querySelector("#project-section");
 const skillsSection = document.querySelector("#skills-section");
 const contactSection = document.querySelector("#contact-section");
 const navBar = document.querySelector("#nav-bar")
+const header = document.querySelector("#name-header")
 const form = document.querySelector("#form")
 let currentPage = homeSection;
 
@@ -15,19 +16,21 @@ document.addEventListener("DOMContentLoaded", (e) => {
 
 });
 
-navBar.addEventListener("click", (e) => {
-    if(e.target.id === "home"){
+header.addEventListener("click", (e)=>{
+    debugger
+    if(e.target.id === "name-header"){
         currentPage.style.display = "none"
         homeSection.style.display = "block"
         currentPage = homeSection;
     }
+})
+
+navBar.addEventListener("click", (e) => {
     if(e.target.id === "about"){
         currentPage.style.display = "none"
         aboutSection.style.display = "block"
         currentPage = aboutSection;
     }
-    debugger;
-    
     if(e.target.id === "project"){
         currentPage.style.display = "none"
         projectSection.style.display = "block"

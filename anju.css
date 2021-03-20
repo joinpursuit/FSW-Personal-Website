@@ -1,19 +1,24 @@
+/* DESKTOP*/
+/* @media only screen and (min-width: 1366px) { */
 body {
-  /* height: 100vh; */
   background-image: url("./jessy-smith-zFOm6KzA-7g-unsplash.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center bottom;
-  background-color: #F3F1F2;
+  background-color: #f3f1f2;
+  display: flex;
 }
 
-.home-page, .about-page, .projects-page, .contact-page {
+.home-page,
+.about-page,
+.projects-page,
+.contact-page {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 1fr);
   height: 100vh;
-  /* align-items: center; */
-  /* grid-auto-rows: minmax(100vh, auto); */
+  /* align-items: center;commented out */
+  /* grid-auto-rows: minmax(100vh, auto); commented out*/
 }
 
 nav {
@@ -21,29 +26,45 @@ nav {
   grid-row: 1/2;
   position: fixed;
   top: 0;
-  
-  /* width: 100%; */
+  /* width: 100%;commented out */
 }
 
 ul {
   display: flex;
   flex-direction: row;
+  /* flex-wrap: wrap; */
 }
 
-ul li {
-  color: rgba(71, 83, 88, 1);
+li {
+  color: black;
   font-family: "Courier New", Courier, monospace;
   font-size: 30px;
   font-weight: bold;
   margin: 30px;
 }
 
+li:hover {
+  color: rgba(89, 197, 7, 1);
+}
+
+#quote-of-the-day {
+  grid-column: 7/13;
+  grid-row: 1/2;
+  justify-self: end;
+
+}
+
+.quote-li {
+  font-size: 16px;
+}
+
 .name {
   font-family: "Courier New", Courier, monospace;
   font-size: 45px;
   font-weight: bold;
-  text-align: center;
   color: rgba(255, 255, 255, 1);
+  /* justify-self: center; */
+  /* align-items: center; */
   grid-column: 5/9;
   grid-row: 6/7;
 }
@@ -51,8 +72,6 @@ ul li {
 .bio {
   font-family: "Courier New", Courier, monospace;
   font-size: 17px;
-  /* text-align: left; */
-  /* align-self: end; */
   color: rgba(255, 255, 255, 1);
   grid-column: 5/8;
   grid-row: 5/10;
@@ -64,19 +83,17 @@ ul li {
   width: 75%;
 }
 
-/* .coming-soon {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 16px;
-    color:rgba(89, 197, 7, 1);
-    text-align: center; 
-    grid-column: 5/9;
-    grid-row: 9/12;
-} */
-
 .to-do-pic {
   grid-column: 4/6;
   grid-row: 5/8;
   margin-left: 95px;
+  /* margin-bottom: 90px; */
+}
+
+.to-do-sum {
+  grid-column: 4/6;
+  grid-row: 8/11;
+  font: 16px "Courier New", Courier, monospace;
 }
 
 .emoji-pic {
@@ -86,6 +103,12 @@ ul li {
   height: 144%;
   margin-left: 10px;
   align-items: flex-start;
+}
+
+.emoji-sum {
+  grid-column: 7/9;
+  grid-row: 8/11;
+  font: 16px "Courier New", Courier, monospace;
 }
 
 .contact-me {
@@ -122,7 +145,7 @@ ul li {
   align-self: center;
 }
 
-.devicon-linkedin-plain-wordmark{
+.devicon-linkedin-plain-wordmark {
   font-size: 60px;
 }
 
@@ -138,6 +161,7 @@ ul li {
   align-items: center;
 }
 
- i:hover {
+i:hover {
   color: rgba(89, 197, 7, 1);
- }
+}
+/* } */

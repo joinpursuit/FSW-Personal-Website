@@ -1,0 +1,137 @@
+body {
+    display: grid;
+    gap: .1rem;
+    grid-template-rows: minmax(1fr, auto);
+}
+/* header {
+    position: absolute;
+} */
+@media screen 
+    and (min-device-width: 1px) 
+    and (orientation: portrait) {
+        body {
+            grid-template-columns: 1fr 1fr;
+            background-color: teal;
+        }
+        .grid-box-size {
+            height: 70px;
+        }
+        #logo-header {
+            grid-column: 3/4;
+        }
+        #hamburger {
+            padding: 6px;
+        }
+        .ham-line {
+            width: 43px;
+            height: 5px;
+            background-color: black;
+            margin: 6px 0;
+        }
+        #main-nav {
+            overflow: visible;
+            width: 55px;
+            background-color: springgreen;
+            position: relative;
+        }
+        #main-nav #navLinks {
+            display: none;
+        }
+        #main-nav ul {
+            width: 120px;
+            background-color: steelblue;
+            z-index: 1;
+        }
+        #main-nav li {
+            color: red;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            display: block;
+        }
+        #main-nav li.icon {
+            background: black;
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        #test {
+            z-index: -1;
+        }
+}
+/*tablet portrait view*/
+@media screen 
+    and (min-device-width: 768px) 
+    and (max-device-width: 1024px) 
+    and (orientation: portrait) {
+        body{
+            grid-template-columns: 1fr 1fr 1fr;
+            background-color: magenta;
+        }
+}
+/*Most phones in landscape*/
+@media screen 
+    and (min-device-width: 500px) 
+    and (max-device-width: 1023px)
+    and (orientation: landscape) {
+        body{
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            background-color: yellow;
+        }
+        .grid-box-size {
+            height: 70px;
+        }
+        #logo-head {
+            grid-column: 3/4;
+        }
+        #hamburger {
+            padding: 6px;
+        }
+        .ham-line {
+            width: 43px;
+            height: 5px;
+            background-color: black;
+            margin: 6px 0;
+        }
+        #main-nav {
+            overflow: visible;
+            width: 55px;
+            background-color: springgreen;
+            position: relative;
+        }
+        #main-nav #navLinks {
+            display: none;
+        }
+        #main-nav ul {
+            width: 120px;
+            background-color: steelblue;
+            z-index: 1;
+        }
+        #main-nav li {
+            color: red;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            display: block;
+        }
+        #main-nav li.icon {
+            background: black;
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        #test {
+            z-index: -1;
+        }
+}
+/*Most tablets and computers while in landscape*/
+@media screen 
+    and (min-device-width: 1024px) 
+    and (orientation: landscape) {
+        body{
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            background-color: darkorange;
+        }
+}

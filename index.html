@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="main.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="landing.css" /> 
+    <link rel="stylesheet" href="menu.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Obaid Rustemi's Website</title>
+  </head>
+  <body>
+    <div class="menu-wrap">
+      <input type="checkbox" class="toggler" />
+      <div class="hamburger"><div></div></div>
+      <div class="menu">
+        <div>
+          <div>
+            <ul>
+              <li class="overlay-links"><a href="#secondContainer">About</a></li>
+              <li class="overlay-links">
+                <a href="https://docs.google.com/document/d/1CL_V-0mespUDRs0S8__7iWtMlsIRYbnQFw9OE4Es_zM/edit?usp=sharing"
+                  target="_blank"
+                  >Resume</a>
+              </li>
+              <li class="overlay-links"><a href="#thirdContainer">Projects</a></li>
+              <li class="overlay-links"><a href="#">Skills</a></li>
+              <li class="overlay-links"><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <header class="showcase">
+      <div class="container showcase-inner">
+        <h1>Welcome to..</h1>
+        <p>Obaid Rustemi's homepage..</p>
+
+        <!-- <a href="#" class="btn">Visit my Linkedin!</a> -->
+      </div>
+    </header>
+    <div id="secondContainer" class="containerLinks">
+      <div>
+        <h1>About Me</h1>
+        <div id="about-me-div">
+          <p class="paragraph-text">
+            I was born in NY but grew up in California near Silicon Valley. My
+            family moved back to New York when I was 16 and I've been here ever
+            since. I really love the seasons in New York and I especially love
+            the winter. I have probably too many hobbies but I find so many
+            things fascinating and interesting about the world, it's hard to
+            narrow things down. I love learning. reading comic books, watching
+            sports, and playing video games. <br /><br />
+            I hope to get the opportunity to travel one day as well because
+            there are lots of places I want to visit. I love technology and have
+            always had a natural understanding of the way it works my family is
+            always asking me for some type of tech support. I am currently
+            learning programming from scratch starting with HTML. I plan on
+            learning Java, Python, and C++ as well eventually. You can contact
+            me using my contact info below. My resume can also be found in the
+            above links. Thanks so much for visiting my homepage!
+          </p>
+        </div>
+      </div>
+      <div>
+        <img
+          id="profilePhoto"
+          src="https://i.ibb.co/4f9Q5ky/Pursuit-7-0-Obaid-Obie-Rustemi.jpg"
+          alt="Obaid Pursuit"
+          width="300"
+          height="auto"
+        />
+      </div>
+    </div>
+    <div id="thirdContainer" class="containerLinks">
+      <div>
+        <h1>Projects</h1>
+        <div id="projects-div">
+          <div class="projects">
+            <h2>Command Line Star Wars Adventure Game</h2>
+            <p><a class="project-link"href="https://github.com/ObaidRustemi/FSW-Text-Based-Adventure">Github Link</a></p>
+            <img class="project-screenshot" src= "https://i.ibb.co/p02qZzJ/Text-Based-Adventure-Screenshot.png" target="_blank" 
+            alt="Text-Based-Adventure-Screenshot" width="300" height="auto">
+            <p class="project-description-p">Just a simple terminal game based on Star Wars. You can choose between 2 different <br>adventures and each adventure has multiple paths</p>
+          </div>
+          <div class="projects">Snowman</div>
+          <div class="projects">To Do App</div>
+          <div class="projects">Joke API</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

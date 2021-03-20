@@ -1,6 +1,6 @@
 const welcomeButton = document.querySelector(".btn")
 welcomeButton.addEventListener("click", () => {
-    document.location.href = "../about.html" 
+    document.location.href = "./html/about.html" 
 })
 
 const changeButton = document.querySelector(".change")

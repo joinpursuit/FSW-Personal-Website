@@ -1,13 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="matrix.css">
+    <link rel="stylesheet" href="effects.css">
+    <link rel="stylesheet" href="fiveHundred.css">
+    <link rel="stylesheet" href="twelveHundred.css">
+    <link rel="stylesheet" href="flicker.css">
+    <script src="matrix.js" defer></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document FR</title>
+    <link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet'>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Document</title>
 </head>
-<body>
-    testing hello world
+<body id="no-matrix">
+    <p id="top"></p>
+
+
+    <div id="navi">
+
+        <p id="name-big" class="tracking-in-expand">Farrah I. Rios</p>
+        <!-- <p id="title-big">Early Career Software Developer</p> -->
+        <p id="pursuit-big">7.2 Pursuit Fellow</p>
+        <p id="menu-button" class="tracking-in-expand">Menu</p>
+        
     
+    
+    
+    </div>
+    
+<section id='home'>
+ 
+<ul id="big-menu">
+   <!-- <div id="big-x">x</div> -->
+<li id="big-home" class="menu-class">Home</li>
+<a href="#about"><li id="big-about" class="menu-class">About</li></a>
+<a href="#projects"><li id="big-projects" class="menu-class">Projects</li></a>
+<a href="#contact"><li id="big-contact" class="menu-class">Contact</li></a>
+
+</ul>
+
+
+
+
+
+
+        <button id="rain">matrix mode
+        </button>
+        <!-- <p id="tog">matrix</p> -->
+        <!-- <button id="revert">Dark Mode</button> -->
+       
+        <div id="hamburger-menu">
+            <div class="ham" id="hamOne"></div>
+            <div class="ham" id="hamTwo"></div>
+            <div class="ham" id="hamThree"></div>
+        </div>
+        <ul id="drop-down">
+            <li id='x'></li><button id='xb'>x</button></li>
+         <li id='home-li'style="color:yellow">Home</li>
+            <a href="#about"><li id='about-li'>About</li></a>
+            <a href="#projects"><li id='projects-li'>Projects</li></a>
+            <a href="#contact"><li id='contact-li'>Contact</li></a>
+        </ul>
+
+<div id='pic'>
+   <img src="plainpic.png" id="plain-pic" alt="picture" style="width:200px">  
+</div>
+    <div id="intro">
+        <p id="name">Farrah Isabelle Rios</p>
+        <p id="title">Early Career Software Developer</p>
+        <p id="pursuit">7.2 Pursuit Fellow</p>
+    </div>
+</section>
+
+<section id='about'>
+        
+        <ul id="drop-down2">
+            <a href="#home"><li id='home-li2'>Home</li></a>
+            <li id='about-li2' style="color:yellow">About</li>
+            <a href="#projects"><li id='projects-li2'>Projects</li></a>
+            <a href="#contact"><li id='contact-li2'>Contact</li></a>
+        </ul>
+        <div id='pic2'>
+            <img src="plainpic.png" id="plain-pic2" alt="picture" style="width:200px">  
+         </div>
+<h3 id='bio'>
+    My love for problem-solving has led me on path as a software web developer. As a selected Fellow at Pursuit, an intensive 12-month software engineering fellowship with a 9% acceptance rate, I am currently honing my skills as a coder. In addition, my immersion into the tech industry world has shaped my perspective of how I can leverage my love of collaboration and problem-solving to real-world challenges.
+    I am passionate about special education advocacy and accessibility of information and technology. As a mother to a brilliant child on the autism spectrum, augmentative and alternative communication (AAC)
+    devices are a huge part of my daily life and I want to use this experience to contribute to the creation of more inclusive assistive technology that meet the communication needs of children and adults of all backgrounds. 
+</h3>
+</section>
+
+
+<section id="projects">
+    <ul id="drop-down3">
+        <a href="#home"><li id='home3-li'>Home</li></a>
+        <a href="#about"><li id='about3-li'>About</li></a>
+        <li id='projects-li'style="color:yellow">Projects</li>
+        <a href="#contact"><li id='contact3-li'>Contact</li></a>
+    </ul>
+    <h1 id="snow-header">Snow Man Terminal JS Node Game</h1>
+    <div id="snow-video"></div>
+    <div id="snow-video-cover">
+  
+        <button id='watch'>watch</button>
+    </div>
+    <h1 id="jokes-header">Random Joke Generator Using API</h1>
+    <div id="jokes-display">
+    </div>
+    <p id="joke-output"></p>
+    <button id='click-joke'>Click for a Joke</button>
+</section>
+
+
 </body>
 </html>

@@ -1,4 +1,4 @@
-const navBar = document.querySelector("#main-nav");
+const navBar = document.querySelector(".main-nav");
 const nav = document.querySelector(".nav-bar");
 // const body = document.querySelector("body")
 const burger = document.querySelector(".burger");
@@ -27,6 +27,12 @@ const naviBar = () => {
 
 naviBar();
 
+
 window.addEventListener("scroll", () => {
-    navBar.className = ("scrolling-active", window.scrollY > 0)  
-})
+   if (window.scrollY > 0) {
+    navBar.classList.add("scrolling-active"); 
+   } else {
+    navBar.classList.remove("scrolling-active");
+    }
+}) 
+    

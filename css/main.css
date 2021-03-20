@@ -157,7 +157,13 @@ strong {
   color: #0b0b0b;
 }
 @media screen and (max-width: 1340px){
+  .fa-bars {
+    display: none;
+  }
   
+  .fa-exchange-alt {
+    display: none;
+  }
 
   main div {
     padding: auto;

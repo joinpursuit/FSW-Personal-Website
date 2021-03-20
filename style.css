@@ -47,7 +47,6 @@ label {
     z-index: 1;
 }
 #main-nav li {
-    color: red;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
@@ -68,9 +67,6 @@ label {
     gap: .1rem;
     grid-template-columns: repeat(2, 1fr);
 }
-#project-title{
-    text-align: center;
-}
 .project-image {
     height: 150px;
 }
@@ -79,15 +75,31 @@ label {
     width: 300px;
     margin: auto;
 }
-#logo {
-    text-align: center;
-}
 #about-me {
     padding: 10px;
     margin: 25px;
 }
 .project-descrip{
     padding: 25px;
+}
+#about-me-title,
+#resume-title,
+#logo,
+#project-title,
+#contact-title{
+    text-align: center;
+}
+#form-container{
+    padding: 20px;
+    text-align: center;
+}
+input[type="password"],
+input[type="email"],
+input[type="text"],
+input[type="textarea"],
+textarea{
+  border: 1px solid black;
+  text-align: left;
 }
 
 @media screen and (orientation: landscape) {

@@ -1,0 +1,339 @@
+:root {
+  --main-radius: 15px;
+  --main-padding: 15px;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  display: grid;
+  height: 200px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 0.2fr 1.5fr 1.2fr 0.5fr;
+  grid-template-areas:
+    "nav nav nav nav"
+    "sidebar main main main"
+    "footer footer footer footer";
+  grid-gap: 0.2rem;
+  font-weight: 800;
+  font-size: 12px;
+  color: purple;
+  text-align: center;
+}
+
+nav {
+  background: purple;
+  grid-area: nav;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+  text-transform: uppercase;
+}
+
+nav li {
+  display: inline-block;
+}
+
+main {
+  background: purple;
+  grid-area: main;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+  color: white;
+  height: 500px;
+}
+
+/* main p tag */
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro");
+
+#main-p-tag {
+  padding: 40px;
+  background-color: none;
+}
+
+#main-second-tag {
+  padding: 40px;
+  background-color: none;
+}
+#main-p-tag {
+  border-right: solid 3px white;
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: "Source Code Pro", monospace;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.7);
+}
+#main-second-tag {
+  border-right: solid 3px white;
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: "Source Code Pro", monospace;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.7);
+}
+/* Animation */
+#main-p-tag {
+  animation: animated-text 4s steps(29) 1s 1 normal both,
+    animated-cursor 600ms steps(29) infinite;
+}
+#main-second-tag {
+  animation: animated-text 4s steps(29) 1s 1 normal both,
+    animated-cursor 600ms steps(29) infinite;
+}
+/* text animation */
+
+@keyframes animated-text {
+  from {
+    width: 0;
+  }
+  to {
+    width: 300px;
+  }
+}
+
+/* cursor animations */
+
+@keyframes animated-cursor {
+  from {
+    border-right-color: white;
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+#sidebar {
+  background: purple;
+  grid-area: sidebar;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+  color: white;
+}
+img {
+  border-radius: 30%;
+  margin: 10px;
+}
+
+footer {
+  background: purple;
+  grid-area: footer;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+  color: white;
+  height: 100px;
+}
+
+nav a {
+  color: rgb(139, 121, 15);
+  text-align: center;
+  font-family: inherit;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 1rem;
+}
+nav a:visited {
+  color: white;
+}
+
+nav a:hover {
+  color: rgb(230, 230, 153);
+}
+/* about me */
+.about-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 0.2fr 1.5fr;
+  grid-template-areas:
+    "nav nav "
+    "about-me-para about-me-para"
+    "about-me-image about-me-image";
+  grid-gap: 0.2rem;
+  font-weight: 800;
+  font-size: 12px;
+  color: purple;
+}
+
+#about-me-body {
+  background-color: white;
+}
+#me {
+  margin: 4px;
+  padding: 10px;
+  text-decoration: underline;
+  text-align: center;
+  color: black;
+}
+
+#about-me-para {
+  width: 100%;
+  color: black;
+  justify-content: right;
+}
+
+/* * skills-container css */
+#skills-container {
+  background-color: white;
+}
+.center {
+  display: flex;
+
+  justify-content: center;
+}
+
+#skills {
+  text-align: center;
+  text-decoration: underline;
+}
+
+#js-img {
+  padding: 20px;
+  transition: transform 0.2s;
+  width: 100px;
+  height: 100px;
+}
+
+/* taken from 3W schools https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_zoom_hover */
+
+#js-img:hover {
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
+#css-img {
+  padding: 20px;
+  transition: transform 0.2s;
+  width: 100px;
+  height: 100px;
+}
+
+#css-img:hover {
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
+#html-img {
+  padding: 20px;
+  transition: transform 0.2s;
+  width: 100px;
+  height: 100px;
+}
+#html-img:hover {
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
+/* Form */
+#contact-form-body {
+  background-color: white;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+}
+.form-back {
+  color: black;
+}
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type="text"],
+select {
+  width: 70%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid rgb(235, 155, 235);
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+
+button[type="submit"] {
+  width: 70%;
+  background-color: peru;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+button[type="submit"]:hover {
+  background-color: white;
+}
+
+input[type="email"] {
+  width: 50%;
+  padding: 7px 20px;
+  margin: 10px 0;
+  display: inline-block;
+  border: 1px solid rgb(235, 155, 235);
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+#form {
+  width: 60%;
+  height: 50%;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  border: 1px solid rgb(235, 155, 235);
+}
+
+#message {
+  width: 270px;
+  height: 200px;
+  border: 1px solid rgb(235, 155, 235);
+  resize: none;
+}
+
+#submit-form {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+form {
+  margin: auto;
+}
+
+/* project page  */
+#text-based-image {
+  border-radius: 1%;
+  margin: 10px;
+  height: 370px;
+}
+
+#snowman-image {
+  border-radius: 1%;
+  margin: 10px;
+  height: 100%;
+}
+/* github icon */
+#linkedin {
+  margin: 30px;
+  font-size: 20px;
+  color: white;
+}
+/* linkedIn icon  */
+#github {
+  font-size: 20px;
+  color: white;
+}
+@media only screen and (max-width: 550px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
+    grid-template-areas:
+      "nav"
+      "sidebar"
+      "main"
+      "footer";
+  }
+}

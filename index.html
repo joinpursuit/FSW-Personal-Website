@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/images/code-solid.svg" />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./website.css" />
+    <title>Personal Website</title>
+  </head>
+  <body>
+    <div class="menu">
+      <div class="flex-item">
+        <a href="./website.html">
+          <img src="images/home-solid.svg" />
+        </a>
+        <a href="./website.html">HOME</a>
+      </div>
+      <div class="flex-item">
+        <a href="#skills-div">
+          <img src="images/tools-solid.svg" />
+        </a>
+        <a href="./website.html">SKILLS</a>
+      </div>
+      <div class="flex-item">
+        <a href="#projects">
+          <img src="images/folder-open-solid.svg" />
+        </a>
+        <a href="./website.html">PROJECTS</a>
+      </div>
+      <div class="flex-item">
+        <a href="#contact">
+          <img src="images/address-book-solid.svg" />
+        </a>
+        <a href="./website.html">CONTACT</a>
+      </div>
+    </div>
+
+    <section id="intro">
+      <div id="name-div">
+        <h1 id="firstname">MIGUEL</h1>
+        <h1 id="lastname">GARCIA</h1>
+      </div>
+
+      <div id="img-div">
+        <img
+          id="picture"
+          src="./images/Pursuit Photo Cartoonizer.png"
+          alt="Me as Cartoon"
+        />
+      </div>
+    </section>
+    <br />
+    <section id="main">
+      <div id="skills-div">
+        <h2 class="subheader skills" id="skills"><br /><br /><br />SKILLS</h2>
+        <div id="Icons">
+          <a href="https://www.javascript.com/">
+            <img
+              id="JavaScript"
+              src="./images/js-brands.svg"
+              alt="JavaScript Icon"
+            />
+          </a>
+          <a href="https://www.w3.org/Style/CSS/Overview.en.html">
+            <img id="CSS3" src="./images/css3-alt-brands.svg" alt="CSS3 Icon"
+          /></a>
+          <a href="https://github.com/"
+            ><img
+              id="GitHub"
+              src="./images/github-brands.svg"
+              alt="GitHub Icon"
+          /></a>
+          <a href="https://html.spec.whatwg.org/multipage/"
+            ><img id="HTML5" src="./images/html5-brands.svg" alt="HTML5 Icon"
+          /></a>
+        </div>
+        <p>
+          Projects created using JavaScript, HTML and/or CSS are posted on
+          GitHub.
+        </p>
+      </div>
+
+      <div>
+        <h2 class="subheader projects" id="projects">
+          <br /><br /><br />PROJECTS
+        </h2>
+        <div id="projects-div">
+          <img id="snowman" src="./images/Snowman.gif" alt="snowman gif" />
+          <p id="snowman-text">
+            "Snowman", a word guessing game that logs correct and<br />
+            incorrect guesses. Also, features an answer board <br />
+            that displays what the player has solved in the word. New <br />
+            word is generated from a list at random each new game.
+          </p>
+        </div>
+        <div id="projects-div">
+          <img
+            id="textAdventure"
+            src="images/textAdventure.gif"
+            alt="textAdventure gif"
+          />
+          <p id="textAdventure-text">
+            "Text Based Adventure", a choose your own adventure <br />
+            game. Game has multiple endings and branches off<br />
+            in various directions.
+          </p>
+        </div>
+        <div id="projects-div">
+          <img
+            id="mondrianReplica"
+            src="./images/mondrianReplica.png"
+            alt="mondrianReplica png"
+          />
+          <p id="mondrianReplica-text">
+            "Mondrian Replica", a CSS Grid Layout replicating a <br />
+            painting from the famous Dutch painter, Piet Mondrian.
+          </p>
+        </div>
+      </div>
+
+      <div>
+        <h2 class="subheader contact" id="contact">
+          <br /><br /><br />CONTACT
+        </h2>
+        <form>
+          <label for="fname">First Name:</label>
+          <br />
+          <input
+            type="text"
+            id="fname"
+            name="firstname"
+            placeholder="Your first name.."
+          />
+          <br />
+          <br />
+
+          <label for="lname">Last Name:</label>
+          <br />
+          <input
+            type="text"
+            id="lname"
+            name="lastname"
+            placeholder="Your last name.."
+          />
+          <br />
+          <br />
+          <label for="email">Email:</label>
+          <br />
+          <input type="email" id="email" name="email" placeholder="Email" />
+          <br />
+          <br />
+
+          <label for="subject">Subject:</label>
+          <br />
+          <textarea
+            id="subject"
+            name="subject"
+            placeholder="Message to me..."
+            style="height: 200px"
+          ></textarea>
+        </form>
+      </div>
+    </section>
+
+    <footer><br /><br /><br /><br /><br /><br />Thanks For Visiting!</footer>
+  </body>
+</html>

@@ -22,19 +22,19 @@
     <br/>
     <main>
 
-        <form id="contact">
-            <h3>Contact Me:</h3>
-            <label for="fullname">First Name:</label>
-            <input type="text" id="fullname" name="fullname" placeholder="Enter your name here..." required>
-            <br>
-            <label for="email"> Email:</label>
-			<input type="email" name="email" id="email" placeholder="Enter Email" required>
-            <br>
-            <label for="subject">Subject:</label>
-            <textarea id="subject" name="subject" placeholder="Enter your message here..."></textarea>
-            <br>
+        <form id="form" name="contact-form" accept-charset="utf-8" action="https://formspree.io/f/xjvjbvzo" method="post">
+            <fieldset id="fs-frm-inputs">
+              <label for="full-name">Full Name</label>
+              <input type="text" name="name" id="full-name" placeholder="Full name" required="">
+              <label for="email-address">Email Address</label>
+              <input type="email" name="email-address" id="email-address" placeholder="email@domain.tld" required="">
+              <label for="email-subject">Subject</label>
+              <input type="text" name="_subject" id="email-subject" placeholder="Contact Form Submission">
+              <label for="message">Message</label>
+              <input type="text" name="message" id="message" placeholder="Enter Message here." required=""></input>
+            </fieldset>
             <input type="submit" value="Submit">
-        </form>
+          </form>
     </main>
 
     <footer id="footer">

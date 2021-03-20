@@ -90,11 +90,16 @@ li:hover {
   /* margin-bottom: 90px; */
 }
 
-.to-do-sum {
+.to-do-pic:hover {
+  width: 100px;
+}
+
+/* .to-do-sum {
   grid-column: 4/6;
   grid-row: 8/11;
-  font: 16px "Courier New", Courier, monospace;
-}
+  font: bold 16px "Courier New", Courier, monospace;
+  color: green;
+} */
 
 .emoji-pic {
   grid-column: 7/9;

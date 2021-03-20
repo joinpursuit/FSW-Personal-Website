@@ -28,6 +28,11 @@
   border-color: white;
   display: flex;
   flex-wrap: wrap;
+  transition: transform .4s;
+}
+
+.project-screenshot:hover { 
+  transform: scale(1.2);
 }
 
 .projects {

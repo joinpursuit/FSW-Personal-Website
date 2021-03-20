@@ -1,0 +1,22 @@
+body {
+    background-color: #F9E784;
+}
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 20%;
+   
+}
+.icon-1 {
+    height: 10px;
+    width: auto;
+}
+
+img {
+    position: relative;
+    height: 200px;
+    width: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}

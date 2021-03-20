@@ -1,0 +1,52 @@
+body {
+  background-color: #f9e784;
+}
+ul {
+  list-style: none;
+  font-size: x;
+}
+
+ul li:before {
+  content: "\2665";
+  color: black;
+}
+h1 {
+  text-align: center;
+  text-decoration: underline;
+  color: #d05353;
+}
+.container {
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(540px, 1fr));
+  align-items: center;
+  padding-top: 80px;
+  justify-content: center;
+  gap: 2em; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2em;
+}
+.child {
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #f97068;
+  border: 2px solid black;
+}
+
+@media only screen and (max-width: 480px) {
+  /* For mobile phones: */
+  body,
+  .container,
+  h1,
+  .p,
+  ul li {
+    width: 100%;
+  }
+  .child {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(540px, 1fr));
+    align-items: center;
+    /* padding-top: 80px;
+  gap: 2em; */
+  }
+}

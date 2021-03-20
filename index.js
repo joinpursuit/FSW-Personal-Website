@@ -60,7 +60,7 @@ const displayLetters = () => {
   });
 };
 
-// create navBar //////////////////////////////////////////////////////////
+// create navBar /////////////////////////////////add if statement//////////////////
 const createNavbar = (section) => {
   const nav = document.createElement("nav");
   const ul = document.createElement("ul");

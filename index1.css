@@ -1,6 +1,9 @@
 /* is it best practice  to have separate styles sheets per page or section? */
 /* Universal styling */
 
+
+
+/***** NOT CERTAIN WHY THIS IS NOT BEING APPLIED EVEN WHEN I USE THE ID AND CLASS NAMES *****/
 body {
   color: #003566;
   font-family: Verdana, sans-serif;

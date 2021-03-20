@@ -1,3 +1,4 @@
+
 #home {
     background: url("https://i.postimg.cc/XNmY0kM0/raul-cacho-oses-r-Ws-H0jn-YSo-M-unsplash.jpg") no-repeat;
     background-size: cover;
@@ -8,15 +9,19 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 #main-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 8vh;
     color: red;
-    /* background: rgba(0, 0, 0, 0.4); */
-    background: seashell;
-    box-shadow: 2px 2px 12px rgba(0, 0, 0, .9);
+    background: rgba(0, 0, 0, 0.2);
+    /* background: seashell; */
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, .9);
     /* z-index: 1; */
     position: fixed;
     top: 0;
@@ -24,10 +29,10 @@
     right: 0; 
 }
 
-.nav-bar li:hover {
-    font-weight: bolder;
-    font-size: 20px;
-    transition: .1s ease-in;
+.bubble {
+    position: absolute;
+    z-index: -2;
+    background: yellowgreen;
 }
 
 .nav-bar {
@@ -39,6 +44,19 @@
     letter-spacing: 5px;
     /* background-color: crimson; */
     width: 60%;
+    /* transition: transform .4s ease-in; */
+    /* transform: translate(100%); */
+}
+
+.scrolling-active {
+    background: seashell;
+    box-shadow: 0px 7px 12px rgba(0, 0, 0, .9);
+}
+
+.nav-bar li:hover {
+    font-weight: bolder;
+    font-size: 20px;
+    transition: .1s ease-in;
 }
 
 .logo {
@@ -76,10 +94,13 @@
         top: 8vh;
         display: flex;
         flex-direction: column;
-        background-color: rgba(0, 0, 0, 0.4);
+        background-color: rgba(0, 0, 0, 0.7);
         font-size: 25px;
+        color: white;
+        filter: drop-shadow(0px 4px 4px);
+        text-shadow: 0px 3px 3px rgb(206, 138, 50);
         transform: translate(100%);
-        transition: transform .4s ease-in;
+        /* transition: transform .4s ease-in; */
     }
     .burger {
         display: block;
@@ -96,6 +117,7 @@
 
 .nav-active {
     transform: translate(0%);
+    /* backdrop-filter: blur(4px); */
 } 
 
 
@@ -140,6 +162,7 @@ body, #about-me {
     align-items: center;
     margin: 20%;
     box-shadow: 0px 20px 20px;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .my-info img {
@@ -166,13 +189,10 @@ body, #about-me {
     align-items: center;
 } */
 
-/* 
-#social-nav {
-    display: flex;
-    justify-content: center;
-} */
 .my-info, h1, h5, p {
     text-align: center;
+    text-shadow: 0px 2px 2px rgb(206, 138, 50);
+    color: whitesmoke;
 }
 
 .my-info h1 {
@@ -247,18 +267,27 @@ body, #about-me {
 /* } */
 
 
-
-.wrapper {
-    /* position: relative; */
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 5%;
-    padding: 5%;
-    margin-bottom: 8%;
+#projects {
+    background: url("https://i.postimg.cc/sfJ7VnSg/colton-jones-O-11-EImfz-Y-unsplash.jpg") no-repeat;
+    height: 100vh;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    background-position: bottom;
+    background-position: center;
+    background-attachment: fixed;
 }
 
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 5%;
+    /* padding: 5%; */
+    margin: 5%;
+} 
+
 .wrapper .proj img {
-    box-shadow: -20px 30px 20px
+    box-shadow: 0px 30px 20px
 }
 
 /* .wrapper .proj img:hover {
@@ -267,19 +296,16 @@ body, #about-me {
 
 .proj img {
     width: 100%;
-}
+} 
 
 
 
-#projects {
-    background-color: whitesmoke;
-}
 
 h1 {
     font-size: 30px;
 }
 
-#resume {
+/* #resume {
     background: cornflowerblue no-repeat;
     background-size: cover;
     height: 100vh;
@@ -288,4 +314,4 @@ h1 {
     background-position: center center;
     background-attachment: fixed;
 
-}
+} */

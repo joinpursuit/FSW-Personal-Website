@@ -1,8 +1,11 @@
-const navBar = () => {
-    const burger = document.querySelector(".burger");
-    const nav = document.querySelector(".nav-bar");
-    const navLinks = document.querySelectorAll(".nav-bar li");
-    const body = document.querySelector("body")
+const navBar = document.querySelector("#main-nav");
+const nav = document.querySelector(".nav-bar");
+// const body = document.querySelector("body")
+const burger = document.querySelector(".burger");
+const navLinks = document.querySelectorAll(".nav-bar li");
+
+
+const naviBar = () => {
 
     burger.addEventListener("click", (e) => {
         //Toggle the burger Nav
@@ -19,6 +22,11 @@ const navBar = () => {
         burger.classList.toggle("toggle");
     })
 
+    
 }
 
-navBar();
+naviBar();
+
+window.addEventListener("scroll", () => {
+    navBar.className = ("scrolling-active", window.scrollY > 0)  
+})

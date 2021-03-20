@@ -1,26 +1,7 @@
-@font-face {
-  font-family: Merriweather;
-  src: url("./Merriweather/Merriweather-Regular.ttf");
-  font-style: normal;
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: Merriweather;
-  src: url("./Merriweather/Merriweather-Bold.ttf");
-  font-style: normal;
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: Lato;
-  src: url("./Lato/Lato-Regular.ttf");
-}
-
 body,
 html {
   height: 100vh;
-  background-image: url(./wetransfer-935d57/Jordan\ Background\ AZUL.jpg);
+  background-image: url(../img/wetransfer-935d57/Jordan\ Background\ AZUL.jpg);
 }
 
 body {
@@ -34,9 +15,15 @@ body {
   grid-column: 2/3;
   background-color: beige;
   display: flex;
-  gap: 20px;
   justify-content: center;
   align-items: center;
+  box-shadow:
+  0 0.6px 2.2px rgba(0, 0, 0, 0.039),
+  0 1.3px 5.3px rgba(0, 0, 0, 0.057),
+  0 2.5px 10px rgba(0, 0, 0, 0.07),
+  0 4.5px 17.9px rgba(0, 0, 0, 0.083),
+  0 8.4px 33.4px rgba(0, 0, 0, 0.101),
+  0 20px 80px rgba(0, 0, 0, 0.14);
 }
 
 .mobile {
@@ -51,6 +38,14 @@ body {
   width: 100%;
   height: auto;
   border-radius: 14px;
+  box-shadow:
+  0 0.6px 2.2px rgba(0, 0, 0, 0.039),
+  0 1.3px 5.3px rgba(0, 0, 0, 0.057),
+  0 2.5px 10px rgba(0, 0, 0, 0.07),
+  0 4.5px 17.9px rgba(0, 0, 0, 0.083),
+  0 8.4px 33.4px rgba(0, 0, 0, 0.101),
+  0 20px 80px rgba(0, 0, 0, 0.14)
+;
   animation: appear2 ease-in 1s forwards;
 }
 
@@ -64,7 +59,7 @@ body {
 }
 
 .two {
-  background-color: #ecebee;
+  background-color: white;
   grid-column: 3/4;
   text-align: center;
   display: flex;
@@ -73,6 +68,13 @@ body {
   height: auto;
   justify-content: center;
   align-items: center;
+  box-shadow:
+  0 0.6px 2.2px rgba(0, 0, 0, 0.039),
+  0 1.3px 5.3px rgba(0, 0, 0, 0.057),
+  0 2.5px 10px rgba(0, 0, 0, 0.07),
+  0 4.5px 17.9px rgba(0, 0, 0, 0.083),
+  0 8.4px 33.4px rgba(0, 0, 0, 0.101),
+  0 20px 80px rgba(0, 0, 0, 0.14);
 }
 
 .fullname {
@@ -115,11 +117,19 @@ button {
   margin-top: 30px;
   width: 228px;
   animation: appear2 1s ease-in forwards;
+  box-shadow:
+  0 0.6px 2.2px rgba(0, 0, 0, 0.039),
+  0 1.3px 5.3px rgba(0, 0, 0, 0.057),
+  0 2.5px 10px rgba(0, 0, 0, 0.07),
+  0 4.5px 17.9px rgba(0, 0, 0, 0.083),
+  0 8.4px 33.4px rgba(0, 0, 0, 0.101),
+  0 20px 80px rgba(0, 0, 0, 0.14)
+;
 }
 
-button:hover {
-  background-color: white;
-  color: #ee964b;
+button:hover, button:focus {
+  background-color: #ecebee;
+  color: #43553b;
   transition: 0.3s ease-in-out;
 }
 
@@ -157,6 +167,14 @@ button:hover {
     display: block;
     width: 100%;
     height: auto;
+    box-shadow:
+  0 0.6px 2.2px rgba(0, 0, 0, 0.039),
+  0 1.3px 5.3px rgba(0, 0, 0, 0.057),
+  0 2.5px 10px rgba(0, 0, 0, 0.07),
+  0 4.5px 17.9px rgba(0, 0, 0, 0.083),
+  0 8.4px 33.4px rgba(0, 0, 0, 0.101),
+  0 20px 80px rgba(0, 0, 0, 0.14);
+    border-radius: 50%;
     animation: appear 1s ease-in forwards;
   }
 
@@ -176,16 +194,7 @@ button:hover {
   }
 
   .fullname {
-    background-color: rgba(236, 235, 238, 0.8);
     font-size: 26px;
-  }
-
-  .two h2 {
-    background-color: rgba(236, 235, 238, 0.8);
-  }
-
-  .welcome {
-    background-color: rgba(236, 235, 238, 0.8);
   }
 
   button {

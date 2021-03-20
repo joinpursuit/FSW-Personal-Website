@@ -1,127 +1,205 @@
-html {
-  background-color: #ecebee;
-}
-
-@font-face {
-    font-family: Yinmar;
-    src: url("/yinmar/Yinmar-Regular.ttf");
+body, html {
+  height: 100%;
+  padding-top: 0;
 }
 
 body {
-  background-color: beige;
-  font-family: Yinmar;
-}
-
-.container {
-  width: 85%;
-  max-width: 850px;
-  margin: 0 auto;
-}
-
-.header {
-  overflow: hidden;
-  background-color: #ecebee;
-  padding: 30px 10px;
   margin: 0;
-  position: fixed;
-  left: 0;
-  top: 0;
-  right: 0;
-}
-
-.logo-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.header a {
-  float: left;
-  color: black;
-  text-align: center;
-  padding: 12px;
-  text-decoration: none;
-  font-size: 20px;
-  line-height: 25px;
-  border-radius: 4px;
-}
-
-.header a.logo {
-  font-size: 30px;
-  font-weight: bold;
-}
-
-.header a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.header-right {
-  float: right;
-}
-
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-
-#first-section {
-  background-color: #f1f1f1;
-  padding-top: 20px;
-  padding-bottom: 120px;
-}
-
-#about-me {
-  padding-bottom: 20px;
-}
-
-#sec-section {
-  display: 200px;
-}
-.left {
-  float: left;
-  margin-right: 25px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 0.42fr 2.19fr 0.42fr;
+  grid-template-rows: 0.40fr 1fr ;
+  grid-template-areas: 
+  "space1 header space2"
+  "space1 main space2"
+  ;
+  background-image: url("../img/wetransfer-935d57/Jordan\ Background\ AZUL.jpg")
 }
 
 aside {
-  font-size: 20px;
-  padding: 12px 20px;
-  text-align: justify;
-  padding-top: 25px;
+  background-color: beige;
+  grid-area: aside;
+  font-family: Merriweather;
+  color: #0b0b0b;
 }
 
-.main {
-  padding-top: 110px;
+header {
+  background-color: white;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+  grid-area: header;
+  font-family: Merriweather;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 30px;
+  color: #0b0b0b;
+  position: fixed;
+  right: 0;
+  left: 0;
+  box-shadow:
+  0 0.6px 2.2px rgba(0, 0, 0, 0.039),
+  0 1.3px 5.3px rgba(0, 0, 0, 0.057),
+  0 2.5px 10px rgba(0, 0, 0, 0.07),
+  0 4.5px 17.9px rgba(0, 0, 0, 0.083),
+  0 8.4px 33.4px rgba(0, 0, 0, 0.101),
+  0 20px 80px rgba(0, 0, 0, 0.14);
 }
 
-#footer {
-  background-color: #f1f1f1;
-  padding-top: 10px;
-  padding-bottom: 30px;
+main {
+  background-color: white;
+  grid-area: main;
+  color: #0b0b0b;
+  display: flex;
+  align-items: center;
+  background-image: url("../img/wetransfer-935d57/Jordan\ Background\ AZUL.jpg")
 }
-#follow-me {
-  color: black;
+
+.me {
+  display: flex;
+  justify-content: center;
+}
+
+.me img{
+  width: 100%;
+  margin-top: 95px;
+  border-radius: 14px;
+  text-align: center;
+
+}
+
+.title{
+  color: #43553B;
+  font-size: 22px;
+  text-align: center;
+  padding-top: 30px;
+}
+
+
+.tel {
+  font-weight: normal;
+  font-size: 18px;
+  text-align: center;
+}
+
+#links {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* width: 50%; */
+  gap: 50px;
+  padding: 50px;
+  margin-top: 130px;
+}
+
+.link1 {
+  grid-column: 1/2;
+}
+
+.link2 {
+  grid-column: 2/3;
+}
+
+.link3 {
+  grid-column: 3/4;
+}
+
+.link4 {
+  grid-column: 4/5;
+}
+
+header a:hover {
+  background-color: #ddd;
+  color: #0b0b0b;
+  transition: 0.3s ease-in-out;
+}
+
+.logo {
+  font-size: 28px;
   font-weight: bold;
 }
-
-#email {
-  color: black;
-  padding: 15px 0 0;
+.menu ul {
+  list-style: none;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
 }
-footer a {
-  float: right;
-  color: black;
+
+.menu li {
+  padding: 0px 20px;
+}
+
+.about {
+  font-size: larger;
+  font-weight: bold;
+
+}
+
+nav a{
+  text-decoration: none;
+  color: #0b0b0b;
   text-align: center;
   padding: 12px;
-  text-decoration: none;
-  font-size: 20px;
   line-height: 25px;
   border-radius: 4px;
 }
 
-footer a:hover {
-  background-color: #ddd;
-  color: black;
+main h2 {
+  font-family: Merriweather;
+  text-align: center;
+}
+
+button {
+  background-color: #ee964b;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-family: Lato;
+  font-size: 14px;
+  height: 45px;
+  line-height: 14px;
+  box-shadow:
+  0 0.6px 2.2px rgba(0, 0, 0, 0.039),
+  0 1.3px 5.3px rgba(0, 0, 0, 0.057),
+  0 2.5px 10px rgba(0, 0, 0, 0.07),
+  0 4.5px 17.9px rgba(0, 0, 0, 0.083),
+  0 8.4px 33.4px rgba(0, 0, 0, 0.101),
+  0 20px 80px rgba(0, 0, 0, 0.14);
+  width: 100px;
+}
+
+button:hover, button:focus {
+  background-color: #ecebee;
+  color: #0b0b0b;
+  transition: 0.3s ease-in-out;
+}
+
+main div {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  background-color: beige;
+  border-radius: 14px;
+  box-shadow:
+  0 0.6px 2.2px rgba(0, 0, 0, 0.039),
+  0 1.3px 5.3px rgba(0, 0, 0, 0.057),
+  0 2.5px 10px rgba(0, 0, 0, 0.07),
+  0 4.5px 17.9px rgba(0, 0, 0, 0.083),
+  0 8.4px 33.4px rgba(0, 0, 0, 0.101),
+  0 20px 80px rgba(0, 0, 0, 0.14);
+  margin-top: 85px;
+}
+.one img {
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+}
+
+.two p{
+  font-family: Lato;
+  text-align: justify;
+  font-size: 16px;
+  line-height: 2rem;
+  padding: 12px 20px;
+  color: #6f6f6f;
 }

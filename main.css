@@ -11,38 +11,41 @@
 }
 
 #thirdContainer {
-
   width: 100%;
   height: 100%;
   /* border-style: solid; */
   color: black;
-  background-color: #434A5C;
+  background-color: #434a5c;
   text-align: center;
-  
+}
+
+#fourthContainer {
+  /* display: flex; */
+  width: 100%;
+  height: 100%;
+  border-style: solid;
+  /* border-color: red; */
+  color: black;
+  background-color: black;
+  text-align: center;
 }
 
 #projects-div {
   /* width: 95%; */
   /* height: 95%; */
   /* border-style: solid; */
-  border-color: white;
+  /* border-color: white; */
   display: flex;
   flex-wrap: wrap;
-  transition: transform .4s;
+  transition: transform 0.4s;
 }
 
-.project-screenshot:hover { 
+.project-screenshot:hover {
   transform: scale(1.2);
 }
 
 .projects {
-  
-  /* border-style: solid; */
-  /* border-color:red; */
   width: 50%;
-  /* margin: 2px; */
-
-
 }
 #profilePhoto {
   margin-left: auto;
@@ -64,55 +67,53 @@
 .project-link:visited {
   color: blue;
 }
-/* #mainSection {
-  display: none;
-} */
 
-/* #navSectionContainer {
-  display: grid;
-  grid-gap: 3px;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 50px;
-  font-family: Georgia;
-  color: black;
-  text-align: center;
-}
-
-#navSectionContainer > div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.5em;
-
-  margin: 2px;
-  background-color: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(5px);
-}
-body {
+.skills-div {
+  display: inline-block;
+  width: 30%;
+  height: auto;
+  /* border-style: solid; */
   background-color: black;
-}
-
-h1 {
-  color: black;
-}
-
-#navSectionContainer > div > a {
-  text-decoration: none;
-}
-
-#navSectionContainer > div > a:visited {
-  color: black;
-}
-
-#navSectionContainer > div > a:hover {
   color: white;
 }
-#navSectionContainer > div:hover {
-  color: white;
-}
+
+/* .skills-p {
+} */
 
 @media (max-width: 375px) {
-  #mainSection {
-    display: none;
+  .skills-div {
+    display: block;
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+    /* border-style: solid; */
+    background-color: black;
+    color: white;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 6px;
   }
-} */
+
+  .skills-div > img {
+    width: 40%;
+    height: auto;
+  }
+  #fourthContainer {
+    margin-left: 10%;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-style: solid;
+    /* border-color: red; */
+    color: black;
+    background-color:black;
+    text-align: center;
+  }
+  #profilePhoto {
+    width: 90%;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+} 

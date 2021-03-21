@@ -5,7 +5,7 @@ body{
 }
 
 #homepage{
-    background-image: url(https://media.allure.com/photos/5e46c3995993fc0009700fc4/16:9/w_2560%2Cc_limit/clouds.jpg);
+    background-image: url(assets/clouds.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     padding-top: 25px;
@@ -24,12 +24,12 @@ h1{
 
 .nav{
     position: fixed;
-    left: 70%;
+    right: 0;
     list-style-type: none;
 }
 
 .nav a{
-    color: rgb(82, 82, 82);
+    color: whitesmoke;
     font-size: 14px;
     text-decoration: none;
     font-weight: bold;
@@ -37,7 +37,7 @@ h1{
 }
 
 .nav a:visited{
-    color: black;
+    color: whitesmoke;
 }
 
 .nav a:hover, .projects a:hover{

@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device=width,">
     <link rel="stylesheet" href="main.css">
+    <script src="main.js" defer></script>
     <ul class="nav">
       <li><a href="index.html" class="link">Home</a></li>
       <li><a href="aboutMe.html" class="link">About Me</a></li>
@@ -14,20 +15,131 @@
     </ul>
     </head>
     <body>
-    <h1>About Me:</h1>
+    <h1 class="intro">About Me:</h1>
+    <div class="flip-card-position">
+      <div class="flip-card">
+       <div class="flip-card-inner">
+      <div class="flip-card-front">
     <img src="pursuit-Headshot.jpg" id="headshot2">
-    <p>My name is Carlos Hidalgo and if I were to describe my true potential and motivation in 7 seconds it would be: "Growing up in Puerto Rico, there weren't many technological opportunities so I made it my mission to bring the future of coding to them." On top of that I also enjoy photography, video games, as well as helping around my community. </p>
+    </div>
+    <div class="flip-card-back">
+      <img src="flag.jpg" id="headshot2">
+    </div>
+    </div>
+    </div>
+    </div>
+    <p class="photo-description">My name is Carlos Hidalgo and if I were to describe my true potential and motivation in 7 seconds it would be: <b>"Growing up in Puerto Rico, there weren't many technological opportunities so I made it my mission to bring the future of coding to them."</b> On top of that I also enjoy photography, video games, as well as helping around my community. </p>
     <h2>Photography Work:</h2>
-    <div class="row">
-      <div class="column">
-        <img src="cali.jpg">
-        <img src="fish.png">
-        <img src="flower1.jpg">
-        <img src="flower2.jpg">
-        <img src="hudson.jpg">
-        <img src="window.jpg">
-        <img src="underwater.jpg">
-        <img src="leaf.jpg">
-      </div>
+    <button id="hidepics" onclick="hidePhoto()">Click Me</button>
+    <ul class="photography-set">
+      <li class="photography-flex">
+          <div class="flip-card">
+           <div class="flip-card-inner">
+          <div class="flip-card-front">
+        <img src="cali.jpg" class="flex-gallery">
+        </div>
+        <div class="flip-card-back">
+          <p class="photo-description">This photo was taken on a airplane takeoff from sunny San Diego. Fun Fact this was my first time ever taking a plane alone and it was quite the nerve-wrecking experience.</p>
+        </div>
+        </div>
+        </div>
+        </li>
+        <li class="photography-flex">
+            <div class="flip-card">
+             <div class="flip-card-inner">
+            <div class="flip-card-front">
+        <img src="fish.jpg" class="flex-gallery">
+        </div>
+        <div class="flip-card-back">
+          <p class="photo-description">This photo was taken in the Hall of Fishes within UC San Diego's Aquarium. UC San Diego had this Cognitive Science program that worked with AI and the human mind which inspired me to want to study AI's in order to produce an app later on in the future.</p>
+        </div>
+        </div>
+        </div>
+        </li>
+        <li class="photography-flex">
+            <div class="flip-card">
+             <div class="flip-card-inner">
+            <div class="flip-card-front">
+        <img src="flower1.jpg" class="flex-gallery">
+        </div>
+        <div class="flip-card-back">
+          <p class="photo-description">This photo was taken at the University at Brockport. This same day I decided to read up on HTML and CSS because I wanted to create a website showcasing different flower images I took.</p>
+        </div>
+        </div>
+        </div>
+        </li>
+        <li class="photography-flex">
+            <div class="flip-card">
+             <div class="flip-card-inner">
+            <div class="flip-card-front">
+        <img src="flower2.jpg" class="flex-gallery">
+        </div>
+        <div class="flip-card-back">
+          <p class="photo-description">This photo was also taken at the University at Brockport. I took this one because I was feeling homesick and this flower reminded me of my flower garden in Puerto Rico.</p>
+        </div>
+        </div>
+        </div>
+        </li>
+        <li class="photography-flex">
+            <div class="flip-card">
+             <div class="flip-card-inner">
+            <div class="flip-card-front">
+        <img src="hudson.jpg" class="flex-gallery">
+        </div>
+        <div class="flip-card-back">
+          <p class="photo-description">This photo was taken in Brooklyn at my secret location. Whenever I feel stressed or stuck on a problem wehther its coding related or not I come here to recharge my mind since it was something I was to do alot as a kid in Puerto Rico. </p>
+        </div>
+        </div>
+        </div>
+        </li>
+        <li class="photography-flex">
+            <div class="flip-card">
+             <div class="flip-card-inner">
+            <div class="flip-card-front">
+        <img src="window.jpg" class="flex-gallery">
+        </div>
+        <div class="flip-card-back">
+          <p class="photo-description">This photo was taken from my mom's kitchen window it was a beautiful sunset as well as the day I found out I got into the Software Development Course within the program Yearup.</p>
+        </div>
+        </div>
+        </div>
+        </li>
+        <li class="photography-flex">
+            <div class="flip-card">
+             <div class="flip-card-inner">
+            <div class="flip-card-front">
+        <img src="underwater.jpg" class="flex-gallery">
+            </div>
+        <div class="flip-card-back">
+          <p class="photo-description">This photo was taken at a petstore in my neighborhood. The way that this underwater plant moved reminded me of electrical currents.</p>
+        </div>
+        </div>
+        </li>
+        <li class="photography-flex">
+            <div class="flip-card">
+             <div class="flip-card-inner">
+            <div class="flip-card-front">
+        <img src="leaf.jpg" class="flex-gallery">
+        </div>
+        <div class="flip-card-back">
+          <p class="photo-description">This photo was taken at SUNY Albany and it was right around the time that I went to attend a Hackathon with my friend who was studying there. </p>
+        </div>
+        </div>
+        </div>
+        </li>
+        <li class="photography-flex">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+           <div class="flip-card-front">
+             <img src="sunset.jpg" class="flex-gallery">
+             </div>
+        <div class="flip-card-back">
+          <p class="photo-description">This photo was taken at a beach in Sunny San Diego. This sunset is one of a kind and you will only get to experience this in California as the sun sets behind the sea.</p>
+        </div>
+        </div>
+        </div>
+        </li>
+        </ul>
+      </ul>
     </body>
     </html>

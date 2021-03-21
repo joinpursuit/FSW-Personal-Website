@@ -6,38 +6,66 @@ html{
     -moz-animation: GradientChanger 30s ease infinite;
     animation: GradientChanger 30s ease infinite;
 }
-#intro{
+.intro{
     text-align: center;
+}
+#index{
+    text-align: center;
+    font-size: 20px;
+}
+#badbunny-logo{
+    height: 200px;
+    width: 200px;
+    display: flex;
+    align-content: flex-end;
+}
+#bunny-logo{
+    display: flex;
+    justify-content: center;
 }
 #headshot1{
     height: 300px;
     width: 300px;
-    padding-left: 300px;
 }
 #headshot2{
     height: 300px;
     width: 300px;
 }
-.row {
+.contact-img{
+    height: 200px;
+    width: 300px;
+}
+.photography-set{
     display: flex;
     flex-wrap: wrap;
-    padding: 0 4px;
-  }
-  
-  /* Create two equal columns that sits next to each other */
-  .column {
-    flex: 50%;
-    padding: 0 4px;
-  }
-  
-  .column img {
-    margin-top: 8px;
-    vertical-align: middle;
-  }
+    flex-direction: row;
+    list-style: none;
+}
+.photography-flex{
+    height: 40vh;
+    flex-grow: 1;
+}
+.photo-description{
+    color: black;
+}
+.flex-gallery{
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    vertical-align: bottom;
+}
+.education-card-position{
+    display: flex;
+    justify-content: space-evenly;
+}
+.flip-card-position{
+    display: flex;
+    justify-content: center;
+}
 .flip-card {
     background-color: transparent;
     width: 300px;
-    height: 200px;
+    height: 300px;
     border: 1px solid #f1f1f1;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
   }
@@ -74,7 +102,7 @@ html{
   
   /* Style the back side */
   .flip-card-back {
-    background-color: dodgerblue;
+    background-color: lightblue;
     color: white;
     transform: rotateY(180deg);
   }
@@ -98,7 +126,7 @@ html{
     background-color: grey;
   }
   .link {
-    display:inline-block;
+    display:flex;
     font-family: 'Times New Roman', Times, serif;
     color: black;
     font-size: 30;

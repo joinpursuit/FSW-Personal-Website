@@ -8,3 +8,13 @@ document.onreadystatechange = function() {
   },4000);
     }
   }
+
+  const hidePhoto = () =>{
+      const ul = document.getElementsByClassName("photography-set")
+      const li = document.getElementsByClassName("photography-flex")
+      if(ul.style.display === "block"){
+          ul.style.display = "none"
+      }else{
+          ul.style.display = "block"
+      }
+  }

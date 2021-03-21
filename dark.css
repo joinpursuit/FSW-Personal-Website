@@ -23,7 +23,7 @@ header {
   grid-row: 1 / 2;
   display: flex;
   flex-direction: column;
-  border-bottom: 1px black dashed;
+  border-bottom: 1px white dashed;
 }
  h1, h2 {
    font-size: 20px;
@@ -101,7 +101,7 @@ nav {
 footer {
   grid-row: 3 / 4;
   grid-column: 2 / 4;
-  border-top: 1px black dashed;
+  border-top: 1px white dashed;
   text-align: center;
 }
 
@@ -115,18 +115,19 @@ footer {
 /* media query 1 */
 @media screen and (max-device-width: 480px) {
   body {
-  background-color: lightgray;
+  background-color: gray;
   display: grid;
   grid-template-columns: 1fr 2fr 2fr 1fr;
   grid-template-rows: auto auto auto;
   gap: 1rem 1rem;
+  color: white;
   }
   header {
     grid-column: 2 / 4;
     grid-row: 1 / 2;
     display: flex;
     flex-direction: column;
-    border-bottom: 1px black dashed;
+    border-bottom: 1px white dashed;
   }
   #selfie {
     max-width: 100%;
@@ -159,7 +160,7 @@ footer {
 footer {
   grid-row: 3 / 4;
   grid-column: 2 / 4;
-  border-top: 1px black dashed;
+  border-top: 1px white dashed;
   text-align: center;
 }
 h1, h2 {
@@ -175,11 +176,12 @@ h1, h2 {
 /* media query 2 */
 @media screen and (min-device-width: 481px) and (max-device-width: 800px) {
   body {
-    background-color: lightgray;
+    background-color: gray;
     display: grid;
     grid-template-columns: 1fr 2fr 2fr 1fr;
     grid-template-rows: auto auto auto;
     gap: 1rem 1rem;
+    color: white;
     }
     
     header {
@@ -187,7 +189,7 @@ h1, h2 {
       grid-row: 1 / 2;
       display: flex;
       flex-direction: column;
-      border-bottom: 1px black dashed;
+      border-bottom: 1px white dashed;
     }
     #selfie {
       max-width: 100%;
@@ -223,7 +225,7 @@ h1, h2 {
   footer {
     grid-row: 3 / 4;
     grid-column: 2 / 4;
-    border-top: 1px black dashed;
+    border-top: 1px white dashed;
     text-align: center;
   }
   h1, h2 {

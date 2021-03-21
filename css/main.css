@@ -116,6 +116,7 @@ nav a{
 main h2 {
   font-family: Merriweather;
   text-align: center;
+  color: var(--color-text);
 }
 
 
@@ -164,7 +165,7 @@ strong {
 .projects {
   display: flex;
   justify-content: space-evenly;
-  margin-top: 0px;
+  align-items: center;
   padding: 70px 0;
 }
 
@@ -172,6 +173,15 @@ strong {
   width: 100%;
   height: auto;
   max-width: 400px;
+}
+
+.projects p {
+  font-family: Lato;
+  text-align: center;
+  font-size: 16px;
+  line-height: 2rem;
+  padding: 12px 20px;
+  color: var(--color-text);
 }
 
 
@@ -316,6 +326,35 @@ main.transition *:after {
   display: none;
 }
 
+button {
+  background-color: #ee964b;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  font-family: Lato;
+  font-size: 14px;
+  height: 45px;
+  line-height: 14px;
+  margin-left: 80px;
+  width: 228px;
+  animation: appear2 1s ease-in forwards;
+  box-shadow:
+  0 0.6px 2.2px rgba(0, 0, 0, 0.039),
+  0 1.3px 5.3px rgba(0, 0, 0, 0.057),
+  0 2.5px 10px rgba(0, 0, 0, 0.07),
+  0 4.5px 17.9px rgba(0, 0, 0, 0.083),
+  0 8.4px 33.4px rgba(0, 0, 0, 0.101),
+  0 20px 80px rgba(0, 0, 0, 0.14)
+;
+}
+
+button:hover, button:focus {
+  background-color: #ecebee;
+  color: #43553b;
+  transition: 0.3s ease-in-out;
+}
+
 @media screen and (max-width: 1340px){
   .fa-bars {
     display: none;
@@ -395,10 +434,6 @@ main.transition *:after {
   }
 
   .menu ul {
-    display: none;
-  }
-
-  button {
     display: none;
   }
 

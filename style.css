@@ -113,6 +113,9 @@ textarea{
     display: block;
     padding: 0;
 }
+#resume-pdf html body {
+    background: chartreuse;
+}
 
 @media screen and (orientation: landscape) {
     .image-container {

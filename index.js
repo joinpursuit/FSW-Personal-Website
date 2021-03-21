@@ -7,6 +7,8 @@ const smallMenu = () => {
     }
 }
 
+const pdf
+
 // var slideIndex = 0;
 // showSlides();
 

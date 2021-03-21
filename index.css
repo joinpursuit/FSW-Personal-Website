@@ -176,6 +176,113 @@ body {
     grid-column: 5/9;
     grid-row: 10;
   }
+
+  /* Style Contact Section */
+  /* #contact-section {
+      grid-column: 4/10;
+      grid-row: 2/11;
+      display: flex;
+      flex-direction: column;
+  } */
+
+  
+  #contact-section {
+      grid-column: 1/13;
+      grid-row: 1/12;
+      
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: repeat(11, 1fr);
+      align-items: start;
+      justify-items: center;
+    }
+    
+    #linkedin, #github, #email {
+        grid-column:5/9;
+    }
+  
+    
+  #contact-title {
+    font-size: 32px;
+    font-weight: bold;
+    grid-column: 4/10;
+    grid-row: 2;
+  }
+
+  #linkedin {
+    grid-row: 4;
+  }
+
+  #github {
+    grid-row: 6;
+  }
+
+  #email {
+    grid-row: 8;
+  }
+
+  #contact-msg {
+    grid-column: 4/10;
+    grid-row: 10;
+    font-size: 20px;
+  }
+
+  #linkedin, #github, #email {
+      font-size: 48px;
+  }
+
+  .icon-links:hover {
+    color: #ffc300;
+    text-shadow: 6px 6px 3px #003566;
+  }
+  /* style footer */
+  footer {
+    grid-column: 1/13;
+    grid-row: 12/13;
+  }
+
+  #footer-rec-grey {
+    background-color: var(--myGrey);
+    height: 3vh;
+  }
+
+  #footer-rec-navy {
+    background-color: var(--myBlue);
+    height: 1vh;
+  }
+
+  footer > ul {
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--myYellow);
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  #footer-links {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #back-to-top {
+    order: -1;
+    padding: 5px 0;
+  }
+
+  #back-to-top:hover {
+  transform: scale(2);
+}
+
+  #copyright {
+    order: 1;
+    padding-top: 2px;
+  }
+
+  #graditude {
+    order: 0;
+  }
 }
 
 @media screen and (min-width: 620px) {
@@ -191,15 +298,16 @@ body {
     display: block;
     grid-column: 1/5;
     grid-row: 1;
+    /* justify-content: space-between; */
   }
 
   nav > ul {
-    display: block;
+    /* display: flex; */
     font-size: 24px;
   }
 
   #name {
-      font-size: 48px;
+    font-size: 48px;
   }
 
   /* About Me Section */
@@ -242,12 +350,65 @@ body {
     grid-column: 5/9;
     grid-row: 10;
   }
+
+ /* Style Contact Section */
+  /* #contact-section {
+    grid-column: 1/13;
+    grid-row: 1/12;
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(11, 1fr);
+    align-items: end;
+  }
+   */
+  #contact-title {
+    grid-column: 6/8;
+    grid-row: 3;
+    justify-self: center;
+    font-size: 32px;
+    font-weight: bold;
+  }
+  
+  #linkedin {
+    grid-column: 8/10;
+    grid-row: 5/7;
+    place-self: center;
+    font-size: 84px;
+  }
+  
+  #github {
+    grid-column: 4/6;
+    grid-row: 5/7;
+    place-self: center;
+    font-size: 84px;
+  }
+  
+  #email {
+    grid-column: 6/8;
+    grid-row: 5/7;
+    place-self: center;
+    font-size: 92px;
+  }
+  
+  #contact-msg {
+    grid-column: 5/9;
+    grid-row: 9/10;
+    justify-self: center;
+    align-self: start;
+    font-size: 20px;
+  }
+
+  /* Style Contact Section */
+  #contact-section > nav {
+   display: none;
+  }
 }
 
 @media screen and (min-width: 670px) {
- /* About Me Section */
+  /* About Me Section */
 
- #about-title {
+  #about-title {
     grid-column: 2/7;
     grid-row: 1;
     justify-self: center;
@@ -278,26 +439,19 @@ body {
   #about-summary:hover {
     transform: scale(1.1);
   }
-
-  /* #project-btn {
-    justify-self: center;
-    grid-column: 5/9;
-    grid-row: 12;
-  } */
 }
 
-
-
 @media screen and (min-width: 1200px) {
-  /* nav {
-      display: block;
-    } */
+  nav {
+    justify-content: space-between;
+    }
 
   nav > ul {
     font-size: 24px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    border: black solid 1px;
   }
 
   #name {
@@ -375,33 +529,32 @@ body {
     margin-top: 10%;
   }
 
-/* About Me Section */
+  /* About Me Section */
   #about-title {
     grid-column: 3/6;
     grid-row: 3/6;
     justify-self: center;
   }
-  
+
   #portrait {
     grid-column: 3/6;
     grid-row: 4/6;
   }
-  
+
   #about-summary {
     grid-column: 7/10;
-    grid-row:3/8;
+    grid-row: 3/8;
     line-height: 26px;
     text-align: center;
     z-index: 2;
   }
-  
+
   #about-rec-yellow {
     grid-column: 8/11;
     grid-row: 6/10;
   }
-  
+
   #about-summary:hover {
     transform: scale(1.25);
   }
-
-}
+} 

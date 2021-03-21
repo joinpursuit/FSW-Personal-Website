@@ -307,7 +307,7 @@ footer {
   }
 
   /* contact section */
-  #contact-title {
+  /* #contact-title {
     font-size: 24px;
   }
 
@@ -325,10 +325,10 @@ footer {
 
   #contact-msg {
     order: 4;
-  }
+  } */
 
   /* footer section */
-  footer {
+  /* footer {
     text-align: center;
   }
 
@@ -350,7 +350,7 @@ footer {
   #graditude {
     order: 0;
   }
-}
+} */
 
 @media screen and (min-width: 620px) {
   /* universal styling ////////////////////////////////////////////////////////620px//////////////////////*/

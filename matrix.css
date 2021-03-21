@@ -443,16 +443,16 @@ align-items: center;
     
   
  button#rain{
-      /* grid-row: 14/19; */
+ 
   margin-left: 5%;
-      font-weight: 90px;
+  
       font-family: 'DotGothic16', sans-serif;
  
       margin-top: 133px;
       text-shadow: honeydew;
-      font-size: 27px;
+      font-size: 11px;
       position: fixed;
-      width:200px;
+      width:100px;
   } 
   
   
@@ -658,12 +658,12 @@ scroll-behavior: smooth;
 @media only screen and (min-width: 414px) {
   body{background-color:black;
   border: solid purple 3px;
-  
+  width: 414px;
   
   }
 
   html{
-    width: auto;
+    width: 414px;
     padding-right: 0%;
   }
 #navi{
@@ -672,7 +672,7 @@ scroll-behavior: smooth;
   align-items: center;
   text-align: center;
   justify-content: center;
-  width: 100%;
+  width: 414px;
   align-content: flex-start;
   height: 35%;
 }
@@ -682,6 +682,7 @@ scroll-behavior: smooth;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 414px;
 }
 #name-big{
   display: none;
@@ -701,8 +702,10 @@ scroll-behavior: smooth;
 }
 
 button#rain{
-  width: 78px;
-  font-size: 22px;
+  width: 58px;
+  font-size: 12px;
+  margin-top:3%;
+  height: 35px;
 }
 #pursuit-big{
   margin-bottom: 1px;
@@ -714,30 +717,44 @@ button#rain{
 }
 
 #divTech,#leadershipTech,#industryTech{
-  font-size: 23px;
+   font-size: 17px;
+   padding-right: 33px;
   background-color: white;
   color: black;
-}
+display: flex;
+flex-direction: column;
+  text-align: center;  
+  overflow-x: scroll;
 
+ 
+ 
+ 
+}
+/* 
+#leadershipTech{
+  padding-right: 70px;
+} */
 #divTech:hover{
   width: 5300px;
-  height: 400px;
+  height: 700px;
   background-color: lightgreen;
   color:black;
 }
 #industryTech:hover{
   width: 5300px;
-  height: 400px;
+  height: 700px;
   background-color: lightgreen;
   color:black;
 }
 #leadershipTech:hover{
   width: 5300px;
-  height: 400px;
+  height: 700px;
   background-color: lightgreen;
   color:black;
 }
-
+#technical{
+  align-self: center;
+}
 
 #pic{
  display: flex;
@@ -762,14 +779,19 @@ button#rain{
 }
 #snow-pic{
   align-self: center;
-  width: auto;
+  width: 380px;
 
 }
 #snow-video{
-  padding-right: 32px;
+  display: flex;
+  flex-direction: column;
+ 
+  width: 414px;
 }
 
-
+#grow-box{
+  width: 414px;
+}
 
 
 }

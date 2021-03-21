@@ -1,0 +1,442 @@
+body{
+    background-color:red
+}
+h1{
+    font-family: 'Engravers Old English';
+    text-align: center;
+    font-size: 30px;
+}
+.links{
+    display: flex;
+    justify-content: flex-end;
+}
+.home-bar {
+    display: flex;
+    border: 3px solid grey;
+    text-shadow: 0 0 5px rgb(100, 84, 84);
+    height: 35px;
+    justify-content: space-evenly;
+    align-items:center;
+    background-color:  rgba(0, 255, 255, 0.503);
+}
+#bullet{
+    border: 2px solid black;
+    border-radius: 20%;
+    font-style: oblique;
+    font-size: 80%;
+    margin-right: 9%;
+    opacity: 1;
+    background-color: white;
+    transform: scale(1.5) ;
+    transition: all 1.5s;
+    color: rgb(4, 0, 255);
+    align-items: center;
+}
+#bullet:hover{
+    transition: all 1.2s;
+    transform: scale(2.2);
+    color: black;
+}
+.presentation{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+}
+#img{
+    display: grid;
+    grid-column:1/ 4 ;
+    grid-row: 1 / 4;
+    margin-top: 15px;
+    margin-left: 25px;
+    border-radius: 50%;
+    border: 3px solid black;
+    width: 100%; 
+}
+h2{
+    grid-column:5/ 10;
+    grid-row: 1/2;
+    text-align: center;
+    font-size: 35px;
+    margin-top:  90px;
+}
+p{
+    grid-column:5/ 11 ;
+    grid-row: 2/3;
+    word-wrap: break-word;
+    font-size: 20px;
+}
+.pdf{
+    font-size: 27px;
+    text-align: center;
+}
+#cambio{
+    background-image: url(images/gif/a2b20cad9728d2ea8fb07e1e0a8b00c8.gif) ;
+}
+#bullet-skills{
+    font-style: oblique;
+    font-size: 80%;
+    margin-right: 20%;
+    opacity: 1;
+    transform: scale(1.8) ;
+    color: rgb(4, 0, 255);
+    align-items: center;
+}
+#bullet-skills:hover{
+    transition: all 1.2s;
+    transform: scale(2.2);
+    color: black;
+}
+#skills{
+    padding: 15px;
+    height: 20px;
+    margin-left: 45px;
+    color: aliceblue;
+    font-size: 40px;
+    font-style:oblique;
+}
+.options{
+    color: white;
+    font-size: 20px;
+    margin-left: 45px;
+}
+#card{
+    display: grid;
+    margin-top: 30px;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+.cardAll{
+    border-radius: 10%;
+    grid-column: 1 / 4;
+    grid-row: 1 / 4;
+    margin-left: 10%;
+    padding: 10p
+  
+}
+#camPro{
+    background-image: url(images/gif/204314074cdff584f32a03e5aac3ebb9.gif)
+   
+}
+.projects{
+    margin-top: 20px;
+     margin-left: 40px;
+     margin-right: 40px;
+    display: grid;
+    font-size: 25px;
+    color: aliceblue;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    gap: 10px;
+    padding: 30px;
+    text-align: center;
+    align-items: center;
+}
+#inicio{
+    color: white;
+    font-size: 30px;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    text-align: center;
+}
+#inicio:hover{
+    transition: all 0.7s;
+    transform: scale(2.0) ;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    text-align: center;
+    color: rgba(37, 29, 29, 0.767);
+    
+
+}
+#present{
+    color: black;
+    font-style: oblique;
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+#present:hover{
+    color: white;
+    transform: scale(1.4);
+    transition: all 1.0s;
+
+}
+#present1{
+    color: black;
+    font-style: oblique;
+    grid-column: 1/2;
+    grid-row: 3/4;
+    text-align: center;
+    padding: 10px;
+}
+#more{
+    border: 1px solid black;
+    background-color: rgba(137, 43, 226, 0.712);
+    color: black;
+    font-size: 15px;
+    grid-column: 1/2;
+    grid-row: 3/4;
+    width: 15%;
+    margin-left: 80%;
+    margin-top: 50%;
+}
+#more:hover{
+    transition: all 1.5s;
+    transform: scale(1.5);
+}
+#puerto{
+    height: 250px;
+    width: 100%;
+    border-radius: 10px;
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+#tw-1{
+    height: 100%;
+    width: 100%;
+    grid-column: 1/2;
+    grid-row: 4/6;
+    border-radius: 15%;
+    opacity: 0.7;
+}
+#tw-1:hover{
+    opacity: 1;
+    transform: scale(0.7);
+    grid-column: 1/3;
+    border-radius: 5%;  
+}
+#tw-2{
+    height:100%;
+    width: 100%;
+    grid-column: 2/3;
+    grid-row: 4/6;
+    border-radius: 15%;
+    opacity: 0.7;
+}
+#tw-2:hover{
+    opacity: 1;
+    transform: scale(0.7);
+    grid-column: 1/3;
+    border-radius: 10%;  
+    
+}
+#present3{
+    color: black;
+    font-style: oblique;
+    grid-column: 1/3;
+    grid-row: 6/7;
+}
+#present3:hover{
+    color: white;
+    transform: scale(1.4);
+    transition: all 1.0s;
+
+}
+#present4{
+    color: black;
+    font-style: oblique;
+    grid-column: 1/2;
+    grid-row: 7/8;
+    text-align: center;
+    padding: 10px;
+}
+#more1{
+    border: 1px solid black;
+    background-color: rgba(137, 43, 226, 0.712);
+    color: black;
+    font-size: 15px;
+    grid-column: 1/2;
+    grid-row: 7/8;
+    width: 15%;
+    margin-left: 80%;
+    margin-top: 50%;
+}
+#more1:hover{
+    transition: all 1.5s;
+    transform: scale(1.5);
+}
+#puerto1{
+    height: 250px;
+    width: 100%;
+    border-radius: 10px;
+    grid-column: 2/3;
+    grid-row: 7/8;
+}
+#sn-1{
+    height: 100%;
+    width: 100%;
+    grid-column: 1/2;
+    grid-row: 8/10;
+    border-radius: 15%;
+    opacity: 0.6;
+}
+#sn-1:hover{
+    opacity: 1;
+    transform: scale(0.7);
+    grid-column: 1/3;
+    border-radius: 5%; 
+    
+}
+#sn-2{
+    height: 100%;
+    width: 100%;
+    grid-column: 2/3;
+    grid-row: 8/10;
+    border-radius: 15%;
+    opacity: 0.6;
+}
+#sn-2:hover{
+    opacity: 1;
+    transform: scale(0.7);
+    grid-column: 1/3;
+    border-radius: 10%;  
+}
+#child-bullet{
+    font-style: oblique;
+    font-size: 75%;
+    margin-right: 20%;
+    opacity: 1;
+    transform: scale(1.8) ;
+    color: rgb(4, 0, 255);
+    align-items: center;
+}
+#child-bullet:hover{
+    transition: all 1.2s;
+    transform: scale(2.2);
+    color: black;
+}
+#form1{
+    margin-left: 30px;
+    text-align: center;
+    font-size: 100%;
+    border-radius: 10px;
+}
+#form2{
+    margin-top: 3px;
+    margin-left: 88px;
+    text-align: center;
+    font-size: 100%;
+    border-radius: 10px;
+}
+#form3{
+    margin-top: 7px;
+    margin-left: 88px;
+    font-size: 100%;
+    text-align: center;
+    border-radius: 10px;
+}
+#point{
+    grid-column: 1/2;
+    grid-row: 1/6;
+}
+#form4{
+    height: 210px;
+    margin-right: 50px;
+    margin-top: 3px;
+    border-radius: 7px;
+}
+#form5{
+    border-radius: 10%;
+    border: 1px solid rgb(26, 26, 31);
+    height: 25px;
+    margin-right: 50px;
+}
+#form6{
+    text-align: end;
+}
+#Hpage{
+    height: 30px; 
+    margin-right: 80px;
+}
+.Hpage4{
+    height: 30px; 
+}
+.one{
+    height: 30px;
+    border-radius: 50%;
+}
+.two{
+    height: 30px;
+    border-radius: 50%;  
+}
+.tree{
+    height: 30px;
+    border-radius: 50%;
+}
+#tree{
+    background-color: rgb(0, 255, 60);
+    border-radius: 50%;
+    height: 1.8em;
+}
+#resume{
+    padding: 15px;
+   text-align: justify;
+   font-size: 20px;
+
+}
+#resume:hover{
+    font-style: oblique;
+    font-family: 'Optima Italic';
+    font-size: 30px;
+    transition: all 2.1s;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+#email{
+    display:grid;
+    justify-content: end;
+}
+#last{
+    display: grid;  
+    gap: 5px;
+    padding: 30px;
+    margin-top: 25px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+}
+#norm{
+
+    grid-column: 2/3;
+    grid-row: 2/ 10;
+   padding: 10px;
+}
+#con-bullet{
+    font-size: 20px;
+    
+}
+#con-bullet:hover{
+    transition: all 1.3s;
+    color: black;
+    font-size: 28px;
+    font-style: oblique;
+}
+#fellow:hover{
+    color: white;
+
+}
+
+@media screen and(max-width:800px){
+    body{
+        width: 100%;
+        min-width: 100px;
+        max-width: 150px;
+    }
+    
+    #cambio{
+        width: 100%;
+        min-width: 200px;
+        max-width: 300px;
+    }
+    #camPro{
+        width: 100%;
+        min-width: 200px;
+        max-width: 300px;
+    }
+    #pro{
+        width: 100%;
+        min-width: 200px;
+        max-width: 300px;
+    }
+    
+   
+}

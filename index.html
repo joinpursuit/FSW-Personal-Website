@@ -6,7 +6,9 @@
     <title>Adam Tahiri Website</title>
     <link rel="stylesheet" href="reset.css" >
     <link rel="stylesheet" href="myWebsite.css" >
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <!-- <script src="https://kit.fontawesome.com/393d08881d.js"></script> -->
     <script src="myWebsite.js" defer ></script>
 </head>
 <body>
@@ -30,7 +32,8 @@
         </nav>
     </main>
 
-    <main id="about-me">
+    <main class="about-me">
+            <h1 class="about-header">About Me</h1>
             <section class="my-info">
                 <img class="avatar" src="https://i.postimg.cc/XqvP0LMh/IMG-2607.jpg" alt="My-Photo">
                 <h1>Hello! I'm Adam</h1>
@@ -40,15 +43,15 @@
                     <!-- <li><a href="https://www.facebook.com/kobe.revis.island24/" target="_blank"> <i class="fa fa-facebook-square"></i></a></li> -->
                     <!-- <li><a href="https://twitter.com/adam_tahiri24" target="_blank"><i class="fa fa-twitter"></i></a></li> -->
                     <!-- <li><a href="https://www.instagram.com/atahiri24/" target="_blank"><i class="fa fa-instagram"></i></a></li> -->
-                    <li><a href="https://github.com/AdamTahiri" target="_blank"> <i class="fa fa-github"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/adam-tahiri-aa8092200/" target="_blank"> <i class="fa fa-linkedin-square"></i></a></li>
-                    <li><a href="mailto:adamtahiri@pursuit.org"></a><i class="fa fa-envelope-o"></i></a></li>
+                    <li><a href="https://github.com/AdamTahiri" target="_blank"> <i class="fab fa-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/adam-tahiri-aa8092200/" target="_blank"> <i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="mailto:adamtahiri@pursuit.org"></a><i class="far fa-envelope"></i></a></li>
                 </ul>
             </section>
     </main>
         
     <main id="projects">
-            <h1>Projects</h1>
+            <h1 class="proj-header">Projects</h1>
         <div class="wrapper">
             <div class="proj proj1"><img src="https://i.postimg.cc/qqmxQDd1/Screen-Shot-2021-03-17-at-6-49-03-PM.png"></div>
             <!-- <h3>Snowman Project</h3> -->
@@ -59,9 +62,21 @@
         </div>
     </main>
 
-    <!-- <section id="resume">
-        <h1>Resume</h1>
-    </section> -->
+    <main class="skills">
+        <h1 class=skills-header>Skills</h1>
+        <section class="skills-icons">
+            <ul class="skills-list">
+                <li><i class="fab fa-js-square"></i></li>
+                <li><i class="fab fa-react"></i></li>
+                <li><i class="fab fa-node"></i></li>
+                <li><i class="fab fa-html5"></i></li>
+                <li><i class="fab fa-css3-alt"></i></li>
+                <li><i class="fab fa-git-square"></i></li>
+                <!-- <li><i class="fab fa-github-square"></i></li> -->
+            </ul>
+        </section>
+
+    </main>
 
 </body>
 </html>

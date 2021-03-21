@@ -23,10 +23,10 @@ const naviBar = () => {
     })
 
     
+    
 }
 
 naviBar();
-
 
 window.addEventListener("scroll", () => {
    if (window.scrollY > 0) {

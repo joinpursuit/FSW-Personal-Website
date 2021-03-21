@@ -30,8 +30,13 @@ clickHereAdventure.addEventListener("click", () => {
  })
 
 
-//  function send() {
-//   setTimeout(function() {
-//     window.open("mailto:" + document.getElementById('email').value + "?subject=" + document.getElementById('subject').value + "&body=" + document.getElementById('message').value);
-//   }, 320);
-// }
+//  button.addEventListener("click", () => {
+//    setTimeout( () => {
+//      window.open("mailto:" + document.getElementById('email').value + "?subject=" + document.getElementById('subject').value + "&body=" + document.getElementById('message').value);
+//    }, 320);
+//  }) 
+function send() {
+  setTimeout(function() {
+    window.open("mailto:" + document.getElementById('email').value + "?subject=" + document.getElementById('subject').value + "&body=" + document.getElementById('message').value);
+  }, 320);
+}

@@ -34,7 +34,7 @@ header {
 	width: 100%;
 	margin: auto;
 	/* default is 16px so # X 16   */
-	font-size: .9rem;
+	font-size: 0.9rem;
 }
 
 #my-info {
@@ -66,18 +66,23 @@ header {
 
 h1,
 h5,
- #name-title{
+#name-title {
 	color: #73869b;
 }
 
 #name-title h3 {
 	/* font-size: 30px; */
 	font-weight: bold;
-	background: linear-gradient(45deg, var(--boldAccent), var(--darkAccent), var(--boldAccent));
+	background: linear-gradient(
+		45deg,
+		var(--boldAccent),
+		var(--darkAccent),
+		var(--boldAccent)
+	);
 	background-clip: text;
 	color: transparent;
 	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;	
+	-webkit-text-fill-color: transparent;
 }
 
 /* NAV BAR */
@@ -136,32 +141,40 @@ section {
 }
 
 /* iPad Pro */
-@media screen and (max-width: 1024px ) {
-
+@media screen and (max-width: 1024px) {
 }
 
 /* iPhone 6/7/8 Plus */
-@media screen and (max-width: 414px ) {
-body {
-	display: grid;
-	flex-direction: column;
+@media screen and (max-width: 414px) {
+	nav {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.nav-links {
+		display: none;
+	}
+
+	section {
+		display: grid;
+		flex-direction: column;
+	}
+	.about-me {
+		height: fit-content;
+	}
+
+	.skills-card {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: fit-content;
+		margin: 10px 0;
+		padding: 10px 10px;
+		/* max-width: ; */
+	}
 }
- 
-header {
-	
-}
-}
-
-
-
-
-
-
-
-
-
-
-
 
 /* ***---->  A B O U T   <---*** */
 #about {

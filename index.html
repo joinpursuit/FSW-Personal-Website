@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<title>Coreen Cooper</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./reset.css">
+<script src="https://kit.fontawesome.com/2a80938f62.js" crossorigin="anonymous"></script>
+<script src="./index.js" defer></script>
+<link rel="stylesheet" href="./index.css">
+
+<body>
+
+    <section class="grid" id="home-section">
+        <header id="name"></header>
+        <p id="home-rec-navy" class="rectangle">Fullstack Engineer</p>
+        <div id="home-rec-grey" class="rectangle"></div> <!-- empty div just for coloring - should this be a p tag? -->
+        <div id="home-rec-yellow" class="rectangle"></div>
+        <button id="about-btn" class="btn" type="button">About me</button>
+    </section>
+
+    <section class="grid" id="about-section">
+        <img id="portrait" src="./coreen.jpg" alt="Coreen Cooper">
+        <p class="rectangle" id="about-summary">Client-focused, community-minded software developer who is with a
+            passion for developing applications to improve user accessibility. Outside of coding, I am active in my
+            community in
+            youth and young adult development. My love for traveling allows me to appreciate the differences in humanity
+            and how I can add value to my community.</p>
+        <p class="rectangle" id="about-rec-yellow"></p>
+        <button class="btn" id="projects-btn" type="button">Projects</button>
+    </section>
+
+    <section class="grid" id="projects-section">
+
+        <section id="snowman-section">
+            <h2 id="snowman-header"><a class="project-repo-link" href="https://github.com/CoreenCooper/Snowman-Game"
+                    target="_blank">Snowman Game</a></h2>
+            <img id="snowman-gif" class="project-block project-gif" src="./snowman.gif" alt="snowman-game">
+            <p id="snowman-summary" class="project-block project-summary">A text-based word guessing game that allows
+                users to guess one letter at a time. Each mystery letter is represented by a dash until the user guesses
+                correctly.</p>
+        </section>
+
+        <section id="emoji-section">
+            <h2 id="emoji-header"><a class="project-repo-link" href="https://github.com/CoreenCooper/emojiStoryApp"
+                    target="_blank">Emoji Story App</a></h2><!-- should my link be a button? -->
+            <img id="emoji-gif" class="project-block project-gif" src="./emojiStory.gif" alt="emoji-story-app">
+            <p id="emoji--summary" class="project-block project-summary">A web app that allows users to select randomly
+                generated emojis, submit a story about the emojis, and see them displayed in the browswer.</p>
+        </section>
+
+        <button class="btn" id="contact-btn" type="button">Contact me</button>
+    </section>
+
+    <section class="grid" id="contact-footer-section">
+        <section id="contact-section">
+            <h2 id="contact-title">Get in touch</h2>
+            <a id="linkedin" class="icons icon-links" href="https://www.linkedin.com/in/coreenmcooper/"
+                target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a id="github" class="icons icon-links" href="https://github.com/CoreenCooper" target="_blank"><i
+                    class="fab fa-github-square"></i></a>
+            <a id="email" class="icons icon-links" href="mailto:coreencooper@pursuit.org" target="_blank"><i
+                    class="fas fa-envelope"></i></a>
+            <p id="contact-msg">Feel free to contact me</p>
+        </section>
+
+        <footer>
+            <div id="footer-rec-grey" class="forectangle"></div>
+            <div id="footer-rec-navy" class="forectangle"></div>
+            <ul id="footer-links">
+                <li id="copyright">&#169; 2021 Coreen Cooper</li>
+                <li id="back-to-top" class="icons"><a href="#home-section"><i class="fas fa-angle-double-up"></i></a>
+                </li>
+                <li id="graditude">Thank you for visiting!</li>
+            </ul>
+        </footer>
+    </section>
+
+</body>
+
+</html>

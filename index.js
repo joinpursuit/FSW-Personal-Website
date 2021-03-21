@@ -1,17 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    let frontendButton = document.querySelector('#front')
-    let backendButton = document.querySelector('#back')
+    let  = document.querySelector("#btn")
+    
 
-    frontendButton.addEventListener("click", event => {
-        event.preventDefault()
+    button.addEventListener("click", event => {
+        event.preventDefault() 
         
     })
-
-    backendButton.addEventListener("click", event => {
-        event.preventDefault()
-        
-    })
-
 
 })

@@ -121,6 +121,7 @@ align-items: center;
     font-family: 'Audiowide';font-size: 27px;
     padding-right: 10%;
     padding-left: 10%;
+    overflow-x: scroll;
   }
   
   #hamburger-menu:hover{
@@ -289,6 +290,8 @@ align-items: center;
       text-align: center;
       position: auto;
       z-index: 3;
+  
+  
       
   }
   #pic2{
@@ -572,15 +575,9 @@ color:white;
   color:lawngreen;
 }
 
-
-
-
- 
-
-
-
-
-
+ #title-big{
+   display: none;
+ }
 
 #divTech,#industryTech,#leadershipTech{
 overflow-x: scroll;
@@ -658,7 +655,124 @@ scroll-behavior: smooth;
 }
 
 
+@media only screen and (min-width: 414px) {
+  body{background-color:black;
+  border: solid purple 3px;
+  
+  
+  }
 
+  html{
+    width: auto;
+    padding-right: 0%;
+  }
+#navi{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  align-content: flex-start;
+  height: 35%;
+}
+#home{
+  margin-right: 0%;
+  border:black solid 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#name-big{
+  display: none;
+}
+#farrah-top{
+  font-size: 44px;
+  margin-bottom: 2%;
+}
+#f-p-top{
+  margin-top: 0%;
+  font-size: 24px;
+}
+
+#big-menu{
+  margin-top: 700px;
+  z-index:4;
+}
+
+button#rain{
+  width: 78px;
+  font-size: 22px;
+}
+#pursuit-big{
+  margin-bottom: 1px;
+  margin-top: 1px;
+}
+
+#menu-button{
+  margin-top: 2%;
+}
+
+#divTech,#leadershipTech,#industryTech{
+  font-size: 23px;
+  background-color: white;
+  color: black;
+}
+
+#divTech:hover{
+  width: 5300px;
+  height: 400px;
+  background-color: lightgreen;
+  color:black;
+}
+#industryTech:hover{
+  width: 5300px;
+  height: 400px;
+  background-color: lightgreen;
+  color:black;
+}
+#leadershipTech:hover{
+  width: 5300px;
+  height: 400px;
+  background-color: lightgreen;
+  color:black;
+}
+
+
+#pic{
+ display: flex;
+ flex-direction: column;
+}
+#plain-pic{
+  align-self: center;
+}
+
+#matrix-pic{
+  align-self: center;
+}
+
+#bio{
+  font-size: 22px;
+}
+
+#projects{
+  display: flex;
+  flex-direction: column;
+ 
+}
+#snow-pic{
+  align-self: center;
+  width: auto;
+
+}
+#snow-video{
+  padding-right: 32px;
+}
+
+
+
+
+}
   
 
 

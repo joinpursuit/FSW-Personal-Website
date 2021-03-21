@@ -6,6 +6,15 @@
         visibility:hidden ;   
     
       }
+      
+#farrah-top{
+  display: none;
+}
+#f-p-top{
+  display: none;
+}
+
+
     #menu-button,#name-big,#title-big,#pursuit-big{
         visibility: visible;   
 

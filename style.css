@@ -112,4 +112,8 @@ textarea{
     .project-image {
         height: auto;
     }
+    #comment {
+        height: 4em;
+        width: 30em;
+    }
 }

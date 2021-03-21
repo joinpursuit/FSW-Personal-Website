@@ -10,4 +10,12 @@
 //         p.style.display = "none"
 //     }
 // })
+// let bodyTag = document.querySelector("#body-tag")
+// let me = document.querySelector(".me")
+// let meNow = document.querySelector("me-now")
+// meNow.addEventListener("click",(event)=>{
+//     me.style.display = "none"
+// //   const article =document.querySelector(“article”)
+//     // article.style.visibility = “visible”
+// })
 

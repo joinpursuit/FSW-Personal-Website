@@ -8,8 +8,7 @@
     <link rel="stylesheet" href="../css/fonts.css">
     <link rel="stylesheet" href="../css/main.css" />
     <script src="https://kit.fontawesome.com/6d1e552f36.js" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="../index.js" defer></script>
+    <script src="../js/about.js" defer></script>
   </head>
   <body>
     <!-- <aside>
@@ -31,26 +30,34 @@
         </a>
       </section>
     </aside> -->
-    <header>
-      <nav class="bars">
-        <i class="fas fa-bars"></i>
-      </nav>
-      <nav class="logo">
-        <a href="../index.html">Jordan Bobadilla</a>
-      </nav>
-      <nav class="menu">
-        <ul>
-          <li class="about"><a href="#about-me">About Me</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#skills">Skills</a></li>
-        </ul>
-      </nav>
-      <button type="button" class="change">Change color</button>
-      <nav class="exchange">
-        <i class="fas fa-exchange-alt"></i>
-      </nav>
+    <nav class="mobile-nav">
+      <ul>
+        <li class="about"><a href="./about.html">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact me</a></li>
+      </ul>
+    </nav>
+    <header data-theme="light">
+      <section>
+        <nav class="bars">
+          <i class="fas fa-bars"></i>
+        </nav>
+        <nav class="logo">
+          <a href="../index.html">Jordan Bobadilla</a>
+        </nav>
+        <nav class="menu">
+          <ul>
+            <li class="about"><a href="./about.html">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact me</a></li>
+          </ul>
+        </nav>
+        <input type="checkbox" id="switch" name="theme" /><label for="switch">Toggle</label>
+      </section>
     </header>
-    <main class="main">
+    <main data-theme="light">
       <div>
 
         <section class="one">
@@ -70,7 +77,7 @@
           <p>
             As a <strong>professional</strong> and a <strong>software engineer</strong>, no challenge is too big; my
             ability to focus and break down problems into step by step <strong>solutions</strong>
-            allows me to consistently deliver elegant solutions <strong>on time</strong>, and with
+            allows me to consistently deliver elegant solutions <strong>on time</strong>, and
             with a <strong>positive attitude</strong>.
           </p>
           <p>

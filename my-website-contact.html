@@ -30,26 +30,48 @@
 
 <section id = "contact-section">
     <!-- <form method="post" action="https//formspree.io/durdonadjalilova@pursuit.org"> -->
-        <input id="email" type="email" value = "durdonadjalilova@pursuit.org" placeholder="durdonadjalilova@pursuit.org"></input>
+        <!-- <input id="email" type="email" value = "durdonadjalilova@pursuit.org" placeholder="durdonadjalilova@pursuit.org"></input> -->
         <!-- <input id="sender-name" type="text" placeholder="Name"> -->
-        <input id="subject" placeholder="Subject"></input>
+        <!-- <input id="subject" placeholder="Subject"></input>
         <textarea id="message" placeholder="Message"></textarea>
-        <button type="button" onclick="send()" id="send" >Send</button>
+        <button type="button" onclick="send()" id="send" >Send</button> -->
+        <!-- <form
+  action="https://formspree.io/f/xjvjbgvv"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="_replyto">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+
+   your other form fields go here -->
+
+  <!-- <button type="submit">Send</button> -->
+<!-- </form> -->
+<form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/durdonadjalilova@pursuit.org" method="post">
+    <fieldset id="fs-frm-inputs">
+      <!-- <label for="your-name">Your Name</label> -->
+      <input type="text" name="name" id="your-name" placeholder="Your Name" required="">
+      <!-- <label for="email-address">Email Address</label> -->
+      <input type="email" name="_replyto" id="email-address" placeholder="Your email" required="">
+      <!-- <label for="message">Message</label> -->
+      <textarea rows="5" name="message" id="message" placeholder="Message" required=""></textarea>
+      <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+    </fieldset>
+    <input type="submit" value="Submit">
+  </form>
         <span><a href="https://github.com/durdonadjalilova">
         <img id="github" src="github.png" alt="github">
     </a>
-       <a href="https://www.linkedin.com/in/durdona-djalilova-b144a4202/"><img id="linkedin" src="linkedin.png" alt="linkedin"> Resume</a> 
+       <a href="https://www.linkedin.com/in/durdona-djalilova-b144a4202/"><img id="linkedin" src="linkedin.png" alt="linkedin"> </a> 
 </span>
-<!-- </form> -->
-    <!-- <img src="my-photo2.jpg" alt="my-photo">
-    <p id = "text-about-me">something about me</p> -->
+
 </section>
 
-<!-- <section id = "projects-section">
-<a name="jump-projects"></a>
-<img src="coding image.jpeg" alt="a picture">
-<p>something</p>
-</section> -->
 
    </body>
 </html>

@@ -2,7 +2,6 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(5, 1fr);
-    /* justify-items: stretch; */
     background-image: url(https://media.giphy.com/media/I895dOTn9xeUukN4mg/source.gif);
     background-size: cover;
     height: 100vh;
@@ -13,12 +12,10 @@ body {
 header {
 grid-column: 1/5;
 display:flex;
-/* justify-content: space-evenly; */
 
 }
 
 header > span {
-    /* grid-row: 1; */
     flex:1;
 border: 5px solid rgb(121, 119, 121);
 background-color: rgb(90, 180, 240);
@@ -29,7 +26,6 @@ text-align: center;
 font-size: 130%;
 font-family:cursive ;
 color: rgb(255, 255, 255);
-/* justify-content: space-evenly; */
 padding: 2%;
 
 }
@@ -37,52 +33,6 @@ padding: 2%;
 header > span > a {
     color: white;
 }
-
-#about-me-section {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, .1fr 1fr .5fr);
-    margin-top: 0;
-    margin-right: auto;
-    margin-left: auto;
-    grid-column: 2/4;
-    grid-row: 2/3;
-    justify-content: center;
-    justify-items: center;
-    align-content: center;
-    color: white;
-    height: 80vh;
-    
-}
-
-#my-photo {
-    /* grid-column: ;
-    justify-self: center;
-    align-self: center; */
-}
-
-#my-name {
-    font-size: xxx-large;
-    font-style: italic;
-    /* font-family: Georgia, 'Times New Roman', Times, serif; */
-    color:white;
-    border: 5px solid rgb(121, 119, 121);
-background-color:rgb(90, 180, 240);
-padding:10px;
-}
-
-#text-about-me {
-    border: 5px solid rgb(121, 119, 121);
-background-color:rgb(90, 180, 240);
-font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-line-height: 150%;
-font-size: large;
-text-align: justify;
-align-self: center;
-padding: 15px;
-    color: white;
-}
-
 
 #about-me-header {
     grid-column: 1/2;
@@ -104,19 +54,58 @@ padding: 15px;
     grid-column: 4/5;
 }
 
+
+#about-me-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, .1fr 1fr .5fr);
+    margin-top: 0;
+    margin-right: auto;
+    margin-left: auto;
+    grid-column: 2/4;
+    grid-row: 2/3;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    color: white;
+    height: 90vh;
+    
+}
+
+
+#my-name {
+    font-size: 200%;
+    font-style: italic;
+    color:white;
+    border: 5px solid rgb(121, 119, 121);
+background-color:rgb(90, 180, 240);
+padding:10px;
+}
+
+#text-about-me {
+    border: 5px solid rgb(121, 119, 121);
+background-color:rgb(90, 180, 240);
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+line-height: 120%;
+font-size: medium;
+text-align: center;
+align-self: center;
+padding: 15px;
+    color: white;
+}
+
+
+
 #projects-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: .05fr .05fr 1fr;
+    grid-template-rows: .01fr .01fr .01fr 1fr;
     gap: .5rem;
     margin-top: 0;
   grid-column:1/5;  
   grid-row: 2/3;
-height:80vh;
+height:90vh;
 width: 100%;
-/* display: flex;  */
-/* margin-right: 5%;
-margin-left: auto; */
 justify-content: center;
 justify-items: center;
 align-items: center;
@@ -124,31 +113,43 @@ align-content: center;
 
 
 }
-/* grid-column: 1/4;
-grid-row: 2/3; */
 
+#projects-section > span > button {
+    margin-bottom: .3%;
+}
 
 
 #projects-section > span {
     flex: 1;
-    /* display: grid; */
     align-self: center;
     grid-row: 2/3;
 
 }
     
-#snowman {
-    /* display: block;
-    align-self: center; */
-   
+#descriptionSnowman {
+font-size: medium;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+width: 87%;
+border: 5px solid rgb(121, 119, 121);
+background-color:rgb(90, 180, 240);
+padding:1%;
+display: none;
+margin-top: 0%;
+    margin-bottom: 0%
 }
+
+#descriptionAdventure {
+    font-size: medium;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 87%;
+    border: 5px solid rgb(121, 119, 121);
+    background-color:rgb(90, 180, 240);
+    padding:1%;
+    display: none;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    }
     
-#adventure {
-    /* display: block;
-  align-self: center; */
-
-}
-
 #snowman-span {
   color:white;
     /* margin-right: 5%;
@@ -172,16 +173,24 @@ grid-row: 2/3; */
     align-self: center; */
 }
 
-#projects-section > span > p > a {
+#projects-section > span > span > a {
     color: white;
     font-size: large;
   text-align: center;
+ 
+}
+
+#projects-section > span > span {
+    float:right;
+    margin-right: 15%;
 }
 
 .project-name {
     font-size: xx-large;
     font-style: italic;
     text-align: center;
+    margin-top: 10%;
+    margin-bottom: 0%;
 }
 /* 
 #snowman-video {
@@ -214,18 +223,9 @@ position: relative;
     /* margin-left: 10px; */
 }
 
-/* .blurEffect {
-    -webkit-filter: blur(7px);
-    -o-filter: blur(7px);
-    -moz-filter: blur(7px);
-    -ms-filter: blur(7px);
-    filter: blur(7px); */
-/* } */
 
 #click-here-snowman {
     position: absolute;
-    /* display: inline-block; */
-    /* transform: translate(-50%,-50%); */
     top: 30%;
     left: 35%;
     color: #FFF;
@@ -235,8 +235,6 @@ position: relative;
     font-size: 30px;
     cursor: pointer;
     border: 1px solid #FFF;
-    /* display: inline-block; */
-    /* text-align: center; */
     padding: 5px 25px;
 }
 
@@ -252,8 +250,6 @@ position: relative;
 
 #click-here-adventure {
     position: absolute;
-    /* display: inline-block; */
-    /* transform: translate(-50%,-50%); */
     top: 30%;
     left: 35%;
     color: #FFF;
@@ -263,18 +259,8 @@ position: relative;
     font-size: 30px;
     cursor: pointer;
     border: 1px solid #FFF;
-    /* display: inline-block; */
-    /* text-align: center; */
     padding: 5px 25px;
 }
-/* .play {
-    font-size: 50px;
-    cursor: pointer;
-    border: 1px solid #FFF;
-    display: inline-block;
-    text-align: center;
-    padding: 5px 25px;
-} */
 
 
 #skills-section {
@@ -289,13 +275,10 @@ position: relative;
     
     justify-content: space-around;
     width: 100%;
-    /* flex: 1;
-    flex-wrap: wrap; */
     flex-direction: row;
     padding: 20px;
     margin: 20px;
     
-    /* height: 10px; */
 }
 
 #ul-with-resume  {
@@ -303,20 +286,16 @@ position: relative;
     
     justify-content: space-around;
     width: 100%;
-    /* flex: 1;
-    flex-wrap: wrap; */
     flex-direction: row;
     padding: 20px;
-    /* margin: 20px; */
-    
-    /* height: 10px; */
 }
+
 #skills-section > ul > li > img {
     height: 180px;
 }
+
 #resume {
 color: white;
-/* border:none; */
 height: 50px;
 font-size: x-large;
 font-style: italic;
@@ -325,8 +304,6 @@ display: block;
 border: 5px solid rgb(121, 119, 121);
     background-color: rgb(90, 180, 240);
     margin-top: 20px;
-    /* margin-left: auto;
-    margin:auto; */
     padding: 20px;
     text-align: center;
     text-justify: center;
@@ -364,35 +341,18 @@ border: 5px solid rgb(121, 119, 121);
 #contact-section > span > a > img {
     height: 40px;
     padding:30px;
-    /* grid-column: 2/3; */
-    
-    
+     
 }
 
-/* #contact-section > span > a > #github {
-    height: 40px;
-    /* grid-column: 3/4; */
-   
-    
-/* } */ 
 
-
-#email {
+#email-address {
     grid-row: 1/2;
     grid-column: 2/3;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: large;
-    /* text-align: center;
-    align-self: center;
-    justify-self: center; */
-    /* border-top: none;
-    border-right: none;
-    border-left: none;
-    height: 10vw;
-    font-size: 2vw;
-    width: 15vw; */
+
   }
-  #subject {
+  #email-subject {
       grid-row: 2/3;
       grid-column: 2/3;
       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -403,10 +363,6 @@ border: 5px solid rgb(121, 119, 121);
       grid-row: 3/4;
       grid-column: 2/3;
     text-align: left;
-    /* border-top: none;
-    border-right: none;
-    border-left: none;
-    border-radius: 5px; */
     width: 30vw;
     height: 10vh;
     font-size: large;
@@ -416,30 +372,8 @@ border: 5px solid rgb(121, 119, 121);
   button {
       grid-row: 4/5;
       grid-column: 2/3;
-    /* border: none; */
     background-color: white;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: large;
-    /* position: fixed;
-    right: 5px;
-    top: 5px;
-    transition: transform .5s; */
+
   }
-  
-  /* input:focus {
-    outline: none;
-    color: orange;
-    border-radius: 3px;
-  }
-  
-  textarea:focus {
-    outline: none;
-    color: orange;
-    border-radius: 7px;
-  }
-  
-  button:focus {
-    outline: none;
-    transform: scale(0);
-    transform: rotate(360deg);
-  } */

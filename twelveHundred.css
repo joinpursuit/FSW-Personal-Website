@@ -1,14 +1,14 @@
 
-@media only screen and (min-width: 1000px) {
-    body{background-color:black;}
+@media only screen and (min-width: 1500px) 
+{
+    body{background-color:yellow;}
   
     #big-menu{
-        visibility:hidden ;   
+        visibility:visible ;   
       }
-      
-#farrah-top{
+       #farrah-top{
   display: none;
-}
+} 
 #f-p-top{
   display: none;
 }
@@ -373,9 +373,9 @@ align-items: center;
       
     }
     #name-big{
-      grid-row: 14/56;
-      grid-column: 24/60;
-      color: white;
+      /* grid-row: 14/56;
+      grid-column: 24/60; */
+      color: blue;
       font-size: 50px;
       /* border-left:white solid 2px;
       border-right:white solid 2px; */
@@ -396,13 +396,15 @@ align-items: center;
   
   #menu-button{
   
-       color: white;
-       font-size: 30px;
+       color: purple;
+       font-size: 90px;
        /* border-left:white solid 2px;
        border-right:white solid 2px; */
+       z-index:5;
+       margin-top: 98px;
        
-  
        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+       position: fixed;
     
   
   }
@@ -449,11 +451,11 @@ align-items: center;
   
  button#rain{
       /* grid-row: 14/19; */
-  margin-left: 5%;
+  margin-left: 3%;
       font-weight: 90px;
       font-family: 'DotGothic16', sans-serif;
  
-      margin-top: 133px;
+      margin-top: 93px;
       text-shadow: honeydew;
       font-size: 27px;
       position: fixed;
@@ -551,6 +553,7 @@ z-index: 3;
 
  #navi{
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   width: 98%;
   border-top: white solid 3px;
@@ -558,6 +561,7 @@ z-index: 3;
 background-color: black;
 position: fixed;
 color:white;
+height: 88px;
 
 } 
 

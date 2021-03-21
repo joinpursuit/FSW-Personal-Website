@@ -32,7 +32,7 @@ h1{
     color: rgb(82, 82, 82);
     font-size: 14px;
     text-decoration: none;
-    font-weight: bolder;
+    font-weight: bold;
     padding-right: 20px;
 }
 
@@ -47,20 +47,9 @@ h1{
 .about{
     text-align: center;
     background-color: #d88383;
-    color: rgb(36, 34, 34);
-    font-weight: bold;
     padding-top: 25px;
     padding-bottom: 25px;
 }
-
-.contact{
-    background-image: url(assets/IMG_1846.JPG);
-    background-size: cover;
-    background-position: center;
-    padding-top: 25px;
-    padding-bottom: 25px;
-}
-
 
 .projects{
     background-color: #47AB98;
@@ -70,18 +59,18 @@ h1{
     padding-bottom: 25px;
 }
 
-.project1, .project2{
+.project1, .project2, .info{
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
 }
 
-.description1, .description2{
+.description1, .description2, .info p{
     text-align: center;
     padding: 20px;
 }
 
-.project1 img, .project2 img{
+.project1 img, .project2 img, .info img{
     display: flex;
     max-width: 100%;
     height: auto;
@@ -92,9 +81,7 @@ h1{
     margin-right: auto;
 }
 
-
-
-#projectsHeading, #contactHeading, #skillsHeading, #aboutHeading{
+#projectsHeading, #contactHeading, #aboutHeading{
     text-align: center;
     color: rgb(82, 82, 82);
     padding-top: 25px;
@@ -105,7 +92,15 @@ h1{
 .projects a{
     color: rgb(82, 82, 82);
     text-decoration: none;
-    font-weight: bolder;
+    font-weight: bold;
+}
+
+.contact{
+    background-image: url(assets/IMG_1846.JPG);
+    background-size: cover;
+    background-position: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 .contactInfo{
@@ -146,7 +141,16 @@ footer{
 
 p{
     font-size: 16px;
-    color: rgb(82, 82, 82) ;
+    color: rgb(82, 82, 82);
+    line-height: 2;
+}
+
+#skillsHeading{
+    text-align: center;
+    color: whitesmoke;
+    padding-top: 25px;
+    margin-top: 0;
+    font-size: 20px; 
 }
 
 .skillsSection{
@@ -169,6 +173,24 @@ p{
     flex-direction: column;
     text-align: center;
     align-items: center;
+   }
+
+   .project1, .project2{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-left: 25px;
+    padding-right: 25px;
+   }
+
+   .info{
+    display: flex;
+    flex-direction: column;
+   }
+
+   .info img{
+    height: 350px;
+    width: auto;
    }
 
 

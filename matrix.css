@@ -30,7 +30,7 @@
       grid-template-columns:  repeat(60,1fr);
       grid-template-rows: repeat(60,1fr);
       height: 60px;
-      border: solid 3px;
+     
       padding-top: 0px;
       padding-right: 0%;
       margin-right: 0%;
@@ -121,6 +121,7 @@ align-items: center;
     padding-right: 10%;
     padding-left: 10%;
     overflow-x: scroll;
+    overflow-y: scroll;
   }
   
   #hamburger-menu:hover{
@@ -706,7 +707,7 @@ scroll-behavior: smooth;
 }
 #home{
   margin-right: 0%;
-  border:black solid 2px;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -739,6 +740,7 @@ button#rain{
   color:limegreen;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 border:greenyellow solid 1px;
+z-index: 8;
 }
 #pursuit-big{
   margin-bottom: 1px;
@@ -804,7 +806,7 @@ flex-direction: column;
 #projects{
   display: flex;
   flex-direction: column;
-  height: 600px;
+  height: 700px;
  
 }
 #snow-pic{
@@ -834,9 +836,9 @@ figure{
   
 }
 #skills{
-  height: 100px;
-  width: 100px;
-  margin-left: 37%;
+  height: 200px;
+  width: 300px;
+  margin-left: 14%;
 
   margin-bottom: 92px;
   border:darkblue solid 5px;
@@ -863,4 +865,164 @@ main{
   flex-wrap: wrap;
 flex-direction: column;
 text-align: center;
+}
+
+@media only screen and (min-width: 600px) 
+{
+body{
+  background-color: orange;
+}
+
+#navi{
+  width: 620px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#home{
+  width: 620px;
+}
+#grow-box{
+  width: 650px;
+}
+#skills{
+  margin-left:39%;
+  margin-right: 45%;
+  width: 79%;
+  height: 80%;
+}
+figure{
+  margin-left: 52%;
+  font-size: 32px;
+  width: 300px;
+  color:white;
+}
+#menu-button{
+  margin-left:76%;
+  margin-top:8px;
+}
+#pic{
+  width: 600px;
+}
+#bio{
+ width:500px;
+ color: black;
+ font-size: 29px;
+ overflow-y: scroll;
+ overflow-x: scroll;
+}
+#divTech,#leadershipTech,#industryTech{
+  border:purple solid 3px;
+  font-size: 27px;
+
+}
+#projects{
+  width: 600px;
+}
+#snow-pic{
+  width: 550px;
+  margin-bottom:13px;
+  
+}
+#snow-word{
+  color:purple;
+  margin-bottom:1px;
+}
+#jokes-header{
+  color:purple;
+font-size:33px;
+}
+#click-joke{
+  width: 200px;
+  height: 60px;
+}
+#joke-output{
+  color:black;
+}
+
+#contact{
+  margin-top:118px;
+  width: 600px;
+}
+
+main{
+  width:600px;
+}
+
+
+
+}
+
+@media only screen and (min-width: 700px) 
+{
+body{
+  background-color: maroon;
+}
+
+#navi{
+  width: 700px;
+  border:solid green 4px;
+}
+
+#menu-button{
+  margin-left:60%;
+  height: 44px;
+  text-align: center;
+  padding-top: 4px;
+
+}
+button#rain{
+margin-left: 20%;
+margin-top:205px;
+height: 51px;
+text-align: center;
+z-index: 8;
+}
+#home{
+  width: 700px;
+ 
+}
+
+#skills{
+  margin-left: 160px;
+  width: 440px;
+  height: 350px;
+}
+figure{
+margin-left: 275px;
+width: 420px;
+}
+    
+    
+#grow-box{
+  width: 720px;
+}
+
+#pic{
+  width: 700px;
+}
+#bio{
+  text-align: center;
+  width: 600px;
+  font-size: 30px;
+  overflow-y: scroll;
+
+}
+#projects,#contact{
+  width: 730px;
+}
+#snow-word,#jokes-header{
+  color:black;
+}
+main{
+  width: 700px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+   svg{
+     width: 194px;
+     margin:10px;
+   }
 }

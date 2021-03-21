@@ -147,10 +147,9 @@ p{
 
 
 .skills{
-    background-image: url(assets/27C9C10D-E74D-410D-A9A9-8730AACD9026.jpeg);
+    background-image: url(assets/27C9C10D-E74D-410D-A9A9-8730AACD9026.jpg);
     background-size: cover;
     background-position: center;
-    filter: brightness(.5) saturate(.8);
     align-items: center;
     padding-top: 25px;
     padding-bottom: 50%;

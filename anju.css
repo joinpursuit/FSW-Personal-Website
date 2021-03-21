@@ -51,7 +51,6 @@ li:hover {
   grid-column: 7/13;
   grid-row: 1/2;
   justify-self: end;
-
 }
 
 .quote-li {
@@ -83,6 +82,15 @@ li:hover {
   width: 75%;
 }
 
+.to-do-list {
+  grid-column: 4/6;
+  grid-row: 5/8;
+  /* font: bold 18px 'Courier New', Courier, monospace; */
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: flex-start; */
+}
+
 .to-do-pic {
   grid-column: 4/6;
   grid-row: 5/8;
@@ -90,31 +98,95 @@ li:hover {
   /* margin-bottom: 90px; */
 }
 
-.to-do-pic:hover {
-  width: 100px;
+.to-do-list, .emoji-story {
+  position: relative;
+  /* width: 50%; */
 }
 
-/* .to-do-sum {
+/* .emoji-pic { */
+  /* display: block; */
+  /* width: 100%;
+  height: auto; */
+/* } */
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 130%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+
+.to-do-list:hover .overlay {
+  opacity: 1;
+}
+
+ .emoji-story:hover .overlay {
+  opacity: 1;
+}
+
+.to-do-sum {
   grid-column: 4/6;
   grid-row: 8/11;
-  font: bold 16px "Courier New", Courier, monospace;
-  color: green;
-} */
+  color: white;
+  font: 16px "Courier New", Courier, monospace;
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: left;
+}
+
+.emoji-sum {
+  color: white;
+  font: 16px "Courier New", Courier, monospace;
+  position: absolute;
+  top: 40%;
+  left: 55%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: right;
+}
+
+.emoji-story {
+  /* grid-column: 8/10;
+  grid-row: 10/11;
+  font: bold 18px 'Courier New', Courier, monospace;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start; */
+  grid-column: 7/9;
+  grid-row: 5/8;
+  width: 105%;
+  height: 125%;
+  /* margin-left: 0px; */
+  margin-bottom: 60px;
+  align-items: flex-start;
+}
 
 .emoji-pic {
   grid-column: 7/9;
   grid-row: 5/8;
   width: 105%;
-  height: 144%;
+  height: 112%;
   margin-left: 10px;
   align-items: flex-start;
+  display: block;
 }
 
-.emoji-sum {
+/* .emoji-sum {
   grid-column: 7/9;
   grid-row: 8/11;
   font: 16px "Courier New", Courier, monospace;
-}
+} */
 
 .contact-me {
   font-family: "Courier New", Courier, monospace;
@@ -141,15 +213,6 @@ li:hover {
   color: white;
 }
 
-.copyright {
-  font-family: "Courier New", Courier, monospace;
-  font-size: 12px;
-  font-weight: bold;
-  grid-column: 9/13;
-  grid-row: 12/13;
-  align-self: center;
-}
-
 .devicon-linkedin-plain-wordmark {
   font-size: 60px;
 }
@@ -170,3 +233,12 @@ i:hover {
   color: rgba(89, 197, 7, 1);
 }
 /* } */
+
+.copyright {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 12px;
+  font-weight: bold;
+  grid-column: 9/13;
+  grid-row: 12/13;
+  align-self: center;
+}

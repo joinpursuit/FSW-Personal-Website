@@ -14,7 +14,7 @@
       <nav>
         <ul>
           <li class="home">
-            <a href="./home.html">HOME</a>
+            <a href="./index.html">HOME</a>
           </li>
           <li class="about">
             <a href="./about.html">ABOUT</a>
@@ -27,22 +27,28 @@
           </li>
         </ul>
       </nav>
+      
+      <!-- Attribution for HTML (lines 32-51) & Corresponding CSS: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_fade -->
+      <div class="to-do-list">
+        <img class="to-do-pic" src="./My To-Dos.png" />
+        <div class="overlay">
+          <p class="to-do-sum">
+            An efficient way for users to track their tasks. The user can delete tasks by clicking the task directly
+            or the 'x'.
+          </p>
+        </div>
+      </div>
 
-      <img class="to-do-pic" src="./My To-Dos.png" />
-      <img class="emoji-pic" src="./Emoji Stories.png" />
-
-      <!-- <p class="to-do-sum">
-        Users can add their tasks in a list by clicking the submit button. The
-        user can delete their tasks by either clicking the task directly or the
-        'x'.
-      </p> -->
-
-      <!-- <p class="emoji-sum">
-        Users can select a number and generate that number of emojis. Users can
-        then create and submit a description (story) of the emojis.
-      </p> -->
+      <div class="emoji-story">
+        <img class="emoji-pic" src="./Emoji Stories.png" />
+        <div class="overlay">
+          <p class="emoji-sum">
+            Users can select a number to generate a number of emojis. Users can
+            then create and submit a story (description) of the emojis.
+          </p>
+        </div>
+      </div>
 
     </section>
-
   </body>
 </html>

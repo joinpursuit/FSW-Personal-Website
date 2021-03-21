@@ -36,6 +36,22 @@ const quoteOfTheDay = document.querySelector("#quote-of-the-day");
     });
 // };
 
+const toDoSum = document.querySelector(".to-do-sum")
+
+// toDoSum.addEventListener("mouseover", (e) => {
+//   // debugger
+//   if (toDoSum.style.display === "none") {
+//     toDoSum.style.display = "block";
+//   } else {
+//     toDoSum.style.display = "none";
+//   }
+// })
+
+// li.addEventListener("click", () => {
+//   if (list.style.display === "block") {
+//     list.style.display = "none";
+//   } else {
+//     list.style.display = "block";
 //     try {
 //         const dailyQuotes = await axios.get("https://favqs.com/api/qotd");
 //         debugger

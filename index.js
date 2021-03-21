@@ -1,3 +1,5 @@
+
+// used a lot of googling to figure out how to use the localStorage to save it and joshua helped me perfect the code"
 const myStorage = window.localStorage;
 let theme = document.querySelector("#style");
 let cssButton = document.querySelector("#css-change");

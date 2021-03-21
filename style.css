@@ -109,6 +109,9 @@ textarea{
 #resume-pdf {
     width: 100%;
     height: 500px;
+    border: 1px solid #ccc;
+    display: block;
+    padding: 0;
 }
 
 @media screen and (orientation: landscape) {

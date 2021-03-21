@@ -1,0 +1,557 @@
+@import url("https://fonts.googleapis.com/css2?family=Neuton:wght@200;400&display=swap");
+
+body {
+  font-family: "Neuton", serif;
+  margin: 1px;
+  padding: 5px 70px 5px 50px;
+  background: #152d50;
+  color: white;
+  display: inline;
+
+}
+
+
+#DN {
+
+  display: block;
+ position: relative;
+  opacity: 0.35;
+  z-index: -1;
+  border-radius: 50%;
+  width: 250px;
+  border-style: solid;
+  border-color: transparent;
+  
+}
+
+
+
+#nav {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  box-shadow: 0 15.2px 12px rgba(0, 0, 0, 0.07),
+    0 121px 96px rgba(0, 0, 0, 0.035);
+}
+
+.top-icon {
+  margin: 5px;
+  padding: 2px;
+  display: flex;
+  align-self: center;
+  width: 64px;
+  height: 64px;
+}
+
+.nav {
+  display: flex;
+  align-self: center;
+  font-size: 20px;
+ 
+}
+
+.nav:hover{
+  cursor: pointer; 
+  text-decoration: underline;
+}
+
+.navigator {
+  width: 68px;
+  height: 68px;
+  display: none;
+}
+
+h1 {
+  font-size: 48px;
+  color: white;
+}
+
+.active {
+  display: grid;
+  grid-template-rows: 140px auto 140px;
+
+}
+
+
+.three {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 4px 40px 4px 40px;
+}
+
+h2 {
+  font-size: 42px;
+  color: #dae1e7af;
+  width: auto;
+  align-self: flex-start;
+}
+
+#description {
+  font-size: 24px;
+  color: #99a7b4af;
+  text-align: justify;
+  align-self: center;
+  width: auto;
+}
+
+.niceButton {
+  display: flex;
+  align-self: flex-start;
+
+  padding: 20px;
+  font-size: 20px;
+  color: #2afeb7;
+  border: solid 1px #2afeb7;
+  background-color: #234e70;
+  border-radius: 10px;
+
+  min-width: 160px;
+  min-height: 60px;
+}
+
+.line {
+  margin-top: 30px;
+  width: 100%;
+  border: solid 0.5px rgba(192, 192, 192, 0.25);
+}
+
+.projects-div {
+  display: grid;
+  grid-template-columns: 45% 55%;
+}
+
+.projects-divReverse {
+  display: grid;
+  grid-template-columns: repeat(10, 10%);
+  align-content: flex-end;
+}
+
+.projects-div:hover {
+  transform: translateY(-10px);
+}
+.projects-divReverse:hover {
+  transform: translateY(-10px);
+}
+#snowmanForm {
+  z-index: -1;
+  min-width: 660px;
+  height: 400px;
+}
+
+#snowmanFormReverse {
+  z-index: -1;
+  width: auto;
+  height: 400px;
+  grid-area: 1 / 5 / 2 / 11;
+}
+
+#snowman-desc {
+  display: grid;
+  position: relative;
+  z-index: 1;
+  grid-template-columns: 100%;
+  grid-template-rows: 120px auto 80px;
+  justify-content: flex-end;
+  color: #8892b0;
+}
+
+.proTitle {
+  margin: 12px 6px 4px 6px;
+  text-align: right;
+  font-size: 32px;
+}
+
+.subTitle {
+  margin: 2px 6px 4px 2px;
+  text-align: right;
+  font-size: 24px;
+  color: #64ffda;
+}
+
+.gameText {
+  margin: 12px 6px 4px 6px;
+  text-align: end;
+  font-size: 20px;
+}
+
+.gameText:hover {
+  transform: translate(-10px, -8px);
+}
+
+.more-desc {
+  background-color: rgba(5, 32, 71, 0.7);
+  border-radius: 6px;
+  box-shadow: 0 15.2px 12px rgba(0, 0, 0, 0.07),
+    0 121px 96px rgba(0, 0, 0, 0.035);
+  color: rgba(114, 113, 113, 0.801);
+  font-size: 20px;
+  text-align: justify;
+
+  margin: 20px 10px 10px 10px;
+  padding: 10px;
+}
+
+.snowman {
+  width: 100%;
+  height: 100%;
+  align-self: auto;
+  border: solid 2px #2afeb7;
+  position: relative;
+  vertical-align: middle;
+}
+
+.snowman:hover {
+  transform: translateY(-10px);
+}
+
+.live {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 60px;
+}
+
+.lowLevel {
+  margin: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.gitHubSpan {
+  align-self: center;
+  margin-right: 10px;
+  align-items: flex-end;
+  padding: 14px;
+  text-align: center;
+  font-size: 24px;
+  color: white;
+  border: solid 1px #2afeb7;
+  background-color: #234e70;
+  border-radius: 10px;
+  box-shadow: 5px 5px 1px 2px rgba(0, 0, 0, 0.194);
+}
+
+.gitHubSpan:hover {
+  background-color: #2afeb721;
+  box-shadow: none;
+  color: #2afeb7;
+}
+
+.gitLive {
+  margin-left: 10px;
+  padding: 14px;
+  text-align: center;
+  font-size: 24px;
+  color: white;
+  border: solid 1px #2afeb7;
+  background-color: #234e70;
+  border-radius: 10px;
+  box-shadow: 5px 5px 1px 2px rgba(0, 0, 0, 0.194);
+}
+
+.gitLive:hover {
+  background-color: #2afeb721;
+  box-shadow: none;
+  color: #2afeb7;
+}
+
+#moreGit {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: repeat(2, minmax(auto, 400px));
+  gap: 40px;
+}
+
+
+.more {
+  width: 420px;
+  height: 400px;
+  background-color: #233554;
+  box-shadow: 5px 5px 1px 2px rgba(0, 0, 0, 0.194);
+  border-radius: 10px;
+}
+
+.more:not(:hover) {
+  background-color: #1122408a;
+}
+.more:hover{
+  transform: translateY(-10px);
+
+}
+
+#skills {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: flex-start;
+  /* width: 97%; */
+}
+
+#category {
+  align-self: center;
+  margin-bottom: 120px;
+  font-size: 32px;
+}
+
+#skills-menu {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+#rolling-menu {
+  width: 100%;
+  min-height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: space-around;
+  margin: 5px;
+  padding: 5px;
+  border: none;
+}
+
+.icon {
+  margin: 20px;
+  width: 96px;
+  height: 96px;
+  text-align: center;
+}
+
+.icon:hover {
+  transform: scale(1.4);
+}
+
+#contacts {
+  display: flex;
+  align-self: flex-start;
+  padding: 5px 70px 5px 50px;
+}
+
+#footer {
+  margin: 10px;
+  padding: 5px;
+  text-align: center;
+}
+
+.footer-elem {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 48px;
+  height: 48px;
+
+  transform: perspective(750px) translate3d(0px, 0px, -250px) rotateX(27deg)
+    scale(0.9, 0.9);
+  border-radius: 20px;
+  border: 5px solid #2afeb7;
+  box-shadow: 0 70px 40px -20px rgba(0, 0, 0, 0.2);
+  transition: 0.4s ease-in-out transform;
+}
+
+.footer-elem:hover {
+  transform: translate3d(0px, 0px, -250px);
+}
+
+.invisible {
+  display: none;
+}
+.visible {
+  display: relative;
+}
+
+/*    ===========================================================
+    ||                      MEDIA QUERIES                        ||
+      ===========================================================         */
+
+@media only screen and (max-width: 375px) {
+  body {
+    display: inline;
+    max-width: 375px;
+    padding: 5px 2px 5px 2px;
+  }
+
+  #nav {
+    width: 100%;
+    margin-left: -3px;
+    margin-right: 0px;
+  }
+
+  section{
+    width: 95%;
+  }
+  .navigator {
+    display: flex;
+  }
+
+  .nav {
+    display: none;
+  }
+
+#DN{
+  width: 150px;
+  align-self: flex-start;
+  transform: translateX(75px);
+
+}
+
+  .projects-div {
+    width: 330px;
+  }
+
+  .projects-divReverse {
+    width: 330px;
+  }
+
+  .snowman {
+    transform: translateY(20px);
+    width: 330px;
+    height: 265px;
+  }
+  .more {
+
+    height: 400px;
+  }
+
+  .three {
+    margin: 0px;
+    padding: 14px;
+  }
+
+  .shell {
+    width: 305px;
+    height: 156px;
+  }
+
+  .gameText {
+    font-size: 18px;
+  }
+  .active {
+    display: inline;
+  }
+
+  .three {
+    max-width: 330px;
+    margin-left:15px;
+  }
+
+  .subTitle {
+    padding: 2px 12px 4px 2px;
+    margin-right: 0px;
+  }
+  .proTitle {
+    padding: 2px 12px 4px 2px;
+    margin-right: 0px;
+  }
+  .gameText {
+    padding: 2px 12px 4px 2px;
+    margin-right: 0px;
+  }
+
+  .more-desc {
+    min-width: 325px;
+    min-height: 216px;
+    margin: 20px 0px 10px 10px;
+  }
+
+  .gitLive {
+    min-width: 103.86px;
+    max-height: 61px;
+  }
+
+  .lowLevel {
+    margin: 12px;
+  }
+  .icon {
+    width: 64px;
+    height: 64px;
+  }
+
+  .footer-elem {
+    width: 64px;
+    height: 64px;
+    align-self: center;
+  }
+
+#top{
+  width: 374px;
+  margin: 0px;
+}
+
+  #traderMedia {
+    transform: translateY(-135px);
+  }
+
+  #snowmanForm {
+    min-width: 330px;
+  }
+  #snowmanFormReverse {
+    grid-area: 1 / 1 / 2 / 11;
+  }
+  #snowman-desc {
+    grid-area: 1 / 1 / 2 / 11;
+  }
+
+  #snowmanFormMedia {
+    width: 330px;
+  }
+
+  #moreGit {
+    grid-template-columns: 330px;
+    grid-template-rows: repeat(4, minmax(auto, 400px));
+  }
+
+  #made {
+    font-size: 20px;
+  }
+
+  #contacts {
+    padding: 2px 2px 2px;
+  }
+
+  #divfooter {
+    width: 330px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #rolling-menu {
+    margin-right: 0px;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+}
+
+@media only screen and (max-width: 812px) {
+
+  #top{
+    width: 100%;
+  }
+
+  .three{
+    width: 790px;
+  }
+
+  .more{
+    width: 330px;
+
+  }
+  .icon{
+    width: 56px;
+    height: 56px;
+  }
+
+  #nav{
+    width: 100%;
+    justify-content: space-between;
+     margin-left: 28px;
+  
+  }
+
+  .nav{
+    align-self: center;
+    margin-right: 30px;
+  }
+}

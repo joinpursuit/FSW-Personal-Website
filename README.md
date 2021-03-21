@@ -75,7 +75,8 @@ Also notice that you can set **DEADLINES** for a card, which may help you manage
 
 When you are done, replace the link below with the link to your Trello board:
 
-[Replace this link with the link to your board](https://trello.com/b/tTFpk77m/fsw-personal-site-project)
+[Replace this link with the link to your board](https://trello.com/b/2QmZVinq/daniel-naranjo-developer-at-pursuit-71)
+
 
 ## User Stories
 

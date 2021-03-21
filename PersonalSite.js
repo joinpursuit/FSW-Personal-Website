@@ -39,28 +39,28 @@ const darkMode = () => {
 // create an option the filters the backend, front and etc...
 
 const data = [
-  { name: "Front End", image: "HTML.png" },
-  { name: "Front End", image: "CSS.png" },
-  { name: "Front End", image: "JavaScript.png" },
-  { name: "Backend", image: "Node JS.png" },
-  { name: "Backend", image: "express.jpeg" },
-  { name: "Backend", image: "Postgresql.png" },
-  { name: "Backend", image: "React and Redux.png" },
-  { name: "Other", image: "agile.png" },
-  { name: "Other", image: "code reviews.jpeg" },
-  { name: "Other", image: "pair programming.png" },
-  { name: "Other", image: "sprint.png" },
-  { name: "All", image: "HTML.png" },
-  { name: "All", image: "CSS.png" },
-  { name: "All", image: "JavaScript.png" },
-  { name: "All", image: "Node JS.png" },
-  { name: "All", image: "express.jpeg" },
-  { name: "All", image: "Postgresql.png" },
-  { name: "All", image: "React and Redux.png" },
-  { name: "All", image: "agile.png" },
-  { name: "All", image: "code reviews.jpeg" },
-  { name: "All", image: "pair programming.png" },
-  { name: "All", image: "sprint.png" },
+  { name: "Front End", image: "HTML.png", text: "HTML"},
+  { name: "Front End", image: "CSS.png" , text: "CSS" },
+  { name: "Front End", image: "JavaScript.png", text: "JavaScript" },
+  { name: "Backend", image: "Node JS.png", text: "Node JS" },
+  { name: "Backend", image: "express.jpeg", text: "Express" },
+  { name: "Backend", image: "Postgresql.png", text: "PostgreSQL" },
+  { name: "Backend", image: "React and Redux.png", text:"React and Redux"},
+  { name: "Other", image: "agile.png", text: "Agile" },
+  { name: "Other", image: "code reviews.jpeg", text: "Code Review" },
+  { name: "Other", image: "pair programming.png", text: "Pair Programming" },
+  { name: "Other", image: "sprint.png", text: "Sprint" },
+  { name: "All", image: "HTML.png", text: "HTML"},
+  { name: "All", image: "CSS.png", text: "CSS" },
+  { name: "All", image: "JavaScript.png", text: "JavaScript"},
+  { name: "All", image: "Node JS.png", text: "Node JS" },
+  { name: "All", image: "express.jpeg", text: "Express"},
+  { name: "All", image: "Postgresql.png" ,text: "PostgreSQL"},
+  { name: "All", image: "React and Redux.png", text:"React and Redux" },
+  { name: "All", image: "agile.png" , text: "Agile" },
+  { name: "All", image: "code reviews.jpeg" , text: "Code Review"  },
+  { name: "All", image: "pair programming.png", text: "Pair Programming" },
+  { name: "All", image: "sprint.png", text: "Sprint"  }
 ];
 
 const skills = ["Front End", "Backend", "Other", "All"];
@@ -73,6 +73,7 @@ const createOptions = () => {
     option.classList.add("skillsOptions")
     option.textContent = skills[i];
     option.value = skills[i];
+    // debugger
     select.appendChild(option);
   }
 };
@@ -86,8 +87,25 @@ const filterOption = (e) => {
   for (let i = 0; i < data.length; i++) {
     if (data[i].name === toTarget) {
       let img = document.createElement("img");
+      img.classList.add("skills-images")
       img.src = data[i].image;
       container.appendChild(img);
+      img.addEventListener("mouseover", () => {
+          debugger
+            debugger;
+            const para = document.querySelector("#text")
+            para.innerHTML = ""
+            let skillsText = document.createElement("p");
+            skillsText.classList.add("para2")
+            skillsText.innerHTML = data[i].text;
+            debugger
+            para.appendChild(skillsText);
+            if(para.style.display === "none"){
+              para.style.display ="block"
+            }else{
+              para.style.display ="none"
+            }
+        })
     }
   }
 };

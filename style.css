@@ -73,9 +73,6 @@ label {
     gap: .1rem;
     grid-template-columns: repeat(2, 1fr);
 }
-.project-image {
-    height: 150px;
-}
 .profile-image-container{
     height: 300px;
     width: 300px;
@@ -86,7 +83,9 @@ label {
     margin: 25px;
 }
 .project-descrip{
-    padding: 25px;
+    padding: 5px;
+    width: 60%;
+    margin: auto;
 }
 #about-me-title,
 #resume-title,
@@ -127,12 +126,9 @@ textarea{
 @media screen and (orientation: landscape) {
     .image-container {
         width: 500px;
-        min-height: 300px;
+        /* min-height: 300px; */
         margin: auto;
         padding: 10px;
-    }
-    .project-image {
-        height: auto;
     }
     #comment {
         height: 4em;

@@ -41,11 +41,6 @@ const emojiSection = document.querySelector("#emoji-section");
 
 const contactSection = document.querySelector("#contact-section");
 const contactBtn = document.querySelector("#contact-btn");
-// https://stackoverflow.com/questions/3664381/force-page-scroll-position-to-top-at-page-refresh-in-html
-// why doesn't page go back to the top when refreshed? // location.reload() // xy axis of page //
-// want navbar to appear when user gets to the new section // is that CSS or js? // scroll to populate
-// is it better to have all the global variables at the top or next to the function? //
-// is it better to have the variable declared in the function it's being used in or global? //
 
 ///////////////////////// ***FUNCTIONS*** ////////////////////////////////
 
@@ -60,7 +55,7 @@ const displayLetters = () => {
   });
 };
 
-// create navBar /////////////////////////////////add if statement//////////////////
+// create navBar ///////////////////////////////////////////////////
 const createNavbar = (section) => {
   const nav = document.createElement("nav");
   const ul = document.createElement("ul");
@@ -72,31 +67,9 @@ const createNavbar = (section) => {
     a.textContent = listItem;
     ul.appendChild(li);
     li.appendChild(a);
-    a.href = navIds[i].toLowerCase() // can't figure out how to string interpolate
+    a.href = navIds[i].toLowerCase()
   });
 };
-
-// display summary //////////////////////////////////////////////////////////////
-
-
-
-// const displaySummary = () => {
-//   const p = document.createElement("p");
-//   p.setAttribute("style", "display: none");
-//   p.textContent = summarys["emoji"];
-//   emojiSection.appendChild(p);
-// }
-
-// emojiSection
-// emojiSection.addEventListener("click", () => {
-//   displaySummary()
-  // let displaySnowmanSummary = event.target.childNodes[0].style.display;
-  // if (displaySnowmanSummary === "none") {
-  //   displaySnowmanSummary = "block";
-  // } else {
-  //   displaySnowmanSummary = "none";
-  // }
-// });
 
 // move to next section ////////////////////////////////////////////////////////
 const jumpToSection = (section) => {

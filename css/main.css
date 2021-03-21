@@ -1,8 +1,6 @@
 body, html {
   height: 100%;
   padding-top: 0;
-
-  
 }
 
 body {
@@ -163,12 +161,32 @@ strong {
   color: var(--strong);
 }
 
+.projects {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 0px;
+  padding: 70px 0;
+}
+
+.projects img {
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+}
+
+
 .skills {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-evenly;
   /* align-items: center; */
+}
+
+.skills h1 {
+  color: var(--color-text);
+  display: none;
+  text-align: center;
 }
 
 .skills section {
@@ -190,6 +208,49 @@ strong {
   
 }
 
+.contact {
+  display: flex;
+  justify-content: space-around;
+}
+
+.contact-one img {
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+  border-radius: 4px;
+  box-shadow:
+  0 0.6px 2.2px rgba(0, 0, 0, 0.039),
+  0 1.3px 5.3px rgba(0, 0, 0, 0.057),
+  0 2.5px 10px rgba(0, 0, 0, 0.07),
+  0 4.5px 17.9px rgba(0, 0, 0, 0.083),
+  0 8.4px 33.4px rgba(0, 0, 0, 0.101),
+  0 20px 80px rgba(0, 0, 0, 0.14);
+}
+
+.contact-two {
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.contact-two h2 {
+  font-size: 28px;
+  padding-right: 30px;
+  color: var(--color-text);
+}
+
+.info{
+  letter-spacing: 40px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 40px;
+  padding: 20px;
+}
+
+.info a{
+  color: var(--strong);
+}
 
 input[type=checkbox]{
 	height: 0;
@@ -269,6 +330,33 @@ main.transition *:after {
     display: flex;
     flex-direction: column;
     align-items: space-between;
+  }
+
+  .projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 85px;
+  }
+
+  .projects-one {
+    margin-bottom: 60px;
+  }
+
+  .projects img {
+    margin: 0 auto;
+  }
+
+  .contact-one {
+    margin: 0 auto;
+  }
+
+  .info {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    letter-spacing: normal;
   }
 }
 
@@ -375,6 +463,15 @@ main.transition *:after {
   .mobile-nav a:hover {
     background-color: #ecebee;
     color: #43553B;
+  }
+
+  .skills h1 {
+    display: block;
+  }
+
+  .contact {
+    display: flex;
+    justify-content: space-around;
   }
 }
 

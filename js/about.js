@@ -7,7 +7,6 @@ checkbox.addEventListener('click', (e) => {
         transition()
         header.setAttribute('data-theme', 'dark')
         main.setAttribute('data-theme', 'dark')
-        localStorage.setItem("changed", "enabled")
     } else {
         transition()
         header.setAttribute('data-theme', 'light')

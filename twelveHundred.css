@@ -1,6 +1,6 @@
 
 @media only screen and (min-width: 1000px) {
-    body{background-color:navy;}
+    body{background-color:black;}
   
     #big-menu{
         visibility:hidden ;   
@@ -32,19 +32,22 @@
       display: grid;
       grid-template-columns:  repeat(60,1fr);
       grid-template-rows: repeat(60,1fr);
-      height: 1000px;
+      height: 330px;
       border: solid 3px;
       padding-top: 0px;
       padding-right: 0%;
       margin-right: 0%;
+      
   }
   
   #projects{
-      display: grid;
-      grid-template-columns:  repeat(60,1fr);
-      grid-template-rows: repeat(60,1fr);
+      display: flex;
+      flex-direction: column;
+
       height: 1000px;
       border: yellow solid 3px;
+align-items: center;
+
   }
   
   #contact{
@@ -111,11 +114,13 @@
   
      #bio{
       color:rgb(191, 206, 193);
-      grid-row: 18/56;
+      grid-row: 17/56;
       grid-column: 4/57;
-      font-size: 15px;
+      font-size: 35px;
     text-align: center;
-    font-family: 'Audiowide';font-size: 22px;
+    font-family: 'Audiowide';font-size: 27px;
+    padding-right: 10%;
+    padding-left: 10%;
   }
   
   #hamburger-menu:hover{
@@ -167,27 +172,31 @@
     color:greenyellow;
   }
   #big-menu{
-    margin-top:38%;
+    margin-top:29%;
     font-size: 30px;
   visibility:hidden;
-  /* position: fixed; */
+
   list-style: none;
-  width: 309px;
+
   text-align: center;
-  grid-row: 3/33;
-  grid-column: 50/59;
-  padding-top: 5%;
+
+  grid-row: 1/56;
+  grid-column: 44/60;
+  position:auto;
+  z-index: 3;
  
   }
   
   #big-home,#big-about,#big-projects,#big-contact{
     border:white solid 3px;
-    margin-bottom:4%;
+    margin-bottom:2%;
     border-radius: 25%;
-    margin-right:44%;
+    /* margin-right:4%;  */
     background-color: black;
     transition: height 4s;
     color:white;
+  
+    /* width:66%; */
  
   }
 #big-x{
@@ -275,11 +284,11 @@
   
   #pic{
       /* width: 699px; */
-      grid-row: 23/52;
+      grid-row: 3/52;
       grid-column: 1/61;
       text-align: center;
       position: auto;
-      z-index: -1;
+      z-index: 3;
       
   }
   #pic2{
@@ -347,17 +356,19 @@
   
   
   #title-big{
-      font-size: 90px;
+      font-size: 30px;
       margin-bottom: 9px;
       color: linen;
       font-family: 'Audiowide';font-weight: 4px;
-    
+      grid-row: 28/31;
+      grid-column: 19/60;
       
     }
     #name-big{
-   
+      grid-row: 14/56;
+      grid-column: 24/60;
       color: white;
-      font-size: 30px;
+      font-size: 50px;
       /* border-left:white solid 2px;
       border-right:white solid 2px; */
       
@@ -474,93 +485,63 @@
       text-decoration: underline;
     }
   
+ 
   
-  
-  #snow-video{
-    background-image: url('Untitled.gif');
-    background-size: contain;
-    height:200px;
-    width: 450px;
-    background-repeat: no-repeat;
-    grid-row: 12/60;
-    grid-column: 4/55;
-    border: greenyellow solid 3px;
-    margin-right: 7px;
-    margin-left: 9px;
-  }
-  
-  #snow-header{
-    grid-row: 9/60;
-    grid-column: 6/60;
-    color: rgb(86, 215, 86);
-    font-size: 29px;
-  }
-  #jokes-header{
-    grid-row: 28/60;
-    grid-column: 6/60;
-    color: rgb(86, 215, 86);
-    font-size: 29px;
-  
-  }
-  
-  
-  #snow-video-cover{
-    background-image: url('snow-cover.png');
-    background-size: contain;
-    height:260px;
-    width: 450px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    grid-row: 12/60;
-    grid-column: 4/55;
-    border: greenyellow solid 3px;
-    margin-right: 7px;
-    margin-left: 9px;
-    text-align: center;
-  }
-  
-  #jokes-display{
-    height:260px;
-    width: 450px;
-    grid-row: 31/60;
-    grid-column: 4/55;
-    border: greenyellow solid 3px;
-    margin-right: 7px;
-    margin-left: 9px;
-    text-align: center;
-    background-color: honeydew;
+    #snow-word{
+      color:greenyellow;
+      font-size:38px;
+      margin-top:5%;
+    }
    
+#snow-video{
+
+width:600px;
+position: auto;
+z-index: -2;
+}
+/* #snow-video-cover{
+width: 624px;
+border:red solid 3px;
+position:auto;
+z-index: 3;
+} */
+
+
+  
+  #jokes-header{
+    /* grid-row: 28/60;
+    grid-column: 6/60; */
+    color: rgb(86, 215, 86);
+    font-size: 29px;
+  
   }
+  
+  
+
+  
+
   
   #watch{
-  margin-top: 50%;
-  font-size: larger;
+  margin-top: 66%;
+  font-size: 33px;
   }
   #click-joke{
-     grid-row: 42/44;
-    grid-column: 9/26;
+  
   
   font-size: larger;
   }
   
-  #watch:hover{
-    cursor: pointer;
-    box-shadow: greenyellow;
-    text-shadow: honeydew;
-  }
-  .cover-away{
-    display: none;
-  }
+
   
   #joke-output{
-    grid-row: 33/60;
-    grid-column: 6/33;
-    color: black;
-    font-size: 25px;
+    text-align: center;
+  
+    color: white;
+    font-size: 35px;
     width: 420px;
   }
 
-#navi{
+ #navi{
   display: flex;
   justify-content: space-around;
   width: 98%;
@@ -569,7 +550,8 @@
 background-color: black;
 position: fixed;
 color:white;
-}
+
+} 
 
 
 
@@ -581,6 +563,100 @@ color:white;
   text-decoration: none;
   color:lawngreen;
 }
+#menu-button>a{
+  text-decoration: none;
+  color:white;
+}
+#menu-button>a:hover{
+  text-decoration: none;
+  color:lawngreen;
+}
+
+
+
+
+ 
+
+
+
+
+
+
+#divTech,#industryTech,#leadershipTech{
+overflow-x: scroll;
+  color:whitesmoke;
+  width: 340px;
+  height: 70px;
+ 
+  transition: width 2s, height 4s;
+  border:solid green 3px;
+   margin-left: 1%; 
+   margin-right: 1%; 
+  margin-bottom: 3%;
+  font-size: 37px;
+display: flex;
+  align-items: center;  
+  padding-left: 8%;
+
+  
+
+}
+#pIn{
+color: black;
+visibility: hidden;
+font-size: 2px;
+
+
+
+}
+#PInd{
+color: black;
+visibility: hidden;
+font-size: 2px;
+
+}
+#lead{
+color: black;
+visibility: hidden;
+font-size: 2px;
+
+}
+/* #pIn:hover{
+  visibility: visible;
+} */
+
+#divTech:hover{
+  width: 1300px;
+  height: 400px;
+  background-color: lightgreen;
+  color:black;
+}
+#industryTech:hover{
+  width: 1300px;
+  height: 400px;
+  background-color: lightgreen;
+  color:black;
+scroll-behavior: smooth;
+
+}
+#leadershipTech:hover{
+  width: 1300px;
+  height: 400px;
+  background-color: lightgreen;
+  color:black;
+}
+/* 
+#learnOne{
+  font-size: 20px;
+} */
+
+
+#grow-box{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
 
 
   }

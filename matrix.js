@@ -48,15 +48,15 @@ let xButton = document.querySelector('#xb')
  })
     
 
-let watchButton = document.querySelector('#watch')
- watchButton.addEventListener('click', (event) => {
-let cover = document.getElementById('snow-video-cover')
-cover.style.display = 'none'
+// let watchButton = document.querySelector('#watch')
+//  watchButton.addEventListener('click', (event) => {
+// let cover = document.getElementById('snow-video-cover')
+// cover.style.display = 'none'
 
-setTimeout(function () {
-    cover.style.display = 'block'
-        }, 15000);
-  })
+// setTimeout(function () {
+//     cover.style.display = 'block'
+//         }, 15000);
+//   })
   
 
 
@@ -81,9 +81,17 @@ setTimeout(function () {
          getJokes()
     })
 
+
+
+
+
+
+
+
+
     let menuButton = document.getElementById("menu-button")
 
-    menuButton.addEventListener('mouseover',(event)=>{
+    menuButton.addEventListener('click',(event)=>{
       
         let bigMenu = document.getElementById("big-menu")
         let bigHome = document.getElementById("big-home")
@@ -99,16 +107,16 @@ setTimeout(function () {
         setTimeout(function () {
           // bigX.style.visibility = 'visible'
             bigHome.style.visibility = "visible"
-          }, 200);
+          }, 5);
         setTimeout(function () {
             bigAbout.style.visibility = "visible"
-          }, 400);
+          }, 100);
         setTimeout(function () {
            bigProjects.style.visibility = "visible"
-          }, 600);
+          }, 200);
         setTimeout(function () {
             bigContact.style.visibility = "visible"
-          }, 800);
+          }, 300);
       
 
 
@@ -117,17 +125,17 @@ setTimeout(function () {
         setTimeout(function () {
             bigHome.style.visibility = 'hidden'
             // menuButton.style.visibility = 'visible'
-                }, 6000);
+                }, 10000);
 
                 setTimeout(function () {
                   bigAbout.style.visibility = "hidden"
-                }, 6000);
+                },10000);
               setTimeout(function () {
                  bigProjects.style.visibility = "hidden"
-                }, 6000);
+                }, 10000);
               setTimeout(function () {
                   bigContact.style.visibility = "hidden"
-                }, 6000);
+                }, 10000);
             
         
     
@@ -136,6 +144,7 @@ setTimeout(function () {
 
 
 
+// let bigX = document.getElementById('big-x')
 // let bigX = document.getElementById('big-x')
 // bigX.addEventListener('click',(event)=>{
 //     let bigMenu= document.querySelector("#big-menu")
@@ -153,3 +162,41 @@ setTimeout(function () {
 
 
 // })
+
+let divTech = document.getElementById('divTech')
+let industryTech = document.getElementById('industryTech')
+let leadershipTech = document.getElementById('leadershipTech')
+let pIn = document.getElementById('pIn')
+let pInD = document.getElementById('PInd')
+let lead = document.getElementById('lead')
+divTech.addEventListener('mouseover',(event)=>{
+
+  pIn.style.visibility = "visible"
+  pIn.style.fontSize = "22px"
+  pIn.style.textOverflow = "ellipsis"
+})
+industryTech.addEventListener('mouseover',(event)=>{
+
+  pInD.style.visibility = "visible"
+  pInD.style.fontSize = "22px"
+  pInD.style.justifyContent = "left"
+  pInD.style.textOverflow = "ellipsis"
+  pInD.style.overflow = "hidden"
+})
+divTech.addEventListener('mouseout',(event)=>{
+  pIn.style.visibility = "hidden"
+})
+industryTech.addEventListener('mouseout',(event)=>{
+  pInD.style.visibility = "hidden"
+})
+
+leadershipTech.addEventListener('mouseover',(event)=>{
+
+  lead.style.visibility = "visible"
+  lead.style.fontSize = "22px"
+  leadershipTech.style.justifyContent = "left"
+  lead.style.textOverflow = "ellipsis"
+})
+leadershipTech.addEventListener('mouseout',(event)=>{
+  lead.style.visibility = "hidden"
+})

@@ -122,7 +122,12 @@ textarea{
     font-size: 80px;
     margin: auto
 }
-
+.image-container {
+    width: 500px;
+    /* min-height: 300px; */
+    margin: auto;
+    padding: 10px;
+}
 @media screen and (orientation: landscape) {
     .image-container {
         width: 500px;

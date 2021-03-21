@@ -222,7 +222,7 @@ html {
     font-family: fantasy;
     color: black;
     font-size: 70px;
-    padding-top: 100px;
+    padding-top: 15px;
     text-shadow: 0px 6px 2px black
 }
 
@@ -876,50 +876,40 @@ html {
         background-attachment: fixed;
     }
 
-    .wrapper {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        margin-top: 10px;
-        gap: 5%;
-        padding: 20px;
-    } 
     
-    .wrapper .proj img {
-        box-shadow: 8px 30px 20px
-    }
-
     .about-header {
         font-family: fantasy;
         color: black;
         font-size: 70px;
-        padding-top: 100px;
+        padding-top: 10px;
         text-shadow: 0px 6px 2px black
     }
 
     .my-info {
         display: flex;
-        height: 800px;
+        height: 500px;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         box-shadow: 0px 20px 20px;
         background-color: rgba(0, 0, 0, 0.5);
-        margin: 15%;
-        margin-top: 50px;
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-top: 7%;
     }
-
+    
     .my-info img {
         display: flex;
         justify-content: center;
         border-radius: 50%;
-        width: 250px;
-        height: 250px;
+        width: 200px;
+        height: 200px;
         /* margin-top: 10%; */
         /* margin-bottom: 30px; */
         object-fit: cover;
         box-shadow: 0px 20px 20px rgb(206, 138, 50);
     }
-
+    
     .my-info, h1, h5, p {
         text-align: center;
         text-shadow: 0px 2px 2px rgb(206, 138, 50);
@@ -930,14 +920,15 @@ html {
     .my-info h1 {
         font-family: fantasy;
         font-size: 40px;
-        /* margin: 0px; */
         letter-spacing: 3px;
-        margin: 15px;
+        /* margin: 0px; */
+        /* margin: 15px; */
     }
     
     .my-info h5 {
         font-family: fantasy;
         font-size: 30px;
+        margin-top: 7px;
     }
     
     .my-info p {
@@ -953,8 +944,9 @@ html {
         color: white;
         text-decoration: none;
         transition: all ease-in-out 250ms;
+        margin-bottom: 20%;
     }
-
+    
     .social li {
         font-size: 60px;
     }
@@ -962,6 +954,18 @@ html {
     .social li:hover {
         color: rgb(206, 138, 50);
         cursor: pointer;
+    }
+    
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        margin-top: 10px;
+        gap: 5%;
+        padding: 20px;
+    } 
+    
+    .wrapper .proj img {
+        box-shadow: 8px 30px 20px
     }
 
     .skills {

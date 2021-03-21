@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
 
+
+
+
 #container {
     display: grid;
     height: 100vh;
@@ -9,6 +12,9 @@
     grid-template-rows: 1.5fr 4fr 1fr;
     /* grid-gap: .1rem; */
     background-color: #CAF0F8;
+    /* background-size: cover;
+    background-position: center;
+    background-image:url('http://traversymedia.com/downloads/assets/beachshowcase.jpg'); */
 }
 p{
   font-size: 1.3em;
@@ -41,7 +47,6 @@ header {
 nav{
     grid-column: 1/2;
     grid-row: 1/4;
-    background-color: #CAF0F8;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -107,7 +112,6 @@ nav a:hover {
 
 
 #main-content{
-    background-color: #CAF0F8;
 }
 
 #home-section img{
@@ -247,7 +251,6 @@ ul{
 /* Footer */
 
 footer {
-    background-color: #CAF0F8;
     display: flex;
     justify-content: space-evenly;
 }

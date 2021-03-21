@@ -179,24 +179,24 @@ h2 {
 
 /* About Me Section */
 
-#about-section {
+/* #about-section { */
   /* for formatting only */
-  border: green solid 1px;
-}
-
+  /* border: green solid 1px;
+} */
+/* 
 #about-title {
   grid-column: 3/6;
   grid-row: 3/6;
   justify-self: center;
-}
+} */
 
-#portrait {
+/* #portrait { */
   /*width: 100%; *//*per AnJu's website*/ 
   /* width: 40vw; */
-  grid-column: 3/6;
+  /* grid-column: 3/6;
   grid-row: 4/6;
-}
-
+} */
+/* 
 #about-summary {
   grid-column: 7/10;
   grid-row:4/8;
@@ -222,7 +222,7 @@ h2 {
 #project-btn {
   grid-column: 4/5;
   grid-row: 10/11;
-}
+} */
 
 /* Style Projects Setion */
 

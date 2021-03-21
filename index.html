@@ -12,51 +12,54 @@
 </head>
 
 <body class="light">
-    <button class="button" onclick="toggleTheme()">Toggle Theme</button>
-    <header id="header">
+    <div class="bannerPic">
 
-        <nav role="navigation">
-            <div id="menuToggle">
-                <input id="closeIcon" type="checkbox" />
-                <span></span>
-                <span></span>
-                <span></span>
-                <ul id="menu">
-                    <li>
-                        <a href="#About">
-                    <li>About</li></a>
-                    </li>
-                    <li>
-                        <a href="#Skills">
-                    <li>Skills</li></a>
-                    </li>
-                    <li>
-                        <a href="#Projects">
-                    <li>Projects</li></a>
-                    </li>
-                    <li>
-                        <a href="#Contact-Me">
-                    <li>Contact</li></a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <h1 class="h1-tag">
-        Miguel Catala
-    </h1>
-
-    <!-- <div id="navbar">
-        <a href=#About>About</a>
-        <a href=#Skills>Skills</a>
-        <a href=#Projects>Projects</a>
-        <a href=#Contact-Me>Contact</a>
-    </div> -->
-    </div>
-    <hr>
+        <button class="button" onclick="toggleTheme()">Toggle Theme</button>
+        <header id="header">
+            
+            <nav role="navigation">
+                <div id="menuToggle">
+                    <input id="closeIcon" type="checkbox" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <ul id="menu">
+                        <li>
+                            <a href="#About">
+                                <li>About</li></a>
+                            </li>
+                            <li>
+                                <a href="#Skills">
+                                    <li>Skills</li></a>
+                                </li>
+                                <li>
+                                    <a href="#Projects">
+                                        <li>Projects</li></a>
+                                    </li>
+                                    <li>
+                                        <a href="#Contact-Me">
+                                            <li>Contact</li></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </header>
+                        <h1 class="h1-tag">
+                            Miguel Catala
+                        </h1>
+                        
+                        <!-- <div id="navbar">
+                            <a href=#About>About</a>
+                            <a href=#Skills>Skills</a>
+                            <a href=#Projects>Projects</a>
+                            <a href=#Contact-Me>Contact</a>
+                        </div> -->
+                    </div>
+                    </div>
+                    <hr>
     <section id="About">
-        <p>
-            <img src="Mec001.png" width="250px" height="250px">
+        <p> 
+                <img id="mainPic"src="Mec001.png" width="250px" height="250px">
             I am a Software Engineer with various ideas for video games and web designs. Born and raised in New York
             City I am passionate about releasing all of the wild ideas I have for the world to see. I love taking risks
             and doing things outside of the box. My motivation comes from helping others and empowering people, I want
@@ -104,6 +107,14 @@
     <section id="Projects">
         <p>
             Projects
+            <div id="projectPic">
+
+                <a class = "projectLinks" href="https://github.com/MiguelCatala27/FSW-Text-Based-Adventure"target="_blank">Text-Based-Adventure</a>
+                <img src="Chongaks.png" width="500px" height="500px">
+                <img src="GuessingGame.png" width="500px" height="500px">
+                <a class = "projectLinks" href="https://github.com/MiguelCatala27/FSW-CLI-Snowman"target="_blank">Snowman Game</a>
+            </div>
+
         </p>
     </section>
     <hr>
@@ -112,7 +123,7 @@
             Contact me
         </p>
         <div class="container">
-            <form action="action_page.php">
+            <form action="https://formspree.io/f/mrgrzbww"method="POST">
                 <label for="fname">Full Name</label>
                 <input type="text" id="fname" name="firstname" placeholder="First and Last">
                 <label for="lname">Email</label>

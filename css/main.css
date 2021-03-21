@@ -101,7 +101,6 @@ header a:hover {
 }
 
 .about {
-  font-size: larger;
   font-weight: bold;
 
 }
@@ -141,6 +140,7 @@ main div {
   width: 100%;
   height: auto;
   max-width: 950px;
+  border-radius: 4px;
   box-shadow:
   0 0.6px 2.2px rgba(0, 0, 0, 0.039),
   0 1.3px 5.3px rgba(0, 0, 0, 0.057),
@@ -161,6 +161,33 @@ main div {
 
 strong {
   color: var(--strong);
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  /* align-items: center; */
+}
+
+.skills section {
+  color: var(--strong);
+  font-size: 120px;
+  width: 100%;
+  padding: 70px 0;
+  margin: 0 auto
+}
+
+.skills .one {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.skills .two {
+  display: flex;
+  justify-content: space-evenly;
+  
 }
 
 
@@ -320,6 +347,8 @@ main.transition *:after {
   .mobile-nav ul {
     list-style: none;
     width: auto;
+    padding: 0;
+    margin: 0;
   }
   
   .mobile-nav.is-active {
@@ -347,6 +376,10 @@ main.transition *:after {
     background-color: #ecebee;
     color: #43553B;
   }
+}
 
-
+@media screen and (max-width: 700px) {
+  .skills section {
+    font-size: 80px;
+  }
 }

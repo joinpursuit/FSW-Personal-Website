@@ -77,8 +77,9 @@
   color: white;
 }
 
-/* .skills-p {
-} */
+#fourthContainer > h1 {
+  color: white;
+}
 
 @media (max-width: 375px) {
   .skills-div {

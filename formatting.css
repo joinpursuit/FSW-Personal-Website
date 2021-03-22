@@ -5,7 +5,7 @@ body {
   grid-template-columns: 80px repeat(auto-fit, minmax(130px, 1fr)) 80px;
   grid-template-rows: 60px 0.75fr 0.5fr repeat(3, minmax(1fr, 400px)) 0.5fr 60px;
   gap: 3px;
-  background-color: rgb(236, 236, 250);
+  background-color: #ececfa;
 }
 
 /* .clicked-sections {
@@ -43,7 +43,7 @@ section {
   margin-right: 15px;
 }
 
-#projects-name-display {
+#projects-name-display, #abtMe-name-display {
   background-color: #2d213f;
   padding: 6px;
   border-radius: 5px;
@@ -62,8 +62,8 @@ section {
   text-align: center;
 }
 
-#top-row {
-  border: .5px solid #2d213f;
+#top-row, #project-top-row, #abtMe-top-row{
+  border: 0.5px solid #2d213f;
   border-bottom: 2.5px solid #2d213f;
   border-radius: 5px;
   grid-column: 1 / -1;
@@ -77,19 +77,6 @@ section {
   align-items: center;
 }
 
-#project-top-row {
-  border: 1px solid black;
-  border-bottom: 2.5px solid #2d213f;
-  grid-column: 1 / -1;
-  grid-row: 4;
-  height: fit-content;
-  padding-left: 20px;
-  padding-right: 20px;
-  min-width: 0;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
 
 #volcano,
 #louvre {
@@ -140,7 +127,26 @@ section {
   color: #220721;
 }
 
-.project-mid-row {
+#headshot {
+  height: 380px;
+  min-width: 0;
+  object-fit: contain;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+#abtMe-text-box {
+  display: inline-block;
+  margin-left: 10px;
+  font-family: jubilat, serif;
+  font-weight: 200;
+  /* font-style: italic; */
+  font-size: 20px;
+  color: #220721;
+}
+
+.project-mid-row, #abtMe-mid-row {
   /* margin-left: 50px;
     margin-right: 50px; */
   display: flex;
@@ -154,6 +160,8 @@ section {
   font-size: 22px;
   align-content: center;
 }
+
+
 
 #aboutMe-section {
   /* width: 173px;
@@ -188,7 +196,7 @@ section {
   gap: 3px;
 }
 
-#mid-row {
+#mid-row, #abtMe-mid-row {
   /* border: 1px solid black; */
   border-top: none;
   /* border-bottom: 1.5px solid red; */
@@ -240,7 +248,7 @@ section {
 
 #abtMe-box,
 #home-box,
-#cntct-box {
+#cntct-box, #pro-box {
   padding-left: 50px;
   border-left: 1.5px solid #2d213f;
   padding-right: 50px;
@@ -260,7 +268,7 @@ section {
 }
 
 #btm-row {
-  border: .5px solid #2d213f;
+  border: 0.5px solid #2d213f;
   border-top: 2.5px solid #2d213f;
   border-radius: 5px;
   grid-column: 1 / -1;
@@ -308,6 +316,8 @@ section {
   min-width: 0;
   /* object-fit: contain; */
   object-fit: contain;
+  margin-top: 10px;
+  border-radius: 5px;
 }
 
 footer {
@@ -346,7 +356,7 @@ footer {
     grid-template-columns: 80px repeat(auto-fit, minmax(130px, 1fr)) 80px;
     grid-template-rows: 60px 0.75fr 0.5fr repeat(3, auto) 0.5fr 60px;
     gap: 3px;
-    background-color: lavender;
+    background-color: #ececfa;
   }
 
   #joke-gif,
@@ -357,8 +367,6 @@ footer {
   }
 }
 
-
-
 @media screen and (max-width: 780px) {
   body {
     height: 100vh;
@@ -366,7 +374,7 @@ footer {
     grid-template-columns: 80px repeat(auto-fit, minmax(130px, 1fr)) 80px;
     grid-template-rows: 60px 0.75fr 0.5fr repeat(3, auto) 0.5fr 60px;
     gap: 3px;
-    background-color: lavender;
+    background-color: #ececfa;
   }
 
   #volcano,
@@ -385,10 +393,7 @@ footer {
     object-fit: contain;
     margin-top: 5px;
   }
-
 }
-
-
 
 @media screen and (max-width: 680px) {
   body {
@@ -397,7 +402,7 @@ footer {
     grid-template-columns: 80px repeat(auto-fit, minmax(130px, 1fr)) 80px;
     grid-template-rows: 60px 0.75fr 0.5fr repeat(3, auto) 0.5fr 60px;
     gap: 3px;
-    background-color: lavender;
+    background-color: #ececfa;
   }
 
   #drop-down {
@@ -407,19 +412,6 @@ footer {
         grid-column: -2 / -1;
         grid-row: 1;
         margin: 0%; */
-  }
-
-  #nav-bar {
-    display: flex;
-    border: 1px solid black;
-    background-color: coral;
-    grid-column: 2 / -2;
-    grid-row: 2;
-    justify-content: space-evenly;
-    align-items: center;
-    font-style: italic;
-    font-weight: bold;
-    font-size: 20px;
   }
 
   #nav-drop-down {
@@ -464,6 +456,37 @@ footer {
   #jokes-description > #jokes-github-link {
     font-size: 90%;
   }
+
+  #project-link,
+  #abtMe-link,
+  #name-display,
+  #cntct-link {
+    font-size: 24px;
+  }
+
+  #copyright {
+    font-size: 20px;
+  }
+
+  #gitHub-icon,
+  #linkedIn-icon {
+    background-color: #8bbbae;
+    border-radius: 5px;
+    margin-top: 14px;
+    margin-right: 5px;
+    height: 25px;
+  }
+
+  #abtMe-link {
+    margin-right: 20px;
+  }
+
+  #project-link {
+    margin-right: 26px;
+  }
+  #contact-box {
+    margin-left: 18px;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -473,20 +496,7 @@ footer {
     grid-template-columns: 80px repeat(auto-fit, minmax(130px, 1fr)) 80px;
     grid-template-rows: 60px 0.75fr 0.5fr repeat(3, auto) 0.5fr 60px;
     gap: 3px;
-    background-color: lavender;
-  }
-
-  #nav-bar {
-    display: flex;
-    border: 1px solid black;
-    background-color: coral;
-    grid-column: 2 / -2;
-    grid-row: 2;
-    justify-content: space-evenly;
-    align-items: center;
-    font-style: italic;
-    font-weight: bold;
-    font-size: 20px;
+    background-color: #ececfa;
   }
 
   #nav-drop-down {
@@ -542,5 +552,36 @@ footer {
   #dice-description > #dice-github-link,
   #jokes-description > #jokes-github-link {
     font-size: 90%;
+  }
+
+  #project-link,
+  #abtMe-link,
+  #name-display,
+  #cntct-link {
+    font-size: 18px;
+  }
+
+  #copyright {
+    font-size: 16px;
+  }
+
+  #gitHub-icon,
+  #linkedIn-icon {
+    background-color: #8bbbae;
+    border-radius: 5px;
+    margin-top: 14px;
+    margin-right: 5px;
+    height: 25px;
+  }
+
+  #abtMe-link {
+    margin-right: 16px;
+  }
+
+  #project-link {
+    margin-right: 22px;
+  }
+  #contact-box {
+    margin-left: 10px;
   }
 }

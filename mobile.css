@@ -1,6 +1,6 @@
 @media (max-width: 700px) {
   #secondContainerWrap {
-    border: 3px solid red;
+    /* border: 3px solid red; */
     display: flex;
     justify-content: space-around;
     color: white;
@@ -14,19 +14,19 @@
     height: 640px;
     text-align: center;
     align-items: center;
-    border: 2px solid green;
+    /* border: 2px solid green; */
     color: white;
     order: 1;
     /* flex-direction: row; */
   }
   #about-me-div {
-      border: 4px solid orchid;
+      /* border: 4px solid orchid; */
       display: inline-block;
   }
 
   .paragraph-text {
     color: white;
-    border: 2px solid white;
+    /* border: 2px solid white; */
   }
 
   #profile-photo-div {
@@ -44,7 +44,7 @@
   }
   .icon-divs {
     margin-top: none;
-    border: 3px solid white;
+    /* border: 3px solid white; */
     height: 200px;
     width: 200px;
     visibility: hidden;
@@ -52,7 +52,7 @@
 
   .paragraph-text {
     color: white;
-    border: 2px solid white;
+    /* border: 2px solid white; */
   }
 
   
@@ -81,7 +81,7 @@
     align-items: center;
     width: 100%;
     height: 100%;
-    border-style: solid;
+    /* border-style: solid; */
     /* border-color: red; */
     color: black;
     background-color: black;

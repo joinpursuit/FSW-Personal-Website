@@ -1,0 +1,47 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:rgb(181, 236, 243); 
+}
+ul{
+    position: relative;
+    display: flex;
+}
+ul li{
+ position: relative;
+ list-style: none;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+  color: #fff;
+  transition: 0.5s;
+}
+.skill-icon :hover{
+transform: rotate(360deg) scale(1.1);
+
+}
+#html {
+    font-size: 4em;
+}
+#javascript {
+    font-size: 4em;
+}
+#react {
+    font-size: 4em;
+}
+#node {
+    font-size: 4em;
+}
+#redux{
+    font-size: 4em;
+}
+#postgre {
+    font-size: 4em;
+}

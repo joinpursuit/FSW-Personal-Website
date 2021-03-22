@@ -1,21 +1,21 @@
+
+const logo = document.querySelector(".logo")
+logo.addEventListener('click', function(){
+    logo.classList.add('animated', 'heartBeat')
+    
+})
+let audio = document.querySelector("#audio")
 const spans = document.querySelectorAll("h1 span") 
 spans.forEach(span => span.addEventListener('mouseover', function(e){
-    span.classList.add('animated', 'shake')
+    span.classList.add('animated', 'flash')
+    audio.play()
 }))
-
 spans.forEach(span => span.addEventListener('mouseout', function(e) {
-    span.classList.remove('animated', 'shake')
+    span.classList.remove('animated', 'flash')
+    audio.pause()
 }))
 
-// const divButton = document.querySelector("#work-category")
-// const button = divButton.getElementsByClassName("btn")
-// for (let i = 0; i < button.length; i++) {
-//     button[i].addEventListener("click", function() {
-//     let current = document.getElementsByClassName("active");
-//     current[0].className = current[0].className.replace(" active", "");
-//     this.className += " active";
-//     });
-//   }
+
 
 const video = document.querySelector("video");
 video.style.visibility = "hidden"
@@ -78,23 +78,56 @@ button3.addEventListener("click", (event) => {
 })
 
 // When the user scrolls the page, execute myFunction
-window.onscroll = function() {myFunction()};
+// window.onscroll = function() {myFunction()};
 
 // Get the navbar
-const navbar = document.querySelector(".navbar");
+// const navbar = document.querySelector(".navbar");
 
 // Get the offset position of the navbar
-const sticky = navbar.offsetHeight;
+// const sticky = navbar.offsetHeight;
 
 // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
-myFunction()
+// function myFunction() {
+//   if (window.pageYOffset >= sticky) {
+//     navbar.classList.add("sticky")
+//   } else {
+//     navbar.classList.remove("sticky");
+//   }
+// }
+// myFunction()
+// const header = document.querySelector("header");
+// let prevScrollpos = window.pageYOffset;
+// window.onscroll = function() {
+//   let currentScrollPos = window.pageYOffset;
+//   if (prevScrollpos > currentScrollPos) {
+//     document.querySelector("header").style.top = "0"
+//   } else {
+//     document.querySelector("header").style.top = "-50px"
+//   }
+//   prevScrollpos = currentScrollPos;
+// }
+
+// window.addEventListener("scroll", bringmenu);
+
+// function bringmenu() {
+//     if (document.body.scrollBottom > 0 || document.documentElement.scrollBottom > 0) {
+//         navbar.style.bottom = "-50%";
+//     } else {
+//         navbar.style.bottom = "0";
+//     }
+// }
+
+// var prevScrollpos = window.pageYOffset;
+
+// window.onscroll = function() {
+//   var currentScrollPos = window.pageYOffset;
+//   if (prevScrollpos > currentScrollPos) {
+//     navbar.style.top = "0";
+//   } else {
+//     navbar.style.top = "-50px";
+//   }
+//   prevScrollpos = currentScrollPos;
+// }
 
 // const navBarSticky = document.querySelector(".navbar")
 // debugger;
@@ -158,3 +191,26 @@ myFunction()
 //     getCategory.classList.remove("hideCategory")
 //     getCategory.classList.remove("showCategory")
 // }
+
+
+// function Scroll()
+// {
+//     const header = document.querySelector("header");
+//     let timeOut;
+//     let displayNone = header.style.display = "none"
+//     if (window.pageYOffset < 1)
+//         {
+//             clearTimeout(timeOut);
+//         }
+//     if (window.pageYOffset > 1) 
+//         {
+//             timeOut = setTimeout(function(){displayNone}, 2000);
+//             navbar.style.opacity = "0";
+//         } else {
+//             header.style.display = "block";
+//             header.style.opacity = "1";
+//             stopcount();
+//         }
+// }
+
+// window.addEventListener("scroll",Scroll);

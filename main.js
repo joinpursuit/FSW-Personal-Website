@@ -10,11 +10,11 @@ document.onreadystatechange = function() {
   }
 
   const hidePhoto = () =>{
-      const ul = document.getElementsByClassName("photography-set")
-      const li = document.getElementsByClassName("photography-flex")
-      if(ul.style.display === "block"){
-          ul.style.display = "none"
+      const ul = document.querySelector(".photography-set")
+      const li = document.querySelector(".photography-flex")
+      if(ul.style.visibility === "visible"){
+          ul.style.visibility = "hidden"
       }else{
-          ul.style.display = "block"
+          ul.style.visibility = "visible"
       }
   }

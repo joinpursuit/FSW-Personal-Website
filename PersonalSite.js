@@ -70,11 +70,11 @@ const container = document.querySelector(".Skills-Container");
 const createOptions = () => {
   for (let i = 0; i < skills.length; i++) {
     const option = document.createElement("option");
-    option.classList.add("skillsOptions")
+    // option.classList.add("skillsOptions")
     option.textContent = skills[i];
     option.value = skills[i];
-    // debugger
     select.appendChild(option);
+    debugger
   }
 };
 createOptions();
@@ -91,21 +91,21 @@ const filterOption = (e) => {
       img.src = data[i].image;
       container.appendChild(img);
       img.addEventListener("mouseover", () => {
-          debugger
-            debugger;
-            const para = document.querySelector("#text")
-            para.innerHTML = ""
-            let skillsText = document.createElement("p");
-            skillsText.classList.add("para2")
-            skillsText.innerHTML = data[i].text;
-            debugger
-            para.appendChild(skillsText);
-            if(para.style.display === "none"){
-              para.style.display ="block"
-            }else{
-              para.style.display ="none"
-            }
-        })
+        debugger
+        debugger;
+        const para = document.querySelector("#text")
+        para.innerHTML = ""
+        let skillsText = document.createElement("p");
+        skillsText.classList.add("para2")
+        skillsText.innerHTML = data[i].text;
+        debugger
+        para.appendChild(skillsText);
+        if(para.style.display === "none"){
+          para.style.display ="block"
+        }else{
+          para.style.display ="none"
+        }
+      })
     }
   }
 };

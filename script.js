@@ -17,7 +17,6 @@ document.addEventListener("DOMContentLoaded", (e) => {
 });
 
 header.addEventListener("click", (e)=>{
-    debugger
     if(e.target.id === "name-header"){
         currentPage.style.display = "none"
         homeSection.style.display = "block"

@@ -1,77 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="my-website.css">
-    <script src = "./my-website.js" defer></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="my-website.css" />
     <title>Document</title>
-</head>
-<body>
-<header>
-    <a name ="jump-contact"></a>
-    <span id = "about-me-header">
-        <a href="index.html#jump-about-me"> About Me</a> 
-    </span>
-    <span id = "projects-header">
+  </head>
+  <body>
+    <header>
+      <a name="jump-contact"></a>
+      <span id="about-me-header">
+        <a href="index.html#jump-about-me"> About Me</a>
+      </span>
+      <span id="projects-header">
         <a href="my-website-projects.html#jump-projects">Projects</a>
-        
-    </span>
-    <span id = "skills-header">
+      </span>
+      <span id="skills-header">
         <a href="my-website-skills.html#jum-skills">Skills</a>
-        
-    </span>
-    <span id = "contact-header">
+      </span>
+      <span id="contact-header">
         <a href="#jump-contact">Contact</a>
-        
-    </span>
-</header>
+      </span>
+    </header>
 
-<section id = "contact-section">
-    <!-- <form method="post" action="https//formspree.io/durdonadjalilova@pursuit.org"> -->
-        <!-- <input id="email" type="email" value = "durdonadjalilova@pursuit.org" placeholder="durdonadjalilova@pursuit.org"></input> -->
-        <!-- <input id="sender-name" type="text" placeholder="Name"> -->
-        <!-- <input id="subject" placeholder="Subject"></input>
-        <textarea id="message" placeholder="Message"></textarea>
-        <button type="button" onclick="send()" id="send" >Send</button> -->
-        <!-- <form
-  action="https://formspree.io/f/xjvjbgvv"
-  method="POST"
->
-  <label>
-    Your email:
-    <input type="email" name="_replyto">
-  </label>
-  <label>
-    Your message:
-    <textarea name="message"></textarea>
-  </label>
-
-   your other form fields go here -->
-
-  <!-- <button type="submit">Send</button> -->
-<!-- </form> -->
-<form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/moqyajqk" method="post">
-    <fieldset id="fs-frm-inputs">
-      <!-- <label for="your-name">Your Name</label> -->
-      <input type="text" name="name" id="your-name" placeholder="Your Name" required="">
-      <!-- <label for="email-address">Email Address</label> -->
-      <input type="email" name="_replyto" id="email-address" placeholder="Your email" required="">
-      <!-- <label for="message">Message</label> -->
-      <textarea rows="5" name="message" id="message" placeholder="Message" required=""></textarea>
-      <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
-    </fieldset>
-    <input type="submit" value="Submit">
-  </form>
-        <span><a href="https://github.com/durdonadjalilova">
-        <img id="github" src="github.png" alt="github">
-    </a>
-       <a href="https://www.linkedin.com/in/durdona-djalilova-b144a4202/"><img id="linkedin" src="linkedin.png" alt="linkedin"> </a> 
-</span>
-
-</section>
-
-
-   </body>
+    <section id="contact-section">
+      <form
+        class="my-style-form"
+        id="fs-frm"
+        name="simple-contact-form"
+        accept-charset="utf-8"
+        action="https://formspree.io/f/durdonadjalilova@pursuit.org"
+        method="post"
+      >
+        <fieldset class="my-style" id="fs-frm-inputs">
+          <input
+            type="text"
+            name="name"
+            id="your-name"
+            placeholder="Your Name"
+            required=""
+          />
+          <input
+            type="email"
+            name="_replyto"
+            id="email-address"
+            placeholder="Your email"
+            required=""
+          />
+          <textarea
+            rows="5"
+            name="message"
+            id="message"
+            placeholder="Message"
+            required=""
+          ></textarea>
+          <input
+            type="hidden"
+            name="_subject"
+            id="email-subject"
+            value="Contact Form Submission"
+          />
+        </fieldset>
+        <input type="submit" value="Submit" />
+      </form>
+      <span
+        ><a href="https://github.com/durdonadjalilova">
+          <img id="github" src="github.png" alt="github" />
+        </a>
+        <a href="https://www.linkedin.com/in/durdona-djalilova-b144a4202/"
+          ><img id="linkedin" src="linkedin.png" alt="linkedin" />
+        </a>
+      </span>
+    </section>
+  </body>
 </html>

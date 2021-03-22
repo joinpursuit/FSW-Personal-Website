@@ -112,8 +112,12 @@ label {
 #logo,
 #project-title,
 #contact-title, 
-#skill-title{
+#skill-title,
+#connect-container{
     text-align: center;
+}
+#connect-container{
+    
 }
 #form-container{
     padding: 20px;

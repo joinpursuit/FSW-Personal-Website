@@ -1,21 +1,32 @@
 body {
-    background-color: #F9E784;
+    background-color: black;
 }
-.container {
+.containers {
     display: flex;
     justify-content: space-evenly;
     
 }
-.icon-1 {
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap-reverse;
+    height: 10px;
+    width: auto;
+    padding-top: 30px;
+
+}
+
+.svg{
+    height: 200px;
+    width: 250px;
+}
+
+.icon {
     height: 10px;
     width: auto;
     padding-top: 30px;
 }
-.icon-2 {
-    height: 10px;
-    width: auto;
-    padding-top: 30px;
-}
+
 
 img {
     position: relative;
@@ -58,15 +69,7 @@ img {
 
   @media only screen and (max-width: 480px) {
     /* For mobile phones: */
-    body
-    .container,
-    .nav-bar,
-    .left-side,
-    .animation,
-    .p,
-    img {
-        
-    }
+    
 
     
   }

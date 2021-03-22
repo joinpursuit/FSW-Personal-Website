@@ -15,9 +15,12 @@ img {
   background-position: center;
 }
 body {
-  background-color: #F9E784;
+  background-color: black;
 }
-
+.svg{
+  height: 200px;
+  width: 200px;
+}
 /* Navbar */
 .nav-bar {
   display: flex;

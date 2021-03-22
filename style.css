@@ -111,7 +111,8 @@ label {
 #resume-title,
 #logo,
 #project-title,
-#contact-title{
+#contact-title, 
+#skill-title{
     text-align: center;
 }
 #form-container{

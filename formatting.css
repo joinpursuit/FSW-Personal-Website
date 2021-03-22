@@ -8,31 +8,8 @@ body {
   background-color: #ececfa;
 }
 
-/* .clicked-sections {
-    display: grid;
-    display: flex;
-    width: 100vw;
-    min-height: 100px;
-    height: fit-content;
-    display: grid;
-    grid-template-columns: 80px repeat(auto-fit, minmax(130px, 1fr)) 80px;
-    grid-template-rows: 60px .75fr .5fr repeat(3, 200px) .50fr 60px; 
-    gap: 3px;
-    background-color: lavender;
-    box-sizing:border-box
-} */
-
 #nav-bar {
   display: none;
-  /* border: 1px solid black;
-    background-color: coral;
-    grid-column: 2 / -2;
-    grid-row: 2;
-    justify-content: center;
-    align-items: center;
-    font-style: italic;
-    font-weight: bold;
-    font-size: 36px; */
 }
 
 section {
@@ -111,7 +88,6 @@ section {
   margin-left: 10px;
   font-family: jubilat, serif;
   font-weight: 200;
-  /* font-style: italic; */
   font-size: 20px;
   color: #220721;
 }
@@ -119,10 +95,8 @@ section {
 #jokes-description > #jokes-github-link,
 #dice-description > #dice-github-link {
   display: inline-block;
-  /* margin-left: 10px; */
   font-family: jubilat, serif;
   font-weight: 600;
-  /* font-style: italic; */
   font-size: 20px;
   color: #220721;
 }
@@ -141,7 +115,6 @@ section {
   margin-left: 10px;
   font-family: jubilat, serif;
   font-weight: 200;
-  /* font-style: italic; */
   font-size: 20px;
   color: #220721;
 }
@@ -153,13 +126,11 @@ section {
   margin-top: 14px;
   margin-right: 27px;
   height: 135px;
-  /* flex-wrap: wrap; */
 }
 
 #topRow-contact-msg {
   font-family: jubilat, serif;
   font-weight: 600;
-  /* font-style: italic; */
   font-size: 40px;
   color: #220721;
   padding-bottom: 10px;
@@ -168,23 +139,18 @@ section {
 #email-link {
   font-family: jubilat, serif;
   font-weight: 600;
-  /* font-style: italic; */
   font-size: 35px;
   color: #220721;
-  /* margin-top: 15px; */
 }
 
 
 .project-mid-row, #abtMe-mid-row, #contact-mid-row {
-  /* margin-left: 50px;
-    margin-right: 50px; */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   font-family: omnes-narrow, sans-serif;
   font-weight: 400;
   font-style: italic;
-  /* color: #2d213f; */
   color: #220721;
   font-size: 22px;
   align-content: center;
@@ -193,8 +159,6 @@ section {
 
 
 #aboutMe-section {
-  /* width: 173px;
-    height: 97px; */
   background-color: rgb(156, 23, 23);
   border: 1px solid black;
   grid-column: 1 / -1;
@@ -226,9 +190,7 @@ section {
 }
 
 #mid-row, #abtMe-mid-row, #contact-mid-row {
-  /* border: 1px solid black; */
   border-top: none;
-  /* border-bottom: 1.5px solid red; */
   grid-column: 1 / -1;
   grid-row: 5;
   min-width: 0;
@@ -247,7 +209,6 @@ section {
   font-weight: 300;
   color: #220721;
   font-size: 42px;
-  /* align-content: center; */
   padding-left: 50px;
   padding-right: 50px;
   border-left: 1.5px solid #2d213f;
@@ -271,7 +232,6 @@ section {
   justify-content: center;
   font-family: jubilat, serif;
   font-weight: 500;
-  /* font-style: bold; */
   font-size: 29px;
   color: #220721;
 }
@@ -286,15 +246,12 @@ section {
 }
 
 #abt-mid-row {
-  /* background-color: darkgreen; */
-  /* border: 1px solid black; */
   grid-column: 1 / -1;
   grid-row: 5;
   padding-left: 20px;
   padding-right: 20px;
   min-width: 0;
   height: 10px;
-  /* border: 1px solid black; */
 }
 
 
@@ -336,9 +293,7 @@ section {
 #canal, #vwm, #wat-arun {
   min-height: 0;
   width: 250px;
-  /* object-fit: contain; */
   object-fit: contain;
-  /* margin-bottom: 10px; */
   margin-top: 10px;
   border-radius: 5px;
 }
@@ -348,7 +303,6 @@ section {
 #embroidery-1, #cm-fr {
   height: 200px;
   min-width: 0;
-  /* object-fit: contain; */
   object-fit: contain;
   margin-top: 10px;
   border-radius: 5px;
@@ -356,8 +310,6 @@ section {
 
 footer {
   background-color: #2d213f;
-  /* background-color: indigo; */
-  /* border: 1px solid black; */
   grid-column: 1 / -1;
   grid-row: 8;
   padding-left: 20px;
@@ -365,7 +317,6 @@ footer {
   min-width: 0;
   display: flex;
   justify-content: space-between;
-  /* padding: 6px; */
   border-radius: 5px;
   font-family: omnes-narrow, sans-serif;
   font-weight: 400;
@@ -435,13 +386,11 @@ footer {
   margin-top: 14px;
   margin-right: 27px;
   height: 85px;
-  /* flex-wrap: wrap; */
 }
 
 #topRow-contact-msg {
   font-family: jubilat, serif;
   font-weight: 600;
-  /* font-style: italic; */
   font-size: 32px;
   color: #220721;
   padding-bottom: 10px;
@@ -450,10 +399,8 @@ footer {
 #email-link {
   font-family: jubilat, serif;
   font-weight: 600;
-  /* font-style: italic; */
-  font-size: 29px;
+  font-size: 2px;
   color: #220721;
-  /* margin-top: 15px; */
 }
 
 }
@@ -470,12 +417,7 @@ footer {
 
   #drop-down {
     display: none;
-    /* border: 1px solid black;
-        background-color: yellow;
-        grid-column: -2 / -1;
-        grid-row: 1;
-        margin: 0%; */
-  }
+    }
 
   #nav-drop-down {
     display: flex;
@@ -554,7 +496,6 @@ footer {
   #topRow-contact-msg {
     font-family: jubilat, serif;
     font-weight: 600;
-    /* font-style: italic; */
     font-size: 28px;
     color: #220721;
     padding-bottom: 10px;
@@ -563,10 +504,8 @@ footer {
   #email-link {
     font-family: jubilat, serif;
     font-weight: 600;
-    /* font-style: italic; */
     font-size: 24px;
     color: #220721;
-    /* margin-top: 15px; */
   }
 }
 
@@ -590,19 +529,13 @@ footer {
   }
 
   #drop-down {
-    display: none;
-    /* border: 1px solid black;
-        background-color: yellow;
-        grid-column: -2 / -1;
-        grid-row: 1;
-        margin: 0%; */
+    display: none;  
   }
 
   #volcano,
   #louvre, #cm-fr {
     height: 85px;
     min-width: 0;
-    /* object-fit: contain; */
     object-fit: contain;
     margin-bottom: 5px;
     margin-top: 5px;
@@ -612,9 +545,7 @@ footer {
   #canal, #vwm, #wat-arun {
     min-height: 0;
     width: 97px;
-    /* object-fit: contain; */
     object-fit: contain;
-    /* margin-bottom: 10px; */
     margin-top: 5px;
   }
 
@@ -673,13 +604,11 @@ footer {
   margin-top: 14px;
   margin-right: 27px;
   height: 65px;
-  /* flex-wrap: wrap; */
 }
 
 #topRow-contact-msg {
   font-family: jubilat, serif;
   font-weight: 600;
-  /* font-style: italic; */
   font-size: 22px;
   color: #220721;
   padding-bottom: 10px;
@@ -688,11 +617,7 @@ footer {
 #email-link {
   font-family: jubilat, serif;
   font-weight: 600;
-  /* font-style: italic; */
   font-size: 20px;
   color: #220721;
-  /* margin-top: 15px; */
 }
-
-
 }

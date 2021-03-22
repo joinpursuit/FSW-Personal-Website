@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Quicksand&family=Raleway&display=swap");
+
+body {
+  /* svgbackgrounds.com */
+  margin: auto;
+  background-color: #b57edc;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg stroke='%23000000' stroke-width='66.7' stroke-opacity='0.05' %3E%3Ccircle fill='%23b57edc' cx='0' cy='0' r='1800'/%3E%3Ccircle fill='%23b383df' cx='0' cy='0' r='1700'/%3E%3Ccircle fill='%23b088e2' cx='0' cy='0' r='1600'/%3E%3Ccircle fill='%23ae8ce5' cx='0' cy='0' r='1500'/%3E%3Ccircle fill='%23ac91e8' cx='0' cy='0' r='1400'/%3E%3Ccircle fill='%23aa95ea' cx='0' cy='0' r='1300'/%3E%3Ccircle fill='%23a899ec' cx='0' cy='0' r='1200'/%3E%3Ccircle fill='%23a69dee' cx='0' cy='0' r='1100'/%3E%3Ccircle fill='%23a5a1ef' cx='0' cy='0' r='1000'/%3E%3Ccircle fill='%23a4a5f1' cx='0' cy='0' r='900'/%3E%3Ccircle fill='%23a3a9f2' cx='0' cy='0' r='800'/%3E%3Ccircle fill='%23a3adf3' cx='0' cy='0' r='700'/%3E%3Ccircle fill='%23a3b1f4' cx='0' cy='0' r='600'/%3E%3Ccircle fill='%23a3b4f5' cx='0' cy='0' r='500'/%3E%3Ccircle fill='%23a3b8f5' cx='0' cy='0' r='400'/%3E%3Ccircle fill='%23a4bbf6' cx='0' cy='0' r='300'/%3E%3Ccircle fill='%23a5bff6' cx='0' cy='0' r='200'/%3E%3Ccircle fill='%23a7c2f6' cx='0' cy='0' r='100'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+}
+
+#name {
+  color: white;
+  font-family: "Press Start 2P", cursive;
+  text-align: center;
+  font-size: 50px;
+}
+
+.title {
+  color: white;
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+}
+
+.navContainer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.navItem {
+  text-align: center;
+  float: left;
+  -webkit-transition: margin 0.5s ease-out;
+  -moz-transition: margin 0.5s ease-out;
+  -o-transition: margin 0.5s ease-out;
+}
+
+.navItem:hover {
+  cursor: pointer;
+  margin-top: 5px;
+  margin-bottom: -5px;
+}
+
+.picture {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  color: white;
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+}
+
+.aboutMeDiv,
+.contactDiv {
+  margin: auto;
+  width: 500px;
+  box-shadow: 10px 10px 5px rgba(255, 255, 255, 0.5);
+}
+
+.aboutMeDesc {
+  background-image: linear-gradient(rgb(167, 194, 246), rgb(181, 126, 220));
+  color: white;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  text-decoration: bold;
+}
+
+.projectDiv {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  text-align: center;
+  color: white;
+  font-family: "Raleway", sans-serif;
+}
+
+.imagelinks {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+img.imagehover {
+  margin: 10px;
+  padding: -100px;
+  border: #a1a1a1;
+  text-align: center;
+  float: left;
+  -webkit-transition: margin 0.5s ease-out;
+  -moz-transition: margin 0.5s ease-out;
+  -o-transition: margin 0.5s ease-out;
+}
+
+img.imagehover:hover {
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.skillsContainer {
+  list-style-type: none;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  /* display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around; */
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  grid-template-rows: repeat(2, 50%);
+  grid-gap: 5px;
+  grid-row-gap: 20px;
+  overflow: hidden;
+}
+
+.skillsItem {
+  text-align: center;
+  color: white;
+  font-size: 50px;
+  font-family: "Quicksand", sans-serif;
+}
+
+#binx {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  height: 450px;
+  width: 400px;
+  display: none;
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+label {
+  color: white;
+  font-family: "Raleway", sans-serif;
+}
+
+form {
+  background-image: linear-gradient(rgb(167, 194, 246), rgb(181, 126, 220));
+}
+
+.imagehover {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

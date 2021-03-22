@@ -2,7 +2,6 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   align-items: center;
-  /* padding-top: 80px; */
   justify-content: center;
   gap: 2em;
 }
@@ -17,7 +16,7 @@ img {
 body {
   background-color: black;
 }
-.svg{
+.svg {
   height: 200px;
   width: 200px;
 }
@@ -57,10 +56,9 @@ body {
   justify-content: space-evenly;
 }
 
-
 /* @media only screen and (max-width:400px) {
   /* For mobile phones: */
-  /* body, .container {
+/* body, .container {
     width:100%;
   }
   img {
@@ -68,4 +66,4 @@ body {
 
   }
  
-} */ 
+} */

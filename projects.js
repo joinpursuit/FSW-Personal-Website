@@ -4,7 +4,7 @@ const learnMoreBtn1 = document.querySelector("#learn-more-btn-1");
 const learnMoreBtn2 = document.querySelector("#learn-more-btn-2");
 
 learnMoreBtn1.addEventListener("click", (e) => {
-//   e.preventDefault();
+  //   e.preventDefault();
   if (willYouSleep.style.display === "none") {
     willYouSleep.style.display = "block";
   } else {
@@ -13,11 +13,11 @@ learnMoreBtn1.addEventListener("click", (e) => {
 });
 
 learnMoreBtn2.addEventListener("click", (e) => {
-    // e.preventDefault();
+  // e.preventDefault();
   if (snowmanDescription.style.display === "none") {
     snowmanDescription.style.display = "block";
   } else {
     snowmanDescription.style.display = "none";
   }
-//   debugger;
+  //   debugger;
 });

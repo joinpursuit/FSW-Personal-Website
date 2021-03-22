@@ -1,11 +1,3 @@
-/* .container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  align-items: center;
-  padding-top: 80px;
-  justify-content: center;
-} */
-
 /* Navbar */
 .nav-bar {
   display: flex;
@@ -103,7 +95,6 @@ footer .content img {
   background-repeat: no-repeat;
   background-position: center;
   padding-top: 180px;
-  
 }
 
 @media only screen and (max-width: 480px) {

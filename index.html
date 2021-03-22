@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Yashiry Azize</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="./reset.css" />
     <link rel="stylesheet" href="./index.css" />
     <script src="index.js" defer ></script>
@@ -14,7 +15,7 @@
     <a class="navbar-a" href="#section-1">Home</a>
     <a class="navbar-a" href="#section-2">About</a>
     <a class="navbar-a" href="#section-4">Projects</a>
-    <a class="navbar-a" href="#section-6">Skills</a>
+    <a class="navbar-a" href="#section-5">Skills</a>
     <a class="navbar-a" href="#section-8">Contact</a>
     </div>
     <main class="grid-container">
@@ -52,13 +53,20 @@
             </p>
             <br />
             <p>
-                Beyond tech, I am an avid drawer, cine-phile, and gamer. I am
-                passionate about sharing ideas and stories through the utilization of
-                gaming, illustrations and other media technologies, and using these
-                forms to more accurately portray POC stories and unify people through
-                shared experiences. I hope to eventually be able to apply my creative
-                side to a future career in app and web development.
+                Beyond tech, I am an avid drawer, cine-phile, gamer and trivia enthusiast - 
+                look below for a fun random-fact. I am passionate about sharing ideas and
+                 stories through the utilization of gaming, illustrations and other media 
+                 technologies, and using these forms to more accurately portray POC stories
+                and unify people through shared experiences. I hope to eventually be able to 
+                apply my creative side to a future career in app and web development.
             </p>
+            <div id="random-trivia">
+            <button id="random-q-button" type="button">Random Trivia</button>
+            <br>
+            <p id="question"></p>
+            <br>
+            <p id="answer"></p>
+        </div>
         </div>
       </section>
       <section id="section-4">
@@ -79,7 +87,9 @@
             A text-based game using the command line. The player uses text input
             to control the game, and the game state is relayed to the player via
             text output.
+            <a target="_blank" class="textadventure-link" href="https://github.com/yashiazize/FSW-Text-Based-Adventure"> Repo Link </a>
         </p>
+        <br>
         <h2 id="projects-title">Snowman Game</h2>
         <img
         id="snowman-game"
@@ -92,17 +102,13 @@
             in all its correct positions. The player has 10 guesses to discover
             the word and the incorrect letter would decrement the guesses and
             display the used letters. 
+            <a  target="_blank" class="snowman-link" href="https://github.com/yashiazize/FSW-CLI-Snowman"> Repo Link</a>
         </p>
       </section> 
       <section id="section-6">
         <img id="lettering-skills" src="./skills-lettering.png" alt="skills">
       </section>
       <section id="section-7">
-        <select name="Filter" id="filter-skills"> Filter
-          <option value="none">Filter Skills</option>
-          <option value="collaboration">Collaboration</option>
-          <option value="full-stack">Full-Stack</option>
-        </select>
         <ul class="skills-list">
           <li>
             <p>HTML</p>
@@ -145,7 +151,19 @@
       </section>
       <section id="section-8">
         <img class="contact-lettering" src="./contact-lettering.png" alt="contact">
-        <img id="my-photo" src="./myphoto.png" alt="me">
+        <ul class="links">
+            <li> 
+              <a target="_blank" class="githublink" href="https://github.com/yashiazize">
+                <img src="https://cdn.icon-icons.com/icons2/509/PNG/512/Github_icon-icons.com_49946.png" alt>
+              </a>
+              
+            </li>
+            <li>
+              <a target="_blank" class="linkedin" href="https://www.linkedin.com/in/yashiry-azize/">
+                <img src="https://cdn.icon-icons.com/icons2/693/PNG/512/LinkedIn_Rounded_Solid_icon-icons.com_61559.png" alt>
+              </a>
+            </li>
+        </ul>
       </section>
       <section id="section-9">
         <div>
@@ -157,21 +175,7 @@
           <p>Contact me:</p>
           <a class="mail-to" href="mailto:yashiryazize@pursuit.org">yashiryazize@pursuit.org</a>
         </div>
-          <ul class="links">
-          <li> 
-            <a target="_blank" class="githublink" href="https://github.com/yashiazize">
-              <img src="https://cdn.icon-icons.com/icons2/509/PNG/512/Github_icon-icons.com_49946.png" alt>
-            </a>
-            
-          </li>
-          <li>
-            <a target="_blank" class="linkedin" href="https://www.linkedin.com/in/yashiry-azize/">
-              <img src="https://cdn.icon-icons.com/icons2/693/PNG/512/LinkedIn_Rounded_Solid_icon-icons.com_61559.png" alt>
-            </a>
-          </li>
-      </ul>
       </section>
-
       </main>
   </body>
 </html> 

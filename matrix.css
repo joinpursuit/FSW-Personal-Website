@@ -671,10 +671,10 @@ scroll-behavior: smooth;
   
   }
 
-  html{
+  /* html{
     width: 414px;
     padding-right: 0%;
-  }
+  } */
 #navi{
   display:flex;
   flex-direction: column;
@@ -907,7 +907,7 @@ figure{
 }
 #bio{
  width:500px;
- color: black;
+ color: white;
  font-size: 29px;
  overflow-y: scroll;
  overflow-x: scroll;
@@ -957,12 +957,12 @@ main{
 @media only screen and (min-width: 700px) 
 {
 body{
-  background-color: maroon;
+  background-color: black;
 }
 
 #navi{
   width: 700px;
-  border:solid green 4px;
+  border-top:solid white 4px;
 }
 
 #menu-button{
@@ -1025,4 +1025,192 @@ main{
      width: 194px;
      margin:10px;
    }
+   #joke-output{color:white;}
 }
+
+@media only screen and (min-width: 800px) {
+  body{
+    background-color: rgb(46, 134, 80);
+
+   
+  }
+ button#rain{
+   margin-left: 150px;
+ }
+ #menu-button{
+   margin-left:500px;
+
+   }
+ #navi{
+   margin-left:40px;
+   
+ }
+}
+@media only screen and (min-width: 900px) {
+  
+
+body{
+  background-color: black;
+  margin-left: 70px;
+}
+#grow-box{
+  width: 800px;
+}
+#f-p-top{
+  font-size: 27px;
+}
+button#rain{
+  margin-top:222px;
+}
+#bio{
+  color:white;
+}
+
+#contact>h2{
+  font-size: 47px;
+}
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+body{
+  background-color: black;
+  /* margin-left: 500px; */
+}
+#navi{
+  width: 1100px;
+  padding-bottom: 40px;
+  
+}
+#farrah-top{
+  font-size:70px;
+}
+#f-p-top{
+  font-size: 40px;
+}
+
+button#rain{
+  margin-top: 342px;
+  width: 140px;
+  height: 50px;
+}
+#menu-button{
+  width: 140px;
+  height: 44px;
+  margin-left: 900px;
+
+}
+
+#skills{
+  margin-left: 368px;
+}
+
+figure{
+  margin-left:430px;
+  font-size: 45px;
+}
+#grow-box{
+  width: 1080px;
+}
+#about{
+width: 1200px;
+
+}
+#pic{
+  width: 1100px;
+}
+ #bio{
+  width: 800px;
+  padding-right: 500px;
+} 
+
+#projects{
+  width: 1100px;
+  height: 1100px;
+}
+#snow-pic{
+  height: 500px;
+  width: 1000px;
+  margin-left: 100px; 
+}
+
+#snow-word,#jokes-header{
+  color:white;
+}
+#contact{
+  width: 1100px;
+}
+
+#big-menu{
+  margin-left: 440px;
+  width: 500px;
+ 
+}
+#divTech,#leadershipTech,#industryTech{
+  width:50px;
+  text-align: center;
+  font-size: 26px;
+  padding-right: 100px;
+}
+#click-joke{
+  margin-bottom: 60px;
+}
+.repo{
+  font-size:30px;
+  margin-left: 50px;
+}
+}
+
+@media only screen and (min-width: 1500px) {
+  body{
+    background-color: black;
+    margin-left: 200px;
+  }
+  @media only screen and (min-width: 1900px) {
+    body{
+      background-color: black;
+      margin-left: 340px;
+    }
+
+}
+
+
+
+@media only screen and (min-width: 2000px) {
+body{
+  background-color:black;
+  margin-left: 400px;
+}
+#grow-box{
+  margin-left: 70px;
+}
+#jokes-header{
+  font-size:50px;
+  margin-left:48px;
+}
+#joke-output{
+  font-size:40px;
+  margin-left: 44px;
+}
+#click-joke{
+  margin-left:40px;
+  font-size: 25px;
+}
+
+.repo{
+  font-size:30px;
+  margin-left: 50px;
+}
+#contact{
+  margin-top:300px;
+}
+}
+
+/* 
+@media only screen and (min-width: 200px) {
+  body{
+    background-color: orange;
+    margin-left: 500px;
+  }
+} */

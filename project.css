@@ -326,6 +326,6 @@ padding: 0;
   display: block;
   text-align: center;
 }
-/* #firstInfo {
-  display: flex;
-} */
+#linkedIn {
+  text-decoration: underline;
+}

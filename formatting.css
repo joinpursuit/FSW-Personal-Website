@@ -62,13 +62,13 @@ section {
   text-align: center;
 }
 
-#top-row, #project-top-row, #abtMe-top-row{
+#top-row, #project-top-row, #abtMe-top-row, #contact-top-row{
   border: 0.5px solid #2d213f;
   border-bottom: 2.5px solid #2d213f;
   border-radius: 5px;
   grid-column: 1 / -1;
   grid-row: 4;
-  height: fit-content;
+  height: minmax(200px, fit-content);
   padding-left: 20px;
   padding-right: 20px;
   min-width: 0;
@@ -79,7 +79,7 @@ section {
 
 
 #volcano,
-#louvre {
+#louvre, #cm-fr {
   height: 220px;
   min-width: 0;
   object-fit: contain;
@@ -146,7 +146,36 @@ section {
   color: #220721;
 }
 
-.project-mid-row, #abtMe-mid-row {
+#top-row-gitHub-icon,
+#top-row-linkedIn-icon {
+  background-color: #8bbbae;
+  border-radius: 5px;
+  margin-top: 14px;
+  margin-right: 27px;
+  height: 135px;
+  /* flex-wrap: wrap; */
+}
+
+#topRow-contact-msg {
+  font-family: jubilat, serif;
+  font-weight: 600;
+  /* font-style: italic; */
+  font-size: 40px;
+  color: #220721;
+  padding-bottom: 10px;
+}
+
+#email-link {
+  font-family: jubilat, serif;
+  font-weight: 600;
+  /* font-style: italic; */
+  font-size: 35px;
+  color: #220721;
+  /* margin-top: 15px; */
+}
+
+
+.project-mid-row, #abtMe-mid-row, #contact-mid-row {
   /* margin-left: 50px;
     margin-right: 50px; */
   display: flex;
@@ -196,7 +225,7 @@ section {
   gap: 3px;
 }
 
-#mid-row, #abtMe-mid-row {
+#mid-row, #abtMe-mid-row, #contact-mid-row {
   /* border: 1px solid black; */
   border-top: none;
   /* border-bottom: 1.5px solid red; */
@@ -225,9 +254,10 @@ section {
   border-right: 1.5px solid #2d213f;
   margin-bottom: 10px;
 }
-/* 
-#name-display {
-} */
+
+#indented-p {
+  text-decoration: underline;
+}
 
 #eng-title {
   display: flex;
@@ -267,6 +297,8 @@ section {
   /* border: 1px solid black; */
 }
 
+
+
 #btm-row {
   border: 0.5px solid #2d213f;
   border-top: 2.5px solid #2d213f;
@@ -299,19 +331,21 @@ section {
   margin-left: 26px;
 }
 
+
 #mana-bowl,
-#canal {
+#canal, #vwm, #wat-arun {
   min-height: 0;
   width: 250px;
   /* object-fit: contain; */
   object-fit: contain;
   /* margin-bottom: 10px; */
   margin-top: 10px;
+  border-radius: 5px;
 }
 
 #seine,
 #gongbi,
-#embroidery-1 {
+#embroidery-1, #cm-fr {
   height: 200px;
   min-width: 0;
   /* object-fit: contain; */
@@ -378,7 +412,7 @@ footer {
   }
 
   #volcano,
-  #louvre {
+  #louvre, #cm-fr {
     height: 105px;
     min-width: 0;
     object-fit: contain;
@@ -387,12 +421,41 @@ footer {
   }
 
   #mana-bowl,
-  #canal {
+  #canal, #vwm, #wat-arun {
     min-height: 0;
     width: 127px;
     object-fit: contain;
     margin-top: 5px;
   }
+
+  #top-row-gitHub-icon,
+#top-row-linkedIn-icon {
+  background-color: #8bbbae;
+  border-radius: 5px;
+  margin-top: 14px;
+  margin-right: 27px;
+  height: 85px;
+  /* flex-wrap: wrap; */
+}
+
+#topRow-contact-msg {
+  font-family: jubilat, serif;
+  font-weight: 600;
+  /* font-style: italic; */
+  font-size: 32px;
+  color: #220721;
+  padding-bottom: 10px;
+}
+
+#email-link {
+  font-family: jubilat, serif;
+  font-weight: 600;
+  /* font-style: italic; */
+  font-size: 29px;
+  color: #220721;
+  /* margin-top: 15px; */
+}
+
 }
 
 @media screen and (max-width: 680px) {
@@ -424,7 +487,7 @@ footer {
   }
 
   #volcano,
-  #louvre {
+  #louvre, #cm-fr {
     height: 115px;
     min-width: 0;
     object-fit: contain;
@@ -433,7 +496,7 @@ footer {
   }
 
   #mana-bowl,
-  #canal {
+  #canal, #vwm, #wat-arun {
     min-height: 0;
     width: 137px;
     object-fit: contain;
@@ -487,6 +550,24 @@ footer {
   #contact-box {
     margin-left: 18px;
   }
+
+  #topRow-contact-msg {
+    font-family: jubilat, serif;
+    font-weight: 600;
+    /* font-style: italic; */
+    font-size: 28px;
+    color: #220721;
+    padding-bottom: 10px;
+  }
+  
+  #email-link {
+    font-family: jubilat, serif;
+    font-weight: 600;
+    /* font-style: italic; */
+    font-size: 24px;
+    color: #220721;
+    /* margin-top: 15px; */
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -518,7 +599,7 @@ footer {
   }
 
   #volcano,
-  #louvre {
+  #louvre, #cm-fr {
     height: 85px;
     min-width: 0;
     /* object-fit: contain; */
@@ -528,7 +609,7 @@ footer {
   }
 
   #mana-bowl,
-  #canal {
+  #canal, #vwm, #wat-arun {
     min-height: 0;
     width: 97px;
     /* object-fit: contain; */
@@ -584,4 +665,34 @@ footer {
   #contact-box {
     margin-left: 10px;
   }
+
+  #top-row-gitHub-icon,
+#top-row-linkedIn-icon {
+  background-color: #8bbbae;
+  border-radius: 5px;
+  margin-top: 14px;
+  margin-right: 27px;
+  height: 65px;
+  /* flex-wrap: wrap; */
+}
+
+#topRow-contact-msg {
+  font-family: jubilat, serif;
+  font-weight: 600;
+  /* font-style: italic; */
+  font-size: 22px;
+  color: #220721;
+  padding-bottom: 10px;
+}
+
+#email-link {
+  font-family: jubilat, serif;
+  font-weight: 600;
+  /* font-style: italic; */
+  font-size: 20px;
+  color: #220721;
+  /* margin-top: 15px; */
+}
+
+
 }

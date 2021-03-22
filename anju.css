@@ -1,244 +1,500 @@
-/* DESKTOP*/
-/* @media only screen and (min-width: 1366px) { */
-body {
-  background-image: url("./jessy-smith-zFOm6KzA-7g-unsplash.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  background-color: #f3f1f2;
-  display: flex;
+@media only screen and (max-width: 375px) {
+  /* HOME PAGE */
+  body {
+    background-image: url("./jessy-smith-zFOm6KzA-7g-unsplash.jpg");
+    background-size: contain;
+    background-repeat: repeat;
+    background-position: center;
+    background-color: #f3f1f2;
+    display: flex;
+  }
+
+  .home-page,
+  .about-page,
+  .projects-page,
+  .contact-page {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    height: 100vh;
+  }
+
+  nav {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  li {
+    font: bold 18px "Courier New", Courier, monospace;
+    margin: 5px;
+  }
+
+  li:hover {
+    color: rgba(89, 197, 7, 1);
+  }
+
+  .quote-li {
+    display: none;
+  }
+
+  .section {
+    display: flex;
+  }
+
+  .name-mobile-one {
+    font: 16px bold "Courier New", Courier, monospace;
+    color: rgba(255, 255, 255, 1);
+    grid-column: 2/5;
+    grid-row: 2/3;
+    margin: 0px 0px 0px 25px;
+  }
+
+  .name-mobile-two {
+    font: 16px bold "Courier New", Courier, monospace;
+    color: rgba(255, 255, 255, 1);
+    grid-column: 2/5;
+    grid-row: 3/4;
+    justify-self: center;
+    align-self: center;
+    margin: 125px 30px 100px 0px;
+  }
+
+  .name-mobile-three {
+    font: 16px bold "Courier New", Courier, monospace;
+    color: rgba(255, 255, 255, 1);
+    grid-column: 2/5;
+    grid-row: 5/6;
+    margin: 0px 0px 0px 25px;
+  }
+
+  .name-mobile-one:hover {
+    color: rgba(89, 197, 7, 1);
+  }
+  .name-mobile-two:hover {
+    color: rgba(89, 197, 7, 1);
+  }
+  .name-mobile-three:hover {
+    color: rgba(89, 197, 7, 1);
+  }
+
+  .name {
+    display: none;
+  }
+
+  /* ABOUT PAGE */
+  .pic-of-me {
+    grid-column: 2/5;
+    grid-row: 1/3;
+    width: 30%;
+    align-self: center;
+    justify-self: center;
+    margin: 10px 50px 0px 25px;
+  }
+
+  .bio {
+    font-family: "Courier New", Courier, monospace;
+    color: rgba(255, 255, 255, 1);
+    grid-column: 2/5;
+    grid-row: 3/4;
+    margin: 180px 50px 0px 15px;
+    display: none;
+  }
+
+  .mobile-bio-one {
+    font-family: "Courier New", Courier, monospace;
+    color: rgba(255, 255, 255, 1);
+    grid-column: 2/5;
+    grid-row: 3/4;
+    margin: 50px 25px 0px 25px;
+  }
+
+  .mobile-bio-two {
+    font-family: "Courier New", Courier, monospace;
+    color: rgba(255, 255, 255, 1);
+    grid-column: 2/5;
+    grid-row: 4/6;
+    margin: 130px 38px 0px 20px;
+  }
+
+  /* PROJECTS PAGE */
+  .to-do-list {
+    grid-column: 2/4;
+    grid-row: 1/3;
+  }
+
+  .to-do-pic {
+    grid-column: 2/4;
+    grid-row: 1/3;
+    justify-self: center;
+    align-self: center;
+    margin: 90px 5px 0px 48px;
+    width: 60%;
+  }
+
+  .to-do-sum {
+    display: none;
+  }
+
+  .mobile-to-do-github {
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    grid-column: 2/4;
+    grid-row: 5/6;
+    color:rgba(255, 255, 255, 1);
+    justify-self: center;
+    margin: 0px 0px 0px 30px;
+  }
+
+  .mobile-to-do-github:hover {
+    color: rgba(89, 197, 7, 1);
+  }
+
+  .mobile-emoji-github {
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    grid-column: 2/4;
+    grid-row: 5/6;
+    color:rgba(255, 255, 255, 1);
+    justify-self: center;
+    align-self: center;
+    margin: 0px 0px 15px 30px;
+  }
+
+  .mobile-emoji-github:hover{
+    color: rgba(89, 197, 7, 1);
+  }
+
+  .emoji-story {
+    grid-column: 2/4;
+    grid-row: 3/4;
+  }
+
+  .emoji-pic {
+    grid-column: 2/4;
+    grid-row: 3/4;
+    width: 65%;
+    margin: 50px 5px 10px 45px;
+  }
+
+  .emoji-sum {
+    display: none;
+  }
+
+  /* CONTACT PAGE */
+  .contact-me {
+    display: none;
+  }
+
+  .mobile-contact-me-one {
+    font-family: "Courier New", Courier, monospace;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+    grid-column: 2/5;
+    grid-row: 1/2;
+    justify-items: center;
+    margin: 90px 15px 0px 15px;
+  }
+
+  .mobile-contact-me-two {
+    font-family: "Courier New", Courier, monospace;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+    grid-column: 2/5;
+    grid-row: 3/4;
+    justify-items: center;
+    margin: 40px 5px 0px 20px;
+  }
+
+  .lets-connect {
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+    color: rgba(89, 197, 7, 1);
+    text-align: center;
+    grid-column: 2/5;
+    grid-row: 5/6;
+    margin: 40px 30px 0px 10px;
+  }
+
+  .lets-connect:hover {
+    color: white;
+  }
+
+  .devicon-linkedin-plain-wordmark {
+    font-size: 30px;
+    margin: 0px 55px 0px 5px;
+  }
+
+  .devicon-github-original-wordmark {
+    font-size: 100%;
+    margin: 10px 270px 0px 5px;
+  }
+
+  .icons {
+    grid-column: 2/5;
+    grid-row: 4/6;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 220px;
+  }
+
+  i:hover {
+    color: rgba(89, 197, 7, 1);
+  }
+
+  .copyright {
+    font: bold 12px "Courier New", Courier, monospace;
+    grid-column: 2/6;
+    grid-row: 12/13;
+    align-self: center;
+  }
 }
 
-.home-page,
-.about-page,
-.projects-page,
-.contact-page {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(12, 1fr);
-  height: 100vh;
-  /* align-items: center;commented out */
-  /* grid-auto-rows: minmax(100vh, auto); commented out*/
-}
+/* DESKTOP */
+@media only screen and (min-width: 1366px) {
+  /* HOME PAGE */
+  body {
+    background-image: url("./jessy-smith-zFOm6KzA-7g-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-color: #f3f1f2;
+    display: flex;
+  }
 
-nav {
-  grid-column: 1/8;
-  grid-row: 1/2;
-  position: fixed;
-  top: 0;
-  /* width: 100%;commented out */
-}
+  .home-page,
+  .about-page,
+  .projects-page,
+  .contact-page {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    height: 100vh;
+  }
 
-ul {
-  display: flex;
-  flex-direction: row;
-  /* flex-wrap: wrap; */
-}
+  nav {
+    grid-column: 1/8;
+    grid-row: 1/2;
+    position: fixed;
+    top: 0;
+  }
 
-li {
-  color: black;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 30px;
-  font-weight: bold;
-  margin: 30px;
-}
+  ul {
+    display: flex;
+    flex-direction: row;
+  }
 
-li:hover {
-  color: rgba(89, 197, 7, 1);
-}
+  li {
+    color: black;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 30px;
+  }
 
-#quote-of-the-day {
-  grid-column: 7/13;
-  grid-row: 1/2;
-  justify-self: end;
-}
+  li:hover {
+    color: rgba(89, 197, 7, 1);
+  }
 
-.quote-li {
-  font-size: 16px;
-}
+  #quote-of-the-day {
+    grid-column: 7/13;
+    grid-row: 1/2;
+    justify-self: end;
+  }
 
-.name {
-  font-family: "Courier New", Courier, monospace;
-  font-size: 45px;
-  font-weight: bold;
-  color: rgba(255, 255, 255, 1);
-  /* justify-self: center; */
-  /* align-items: center; */
-  grid-column: 5/9;
-  grid-row: 6/7;
-}
+  /* Otherwise font will be 30px like other <li> */
+  .quote-li {
+    font-size: 21px;
+  }
 
-.bio {
-  font-family: "Courier New", Courier, monospace;
-  font-size: 17px;
-  color: rgba(255, 255, 255, 1);
-  grid-column: 5/8;
-  grid-row: 5/10;
-}
+  .name {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 45px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    grid-column: 5/9;
+    grid-row: 6/7;
+  }
 
-.pic-of-me {
-  grid-column: 8/10;
-  grid-row: 5/10;
-  width: 75%;
-}
+  .name-mobile-one,
+  .name-mobile-two,
+  .name-mobile-three {
+    display: none;
+  }
 
-.to-do-list {
-  grid-column: 4/6;
-  grid-row: 5/8;
-  /* font: bold 18px 'Courier New', Courier, monospace; */
-  /* display: flex; */
-  /* justify-content: center; */
-  /* align-items: flex-start; */
-}
+  /* ABOUT */
+  .bio {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 17px;
+    color: rgba(255, 255, 255, 1);
+    grid-column: 5/8;
+    grid-row: 5/10;
+  }
 
-.to-do-pic {
-  grid-column: 4/6;
-  grid-row: 5/8;
-  margin-left: 95px;
-  /* margin-bottom: 90px; */
-}
+  .mobile-bio-one {
+    display: none;
+  }
 
-.to-do-list, .emoji-story {
-  position: relative;
-  /* width: 50%; */
-}
+  .mobile-bio-two {
+    display: none;
+  }
 
-/* .emoji-pic { */
-  /* display: block; */
-  /* width: 100%;
-  height: auto; */
-/* } */
+  .pic-of-me {
+    grid-column: 8/10;
+    grid-row: 5/10;
+    width: 75%;
+  }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 130%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: black;
-}
+  /* PROJECTS PAGE */
+  .to-do-list {
+    grid-column: 4/6;
+    grid-row: 5/8;
+  }
 
-.to-do-list:hover .overlay {
-  opacity: 1;
-}
+  .to-do-pic {
+    grid-column: 4/6;
+    grid-row: 5/8;
+    margin-left: 95px;
+  }
 
- .emoji-story:hover .overlay {
-  opacity: 1;
-}
+  .to-do-list,
+  .emoji-story {
+    position: relative;
+  }
 
-.to-do-sum {
-  grid-column: 4/6;
-  grid-row: 8/11;
-  color: white;
-  font: 16px "Courier New", Courier, monospace;
-  position: absolute;
-  top: 50%;
-  left: 45%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: left;
-}
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 130%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: black;
+  }
 
-.emoji-sum {
-  color: white;
-  font: 16px "Courier New", Courier, monospace;
-  position: absolute;
-  top: 40%;
-  left: 55%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: right;
-}
+  .to-do-list:hover .overlay {
+    opacity: 1;
+  }
 
-.emoji-story {
-  /* grid-column: 8/10;
-  grid-row: 10/11;
-  font: bold 18px 'Courier New', Courier, monospace;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start; */
-  grid-column: 7/9;
-  grid-row: 5/8;
-  width: 105%;
-  height: 125%;
-  /* margin-left: 0px; */
-  margin-bottom: 60px;
-  align-items: flex-start;
-}
+  .emoji-story:hover .overlay {
+    opacity: 1;
+  }
 
-.emoji-pic {
-  grid-column: 7/9;
-  grid-row: 5/8;
-  width: 105%;
-  height: 112%;
-  margin-left: 10px;
-  align-items: flex-start;
-  display: block;
-}
+  .to-do-sum {
+    grid-column: 4/6;
+    grid-row: 8/11;
+    color: white;
+    font: 16px "Courier New", Courier, monospace;
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: left;
+  }
 
-/* .emoji-sum {
-  grid-column: 7/9;
-  grid-row: 8/11;
-  font: 16px "Courier New", Courier, monospace;
-} */
+  .emoji-pic {
+    grid-column: 7/9;
+    grid-row: 5/8;
+    width: 105%;
+    height: 112%;
+    margin-left: 10px;
+    align-items: flex-start;
+    display: block;
+  }
 
-.contact-me {
-  font-family: "Courier New", Courier, monospace;
-  font-size: 21px;
-  text-align: left;
-  color: rgba(255, 255, 255, 1);
-  grid-column: 5/9;
-  grid-row: 4/8;
-  justify-items: center;
-  align-self: end;
-}
+  .emoji-sum {
+    color: white;
+    font: 16px "Courier New", Courier, monospace;
+    position: absolute;
+    top: 40%;
+    left: 55%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: right;
+  }
 
-.lets-connect {
-  font-family: "Courier New", Courier, monospace;
-  font-size: 32px;
-  font-weight: bold;
-  color: rgba(89, 197, 7, 1);
-  text-align: center;
-  grid-column: 5/9;
-  grid-row: 9/10;
-}
+  .emoji-story {
+    grid-column: 7/9;
+    grid-row: 5/8;
+    width: 105%;
+    height: 125%;
+    margin-bottom: 60px;
+    align-items: flex-start;
+  }
 
-.lets-connect:hover {
-  color: white;
-}
+  .mobile-to-do-github,
+  .mobile-emoji-github {
+    display: none;
+  }
 
-.devicon-linkedin-plain-wordmark {
-  font-size: 60px;
-}
+  /* CONTACT PAGE */
+  .contact-me {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 21px;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+    grid-column: 5/9;
+    grid-row: 4/8;
+    justify-items: center;
+    align-self: end;
+  }
 
-.devicon-github-original-wordmark {
-  font-size: 40px;
-}
+  .mobile-contact-me-one,
+  .mobile-contact-me-two {
+    display: none;
+  }
 
-.icons {
-  grid-column: 5/9;
-  grid-row: 10/11;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+  .lets-connect {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 32px;
+    font-weight: bold;
+    color: rgba(89, 197, 7, 1);
+    text-align: center;
+    grid-column: 5/9;
+    grid-row: 9/10;
+  }
 
-i:hover {
-  color: rgba(89, 197, 7, 1);
-}
-/* } */
+  .lets-connect:hover {
+    color: white;
+  }
 
-.copyright {
-  font-family: "Courier New", Courier, monospace;
-  font-size: 12px;
-  font-weight: bold;
-  grid-column: 9/13;
-  grid-row: 12/13;
-  align-self: center;
+  .devicon-linkedin-plain-wordmark {
+    font-size: 60px;
+  }
+
+  .devicon-github-original-wordmark {
+    font-size: 40px;
+  }
+
+  .icons {
+    grid-column: 5/9;
+    grid-row: 10/11;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  i:hover {
+    color: rgba(89, 197, 7, 1);
+  }
+
+  .copyright {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 12px;
+    font-weight: bold;
+    grid-column: 9/13;
+    grid-row: 12/13;
+    align-self: center;
+  }
 }

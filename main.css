@@ -1,13 +1,55 @@
+#secondContainerWrap {
+/* border: 3px solid red; */
+display: flex;
+justify-content: space-around;
+color: white;
+text-align: center;
+}
+
+.icon-divs {
+margin-top: 35%;  
+height: 160px;
+width: auto;
+/* position: absolute;
+bottom: 2px; */
+}
+
+.icon:hover {
+  color: #ffee10;
+  
+}
+
 #secondContainer {
-  margin: auto;
-  /* padding: 0; */
   background-color: black;
-  color: white;
   width: 50%;
-  /* height: 100vh; */
+  height: 640px;
   text-align: center;
+  align-items: center;
   /* border-style: solid; */
-  border-color: white;
+  /* border-color: blue; */
+  color: white;
+}
+
+.paragraph-text {
+  color: white;
+  /* border: 2px solid white; */
+}
+
+/* #linkedin-div{
+  flex: 1;
+} */
+/* #about-me-div {
+  display: flex;
+} */
+
+#profile-photo-div {
+  display: flex;
+}
+
+.icon-divs {
+  /* border: 3px solid white; */
+  width: 10%;
+  
 }
 
 #thirdContainer {
@@ -20,7 +62,7 @@
 }
 
 #fourthContainer {
-  padding-top: 5%;
+  margin-top: 15px;
   width: 100%;
   height: 100%;
   border-style: solid;

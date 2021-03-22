@@ -107,25 +107,25 @@ nav a:hover {
 
 #project-section {
   height: 66vh;
-  overflow: scroll;
+  overflow-y: scroll;
   margin-right: 10px;
   border: 3px solid black;
 }
 
 #project-section::-webkit-scrollbar {
-  width: 15px;
+  width: 13px;
 }
 
 #project-section::-webkit-scrollbar-track {
-  background: #918d8d;
+  background: #838383;
 }
 
 #project-section::-webkit-scrollbar-thumb {
-  background: #3d405b;
+  background: #14151d;
 }
 
 #project-section::-webkit-scrollbar-thumb:hover {
-  background: rgb(128, 20, 20);
+  background: #023E8A;
 }
 
 .project-list {
@@ -152,7 +152,7 @@ nav a:hover {
   margin-top: 3%;
 }
 
-/* Skills section*/
+/* SKILLS SECTION*/
 
 #skills-section {
   display: grid;
@@ -196,24 +196,13 @@ nav a:hover {
   margin-top: 5%;
 }
 
-#textarea {
-  width: 300px;
-}
-
-#name-input {
-  width: 300px;
-}
-
-#email-input {
-  width: 300px;
-}
-
 .form {
   font-size: 16px;
+  width: 300px;
 }
 
 
-/* Footer */
+/* FOOTER */
 
 footer {
   display: flex;
@@ -221,19 +210,19 @@ footer {
 }
 
 .footer-icon:hover {
-  transform: scale(1.1);
-  opacity: 0.7;
+  filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
 }
 
 .footer-icon {
   max-width: 3em;
 }
 
+/* MOBILE SCREEN */
+
 @media only screen and (max-width: 600px) {
   #container {
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 3fr 1fr;
-    height: 80px;
   }
   header {
     grid-column: 2/3;

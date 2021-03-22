@@ -40,11 +40,3 @@ var menu = document.getElementById('menu');
         closeIcon.checked = false;
       }
     }
-
-    document.addEventListener('DOMContentLoaded', e =>{
-      e.preventDefault
-      const btn = document.getElementById('form5')
-      btn.addEventListener('submit', eve => {
-          eve.preventDefault()
-      })
-  })

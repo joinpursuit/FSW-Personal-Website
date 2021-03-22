@@ -26,11 +26,3 @@ toggleSwitch.addEventListener("click", function () {
   localStorage.setItem("theme", theme);
   localStorage.setItem("toggle", toggle);
 });
-
-// code up a functioning form
-// expanded details about project
-// project picture at expand out readme file a link to github
-
-// possible implementaion of an API
-// constants overall activity for commits to github for display
-// on projects page

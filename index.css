@@ -303,17 +303,16 @@ form {
   margin: auto;
 }
 
-/* project page  */
-#text-based-image {
-  border-radius: 1%;
+/* project page   */
+#text-game {
+  border-radius: 0%;
+  padding: 50px;
   margin: 10px;
   height: 370px;
 }
 
-#snowman-image {
-  border-radius: 1%;
-  margin: 10px;
-  height: 100%;
+#intro {
+  display: none;
 }
 /* github icon */
 #linkedin {
@@ -325,6 +324,11 @@ form {
 #github {
   font-size: 20px;
   color: white;
+}
+
+/* copyright */
+#copyright {
+  color: black;
 }
 @media only screen and (max-width: 550px) {
   .container {

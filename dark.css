@@ -15,12 +15,14 @@ body {
   color: white;
   border-radius: 30px;
 }
-a:link, a:visited {
+a:link,
+a:visited {
   color: rgb(110, 14, 14);
   text-decoration: underline;
   cursor: auto;
 }
-a:link:active, a:visited:active {
+a:link:active,
+a:visited:active {
   color: red;
 }
 header {
@@ -30,21 +32,23 @@ header {
   flex-direction: column;
   border-bottom: 1px white dashed;
 }
- h1, h2, h3{
-   font-size: 20px;
-   font-family: 'Courier New', Courier, monospace;
-   font-weight: bold;
- }
- #projectheadline {
-   border-bottom: 1px white dotted;
- }
- p {
-   font-family: Arial, Helvetica, sans-serif;
- }
+h1,
+h2,
+h3 {
+  font-size: 20px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+}
+#projectheadline {
+  border-bottom: 1px white dotted;
+}
+p {
+  font-family: Arial, Helvetica, sans-serif;
+}
 
- #projects-description {
-   font-size: 16px;
- }
+#projects-description {
+  font-size: 16px;
+}
 #skills {
   text-align: center;
 }
@@ -56,18 +60,18 @@ header {
   text-align: center;
 }
 
- main {
+main {
   grid-column: 2 / 4;
   grid-row: 2/3;
- }
+}
 
- #projects {
-   grid-column: 2 / 3;
- }
- form {
+#projects {
+  grid-column: 2 / 3;
+}
+form {
   text-align: center;
- }
- label {
+}
+label {
   display: block;
   text-align: center;
 }
@@ -83,7 +87,7 @@ input {
   column-gap: 5px;
 }
 
-#title1{
+#title1 {
   text-align: center;
   grid-column: 1 / 4;
   grid-row: 1 / 2;
@@ -94,7 +98,7 @@ input {
   grid-column: 1 / 2;
   grid-row: 2 / 3;
 }
-#bio{
+#bio {
   grid-column: 3/4;
   grid-row: 2 / 3;
   font-size: 16px;
@@ -118,7 +122,6 @@ nav {
   border-radius: 30px;
 }
 
-
 footer {
   display: block;
   grid-row: 3 / 4;
@@ -132,19 +135,20 @@ footer {
 
 #css-change {
   grid-column: 2 / 3;
-} 
-#textadventure, #snowman {
+}
+#textadventure,
+#snowman {
   max-width: 100%;
 }
 /* Media Queries */
 /* media query 1 */
 @media screen and (max-device-width: 480px) {
   body {
-  background-color: rgb(58, 58, 58);
-  display: grid;
-  grid-template-columns: 1fr 2fr 2fr 1fr;
-  grid-template-rows: auto auto auto;
-  gap: 1rem 1rem;
+    background-color: rgb(58, 58, 58);
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 1rem 1rem;
   }
   header {
     grid-column: 2 / 4;
@@ -162,70 +166,8 @@ footer {
   main {
     grid-column: 2 / 4;
     grid-row: 2/3;
-   }
+  }
   #about-me {
-  display: flex;
-  flex-direction: column;
-  align-items: center
-}
-#form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-#title1{
-  font-size: 40px;
-}
-#bio{
-  grid-column: 3/4;
-  font-size: 20px;
-}
-footer {
-  grid-row: 3 / 4;
-  grid-column: 2 / 4;
-  border-top: 1px white dashed;
-  text-align: center;
-}
-h1, h2 {
-  font-size: 20px;
-}
-
-#textadventure, #snowman {
-  max-width: 100%;
-}
-}
-/* media query 2 */
-@media screen and (min-device-width: 481px) and (max-device-width: 800px) {
-  body {
-    background-color: rgb(58, 58, 58);
-    display: grid;
-    grid-template-columns: 1fr 2fr 2fr 1fr;
-    grid-template-rows: auto auto auto;
-    gap: 1rem 1rem;
-    }
-    
-    header {
-      grid-column: 2 / 4;
-      grid-row: 1 / 2;
-      display: flex;
-      flex-direction: column;
-      border-bottom: 1px white dashed;
-    }
-    #selfie {
-      max-width: 100%;
-    }
-    #bio {
-      max-width: 100%;
-    }
-    main {
-      grid-column: 2 / 4;
-      grid-row: 2/3;
-     }
-     #textadventure, #snowman {
-       max-width: 100%;
-     }
-    #about-me {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -236,10 +178,10 @@ h1, h2 {
     justify-content: center;
     align-items: center;
   }
-  #title1{
+  #title1 {
     font-size: 40px;
   }
-  #bio{
+  #bio {
     grid-column: 3/4;
     font-size: 20px;
   }
@@ -249,7 +191,73 @@ h1, h2 {
     border-top: 1px white dashed;
     text-align: center;
   }
-  h1, h2 {
+  h1,
+  h2 {
+    font-size: 20px;
+  }
+
+  #textadventure,
+  #snowman {
+    max-width: 100%;
+  }
+}
+/* media query 2 */
+@media screen and (min-device-width: 481px) and (max-device-width: 800px) {
+  body {
+    background-color: rgb(58, 58, 58);
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 1rem 1rem;
+  }
+
+  header {
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px white dashed;
+  }
+  #selfie {
+    max-width: 100%;
+  }
+  #bio {
+    max-width: 100%;
+  }
+  main {
+    grid-column: 2 / 4;
+    grid-row: 2/3;
+  }
+  #textadventure,
+  #snowman {
+    max-width: 100%;
+  }
+  #about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #title1 {
+    font-size: 40px;
+  }
+  #bio {
+    grid-column: 3/4;
+    font-size: 20px;
+  }
+  footer {
+    grid-row: 3 / 4;
+    grid-column: 2 / 4;
+    border-top: 1px white dashed;
+    text-align: center;
+  }
+  h1,
+  h2 {
     font-size: 20px;
   }
   #resume {

@@ -1,6 +1,6 @@
 html, body, header, nav, h1, a,
 ul, ol, li, strong, main, button, i,
-section, img, div, h2, p, form,
+section, img, div, h2, h3, h4, h5, p, form,
 fieldset, label, input, textarea,
 span, article, footer, time, small, th {
   margin: 0;
@@ -14,6 +14,7 @@ span, article, footer, time, small, th {
   vertical-align: inherit;
   box-sizing: inherit;
   background: transparent;
+  -webkit-font-smoothing: subpixel-antialiased;
 }
 
 ul, ol {
@@ -25,3 +26,4 @@ img {
   width: 100%;
   height: auto;
 }
+

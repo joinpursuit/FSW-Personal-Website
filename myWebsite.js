@@ -1,6 +1,5 @@
 const navBar = document.querySelector(".main-nav");
 const nav = document.querySelector(".nav-bar");
-// const body = document.querySelector("body")
 const burger = document.querySelector(".burger");
 const navLinks = document.querySelectorAll(".nav-bar li");
 
@@ -9,6 +8,7 @@ const naviBar = () => {
 
     burger.addEventListener("click", (e) => {
         //Toggle the burger Nav
+        
         nav.classList.toggle("nav-active");
         //Animation for Links in Nav 
         navLinks.forEach((link, i) => {
@@ -21,7 +21,6 @@ const naviBar = () => {
         //Burger X animation
         burger.classList.toggle("toggle");
     })
-
     
     
 }

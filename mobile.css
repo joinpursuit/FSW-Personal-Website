@@ -20,8 +20,8 @@
     /* flex-direction: row; */
   }
   #about-me-div {
-      /* border: 4px solid orchid; */
-      display: inline-block;
+    /* border: 4px solid orchid; */
+    display: inline-block;
   }
 
   .paragraph-text {
@@ -30,7 +30,7 @@
   }
 
   #profile-photo-div {
-    visibility:hidden;
+    visibility: hidden;
   }
   #mobileProfilePhoto {
     height: 200px;
@@ -54,8 +54,6 @@
     color: white;
     /* border: 2px solid white; */
   }
-
-  
 
   /* end of second container  */
 
@@ -88,7 +86,11 @@
     text-align: center;
   }
 
-  .menu-wrap {
-    background-color: #434a5c;
+  .menu-wrap .hamburger > div {
+      background-color: white;
+}
+
+.menu-wrap .menu > div {
+        background-color: rgba(73, 98, 163, .80);
   }
 }

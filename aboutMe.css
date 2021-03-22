@@ -64,22 +64,28 @@ ul li:before {
   display: flex;
 }
 
+.containers {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 @media only screen and (max-width: 480px) {
   /* For mobile phones: */
   body,
   .container,
+  .containers,
   h1,
   .p,
   ul li {
     width: 100%;
   }
-  .child {
+  /* .child {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(540px, 1fr));
     align-items: center;
     /* padding-top: 80px;
   gap: 2em; */
-  }
+  } */
 }
 
 

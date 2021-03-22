@@ -15,7 +15,7 @@
 // let meNow = document.querySelector("me-now")
 // meNow.addEventListener("click",(event)=>{
 //     me.style.display = "none"
-// //   const article =document.querySelector(“article”)
-//     // article.style.visibility = “visible”
+//   const article =document.querySelector(“article”)
+    // article.style.visibility = “visible”
 // })
 

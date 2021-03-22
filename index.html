@@ -14,13 +14,20 @@
     <div class='container'>
         <div class="sub-container sub1">
             <nav id='main-nav'>
-                <img id="menu-icon" src="./images/menu-icon.svg" onclick="smallMenu()">
+                <div id='menu-container'>
+                    <i id='icon' class="fas fa-bars fa-5x" onclick="smallMenu()"></i>
+                </div>
                 <ul id='navLinks'>
                     <a href="./index.html"><li>Home</li></a>
                     <a href="./about.html"><li>About Me</li></a>
                     <a href="./contact.html"><li>Contact Me</li></a>
                     <a href="./resume.html"><li>Resume</li></a>
-                </ul>  
+                </ul>
+                <!-- <img id="menu-icon" src="./images/menu-icon.svg" onclick="smallMenu()"> -->
+                <label class="switch">
+                    <input class='toggle-switch'type="checkbox">
+                    <div class="slider round"></div>
+                </label>
             </nav>
         </div>
         <div class="sub-container sub2">
@@ -28,7 +35,9 @@
                 <a href="./about.html"><h1>Joshua Mendez</h1></a>
                 <a href="./index.html">
                     <label>
-                        Full Stack Web Developer
+                        <p>
+                            Full Stack Web Developer
+                        </p>
                     </label>
                 </a>
             </div>  

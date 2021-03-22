@@ -7,19 +7,27 @@
     <title>Skills & Projects</title>
     <link rel='stylesheet' href='./reset.css'/>
     <link rel='stylesheet' href='./style.css'/>
+    <script src="https://kit.fontawesome.com/5c7ae435bd.js" crossorigin="anonymous"></script>
     <script src="./index.js" defer></script>
 </head>
 <body>
     <div class='container'>
         <div class="sub-container sub1">
             <nav id='main-nav'>
-                <img id="menu-icon" src="./images/menu-icon.svg" onclick="smallMenu()">
+                <div id='menu-container'>
+                    <i id='icon' class="fas fa-bars fa-5x" onclick="smallMenu()"></i>
+                </div>
                 <ul id='navLinks'>
                     <a href="./index.html"><li>Home</li></a>
                     <a href="./about.html"><li>About Me</li></a>
                     <a href="./contact.html"><li>Contact Me</li></a>
                     <a href="./resume.html"><li>Resume</li></a>
-                </ul>  
+                </ul>
+                <!-- <img id="menu-icon" src="./images/menu-icon.svg" onclick="smallMenu()"> -->
+                <label class="switch">
+                    <input class='toggle-switch'type="checkbox">
+                    <div class="slider round"></div>
+                </label>
             </nav>
         </div>
         <div class="sub-container sub2">
@@ -39,7 +47,6 @@
         </div>
         <div class="sub-container sub4">
             <div id='resume-container'>
-                <!-- <iframe id='resume-pdf' src="./JoshuaMendez.pdf" frameborder="0"></iframe> -->
                 <object data="JoshuaMendez.pdf" type="application/pdf" width="100%" height="800px"> 
                     <p>It appears you don't have a PDF plugin for this browser.
                      No biggie... you can <a href="JoshuaMendez.pdf">click here to

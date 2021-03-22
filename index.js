@@ -18,10 +18,17 @@ const darkMode = () =>{
     const body= document.querySelector("body")
     const button=document.querySelector("#dark-mode")
     body.classList.toggle("darkMode")
-    if(button.innerText === "Dark Mode"){
-        button.innerText = "Light Mode"
+    
+    if(button.innerText === "Light Mode"){
+        button.innerText = "Dark Mode"
     } else {
-        button.innerText="Dark Mode"
+        button.innerText="Light Mode"
     }
 
 }
+
+const showButton=document.querySelector("#show")
+
+showButton.onclick = () => { 
+    document.querySelector("#meme-image").style.display = "block"; 
+};

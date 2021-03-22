@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="index.js" defer></script>
     <title>Document</title>
 </head>
@@ -32,50 +33,61 @@
     </nav>
     
     
-  
+    
     
     <button onclick="topFunction()" id="topBtn" title="Go to top">Back to the Top</button>
     
     <main>
         <header id="h1Home">
-            <span class="desktop-header">
+            <div class="desktop-header">
                 <h1>Greetings, I am Poonam!</h1>
-                <img src="malcolmX.png" alt="Malcolm X quote">
-                <img src="noBorders.png" alt="No Borders quote">
-                <p>Thank you for stopping by.Feel free to scroll down and learn more about me and the work I'd like to offer to the world.</p> 
+                <!-- <img src="malcolmX.png" alt="Malcolm X quote">
+                    <img src="noBorders.png" alt="No Borders quote"> -->
+                    <p>Thank you for stopping by.Feel free to scroll down and learn more about me and the work I'd like to offer to the world.</p> 
+                    <button id="dark-mode" onclick="darkMode()">Light Mode</button>
                 <!-- <button onclick="myFunction()">Toggle dark mode</button> -->
-            </span>
+                </div>
             
             <span class="mobile-header">
                 <!-- <h1>Greetings, I am Poonam</h1> -->
-                
+                <!-- <p>Greetings, my name is Poonam and thank you for stopping by. Feel free to scroll down and what I'd like to offer to the world</p> -->
                 <img class="malcolm" src="malcolmX.png" alt="Malcolm X quote">
                 <!-- <img src="noBorders.png" alt="No Borders quote"> -->
                 
                 <div class="middle">
-                    <p class="text"> The artwork displayed on this page is created by Justseeds Artists' Cooperative. To check out more 
-                        of their radical artwork please click here.
+                    <p class="text"> All artwork displayed is by Justseeds Artists' Cooperative, please click to view more 
+                        of their radical artwork
                     </p>
-                    <div class="just-seeds-button"><a href="https://twitter.com/Justseeds">Click </a></div>
+                    <div class="just-seeds-button"><a href="https://twitter.com/Justseeds" target="_blank"> View</a></div>
                 </div>
             </div>
             
         </span>
     </header>
     
-    <button id="dark-mode" onclick="darkMode()">Dark Mode</button>
     <section class="section" id="homeSection">
         
-            <div class="flex-container1">
-                <p id="summary">I am passionate about developing tools and programs for working class communities and ensuring data is accessible and user friendly to a wide and diverse net of audiences. </p>
-                <img id="poonam_image" src="Poonam.png" alt="Image of Poonam">
+        <div class="flex-container1">
+            <button id="dark-mode" onclick="darkMode()">Light Mode</button>
+            <p id="summary">Greetings, thank you for stopping by! </p>
+            <p id="summary2">My name is Poonam and I am passionate about developing tools and programs for working class communities and ensuring data is accessible and user friendly to a wide and diverse net of audiences. </p>
+            <img id="poonam_image" src="Poonam.png" alt="Image of Poonam">
+
+        </div>
+
+        <div class="flex-containerdesk">
+            <div>
+                <button id="dark-mode" onclick="darkMode()">Light Mode</button>
             </div>
+            <p id="summary2">My name is Poonam and I am passionate about developing tools and programs for working class communities and ensuring data is accessible and user friendly to a wide and diverse net of audiences. </p>
+            <img id="poonam_image" src="Poonam.png" alt="Image of Poonam">
+        </div>
 
         
     </section>
     
     
-    <section class="section">
+    <section class="section" id="projectSection">
         <h1 class="headingOfSection"> Projects</h1>
 
         <div id="flex-container2">
@@ -83,75 +95,61 @@
             <div class="flex-container2a">
                 <h2>Text Based Adventure</h2>
                 <img id="project-image1" src="textbasedAdventure.png" alt="Image of Text Based Adventure">
-                <p>Skills:JavaScript</p>
-                <p>Inspired by my favorite childhood show "The Twilight Zone", this command line based game prompts users to make fairly simple decisions, but there is a caveat to each choice. Enter the "Twilight Zone" via the link below to test your luck!</p>
-                <a class="project-links" href="https://github.com/PoonamDass/FSW-Text-Based-Adventure">Text Based Adventure</a>
+                <p class="two-p">Skills:JavaScript</p>
+                <p class="two-p">Inspired by my favorite childhood show "The Twilight Zone", this command line based game prompts users to make fairly simple decisions, but there is a caveat to each choice. Enter the "Twilight Zone" via the link below to test your luck!</p>
+               <a class="project-links" href="https://github.com/PoonamDass/FSW-Text-Based-Adventure" target="_blank">Github Repo</a>
             </div>
 
             <div class="flex-container2b">
                 <h2>Emoji Story Generator</h2>
                 <img id="project-image2" src="Emoji_Stories_App.png" alt="Image of Emoji Story Game">
-                <p>Skills: JavaScript, CSS, HTML</p>
-                <p>A user is able to generate random emojis and make meaning of them by writing a descriptive story. They are able to view past stories as well as the number of stories they've written.</p>
-                <a class="project-links" href="https://github.com/PoonamDass/fsw-mid-module-two-practice-assessment">Emoji Stories App</a>
+                <p class="two-p">Skills: JavaScript, CSS, HTML</p>
+                <p class="two-p">A user is able to generate random emojis and make meaning of them by writing a descriptive story. They are able to view past stories as well as the number of stories they've written.</p>
+                <a class="project-links" href="https://github.com/PoonamDass/fsw-mid-module-two-practice-assessment" target="_blank">Github Repo</a>
             </div>
 
         </div>
     </section>
     
-    <section class="section">
+    <section class="section" id="faqSection">
         <h1 class="headingOfSection">FAQs Section</h1>
-            <ul>
-              <li>What is my favorite quote?</li>
+            <ul class="faq-ul">
+              <!-- <li class="faq-li">What is my favorite quote?</li> -->
+              <li class="faq-li">
                 <div class="square1">
+                  <p>What is my favorite quote?</p>  
                   <p>"People are like onions, they have layers" - Shrek, the Ogre</p>
                 </div>
+            </li>
               
-              <li> What is my favorite meme?</li>
+              <li class="faq-li"> What is my favorite meme?</li>
+              <br>
                 <div id="meme">
                     <img id="meme-image" src="https://static01.nyt.com/images/2016/08/05/us/05onfire1_xp/05onfire1_xp-videoSixteenByNineJumbo1600-v2.jpg">
                     <button id="show">Show</button>
                 </div>
+                <br>
 
-              <li>Would I rather fight ten chicken-sized horses or 1 horse sized chicken?</li>
+              <li class="faq-li">Would I rather fight ten chicken-sized horses or 1 horse sized chicken?</li>
               <div id="box2">
                 <p id="horse">A  horse sized chicken  because it might have an achille's heel and can be defeated with one blow. Plus I can eat the chicken, not the horse.</p>
             </ul>
     </section>
     
-    <section class="section">
+    <section class="section" id="contactSection">
         <h1 class="headingOfSection">Contact Section</h1>
-        <div id="flex-container4">
-            <form>
-                <label>Message</label>
-                <br>
-                <textarea type="text" id="text" size="50">
-                <br>
-                <br>
-                
-                <label>Name</label>
-                <br>
-                <input type="text" id="text1">
-                <br>
-                <br>
-                
-                <label>Email</label>
-                <br>
-                <input type="text" id="text3">
-                <br>
-                <br>
-               <button type="submit">Submit</button>
-        </form>
-
-        <a class="linkedIn" href="https://www.linkedin.com/in/poonam-dass/">Connect With Me on Linkedin Here</a>
-    </div>
+        <div class="connect-icons">
+        <a href="mailto:poonamdass@pursuit.org" class="email">Email</a>
+        <a href ="https://www.linkedin.com/in/poonam-dass/" class="fa fa-linkedin"></a>
+        <a href ="https://github.com/PoonamDass" class="fa fa-github"></a>
+       </div>
     
     </section>
 
 
     </main>
     <footer>
-        <div><p>Thank You!</p></div>
+        <img id="noBorders" src="noBorders.png" alt="No Borders quote">
     </footer>
 
     

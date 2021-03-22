@@ -338,6 +338,7 @@ padding: 10px;
 	/* min-width: 400px; */
 	height: fit-content;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-around;
 	padding: 20px 50px;
 	border: 1.5px solid rgb(60, 60, 90);
@@ -345,6 +346,21 @@ padding: 10px;
 	/* to set the dots in the corners and not the page  -- to PARENT */
 	position: relative;
 	background-color: #948ecc;
+}
+
+.skills-card ul{
+list-style: none;
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+align-items: left;
+justify-content: center;
+margin:15px;
+}
+
+.skills-card li{
+list-style: none;
+
 }
 
 /* right */
@@ -405,6 +421,7 @@ padding: 10px;
 	background-color: #787999;
 	padding: 15px;
 	margin-bottom: 10px;
+	/* height: 100vh; */
 }
 
 /* form  */
@@ -444,7 +461,7 @@ padding: 10px;
 	width: 100%;
 	padding: 10px 0;
 	color: #fff;
-	background-color: var(--buttonColor);
+	background-color: var(--darkAccent);
 	border: none;
 }
 

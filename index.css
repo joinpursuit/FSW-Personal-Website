@@ -175,6 +175,17 @@ nav a:hover {
   justify-content: right;
 }
 
+#resume-link {
+  background-color: purple;
+  border: 2px solid purple;
+  width: 14%;
+  padding: 10px;
+}
+
+#resume-btn {
+  color: white;
+}
+
 /* * skills-container css */
 #skills-container {
   background-color: white;
@@ -311,8 +322,58 @@ form {
   height: 370px;
 }
 
+#project-title {
+  color: black;
+  font-size: 30px;
+  margin: 30px;
+  padding: 10px;
+  text-decoration: underline;
+  text-emphasis: bold;
+}
+
+#text-btn {
+  margin: 20px;
+  padding: 10px;
+  color: purple;
+}
+
+#text-btn:hover {
+  background-color: white;
+}
+
+#game-header-one {
+  margin: 40px;
+}
 #intro {
   display: none;
+  margin: 18px;
+}
+
+#snowman-game {
+  padding: 30px;
+}
+#game-header-two {
+  margin: 40px;
+}
+
+#introduction {
+  display: none;
+  margin: 18px;
+}
+#snowman {
+  border-radius: 0%;
+  padding: 50px;
+  margin: 10px;
+  height: 370px;
+}
+#words-btn {
+  margin: 20px;
+  padding: 10px;
+  color: purple;
+}
+
+#words-btn:hover {
+  background-color: white;
 }
 /* github icon */
 #linkedin {

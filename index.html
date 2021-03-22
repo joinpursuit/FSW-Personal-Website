@@ -9,39 +9,64 @@
     <title>Document</title>
 </head>
 <body>
+    <!-- <header>
+        <img id="banner" src="BLM.png" alt="List of names of lives lost due to police brutality">
+    </header> -->
     <nav>
         <ul class="desktop-nav">
             <li><a class="navigation-links" href="#homeSection">Home</a></li>
             <li><a class="navigation-links" href="#projectSection">Projects</a></li>
             <li><a class="navigation-links" href="#faqSection">FAQs</a></li>
             <li><a class="navigation-links" href="#contactSection">Contact</a></li>
-            <!-- <strong id="mobile-menu-btn">Menu</strong> -->
-        </ul>
+         </ul>
 
         <ul class="mobile-nav"> 
-            <li><a class="navigation-links-1" href="#homeSection">Home</a></li>
-            <li><a class="navigation-links-1" href="#projectSection">Projects</a></li>
-            <li><a class="navigation-links-1" href="#faqSection">FAQs</a></li>
-            <li><a class="navigation-links-1" href="#contactSection">Contact</a></li>
-            <li class="navigation-links-1 menu-btn">Menu</li>
+            <span class="menu">
+                <li><a class="navigation-links-1" href="#homeSection">Home</a></li>
+                <li><a class="navigation-links-1" href="#projectSection">Projects</a></li>
+                <li><a class="navigation-links-1" href="#faqSection">FAQs</a></li>
+                <li><a class="navigation-links-1" href="#contactSection">Contact</a></li>
+            </span>
+            <li id="menu-btn">Menu</li>
         </ul>
     </nav>
     
     
   
     
-    <!-- <button onclick="topFunction()" id="topBtn" title="Go to top">Back to the Top</button>
+    <button onclick="topFunction()" id="topBtn" title="Go to top">Back to the Top</button>
     
     <main>
         <header id="h1Home">
-            <h1>Greetings, I am Poonam!</h1>
-            <p>Thank you for stopping by, feel free to scroll down and learn more about me and the work I'd like to offer to the world.</p>
-            <button onclick="myFunction()">Toggle dark mode</button>
-        </header>
-        
-        <section class="section">
+            <span class="desktop-header">
+                <h1>Greetings, I am Poonam!</h1>
+                <img src="malcolmX.png" alt="Malcolm X quote">
+                <img src="noBorders.png" alt="No Borders quote">
+                <p>Thank you for stopping by.Feel free to scroll down and learn more about me and the work I'd like to offer to the world.</p> 
+                <!-- <button onclick="myFunction()">Toggle dark mode</button> -->
+            </span>
             
-            <div id="flex-container1">
+            <span class="mobile-header">
+                <!-- <h1>Greetings, I am Poonam</h1> -->
+                
+                <img class="malcolm" src="malcolmX.png" alt="Malcolm X quote">
+                <!-- <img src="noBorders.png" alt="No Borders quote"> -->
+                
+                <div class="middle">
+                    <p class="text"> The artwork displayed on this page is created by Justseeds Artists' Cooperative. To check out more 
+                        of their radical artwork please click here.
+                    </p>
+                    <div class="just-seeds-button"><a href="https://twitter.com/Justseeds">Click </a></div>
+                </div>
+            </div>
+            
+        </span>
+    </header>
+    
+    <button id="dark-mode" onclick="darkMode()">Dark Mode</button>
+    <section class="section" id="homeSection">
+        
+            <div class="flex-container1">
                 <p id="summary">I am passionate about developing tools and programs for working class communities and ensuring data is accessible and user friendly to a wide and diverse net of audiences. </p>
                 <img id="poonam_image" src="Poonam.png" alt="Image of Poonam">
             </div>
@@ -55,7 +80,7 @@
 
         <div id="flex-container2">
 
-            <div id="flex-container2a">
+            <div class="flex-container2a">
                 <h2>Text Based Adventure</h2>
                 <img id="project-image1" src="textbasedAdventure.png" alt="Image of Text Based Adventure">
                 <p>Skills:JavaScript</p>
@@ -63,7 +88,7 @@
                 <a class="project-links" href="https://github.com/PoonamDass/FSW-Text-Based-Adventure">Text Based Adventure</a>
             </div>
 
-            <div id="flex-container2b">
+            <div class="flex-container2b">
                 <h2>Emoji Story Generator</h2>
                 <img id="project-image2" src="Emoji_Stories_App.png" alt="Image of Emoji Story Game">
                 <p>Skills: JavaScript, CSS, HTML</p>
@@ -127,7 +152,7 @@
     </main>
     <footer>
         <div><p>Thank You!</p></div>
-    </footer> -->
+    </footer>
 
     
 </body>

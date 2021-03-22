@@ -1,35 +1,143 @@
 
 * {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
 }
+body{
+  margin: 0%;
+  padding: 0%;
+  background-color: #123c69;
+  color: #eae7dc;
+}
+
 nav{
-  background-color:#BBE1B6;
+  background:  #eae7dc;
   width: 100vw;
   top:0;
   position: fixed;
+  color: black;
 }
 
 .desktop-nav{
   display: none;
 }
 
+.desktop-header{
+  display: none;
+}
+.navigation-links-1{
+  text-decoration:none;
+  padding: 8px;
+  font-size: 20px;
+
+}
+.navigation-links-1 a, a:visited{
+  color:black;
+}
+
+
 .mobile-nav{
   display: flex;
   flex-direction: column;
   justify-self: space-around;
-  align-items: center;
+  align-items: flex-end;
   list-style-type: none;
+  padding-right: 20px;
 }
 
-.navigation-links-1{
+.menu{
   display: none;
 }
 
-body{
-  margin: 0%;
-  padding: 0%;
+.menu-btn{
+  display: block;
 }
 
+header{
+  width: 100%;
+  min-height: 100vh;
+}
+
+.mobile-header{
+  padding: 5%;
+  text-align:  center;
+  position: relative;
+  width: 50%;
+  
+
+}
+
+.malcolm{
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle{
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top:45%;
+  left:25%;
+}
+
+.mobile-header:hover,  .mobile-header:active .malcolm{
+  opacity: .3;
+}
+
+.mobile-header:hover, .mobile-header:active .middle{
+ opacity: 1;
+}
+
+.just-seeds-button {
+  width: 500px;
+  top: 18px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity .35s ease;
+  display: flex;
+  align-items: flex-start;
+}
+
+.just-seeds-button a {
+  width: 50px;
+  padding: 12px 48px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  border: solid 2px white;
+  background-color: #022140;
+  
+}
+
+.mobile-header:hover, .mobile-header:active  .just-seeds-button {
+  opacity: 1;
+}
+
+.text{
+  background-color: #644e58;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  width: 45%;
+}
+
+
+
+#poonam_image{
+  width: 100%;
+  min-height: 50%;
+}
+
+
+.darkMode{
+  background-color: #eae7dc;
+  color:  #123c69;
+
+}
 
 /* for desktop */
 @media (min-width: 768px){
@@ -51,10 +159,14 @@ body{
       background-color: white;
       color:black;
      }
-.mobile-nav{
+
+/* .mobile-nav{
+  display: none;
+} */
+
+.mobile-links{
   display: none;
 }
-
 .desktop-nav{
   display:flex;
   list-style-type: none;

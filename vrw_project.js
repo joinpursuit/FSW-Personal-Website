@@ -2,6 +2,7 @@ const jokesRepo = document.querySelector("#jokes-github-link");
 
 jokesRepo.addEventListener("mouseenter", (e) => {
     e.target.style.backgroundColor = "#8bbbae";
+    e.target.style.borderRadius = "3px";
 })
 
 jokesRepo.addEventListener("mouseleave", (e) => {
@@ -12,6 +13,7 @@ const diceRepo = document.querySelector("#dice-github-link");
 
 diceRepo.addEventListener("mouseenter", (e) => {
     e.target.style.backgroundColor = "#8bbbae";
+    e.target.style.borderRadius = "3px";
 })
 
 diceRepo.addEventListener("mouseleave", (e) => {

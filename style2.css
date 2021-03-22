@@ -1,0 +1,90 @@
+/* create a variable to change colors 
+ * allows you to use a color repeatedly throughout the website
+ */
+:root {
+	--mainColor: #787999;
+	--secondaryColor: silver;
+
+	--subtleAccent: #e5e5e7;
+	--boldAccent: #882ad4;
+	--darkAccent: #1f095a;
+
+	--linkColor: #73869b;
+
+	--borderColor: #c1c1c1;
+}
+
+/* remove all default styles */
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+/* images */
+#profile-pic {
+	width: 100px;
+	border-radius: 10px;
+	margin: 10px;
+}
+
+.thumbnail {
+	width: 250px;
+	border-radius: 10px;
+}
+
+.shadow {
+	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* displays one section on the page at a time */
+section {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+body {
+	background-color: #89909f;
+	display: grid;
+	/* iPhone 6/7/8 Plus */
+	grid-template-columns: 33% 1fr 1fr, minmax(414px, 1fr);
+	/* iPad Pro */
+	/* grid-template-columns: 33% 1fr 1fr, minmax(1024px, 2fr); */
+	grid-template-rows: 10vh repeat(5, 1fr);
+	grid-template-areas: "header header header";
+}
+
+/* Nav Bar  and HEADER Styling */
+header {
+	display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-columns: repeat(auto-fit, minmax(414px, 1fr)); */
+  grid-template-areas: "profile nav nav";
+	background-color: var(--subtleAccent);
+	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+	position: sticky;
+	top: 0;
+}
+
+nav {
+	grid-area: nav;
+	width: fit-content;
+}
+
+#profile {
+	/* grid-area: profile; */
+	display: flex;
+	align-items: center;
+	/* background-color: #a6c4e6; */
+    grid-area: profile;
+}
+
+.nav-links {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	/* background-color: #73869b; */
+}

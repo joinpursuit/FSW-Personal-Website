@@ -9,14 +9,12 @@ let aboutMeClass = document.querySelector(".aboutMe")
 let projectsClass = document.querySelector(".projects")
 let skillsClass = document.querySelector(".skills")
 let contactClass = document.querySelector(".contact")
-let resumeClass = document.querySelector(".resume")
 
 aboutMe.addEventListener("click", () => {
   aboutMeClass.style.display = "inline";
   projectsClass.style.display = "none";
   skillsClass.style.display = "none";
   contactClass.style.display = "none";
-  resumeClass.style.display = "none";
 })
 
 projects.addEventListener("click", () => {
@@ -24,7 +22,6 @@ projects.addEventListener("click", () => {
   projectsClass.style.display = "inline";
   skillsClass.style.display = "none";
   contactClass.style.display = "none";
-  resumeClass.style.display = "none";
 })
 
 skills.addEventListener("click", () => {
@@ -32,7 +29,6 @@ skills.addEventListener("click", () => {
   projectsClass.style.display = "none";
   skillsClass.style.display = "inline";
   contactClass.style.display = "none";
-  resumeClass.style.display = "none";
 })
 
 contact.addEventListener("click", () => {
@@ -40,15 +36,6 @@ contact.addEventListener("click", () => {
   projectsClass.style.display = "none";
   skillsClass.style.display = "none";
   contactClass.style.display = "inline";
-  resumeClass.style.display = "none";
-})
-
-resume.addEventListener("click", () => {
-  aboutMeClass.style.display = "none";
-  projectsClass.style.display = "none";
-  skillsClass.style.display = "none";
-  contactClass.style.display = "none";
-  resumeClass.style.display = "inline";
 })
 
 /* Source: http://thatmikeflynn.com/egg.js/ */

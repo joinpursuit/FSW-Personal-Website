@@ -5,7 +5,7 @@ const skillsSection = document.querySelector("#skills-section");
 const contactSection = document.querySelector("#contact-section");
 const navBar = document.querySelector("#nav-bar")
 const header = document.querySelector("#name-header")
-const form = document.querySelector("#form")
+const form = document.querySelector("#form-id")
 let currentPage = homeSection;
 
 document.addEventListener("DOMContentLoaded", (e) => {

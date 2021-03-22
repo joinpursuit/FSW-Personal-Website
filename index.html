@@ -13,28 +13,28 @@
   <body>
     <div class="menu">
       <div class="flex-item">
-        <a href="./website.html">
-          <img src="images/home-solid.svg" height="50px" width="50px"/>
+        <a href="./index.html">
+          <img src="images/home-solid.svg" height="50px" width="50px" />
         </a>
-        <a href="./website.html">HOME</a>
+        <a href="./index.html">HOME</a>
       </div>
       <div class="flex-item">
         <a href="#skills-div">
-          <img src="images/tools-solid.svg" height="50px" width="50px"/>
+          <img src="images/tools-solid.svg" height="50px" width="50px" />
         </a>
-        <a href="./website.html">SKILLS</a>
+        <a href="./index.html">SKILLS</a>
       </div>
       <div class="flex-item">
         <a href="#projects">
-          <img src="images/folder-open-solid.svg" height="50px" width="50px"/>
+          <img src="images/folder-open-solid.svg" height="50px" width="50px" />
         </a>
-        <a href="./website.html">PROJECTS</a>
+        <a href="./index.html">PROJECTS</a>
       </div>
       <div class="flex-item">
         <a href="#contact">
-          <img src="images/address-book-solid.svg" height="50px" width="50px"/>
+          <img src="images/address-book-solid.svg" height="50px" width="50px" />
         </a>
-        <a href="./website.html">CONTACT</a>
+        <a href="./index.html">CONTACT</a>
       </div>
     </div>
 
@@ -125,7 +125,7 @@
         <h2 class="subheader contact" id="contact">
           <br /><br /><br />CONTACT
         </h2>
-        <form>
+        <form id="form" method="POST" action="mailto:miguelgarcia@pursuit.org">
           <label for="fname">First Name:</label>
           <br />
           <input
@@ -161,6 +161,8 @@
             placeholder="Message to me..."
             style="height: 200px"
           ></textarea>
+          <br>
+          <input type="submit" value="Send Email">
         </form>
       </div>
     </section>

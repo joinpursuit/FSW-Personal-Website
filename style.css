@@ -1,0 +1,214 @@
+/* https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/#storing-preferences */
+/* switch between light mode and dark mode*/
+body {
+  color:black;
+  background-color: white;
+}
+body.dark-theme{
+  color:white;
+  background-color: black;
+}
+body {
+  background: var(background-color);
+}
+
+h1,
+p {
+  color: var(color);
+}
+
+/* my code below */
+h1 {
+    font-size: 20px;
+    font-weight: bold;
+}
+label {
+    font-size: 14px;
+}
+.container {
+    display: grid;
+    gap: .1rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
+}
+.sub-container {
+    height: auto;
+}
+.sub1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.sub2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.sub3 {
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+.sub4 {
+    grid-column: 1/3;
+    grid-row: 3/4;
+}
+.sub5 {
+    grid-column: 1/3;
+    grid-row: 4/5;
+}
+#main-nav {
+    overflow: visible;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+}
+#menu-container{
+    grid-row: 1/2;
+    grid-column: 1/2;
+    width: 120px;
+    padding: 10px;
+}
+#main-nav #navLinks {
+    display: none;
+}
+#main-nav ul {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+#main-nav li {
+    padding: 5px 10px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.github {
+    text-align: center;
+}
+.project-header {
+    display: grid;
+    gap: .1rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+.profile-image-container{
+    height: 300px;
+    width: 300px;
+    margin: auto;
+}
+#about-me {
+    padding: 10px;
+    margin: 25px;
+}
+.project-descrip{
+    padding: 5px;
+    width: 60%;
+    margin: auto;
+}
+#about-me-title,
+#resume-title,
+#logo,
+#project-title,
+#contact-title, 
+#skill-title,
+#connect-container{
+    text-align: center;
+}
+#form-container{
+    padding: 20px;
+    text-align: center;
+}
+input[type="password"],
+input[type="email"],
+input[type="text"],
+input[type="textarea"],
+textarea{
+  border: 1px solid black;
+  text-align: left;
+  background-color: white;
+}
+#resume-container {
+    width: fit-content;
+    margin: auto;
+}
+#resume-pdf {
+    width: 100%;
+    height: 500px;
+    border: 1px solid #ccc;
+    display: block;
+    padding: 0;
+}
+.skill-container {
+    width: fit-content;
+    font-size: 80px;
+    margin: auto
+}
+.image-container {
+    width: 300px;
+    margin: auto;
+    padding: 10px;
+}
+@media screen and (orientation: landscape) {
+    .image-container {
+        width: 500px;
+        margin: auto;
+        padding: 10px;
+    }
+    #comment {
+        height: 4em;
+        width: 30em;
+    }
+}
+
+
+
+
+
+/* https://www.w3schools.com/howto/howto_css_switch.asp */
+.switch {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin: auto
+}
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+input:checked + .slider {
+    background-color:white;
+}
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+    background-color: black;
+}
+.slider.round {
+    border-radius: 34px;
+}
+.slider.round:before {
+    border-radius: 50%;
+}

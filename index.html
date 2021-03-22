@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills & Projects</title>
+    <link rel='stylesheet' href='./reset.css'/>
+    <link rel='stylesheet' href='./style.css'/>
+    <script src="https://kit.fontawesome.com/5c7ae435bd.js" crossorigin="anonymous"></script>
+    <script src="./index.js" defer></script>
+</head>
+<body>
+    <div class='container'>
+        <div class="sub-container sub1">
+            <nav id='main-nav'>
+                <div id='menu-container'>
+                    <i id='icon' class="fas fa-bars fa-5x" onclick="smallMenu()"></i>
+                </div>
+                <ul id='navLinks'>
+                    <a href="./index.html"><li>Home</li></a>
+                    <a href="./about.html"><li>About Me</li></a>
+                    <a href="./contact.html"><li>Contact Me</li></a>
+                    <a href="./resume.html"><li>Resume</li></a>
+                </ul>
+                <label class="switch">
+                    <input class='toggle-switch'type="checkbox">
+                    <div class="slider round"></div>
+                </label>
+            </nav>
+        </div>
+        <div class="sub-container sub2">
+            <div id='logo'>
+                <a href="./about.html"><h1>Joshua Mendez</h1></a>
+                <a href="./index.html">
+                    <label>
+                        <p>
+                            Full Stack Web Developer
+                        </p>
+                    </label>
+                </a>
+            </div>  
+        </div>
+        <div class="sub-container sub3">
+            <h1 id='skill-title'>Skills & Projects</h1>
+            <div class='skill-container'>
+                <!-- fontAwesome -->
+                <i class="fab fa-github-square"></i>
+                <i class="fab fa-js-square"></i>
+                <i class="fab fa-html5"></i>
+                <i class="fab fa-css3-alt"></i>
+            </div>
+        </div>
+        <div class="sub-container sub4">
+            <div class='project-header'>
+                <h1 id="project-title">Star Wars Explorer</h1>
+                <a href="https://github.com/joshuafmendez/FSW-Text-Based-Adventure" target="_blank"><h1 class="github">GitHub</h1></a>
+            </div>
+            <div class='image-container'>
+                <img class='project-image' src="./images/StarWarsImg/StarWars2.png">
+            </div>
+            <p class ='project-descrip'>Star Wars Explorer is a exploration text-based game for the console. Users are able to explore their ship while visiting each room. While in each room there are conditions that must be met in order to leave the ship.</p>
+        </div>
+        <div class="sub-container sub5">
+            <div class='project-header'>
+                <h1 id="project-title">Snowman</h1>
+                <a href="https://github.com/joshuafmendez/FSW-CLI-Snowman" target="_blank"><h1 class="github">GitHub</h1></a>
+            </div>
+            <div class='image-container'>
+                <img class='project-image' src="./images/snowmanImg/snowmanSlide1.png">
+            </div>
+            <div>
+                <p class ='project-descrip'>Snowman game is a game where you are given a hidden word. After that you must guess each letter in order find out what the correct word.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

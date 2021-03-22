@@ -1,0 +1,218 @@
+body {
+  font-family: Ubuntu, Roboto, sans-serif;
+  display: flexbox;
+}
+
+#intro {
+  justify-content: space-evenly;
+  z-index: -1;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 80px 400px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#name-div {
+  font-size: 150px;
+  /* border: 3px solid black; */
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+#img-div {
+  /* border: 3px solid black; */
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+#firstname {
+  text-align: left;
+}
+
+#lastname {
+  padding-top: 95px;
+  text-align: right;
+}
+
+p {
+  margin: 5%;
+  text-align: center;
+  font-size: 16px;
+}
+
+#projects-div {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 400px;
+}
+
+#projects-div > #snowman {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  margin: auto;
+}
+
+#projects-div > #snowman-text {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  margin: auto;
+  line-height: 2;
+}
+
+#projects-div > #textAdventure {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  margin: auto;
+}
+
+#projects-div > #textAdventure-text {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  margin: auto;
+  line-height: 2;
+}
+
+#projects-div > #mondrianReplica {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  margin: auto;
+}
+
+#projects-div > #mondrianReplica-text {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  margin: auto;
+  line-height: 2;
+}
+
+#picture {
+  height: 400px;
+  float: right;
+}
+
+.subheader {
+  display: flexbox;
+  border: 3px solid black;
+  font-size: 25px;
+  animation-duration: 3s;
+  animation-name: shake-horizontal;
+  animation-iteration-count: infinite;
+  z-index: -1;
+}
+
+#Icons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#JavaScript,
+#CSS3,
+#GitHub,
+#HTML5 {
+  margin: 5%;
+  height: 200px;
+}
+
+form {
+  margin: 5%;
+  font-size: 16;
+  text-align: center;
+}
+
+::placeholder {
+  font-family: Ubuntu, Roboto, sans-serif;
+}
+
+.skills,
+.projects,
+.contact {
+  color: yellow;
+  margin: 5%;
+  display: flex;
+  top: 50px;
+  background-color: red;
+}
+
+#snowman {
+  height: 300px;
+}
+
+#textAdventure {
+  height: 300px;
+}
+
+#mondrianReplica {
+  height: 300px;
+}
+
+.flex-item {
+  margin: auto;
+}
+
+.flex-item > a {
+  margin: auto;
+  color: yellow;
+}
+.flex-item > a:first-child {
+  display: none;
+}
+.flex-item:hover > a:first-child {
+  display: inline;
+}
+.flex-item:hover > a {
+  display: none;
+}
+.menu {
+  display: flex;
+  position: sticky;
+  top: 0;
+  margin: auto;
+  border: 3px solid black;
+  justify-content: space-evenly;
+  font-size: 20px;
+  height: 60px;
+  width: 75%;
+  background-color: blue;
+  z-index: 3;
+}
+
+footer {
+  font-size: 20px;
+  margin: 10%;
+  text-align: center;
+}
+
+@keyframes shake-horizontal {
+  0%,
+  20%,
+  40%,
+  60%,
+  80%,
+  100% {
+    transform: translate3d(7px, 0, 0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translate3d(-7px, 0, 0);
+  }
+}

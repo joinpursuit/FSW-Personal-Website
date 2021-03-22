@@ -7,10 +7,8 @@ const quoteOfTheDay = document.querySelector("#quote-of-the-day");
       return res.json();
     })
     .then((res) => {
-      // debugger;
       const quoteBody = res.quote.body
       const quoteAuthor = res.quote.author
-        // debugger;
         const li = document.createElement("li");
         li.classList.add("quote-li")
         li.textContent = `"${quoteBody}" -${quoteAuthor}`;

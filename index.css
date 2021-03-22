@@ -1,0 +1,122 @@
+/* .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  align-items: center;
+  padding-top: 80px;
+  justify-content: center;
+} */
+
+/* Navbar */
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+}
+.nav-link {
+  height: 40px;
+  border-bottom: 2px;
+  transition: border-bottom 0.5s;
+}
+.nav-link a {
+  color: #ffd972;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+.nav-link:hover {
+  border-bottom: 2px solid #e88d67;
+}
+.nav-link a:hover {
+  color: #e88d67;
+}
+.nav-bar > .left-side > div {
+  display: flex;
+  font-size: 1em;
+  margin-right: 40px;
+}
+.left-side {
+  display: flex;
+}
+
+/* Initials logo */
+.right-side {
+  display: flex;
+  color: #e88d67;
+}
+:root {
+  --avatar-size: 4rem;
+}
+.intial-logo {
+  background-color: #d5a021;
+  border-radius: 10%;
+  height: var(--avatar-size);
+  text-align: right;
+  width: var(--avatar-size);
+}
+.initials {
+  font-size: calc(var(--avatar-size) / 2);
+  line-height: 1;
+  position: relative;
+  top: auto;
+  top: calc(var(--avatar-size) / 4);
+}
+
+/* body */
+body {
+  margin: 0px;
+  background-color: #000000;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23220000' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23440000' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23660000' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23880000' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23A00' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+}
+.animation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  padding-top: 40px;
+}
+
+p {
+  text-align: center;
+  text-decoration: solid;
+  color: wheat;
+  text-transform: capitalize;
+  text-shadow: 6px 6px 12px black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1vw;
+}
+.me {
+  display: none;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .content img {
+  position: relative;
+  height: 40px;
+  width: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 180px;
+  
+}
+
+@media only screen and (max-width: 480px) {
+  /* For mobile phones: */
+  .container,
+  .nav-bar,
+  .left-side,
+  .animation,
+  .p,
+  .content {
+    width: 100%;
+  }
+  .right-side {
+    display: none;
+  }
+}

@@ -4,22 +4,19 @@ body{
     margin: 0;
 }
 
-#homepage{
+.homepage{
     background-image: url(assets/clouds.jpg);
+    display: flex;
+    justify-content: center;
     background-size: cover;
     background-repeat: no-repeat;
     padding-top: 25px;
     padding-bottom: 25px;
 }
 
-h1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#name{
     margin-top: 25%;
     margin-bottom: 30%;
-    color: whitesmoke;
-    font-size: 50px;
 }
 
 .nav{
@@ -221,5 +218,9 @@ p{
     width: auto;
    }
 
+    .homepage img{
+    height: 50px;
+    width: auto;
+   }
 
 }

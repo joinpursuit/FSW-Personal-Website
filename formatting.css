@@ -62,6 +62,7 @@ section {
   object-fit: contain;
   margin-bottom: 10px;
   margin-top: 10px;
+  border-radius: 5px;
 }
 
 #abtMe-link {

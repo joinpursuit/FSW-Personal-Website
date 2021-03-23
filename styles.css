@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&display=swap');
+
+
+
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+
+body{
+padding:0px;
+margin:0px;
+background-color: #FEE4BD;
+font-family: Poppins, sans-serif;
+font-size: 16px;
+color: black;
+min-height: 100vh;
+
+/* margin-left:auto;
+margin-right:auto;
+width:990px; */
+}
+
+.scale-size{
+  display: flex;
+  flex-direction: column;
+}
+
+.logo{
+  height:50px;
+  width: 50px;
+}
+
+.container{
+  max-width:1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.navbar ul{
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+  background-color: #AF392D;
+  font-size: 18px;
+}
+
+.nav-header{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  height: 120px;
+}
+
+
+
+.major-text {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 100;
+  margin-bottom: 10px;
+  font-size: 36px;
+}
+
+.major-text-2{
+  font-weight: 100;
+  margin-bottom: 10px;
+  font-size: 36px;
+}
+
+.bio-text{
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.sub-text {
+  font-family: "IBM Plex Mono", monospace;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+}

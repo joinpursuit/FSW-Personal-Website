@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="projects.css" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="icon" href="../images/logo1x.png" />
+  </head>
+
+  <body class="container scale-size center-projects">
+    <header class="nav-header">
+      <a href="../homePage/index.html">
+        <img src="../images/logo1x.png" class="logo" alt="logo" />
+      </a>
+      <nav class="navbar">
+        <ul>
+          <li><a href="../about/about.html">about</a></li>
+          <li><a href="../skills/skills.html">skills</a></li>
+          <li><a href="../projects/projects.html">projects</a></li>
+          <li><a href="../contact/contact.html">contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="images">
+      <div>
+      <a href="https://www.github.com/dalizcruz/FSW-CLI-Snowman">
+        <img class="game-image"
+          src="../images/snowManGame.png"
+          id="snowManGame"
+          alt="snowManGame"
+        />
+      </a>
+      <h1 class="sub-text" >
+        COVID-19 Safe Activity Generator: An Interactive Command Line Application that suggests personalized 
+        safe activities for the day. Click on the photo for the repo!
+      </h1>
+    </div>
+
+    <div>
+      <a href="https://www.github.com/dalizcruz/FSW-Text-Based-Adventure">
+        <img class="game-image"
+          src="../images/textBasedGame.png"
+          id="textBasedGame"
+          alt="textBasedGame"
+        />
+      </a>
+      <h1 class="sub-text" id="aboutSnowman" style="color:#EF4136" onmouseover="hiddenText()" onmouseout="hiddenText1()"> 
+        Click on the image for the repo!
+      </h1>
+    </div>
+    </section>
+
+    <div class="git-hub-container">
+      <h2>
+        CHECK OUT MY OTHER GitHub PROJECTS! 
+      </h2>
+    <a href="https://www.github.com/dalizcruz?tab=repositories">
+      <img src="../images/GitHub_Logo.png" id="github" alt="GitHub_Logo" />
+    </a>
+  </div>
+
+  <script>
+    function hiddenText(){
+ document.getElementById('aboutSnowman').innerHTML = "This game manages separate functions that generate a random word, handle invalid guesses, update correct guesses, and displays a board with number of guesses left, guessed letters and incorrect guesses"
+};
+function hiddenText1(){
+document.getElementById('aboutSnowman').innerHTML = "Snowman Project:Command Line single-player game. Players guess individual letters to complete a mystery word within 8 guesses"
+};
+
+
+  </script>
+  </body>
+</html>

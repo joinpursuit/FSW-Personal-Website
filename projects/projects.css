@@ -1,0 +1,23 @@
+.images{
+    display:flex; 
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.game-image{
+    display:inline;
+    height: 300px;
+    width: auto;
+}
+
+#github{
+    height: 50%;
+    width: 20%;
+}
+
+@media screen and (max-width: 400px){
+    #github{
+        height: 70%;
+        width: 40%;
+    }
+  }

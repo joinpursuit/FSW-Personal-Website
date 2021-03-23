@@ -11,13 +11,13 @@
     <script src="index.js" defer ></script>
   </head>
   <body>
-    <div id="navbar">
+    <nav id="navbar">
     <a class="navbar-a" href="#section-1">Home</a>
     <a class="navbar-a" href="#section-2">About</a>
     <a class="navbar-a" href="#section-4">Projects</a>
     <a class="navbar-a" href="#section-6">Skills</a>
     <a class="navbar-a" href="#section-8">Contact</a>
-    </div>
+    </nav>
     <main class="grid-container">
       <section id="section-1">
         <img
@@ -28,13 +28,10 @@
         <h2 id="title">Fullstack Web Developer</h2>
       </section>
       <section id="section-2">
-        <div class="child-about">
-        <img
-          id="about-lettering"
-          src="./about-lettering.PNG"
-          alt="about-lettering"
-        />
-      </div>
+        <img  id="about-lettering"
+        src="./about-lettering.PNG"
+        alt="about-lettering">
+        <img id="myphoto" src="./myphoto.png"> 
     </section>
       <section id="section-3">
         <div class="info">
@@ -62,9 +59,9 @@
             </p>
             <div id="random-trivia">
             <button id="random-q-button" type="button">Random Trivia</button>
-            <br>
+            
             <p id="question"></p>
-            <br>
+            
             <p id="answer"></p>
         </div>
         </div>
@@ -77,6 +74,7 @@
       />
     </section>
       <section id="section-5">
+          <div id="text-adventure"></div>
         <h2 id="projects-title">Text-Based Adventure Game</h2>
         <img
           id="text-adventure-game"
@@ -88,8 +86,9 @@
             to control the game, and the game state is relayed to the player via
             text output.
             <a target="_blank" class="textadventure-link" href="https://github.com/yashiazize/FSW-Text-Based-Adventure"> Repo Link </a>
+        </div>
         </p>
-        <br>
+        <div id="snowman"></div>
         <h2 id="projects-title">Snowman Game</h2>
         <img
         id="snowman-game"
@@ -104,6 +103,7 @@
             display the used letters. 
             <a  target="_blank" class="snowman-link" href="https://github.com/yashiazize/FSW-CLI-Snowman"> Repo Link</a>
         </p>
+        </div>
       </section> 
       <section id="section-6">
         <img id="lettering-skills" src="./skills-lettering.png" alt="skills">
@@ -166,7 +166,7 @@
         </ul>
       </section>
       <section id="section-9">
-        <div>
+        <div id="contact-info">
           <p> If you want to learn more about me – you are more than welcome to contact me</p>
           <br>
           <p> I am available for freelance work and full-time employment.</p>

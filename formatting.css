@@ -39,7 +39,6 @@ section {
   text-align: center;
 }
 
-
 #projects-name-display {
   background-color: #2d213f;
   padding: 6px;
@@ -59,7 +58,10 @@ section {
   text-align: center;
 }
 
-#top-row, #project-top-row, #abtMe-top-row, #contact-top-row{
+#top-row,
+#project-top-row,
+#abtMe-top-row,
+#contact-top-row {
   border: 0.5px solid #2d213f;
   border-bottom: 2.5px solid #2d213f;
   border-radius: 5px;
@@ -81,11 +83,12 @@ section {
 
 #project-switch {
   margin-left: 28%;
-  color:#8bbbae;
+  color: #8bbbae;
 }
 
 #volcano,
-#louvre, #cm-fr {
+#louvre,
+#cm-fr {
   height: 220px;
   min-width: 0;
   object-fit: contain;
@@ -173,8 +176,9 @@ section {
   color: #220721;
 }
 
-
-.project-mid-row, #abtMe-mid-row, #contact-mid-row {
+.project-mid-row,
+#abtMe-mid-row,
+#contact-mid-row {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -185,8 +189,6 @@ section {
   font-size: 22px;
   align-content: center;
 }
-
-
 
 #aboutMe-section {
   background-color: rgb(156, 23, 23);
@@ -219,7 +221,9 @@ section {
   gap: 3px;
 }
 
-#mid-row, #abtMe-mid-row, #contact-mid-row {
+#mid-row,
+#abtMe-mid-row,
+#contact-mid-row {
   border-top: none;
   grid-column: 1 / -1;
   grid-row: 5;
@@ -268,7 +272,8 @@ section {
 
 #abtMe-box,
 #home-box,
-#cntct-box, #pro-box {
+#cntct-box,
+#pro-box {
   padding-left: 50px;
   border-left: 1.5px solid #2d213f;
   padding-right: 50px;
@@ -283,8 +288,6 @@ section {
   min-width: 0;
   height: 10px;
 }
-
-
 
 #btm-row {
   border: 0.5px solid #2d213f;
@@ -318,9 +321,10 @@ section {
   margin-left: 26px;
 }
 
-
 #mana-bowl,
-#canal, #vwm, #wat-arun {
+#canal,
+#vwm,
+#wat-arun {
   min-height: 0;
   width: 250px;
   object-fit: contain;
@@ -328,10 +332,11 @@ section {
   border-radius: 5px;
 }
 
-#seine,
+#out4u,
 #gongbi,
-#embroidery-1, #cm-fr {
-  height: 200px;
+#embroidery-1,
+#cm-fr {
+  height: 240px;
   min-width: 0;
   object-fit: contain;
   margin-top: 10px;
@@ -364,7 +369,7 @@ footer {
   height: 35px;
 }
 
-@media screen and (max-width: 810px) {
+@media screen and (max-width: 850px) {
   body {
     height: 100vh;
     display: grid;
@@ -380,6 +385,18 @@ footer {
     min-width: 0;
     object-fit: contain;
   }
+
+  #out4u,
+  #gongbi,
+  #embroidery-1,
+  #cm-fr {
+    height: 175px;
+    min-width: 0;
+    object-fit: contain;
+    margin-top: 10px;
+    border-radius: 5px;
+  }
+
 }
 
 @media screen and (max-width: 780px) {
@@ -393,7 +410,8 @@ footer {
   }
 
   #volcano,
-  #louvre, #cm-fr {
+  #louvre,
+  #cm-fr {
     height: 105px;
     min-width: 0;
     object-fit: contain;
@@ -402,37 +420,68 @@ footer {
   }
 
   #mana-bowl,
-  #canal, #vwm, #wat-arun {
+  #canal,
+  #vwm,
+  #wat-arun {
     min-height: 0;
     width: 127px;
     object-fit: contain;
     margin-top: 5px;
   }
 
+  #headshot {
+    height: 300px;
+    min-width: 0;
+    object-fit: contain;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+  }
+
+  #abtMe-text-box {
+    display: inline-block;
+    margin-left: 10px;
+    font-family: jubilat, serif;
+    font-weight: 200;
+    font-size: 18px;
+    color: #220721;
+  }
+
+  #out4u,
+  #gongbi,
+  #embroidery-1,
+  #cm-fr {
+    height: 160px;
+    min-width: 0;
+    object-fit: contain;
+    margin-top: 10px;
+    border-radius: 5px;
+  }
+
+
   #top-row-gitHub-icon,
-#top-row-linkedIn-icon {
-  background-color: #8bbbae;
-  border-radius: 5px;
-  margin-top: 14px;
-  margin-right: 27px;
-  height: 85px;
-}
+  #top-row-linkedIn-icon {
+    background-color: #8bbbae;
+    border-radius: 5px;
+    margin-top: 14px;
+    margin-right: 27px;
+    height: 85px;
+  }
 
-#topRow-contact-msg {
-  font-family: jubilat, serif;
-  font-weight: 600;
-  font-size: 32px;
-  color: #220721;
-  padding-bottom: 10px;
-}
+  #topRow-contact-msg {
+    font-family: jubilat, serif;
+    font-weight: 600;
+    font-size: 32px;
+    color: #220721;
+    padding-bottom: 10px;
+  }
 
-#email-link {
-  font-family: jubilat, serif;
-  font-weight: 600;
-  font-size: 2px;
-  color: #220721;
-}
-
+  #email-link {
+    font-family: jubilat, serif;
+    font-weight: 600;
+    font-size: 2px;
+    color: #220721;
+  }
 }
 
 @media screen and (max-width: 680px) {
@@ -447,7 +496,7 @@ footer {
 
   #drop-down {
     display: none;
-    }
+  }
 
   #nav-drop-down {
     display: flex;
@@ -459,7 +508,8 @@ footer {
   }
 
   #volcano,
-  #louvre, #cm-fr {
+  #louvre,
+  #cm-fr {
     height: 115px;
     min-width: 0;
     object-fit: contain;
@@ -468,7 +518,9 @@ footer {
   }
 
   #mana-bowl,
-  #canal, #vwm, #wat-arun {
+  #canal,
+  #vwm,
+  #wat-arun {
     min-height: 0;
     width: 137px;
     object-fit: contain;
@@ -480,6 +532,15 @@ footer {
     height: 205px;
     min-width: 0;
     object-fit: contain;
+  }
+
+  #abtMe-text-box {
+    display: inline-block;
+    margin-left: 10px;
+    font-family: jubilat, serif;
+    font-weight: 200;
+    font-size: 17px;
+    color: #220721;
   }
 
   #dice-description,
@@ -523,6 +584,26 @@ footer {
     margin-left: 18px;
   }
 
+  #out4u,
+  #gongbi,
+  #embroidery-1,
+  #cm-fr {
+    height: 120px;
+    min-width: 0;
+    object-fit: contain;
+    margin-top: 10px;
+    border-radius: 5px;
+  }
+
+  #headshot {
+    height: 240px;
+    min-width: 0;
+    object-fit: contain;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+  }
+  
   #topRow-contact-msg {
     font-family: jubilat, serif;
     font-weight: 600;
@@ -530,7 +611,7 @@ footer {
     color: #220721;
     padding-bottom: 10px;
   }
-  
+
   #email-link {
     font-family: jubilat, serif;
     font-weight: 600;
@@ -559,11 +640,12 @@ footer {
   }
 
   #drop-down {
-    display: none;  
+    display: none;
   }
 
   #volcano,
-  #louvre, #cm-fr {
+  #louvre,
+  #cm-fr {
     height: 85px;
     min-width: 0;
     object-fit: contain;
@@ -571,8 +653,19 @@ footer {
     margin-top: 5px;
   }
 
+  #abtMe-text-box {
+    display: inline-block;
+    margin-left: 10px;
+    font-family: jubilat, serif;
+    font-weight: 200;
+    font-size: 16px;
+    color: #220721;
+  }
+
   #mana-bowl,
-  #canal, #vwm, #wat-arun {
+  #canal,
+  #vwm,
+  #wat-arun {
     min-height: 0;
     width: 97px;
     object-fit: contain;
@@ -584,6 +677,15 @@ footer {
     height: 105px;
     min-width: 0;
     object-fit: contain;
+  }
+
+  #headshot {
+    height: 140px;
+    min-width: 0;
+    object-fit: contain;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
   }
 
   #dice-description,
@@ -628,26 +730,37 @@ footer {
   }
 
   #top-row-gitHub-icon,
-#top-row-linkedIn-icon {
-  background-color: #8bbbae;
+  #top-row-linkedIn-icon {
+    background-color: #8bbbae;
+    border-radius: 5px;
+    margin-top: 14px;
+    margin-right: 27px;
+    height: 65px;
+  }
+
+#out4u,
+#gongbi,
+#embroidery-1,
+#cm-fr {
+  height: 80px;
+  min-width: 0;
+  object-fit: contain;
+  margin-top: 10px;
   border-radius: 5px;
-  margin-top: 14px;
-  margin-right: 27px;
-  height: 65px;
 }
 
-#topRow-contact-msg {
-  font-family: jubilat, serif;
-  font-weight: 600;
-  font-size: 22px;
-  color: #220721;
-  padding-bottom: 10px;
-}
+  #topRow-contact-msg {
+    font-family: jubilat, serif;
+    font-weight: 600;
+    font-size: 22px;
+    color: #220721;
+    padding-bottom: 10px;
+  }
 
-#email-link {
-  font-family: jubilat, serif;
-  font-weight: 600;
-  font-size: 20px;
-  color: #220721;
-}
+  #email-link {
+    font-family: jubilat, serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #220721;
+  }
 }

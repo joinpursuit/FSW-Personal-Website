@@ -1,0 +1,1216 @@
+
+
+    body{background-color:black;}
+  
+    
+    #menu-button,#name-big,#title-big,#pursuit-big{
+        visibility: visible;   
+
+
+
+        
+      }
+    html {
+      scroll-behavior: smooth;
+    }
+  
+  
+  
+   
+  
+  #about{
+      display: grid;
+      grid-template-columns:  repeat(60,1fr);
+      grid-template-rows: repeat(60,1fr);
+      height: 1000px;
+ 
+  }
+  #home{
+      display: grid;
+      grid-template-columns:  repeat(60,1fr);
+      grid-template-rows: repeat(60,1fr);
+      height: 60px;
+     
+      padding-top: 0px;
+      padding-right: 0%;
+      margin-right: 0%;
+      
+  }
+  
+  #projects{
+      display: flex;
+      flex-direction: column;
+
+      height: 1000px;
+   
+align-items: center;
+
+  }
+  
+  #contact{
+      display: flex;
+      height: 500px;
+  
+      color: green;
+      flex-direction: column;
+      text-align: center;
+  
+  }
+  #contact>a{
+    font-size: 34px;
+  }
+   #hamburger-menu{
+  grid-row: 1/2;
+  grid-column:46/60;
+  
+  z-index: 0;
+  margin-top: 28px;
+  margin-right: 1px;
+  width: 120px;
+  height: 50px;
+  display: none;
+  } 
+  #hamburger-menu :hover{
+  cursor: pointer;
+  
+  }
+  #hamOne,#hamTwo,#hamThree{
+      background-color: rgb(86, 255, 92);
+      height: 9px;
+      width: 109px;
+      border-radius: 25px;
+     margin:8px;
+     margin-right: 25px;
+     display: none;
+  }
+  #drop-down{
+   display:none;
+      color:whitesmoke;
+      grid-row: 2/12;
+      grid-column: 45/60;
+      font-size: 15px;
+    text-align: center;
+    font-family: 'Audiowide';font-size: 22px;
+    display: none;
+  }
+ 
+  #drop-down2{
+         color:whitesmoke;
+         grid-row: 2/10;
+         grid-column: 45/60;
+         font-size: 25px;
+       text-align: center;
+       font-family: 'Audiowide';font-size: 22px;
+       display: none;
+     }
+     #drop-down3{
+      color:whitesmoke;
+      grid-row: 2/12;
+      grid-column: 45/60;
+      font-size: 25px;
+    /* text-align: center; */
+    font-family: 'Audiowide';font-size: 22px;
+  }
+  
+     #bio{
+      color:rgb(191, 206, 193);
+      grid-row: 17/56;
+      grid-column: 4/57;
+      font-size: 21px;
+    text-align: center;
+    padding-right: 10%;
+    padding-left: 10%;
+    overflow-x: scroll;
+    overflow-y: scroll;
+  }
+  
+  #hamburger-menu:hover{
+      cursor:pointer;
+  }
+  
+  #xb{
+  background-color: rgb(124, 244, 124);
+  color: black;
+  border-radius:50%;
+  border-style:none;
+  display: none;
+  }
+  #xb:hover {
+    cursor: pointer;
+    background-color: orange;
+    display:none
+  }
+  
+  
+  #home-li{
+      margin-top:3px;
+      display:none;
+  }
+  #about-li{
+    display: none;
+  }
+  #projects-li{
+    display: none;
+  }
+  #contact-li{
+    display: none;
+  }
+  
+ 
+
+  /* #big-home,#big-about,#big-projects,#big-contact{
+    transition: width 2s;
+ 
+  } */
+
+
+
+
+
+
+  #menu-button:hover{
+    cursor: pointer;
+    color:greenyellow;
+  }
+  /* #big-menu{
+    margin-top:29%;
+    font-size: 30px;
+  visibility:hidden;
+
+  list-style: none;
+
+  text-align: center;
+
+  grid-row: 1/56;
+  grid-column: 44/60;
+  position:auto;
+  z-index: 3;
+ 
+  } */
+  
+  #big-home,#big-about,#big-projects,#big-contact{
+    border:white solid 3px;
+    margin-bottom:2%;
+    margin-top: 1%;
+    border-radius: 25%;
+    margin-right:8%;  
+    background-color: black;
+    transition: height 4s;
+    color:white;
+    font-size: 40px;
+    text-align: center;
+    list-style-type:none;
+  
+    /* width:66%; */
+ 
+  }
+#big-x{
+
+  color: white;
+  visibility: hidden;
+ 
+}
+
+  #big-menu:hover{
+    cursor: pointer
+    
+  }
+  #big-home{
+
+    background-color:white;
+    color:black;
+    height: 44px;
+    margin-top:0px;
+    border:black solid 3px;
+    /* padding-top:6%; */
+  }
+/* #big-home:hover{
+    width:330px;
+    background-color: lawngreen;
+} */
+#big-about:hover{
+
+    background-color:white;
+    color:black;
+    height: 44px;
+    /* padding-top: 10%; */
+}
+#big-projects:hover{
+
+    background-color:white;
+    color:black;
+    height: 44px;
+    /* padding-top: 10%; */
+}
+#big-contact:hover{
+ 
+  background-color:white;
+  color:black;
+  height: 44px;
+  /* padding-top: 10%; */
+}
+
+
+
+
+
+
+
+
+  #big-x{
+    margin-top: 0px;
+    margin-bottom:0px;
+    border-radius: 50%;
+    /* border:solid white 3px; */
+    width: 45px;
+    font-size: 12px;
+
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  #big-x:hover{
+    cursor: pointer;
+  }
+  /* .menu-class{
+    margin-top: 16px;
+    border-radius: 25px;
+    border: solid white 4px;
+    font-size: 30px;
+    width: 130px;
+    background-color: white;
+    text-align: center;
+    z-index: 2;
+    list-style: none;
+  } */
+
+
+
+
+  
+  
+  #pic{
+      /* width: 699px; */
+      grid-row: 3/52;
+      grid-column: 1/61;
+      text-align: center;
+      position: auto;
+      z-index: 3;
+  
+  
+      
+  }
+  #pic2{
+      grid-row: 12/52;
+      grid-column: 5/52;
+      text-align: center;
+      
+  }
+    #plain-pic{
+         border-radius: 50%;
+         border: solid green 3px;
+         grid-column: 2/52;
+         height: 240px;
+         grid-row: 6/45;
+         /* grid-column: 19/41; */
+         display: block;
+        
+     }
+   
+  
+     #matrix-pic{
+        border-radius: 50%;
+        border: solid green 3px;
+        grid-column: 2/52;
+        height: 240px;
+        grid-row: 6/45;
+        /* grid-column: 19/41; */
+        /* display: block; */
+     }
+
+     #intro{
+      grid-row: 22/60;
+      grid-column:14/44;
+      font-size: 33px;
+      text-align: center;
+      font-weight: 300;
+      /* border: solid white 3px; */
+      /* background-color: black; */
+      width: 300px;
+      height: 100px;
+      display: none;
+  
+     }
+     #name1200{
+
+ 
+      color: linen;
+       /* font-family: 'Audiowide'; */
+       font-family: 'Courier New', Courier, monospace;
+      
+     height: 29%;
+       position: auto;
+       z-index: 4;
+   
+
+     
+        
+      
+  }
+  
+  
+  
+  
+  
+  
+  
+  #title-big{
+      font-size: 30px;      margin-bottom: 19px;
+visibility: hidden;
+      color: linen;
+      font-family: 'Audiowide';font-weight: 4px;
+  
+      
+    }
+    #name-big{
+      grid-row: 14/56;
+      grid-column: 24/60;
+      color: white;
+      font-size: 50px;
+      /* border-left:white solid 2px;
+      border-right:white solid 2px; */
+      
+      font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    } 
+  #pursuit-big{
+
+
+    color: white;
+    font-size: 30px;
+    /* border-left:white solid 2px;
+    border-right:white solid 2px; */
+    
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     
+  }
+  
+  #menu-button{
+    border:solid white 2px;
+    background-color: darkblue;
+  width: 100px;
+  text-align: center;
+  
+       color: limegreen;
+       font-size: 30px;
+       /* border-left:white solid 2px;
+       border-right:white solid 2px; */
+       margin-top: 18px;
+       margin-left: 290px;
+       font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+position: fixed;
+z-index: 7;
+  
+  }
+
+
+
+
+  #title{
+      font-size: 22px;
+      font-family: Arial, Helvetica, sans-serif;
+       margin-bottom: 4px; 
+       display: none;
+  }
+  
+  #pursuit{
+      color: rgb(93, 154, 93);
+      font-size: 21px;
+      margin-top: 8px;
+      display: none;
+  }
+  #title,#pursuit{
+      color: rgb(73, 226, 73);
+      display: none;
+  }
+  /* https://codepen.io/FelixRilling/pen/vNJoMy */
+  
+  #matrix-pic {
+      text-align: center;
+      color: #fff;
+      font-size: 5em;
+      letter-spacing: 8px;
+      font-family: 'Press Start 2P';
+      font-weight: 400;
+
+      
+      margin: 0;
+      line-height: 0;
+     
+      
+      animation: glitcimg 2.5s infinite;
+    }
+    
+    
+  
+ /* button#rain{
+ 
+  margin-left: 5%;
+  
+      font-family: 'DotGothic16', sans-serif;
+ 
+      margin-top: 13px;
+      text-shadow: honeydew;
+      font-size: 11px;
+      position: fixed;
+      width:100px;
+      z-index: 3;
+  }  */
+  
+  
+  
+  
+  
+  
+  #go-to-top{
+      color: greenyellow;
+      grid-row: 1/2;
+      grid-column: 20/40;
+  }
+  
+  
+  /* a{
+      color:orangered;
+  } */
+  
+  a:link {
+      text-decoration: none;
+    }
+    
+    a:visited {
+      text-decoration: none;
+    }
+    
+    a:hover {
+      text-decoration: underline;
+   color: lawngreen;
+    }
+    
+    a:active {
+      text-decoration: underline;
+    }
+  
+ 
+  
+    #snow-word{
+      color:greenyellow;
+      font-size:38px;
+      margin-top:5%;
+    }
+   
+#snow-video{
+
+width:600px;
+position: auto;
+z-index: -2;
+}
+/* #snow-video-cover{
+width: 624px;
+border:red solid 3px;
+position:auto;
+z-index: 3;
+} */
+
+
+  
+  #jokes-header{
+    /* grid-row: 28/60;
+    grid-column: 6/60; */
+    color: rgb(86, 215, 86);
+    font-size: 25px;
+  
+  }
+  
+  
+
+  
+
+  
+  #watch{
+  margin-top: 66%;
+  font-size: 33px;
+  }
+  #click-joke{
+  
+  
+  font-size: larger;
+  }
+  
+
+  
+  #joke-output{
+    text-align: center;
+  
+    color: white;
+    font-size: 27px;
+    width: 370px;
+  }
+
+ /* #navi{
+  display: flex;
+  justify-content: space-around;
+  width: 98%;
+  border-top: white solid 3px;
+  border-bottom: white solid 3px;
+background-color: black;
+position: fixed;
+color:white;
+
+
+}  */
+
+
+
+#pursuit-big>a{
+  text-decoration: none;
+  color:blue;
+  padding-bottom: 55px;
+}
+#pursuit-big>a:hover{
+  text-decoration: none;
+  color:lawngreen;
+}
+#menu-button>a{
+  text-decoration: none;
+  color:limegreen;
+}
+#menu-button>a:hover{
+  text-decoration: none;
+  color:purple;
+}
+
+
+
+#divTech,#industryTech,#leadershipTech{
+overflow-x: scroll;
+  color:whitesmoke;
+  width: 340px;
+  height: 70px;
+ 
+  transition: width 2s, height 4s;
+  border:solid green 3px;
+   margin-left: 1%; 
+   margin-right: 1%; 
+  margin-bottom: 3%;
+  font-size: 37px;
+display: flex;
+  align-items: center;  
+  padding-left: 8%;
+
+  
+
+}
+#pIn{
+color: black;
+visibility: hidden;
+font-size: 2px;
+
+
+
+}
+#PInd{
+color: black;
+visibility: hidden;
+font-size: 2px;
+
+}
+#lead{
+color: black;
+visibility: hidden;
+font-size: 2px;
+
+}
+/* #pIn:hover{
+  visibility: visible;
+} */
+
+#divTech:hover{
+  width: 1300px;
+  height: 400px;
+  background-color: lightgreen;
+  color:black;
+}
+#industryTech:hover{
+  width: 1300px;
+  height: 400px;
+  background-color: lightgreen;
+  color:black;
+scroll-behavior: smooth;
+
+}
+#leadershipTech:hover{
+  width: 1300px;
+  height: 400px;
+  background-color: lightgreen;
+  color:black;
+}
+/* 
+#learnOne{
+  font-size: 20px;
+} */
+
+
+#grow-box{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+  body{background-color:black;
+
+  width: 414px;
+  
+  
+  }
+
+  /* html{
+    width: 414px;
+    padding-right: 0%;
+  } */
+#navi{
+  display:flex;
+  flex-direction: column;
+
+  text-align: center;
+  /* justify-content: center; */
+  width: 414px;
+  /* align-content: flex-start; */
+
+  border-top: white solid 3px;
+  border-bottom: white solid 3px;
+  margin-top: 0px;
+  margin-bottom: 1px;
+  padding-top:0%;
+  padding-bottom:8px;
+
+}
+#farrah-top{
+  position:auto;
+  color:white;
+}
+#f-p-top{
+  position:auto;
+  color:white;
+  position:auto;
+  font-size: 20px;
+  visibility: visible;
+  margin-top:1px;
+  font-family: monospace;
+}
+#home{
+  margin-right: 0%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 414px;
+}
+#name-big{
+  display: none;
+}
+#farrah-top{
+  font-size: 44px;
+  margin-bottom: 2%;
+}
+
+#big-menu{
+  position:auto;
+  margin-top: 1px;
+  z-index:6;
+  align-self: center;
+  width: 330px;
+  visibility: hidden;
+}
+
+button#rain{
+  width: 100px;
+  font-size: 27px;
+  margin-top:210px;
+  height: 38px;
+  position: fixed;
+  background-color:darkblue;
+  color:limegreen;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+border:greenyellow solid 1px;
+z-index: 8;
+}
+#pursuit-big{
+  margin-bottom: 1px;
+  margin-top: 1px;
+}
+
+
+
+#divTech,#leadershipTech,#industryTech{
+   font-size: 17px;
+   padding-right: 33px;
+  background-color: white;
+  color: black;
+display: flex;
+flex-direction: column;
+  text-align: center;  
+  overflow-x: scroll;
+
+ 
+ 
+ 
+}
+/* 
+#leadershipTech{
+  padding-right: 70px;
+} */
+#divTech:hover{
+  width: 5300px;
+  height: 700px;
+  background-color: lightgreen;
+  color:black;
+}
+#industryTech:hover{
+  width: 5300px;
+  height: 700px;
+  background-color: lightgreen;
+  color:black;
+}
+#leadershipTech:hover{
+  width: 5300px;
+  height: 700px;
+  background-color: lightgreen;
+  color:black;
+}
+#technical{
+  align-self: center;
+}
+
+#pic{
+ display: flex;
+ flex-direction: column;
+}
+#plain-pic{
+  align-self: center;
+}
+
+#matrix-pic{
+  align-self: center;
+}
+
+
+
+#projects{
+  display: flex;
+  flex-direction: column;
+  height: 700px;
+ 
+}
+#snow-pic{
+  align-self: center;
+  width: 380px;
+
+}
+#snow-video{
+  display: flex;
+  flex-direction: column;
+ 
+  width: 414px;
+}
+
+#grow-box{
+  width: 414px;
+  margin-top: 2px;
+  padding:0px;
+}
+
+
+figure{
+  color: limegreen;
+  margin-bottom: 2px;
+  margin-left:127px;
+  font-size: 22px;
+  
+}
+#skills{
+  height: 200px;
+  width: 300px;
+  margin-left: 14%;
+
+  margin-bottom: 92px;
+  border:darkblue solid 5px;
+}
+#skills:hover{
+  cursor: pointer;
+}
+  
+svg{
+  height: 102px;
+  width: 87px;
+  margin: 3px;
+  border:limegreen solid 2px;
+}
+main{
+  visibility: hidden;
+}
+#code-div{
+  /* height: 500px; */
+  width: 100%; 
+  height: 2px;
+  visibility: hidden;
+  display: flex;
+  flex-wrap: wrap;
+flex-direction: column;
+text-align: center;
+}
+
+@media only screen and (min-width: 600px) 
+{
+body{
+  background-color: orange;
+}
+
+#navi{
+  width: 620px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#home{
+  width: 620px;
+}
+#grow-box{
+  width: 650px;
+}
+#skills{
+  margin-left:39%;
+  margin-right: 45%;
+  width: 79%;
+  height: 80%;
+}
+figure{
+  margin-left: 52%;
+  font-size: 32px;
+  width: 300px;
+  color:white;
+}
+#menu-button{
+  margin-left:76%;
+  margin-top:8px;
+}
+#pic{
+  width: 600px;
+}
+#bio{
+ width:500px;
+ color: white;
+ font-size: 29px;
+ overflow-y: scroll;
+ overflow-x: scroll;
+}
+#divTech,#leadershipTech,#industryTech{
+  border:purple solid 3px;
+  font-size: 27px;
+
+}
+#projects{
+  width: 600px;
+}
+#snow-pic{
+  width: 550px;
+  margin-bottom:13px;
+  
+}
+#snow-word{
+  color:purple;
+  margin-bottom:1px;
+}
+#jokes-header{
+  color:purple;
+font-size:33px;
+}
+#click-joke{
+  width: 200px;
+  height: 60px;
+}
+#joke-output{
+  color:black;
+}
+
+#contact{
+  margin-top:118px;
+  width: 600px;
+}
+
+main{
+  width:600px;
+}
+
+
+
+}
+
+@media only screen and (min-width: 700px) 
+{
+body{
+  background-color: black;
+}
+
+#navi{
+  width: 700px;
+  border-top:solid white 4px;
+}
+
+#menu-button{
+  margin-left:60%;
+  height: 44px;
+  text-align: center;
+  padding-top: 4px;
+
+}
+button#rain{
+margin-left: 20%;
+margin-top:205px;
+height: 51px;
+text-align: center;
+z-index: 8;
+}
+#home{
+  width: 700px;
+ 
+}
+
+#skills{
+  margin-left: 160px;
+  width: 440px;
+  height: 350px;
+}
+figure{
+margin-left: 275px;
+width: 420px;
+}
+    
+    
+#grow-box{
+  width: 720px;
+}
+
+#pic{
+  width: 700px;
+}
+#bio{
+  text-align: center;
+  width: 600px;
+  font-size: 30px;
+  overflow-y: scroll;
+
+}
+#projects,#contact{
+  width: 730px;
+}
+#snow-word,#jokes-header{
+  color:black;
+}
+main{
+  width: 700px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+   svg{
+     width: 194px;
+     margin:10px;
+   }
+   #joke-output{color:white;}
+}
+
+@media only screen and (min-width: 800px) {
+  body{
+    background-color: rgb(46, 134, 80);
+
+   
+  }
+ button#rain{
+   margin-left: 150px;
+ }
+ #menu-button{
+   margin-left:500px;
+
+   }
+ #navi{
+   margin-left:40px;
+   
+ }
+}
+@media only screen and (min-width: 900px) {
+  
+
+body{
+  background-color: black;
+  margin-left: 70px;
+}
+#grow-box{
+  width: 800px;
+}
+#f-p-top{
+  font-size: 27px;
+}
+button#rain{
+  margin-top:222px;
+}
+#bio{
+  color:white;
+}
+
+#contact>h2{
+  font-size: 47px;
+}
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+body{
+  background-color: black;
+  /* margin-left: 500px; */
+}
+#navi{
+  width: 1100px;
+  padding-bottom: 40px;
+  
+}
+#farrah-top{
+  font-size:70px;
+}
+#f-p-top{
+  font-size: 40px;
+}
+
+button#rain{
+  margin-top: 342px;
+  width: 140px;
+  height: 50px;
+}
+#menu-button{
+  width: 140px;
+  height: 44px;
+  margin-left: 900px;
+
+}
+
+#skills{
+  margin-left: 368px;
+}
+
+figure{
+  margin-left:430px;
+  font-size: 45px;
+}
+#grow-box{
+  width: 1080px;
+}
+#about{
+width: 1200px;
+
+}
+#pic{
+  width: 1100px;
+}
+ #bio{
+  width: 800px;
+  padding-right: 500px;
+} 
+
+#projects{
+  width: 1100px;
+  height: 1100px;
+}
+#snow-pic{
+  height: 500px;
+  width: 1000px;
+  margin-left: 100px; 
+}
+
+#snow-word,#jokes-header{
+  color:white;
+}
+#contact{
+  width: 1100px;
+}
+
+#big-menu{
+  margin-left: 440px;
+  width: 500px;
+ 
+}
+#divTech,#leadershipTech,#industryTech{
+  width:50px;
+  text-align: center;
+  font-size: 26px;
+  padding-right: 100px;
+}
+#click-joke{
+  margin-bottom: 60px;
+}
+.repo{
+  font-size:30px;
+  margin-left: 50px;
+}
+}
+
+@media only screen and (min-width: 1500px) {
+  body{
+    background-color: black;
+    margin-left: 200px;
+  }
+  @media only screen and (min-width: 1900px) {
+    body{
+      background-color: black;
+      margin-left: 340px;
+    }
+
+}
+
+
+
+@media only screen and (min-width: 2000px) {
+body{
+  background-color:black;
+  margin-left: 400px;
+}
+#grow-box{
+  margin-left: 70px;
+}
+#jokes-header{
+  font-size:50px;
+  margin-left:48px;
+}
+#joke-output{
+  font-size:40px;
+  margin-left: 44px;
+}
+#click-joke{
+  margin-left:40px;
+  font-size: 25px;
+}
+
+.repo{
+  font-size:30px;
+  margin-left: 50px;
+}
+#contact{
+  margin-top:300px;
+}
+}
+
+/* 
+@media only screen and (min-width: 200px) {
+  body{
+    background-color: orange;
+    margin-left: 500px;
+  }
+} */

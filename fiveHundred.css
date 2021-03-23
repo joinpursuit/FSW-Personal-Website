@@ -1,0 +1,64 @@
+/* 
+
+@media only screen and (min-width: 900px) {
+    body{background-color:black;}
+    #big-menu{
+      visibility: hidden;   
+    }
+   #menu-button,#name-big,#title-big,#pursuit-big{
+      visibility: hidden;   
+    }
+  
+    div#intro{
+        height: 23%;
+        padding-top: 19px;
+   
+        margin-left: 21%;
+    }
+  div#pic{
+ 
+      width: 50%;
+      margin-left:auto;
+      margin-right:auto;
+  }
+  #plain-pic{
+      margin-left:auto;
+      margin-right:auto;
+  }
+  
+  #rain{
+      margin-left: 7%;
+      height: 7%;
+      width: 14%;
+      font-size: 22px;
+      border-radius: 13%;
+  }
+  
+  
+  /* #hambuger-menu{
+      width: 90%;
+  } */
+  /* #hamOne,#hamTwo,#hamThree{
+      width: 120px;
+      height: 15px;
+      margin-right: auto;
+  }
+  
+  #drop-down{
+      margin-right: 28%;
+      margin-top: 22%;
+      font-size: 34px;
+  }
+  #xb{
+      font-size: 34px;
+      border: black solid 2px;
+      padding-bottom: 3%;
+      width: 45px;
+  
+  }
+  #plain-pic{
+      height: 260px;
+  }
+  
+  
+  } */ 

@@ -369,7 +369,7 @@ footer {
   height: 35px;
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 880px) {
   body {
     height: 100vh;
     display: grid;
@@ -395,6 +395,15 @@ footer {
     object-fit: contain;
     margin-top: 10px;
     border-radius: 5px;
+  }
+
+ 
+  #vwm,
+  #wat-arun {
+    min-height: 0;
+    width: 207px;
+    object-fit: contain;
+    margin-top: 5px;
   }
 
 }
@@ -424,7 +433,7 @@ footer {
   #vwm,
   #wat-arun {
     min-height: 0;
-    width: 127px;
+    width: 157px;
     object-fit: contain;
     margin-top: 5px;
   }
@@ -479,7 +488,7 @@ footer {
   #email-link {
     font-family: jubilat, serif;
     font-weight: 600;
-    font-size: 2px;
+    font-size: 28px;
     color: #220721;
   }
 }

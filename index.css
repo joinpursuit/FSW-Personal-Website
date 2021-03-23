@@ -1,0 +1,427 @@
+body {
+    background-color: rgb(50, 50, 50);
+}
+
+a, a:visited {
+    color: rgb(192, 208, 236);
+}
+
+nav {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(20, 20, 20);
+    z-index: 9;
+}
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding: 0px;
+}
+.nav-button {
+    border: 0px;
+    color: rgb(114, 148, 214);
+    font-family: Georgia;
+    font-weight: bold;
+    background: none;
+}
+
+section {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(42, 171, 80);
+    font-family: Verdana;
+}
+.section-header, .section-footer {
+    flex-grow: 1;
+}
+#intro {
+    top: 0px;
+    display: block;
+    font-family: Courier;
+    color: rgb(0, 185, 0);
+    background-color: rgb(30, 30, 30);
+}
+#about-container, #skills-container, #contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#resume-container {
+    width: 98%;
+}
+
+.msg-container {
+    margin: 8px;
+    padding: 0px;
+}
+#msg1 {
+    color: rgb(152, 177, 225);
+    margin: 25px 0px 0px 0px;
+}
+#msg2 {
+    color: rgb(192, 208, 236);
+}
+#msg3 {
+    color: rgb(112, 146, 213);
+    margin: 0px;
+}
+#msg4 {
+    width: 80%;
+    align-self: center;
+    visibility: hidden;
+    text-align: justify;
+    text-justify: inter-word;
+}
+#msg4:hover {
+    color: #4ad373;
+}
+#msg5 {
+    display: grid;
+    margin: 10px;
+}
+#profile-container {
+    text-align: center;
+    grid-area: 1/1;
+}
+#profile-container:hover {
+    order: 2;
+}
+#profile-overlay {
+    background-color: rgba(50,50,50,.7);
+    grid-area: 1/1;
+    order: 1;
+}
+
+#skills-container ul {
+    display: grid;
+    gap: 10px 10px;
+    padding: 0px 8px 0px 8px;
+}
+#skills-container ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.188);
+    border-radius: 50%;
+    margin: 2px;
+    padding: 2px;
+    border: 2px solid rgb(113, 146, 214);
+}
+.skills-icons {
+    width: 30%;
+}
+
+#project-1, #project-2 {
+    border: 2px solid rgba(255, 217, 0, 0.33);
+    border-radius: 20px 20px 30px 30px;
+}
+.project-title {
+    color: rgb(152, 177, 225);
+    font-size: 1.5em;
+    margin: 0px;
+    padding: 0px;
+}
+.project-summary {
+    color: rgb(112, 146, 213);
+    font-size: 1.2em;
+}
+.project-desc {
+    padding: 15px;
+}
+.img-container:hover {
+    order: 3;
+}
+.github-link {
+    list-style-type: none;
+}
+
+#contact-container p {
+    font-size: 1.1em;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(152, 177, 225);
+}
+form label, form input, form textarea {
+    align-self: flex-start;
+}
+form input, form textarea {
+    width: 98%;
+    background-color: rgb(210, 210, 210);
+    margin-bottom: 20px;
+}
+#contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding: 0px;
+}
+.submit-response {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: rgb(0, 185, 0);
+    background-color: rgb(188, 215, 200);
+    border-radius: 12px;
+    padding: 8px;
+}
+
+#resume-container iframe {
+    width: 100%;
+    height: 94vh;
+}
+
+@media screen and (max-width: 8000px){
+
+    nav ul, #about-container, #skills-container, #projects-container, #contact-container {
+        width: 930px;
+    }
+    nav ul li {
+        margin: 0px 14px 0 14px;
+    }
+    .nav-button {
+        font-size: 20px;
+    }
+
+    section {
+        top: 58px;
+    }
+    #intro {
+        font-size: 1.3em;
+    }
+    #intro-container {
+        padding-left: 13px;
+    }
+    #term-cursor {
+        vertical-align: middle;
+    }
+    #term-cursor img {
+        width: 9px;
+        height: 18px;
+    }
+
+    #msg1 {
+        font-size: 20px;
+    }
+    #msg2 {
+        font-size: 40px;
+        margin: 2px;
+    }
+    #msg3 {
+        font-size: 30px;
+    }
+    #btn-about-read {
+        margin: 35px 0px 0px 0px;
+    }
+    #msg4 {
+        font-size: 18px;
+    }
+    #msg5 {
+        margin-top: 50px;
+    }
+    #profile {
+        width: 40%;
+        border-radius: 65px 65px 45px 45px;
+    }
+
+    #skills-container ul {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #project-1, #project-2 {
+        display: grid;
+        grid-template: repeat(8, 1fr) / repeat(14, 1fr);
+        margin: 15px;
+    }
+    .project-desc {
+        background-color: rgba(42, 45, 50, 0.95);
+        grid-area: 1/1/9/9;
+        order: 2;
+        border-radius: 20px 20px 20px 30px;
+    }
+    .project-desc:hover {
+        background-color: rgba(34, 36, 40, 0.95);
+    }
+    .project-img {
+        width: 100%;
+        border-radius: 20px 20px 30px 20px;
+    }
+    .project-img-scale {
+        width: 100%;
+        border-radius: 20px 20px 30px 30px;
+        border: 2px solid rgb(125, 111, 33);
+        transform: scale(1.75);
+        transform-origin: top right;
+    }
+    .img-container {
+        grid-area: 1/7/9/15;
+    }
+    .img-overlay {
+        background-color: rgba(50,50,50,.6);
+        grid-area: 1/7/9/15;
+        order: 1;
+    }
+
+    form, #contact-container ul {
+        width: 60%;
+    }
+    form input {
+        font-size: 1.1em;
+    }
+    form textarea {
+        font-size: 1.3em;
+        height: 200px;
+    }
+    form button {
+        font-size: 1.1em;
+        background-color: rgb(210, 210, 210);
+        margin-bottom: 40px;
+    }
+}
+@media screen and (max-width: 2561px) {
+
+    nav ul, #about-container, #skills-container, #projects-container, #contact-container {
+        width: 845px;
+    }
+}
+@media screen and (max-width: 845px) {
+
+    nav ul, #about-container, #skills-container, #projects-container, #contact-container {
+        width: 100%;
+    }
+
+    #skills-container ul {
+        grid-template-columns: repeat(2, 270px);
+    }
+}
+@media screen and (max-width: 750px) {
+
+    #project-1, #project-2 {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+    .project-desc {
+        order: 0;
+        border-radius: 20px 20px 25px 25px;
+    }
+    .project-desc:hover {
+        background-color: none;
+    }
+    .project-img {
+        width: 57%;
+        border-radius: 20px 20px 25px 25px;
+    }
+    .project-img-scale {
+        width: 57%;
+        border-radius: 20px 20px 25px 25px;
+        transform: scale(1.75);
+        transform-origin: top center;
+    }
+    .img-container {
+        text-align: center;
+    }
+}
+@media screen and (max-width: 580px) {
+
+    nav ul li {
+        margin: 0px 10px 0 10px;
+    }
+    .nav-button {
+        font-size: 15px;
+    }
+
+    section {
+        top: 52px;
+    }
+
+    #msg1 {
+        font-size: 15px;
+    }
+    #msg2 {
+        font-size: 25px;
+        margin: 2px;
+    }
+    #msg3 {
+        font-size: 20px;
+    }
+    #profile {
+        width: 50%;
+        border-radius: 45px 45px 30px 30px;
+    }
+
+    #skills-container ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    form, #contact-container ul {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 435px) {
+
+    nav ul li {
+        margin: 0px;
+    }
+    .nav-button {
+        font-size: 12px;
+        margin: 0px;
+    }
+
+    #intro-container {
+        font-size: 0.8em;
+    }
+    #term-cursor img {
+        width: 8px;
+        height: 13px;
+    }
+
+    section {
+        top: 52px;
+    }
+
+    #msg1 {
+        font-size: 15px;
+    }
+    #msg2 {
+        font-size: 23px;
+        margin: 2px;
+    }
+    #msg3 {
+        font-size: 19px;
+    }
+    #profile {
+        width: 55%;
+    }
+
+    form input {
+        font-size: 1.0em;
+        width: 95%;
+    }
+    form textarea {
+        font-size: 1.2em;
+        height: 200px;
+    }
+    form button {
+        font-size: 1em;
+        background-color: rgb(210, 210, 210);
+        margin: 1px 1px 30px 1px;
+        padding: 4px;
+    }
+}
+

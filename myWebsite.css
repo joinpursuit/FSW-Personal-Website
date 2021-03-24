@@ -261,8 +261,8 @@ html {
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
-            min-height: 100vh;
-            max-width: 100%;
+            height: 100vh;
+            width: 120%;
             margin: 0;
             padding: 0;
         }
@@ -341,6 +341,7 @@ html {
             background: url("https://i.postimg.cc/wMKkqjwn/victoriano-izquierdo-Hoev-DVvx-Inw-unsplash.jpg") no-repeat;
             background-size: cover;
             height: 100vh;
+            width: 120%;
             margin: 0;
             padding: 0;
             background-position: center center;
@@ -431,6 +432,7 @@ html {
         #projects {
             background: url("https://i.postimg.cc/3R6tBYj9/parker-hilton-n-Lx-UP6g-g-VE-unsplash.jpg") no-repeat;
             height: 100vh;
+            width: 120%;
             background-size: cover;
             margin: 0;
             padding: 0;
@@ -439,7 +441,6 @@ html {
             background-attachment: fixed;
         }
 
-    
         .wrapper {
             display: flex;
             flex-direction: column;
@@ -447,7 +448,70 @@ html {
         } 
     
         .wrapper .proj {
-            padding: 20px;
+            position: relative;
+            margin: 20px;
+        }
+        
+        .wrapper .proj img {
+            display: flex;
+            box-shadow: 0px 30px 20px;
+            width: 480px;
+            height: 250px;
+        }
+    
+        /* .wrapper {
+            position: relative;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            margin-top: 10px;
+            gap: 5%;
+            padding: 25px;
+        }  */
+    
+        .proj {
+            position: relative;
+        }
+    
+        .project-info-wrapper {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            opacity: 0;
+        }
+    
+        .project-info-wrapper:hover {
+            opacity: 1;
+            backdrop-filter: blur(4px);
+        }
+    
+        .project-info-wrapper h5 {
+            font-family: fantasy;
+            font-size: 27px;
+        }
+    
+        .project-info-wrapper h3 {
+            font-family: fantasy;
+            font-size: 18px;
+            color: tan;
+        }
+    
+        .github-proj {
+            padding-top: 25px;
+            font-size: 35px;
+            text-shadow: 0px 2px 2px rgb(206, 138, 50);
+            color: whitesmoke;
+        }
+    
+        .github-proj:hover {
+            color: rgb(206, 138, 50);
+            cursor: pointer;
+            font-size: 40px;
         }
         
         .wrapper .proj img {
@@ -457,16 +521,13 @@ html {
             height: 200px;
         }
         
-        /* .wrapper .proj img {
-            box-shadow: 0px 30px 20px
-        } */
 
-        .proj-header {
+    .proj-header {
             color: black;
             font-size: 35px;
             padding-top: 45px;
             text-shadow: 0px 6px 2px black;
-        }
+    }
 
     .skills {
             background: rgb(206, 138, 50);
@@ -474,6 +535,7 @@ html {
             background-position: center;
             background-attachment: fixed;
             height: 100vh;
+            width: 120%;
             margin: 0;
             padding: 0;
         }
@@ -692,6 +754,7 @@ html {
     }
 
     .wrapper {
+        /* position: relative; */
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -702,7 +765,8 @@ html {
     } 
 
     .wrapper .proj {
-        padding: 20px;
+        position: relative;
+        margin: 20px;
     }
     
     .wrapper .proj img {
@@ -710,6 +774,61 @@ html {
         box-shadow: 0px 30px 20px;
         width: 480px;
         height: 250px;
+    }
+
+    /* .wrapper {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        margin-top: 10px;
+        gap: 5%;
+        padding: 25px;
+    }  */
+
+    .proj {
+        position: relative;
+    }
+
+    .project-info-wrapper {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        opacity: 0;
+    }
+
+    .project-info-wrapper:hover {
+        opacity: 1;
+        backdrop-filter: blur(4px);
+    }
+
+    .project-info-wrapper h5 {
+        font-family: fantasy;
+        font-size: 27px;
+    }
+
+    .project-info-wrapper h3 {
+        font-family: fantasy;
+        font-size: 18px;
+        color: tan;
+    }
+
+    .github-proj {
+        padding-top: 25px;
+        font-size: 35px;
+        text-shadow: 0px 2px 2px rgb(206, 138, 50);
+        color: whitesmoke;
+    }
+
+    .github-proj:hover {
+        color: rgb(206, 138, 50);
+        cursor: pointer;
+        font-size: 40px;
     }
 
     .proj-header {
@@ -739,6 +858,61 @@ html {
 }
 
 @media screen and (min-width:769px) and (max-width: 810px) {
+    .wrapper {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        margin-top: 10px;
+        gap: 5%;
+        padding: 25px;
+    } 
+
+    .proj {
+        position: relative;
+    }
+
+    .project-info-wrapper {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        opacity: 0;
+    }
+
+    .project-info-wrapper:hover {
+        opacity: 1;
+        backdrop-filter: blur(4px);
+    }
+
+    .project-info-wrapper h5 {
+        font-family: fantasy;
+        font-size: 27px;
+    }
+
+    .project-info-wrapper h3 {
+        font-family: fantasy;
+        font-size: 18px;
+        color: tan;
+    }
+
+    .github-proj {
+        padding-top: 25px;
+        font-size: 35px;
+        text-shadow: 0px 2px 2px rgb(206, 138, 50);
+        color: whitesmoke;
+    }
+
+    .github-proj:hover {
+        color: rgb(206, 138, 50);
+        cursor: pointer;
+        font-size: 40px;
+    }
+
     .about-header {
         font-family: fantasy;
         color: black;
@@ -859,7 +1033,6 @@ html {
         right: 0; 
     }
     
-    
     .nav-bar li:hover {
         font-weight: bolder;
         font-size: 20px;
@@ -889,7 +1062,6 @@ html {
         cursor: pointer;
         transition: all 0.3s ease;
     }
-    
     
     .nav-active {
         transform: translate(0%);
@@ -982,15 +1154,62 @@ html {
     }
     
     .wrapper {
+        position: relative;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         margin-top: 10px;
         gap: 5%;
-        padding: 20px;
+        padding: 25px;
     } 
+
+    .proj {
+        position: relative;
+    }
+
+    .project-info-wrapper {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        opacity: 0;
+    }
+
+    .project-info-wrapper:hover {
+        opacity: 1;
+        backdrop-filter: blur(4px);
+    }
+
+    .project-info-wrapper h5 {
+        font-family: fantasy;
+        font-size: 30px;
+    }
+
+    .project-info-wrapper h3 {
+        font-family: fantasy;
+        font-size: 20px;
+        color: tan;
+    }
+
+    .github-proj {
+        padding-top: 25px;
+        font-size: 40px;
+        text-shadow: 0px 2px 2px rgb(206, 138, 50);
+        color: whitesmoke;
+    }
+
+    .github-proj:hover {
+        color: rgb(206, 138, 50);
+        cursor: pointer;
+        font-size: 45px;
+    }
     
     .wrapper .proj img {
-        box-shadow: 8px 30px 20px
+        box-shadow: 8px 30px 20px;
     }
 
     .skills {
@@ -1035,5 +1254,30 @@ html {
     
 }
 
+@media screen and (min-width: 930px) {
+    .project-info-wrapper h5 {
+        font-family: fantasy;
+        font-size: 40px;
+    }
+
+    .project-info-wrapper h3 {
+        font-family: fantasy;
+        font-size: 25px;
+        color: tan;
+    }
+
+    .github-proj {
+        padding-top: 25px;
+        font-size: 45px;
+        text-shadow: 0px 2px 2px rgb(206, 138, 50);
+        color: whitesmoke;
+    }
+
+    .github-proj:hover {
+        color: rgb(206, 138, 50);
+        cursor: pointer;
+        font-size: 50px;
+    }
+}
 
 

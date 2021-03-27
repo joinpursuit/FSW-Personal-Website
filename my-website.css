@@ -105,6 +105,7 @@ header > span > a {
 }
 
 #projects-section > span > button {
+  margin-left: 5%;
   margin-bottom: 0.3%;
 }
 
@@ -124,6 +125,7 @@ header > span > a {
   display: none;
   margin-top: 0%;
   margin-bottom: 0%;
+  margin-left: 5%;
 }
 
 #descriptionAdventure {
@@ -136,6 +138,7 @@ header > span > a {
   display: none;
   margin-top: 0%;
   margin-bottom: 0%;
+  margin-left: 5%;
 }
 
 #snowman-span {
@@ -278,7 +281,7 @@ header > span > a {
   grid-row: 4/5;
   grid-column: 2/4;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 #contact-section > span > a > img {
@@ -480,8 +483,9 @@ button {
   }
 
   #contact-section {
-    display: block;
+    display: grid;
     grid-row: 3/7;
+    grid-column: 2/3;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 10% 10% 20% 10% 10%;
     gap: 1rem;
@@ -491,17 +495,5 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-
-  #github {
-    display: block;
-    position: relative;
-    right: 90%;
-  }
-
-  #linkedin {
-    display: block;
-    position: relative;
-    right: 50px;
-  }
+  }  
 }

@@ -22,21 +22,21 @@ clickHereAdventure.addEventListener("click", () => {
 });
 
 buttonSnowman.addEventListener("click", () => {
-  if (descriptionSnowman.style.display === "none") {
+  if (descriptionSnowman.style.display === "block") {
+    descriptionSnowman.style.display = "none";
+    buttonSnowman.textContent = `Show description`;
+  } else {
     descriptionSnowman.style.display = "block";
     buttonSnowman.textContent = `Show less`;
-  } else {
-    buttonSnowman.textContent = `Show description`;
-    descriptionSnowman.style.display = "none";
   }
 });
 
 buttonAdventure.addEventListener("click", () => {
-  if (descriptionAdventure.style.display === "none") {
-    descriptionAdventure.style.display = "block";
-    buttonAdventure.textContent = `Show less`;
-  } else {
+  if (descriptionAdventure.style.display === "block") {
     buttonAdventure.textContent = `Show description`;
     descriptionAdventure.style.display = "none";
+  } else {
+    descriptionAdventure.style.display = "block";
+    buttonAdventure.textContent = `Show less`;
   }
 });

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="my-website.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <a name="jump-contact"></a>
+      <span id="about-me-header">
+        <a href="index.html#jump-about-me"> About Me</a>
+      </span>
+      <span id="projects-header">
+        <a href="my-website-projects.html#jump-projects">Projects</a>
+      </span>
+      <span id="skills-header">
+        <a href="my-website-skills.html#jum-skills">Skills</a>
+      </span>
+      <span id="contact-header">
+        <a href="#jump-contact">Contact</a>
+      </span>
+    </header>
+
+    <section id="contact-section">
+      <form
+        class="my-style-form"
+        id="fs-frm"
+        name="simple-contact-form"
+        accept-charset="utf-8"
+        action="https://formspree.io/f/durdonadjalilova@pursuit.org" target="_blank" 
+        method="post"
+      >
+        <fieldset class="my-style" id="fs-frm-inputs">
+          <input
+            type="text"
+            name="name"
+            id="your-name"
+            placeholder="Your Name"
+            required=""
+          />
+          <input
+            type="email"
+            name="_replyto"
+            id="email-address"
+            placeholder="Your email"
+            required=""
+          />
+          <textarea
+            rows="5"
+            name="message"
+            id="message"
+            placeholder="Message"
+            required=""
+          ></textarea>
+          <input
+            type="hidden"
+            name="_subject"
+            id="email-subject"
+            value="Contact Form Submission"
+          />
+        </fieldset>
+        <input type="submit" value="Submit" />
+      </form>
+      <span>
+        <a href="https://github.com/durdonadjalilova" target="_blank" >
+          <img id="github" src="github.png" alt="github" />
+        </a>
+        <a href="https://www.linkedin.com/in/durdona-djalilova-b144a4202/" target="_blank" 
+          ><img id="linkedin" src="linkedin.png" alt="linkedin"  />
+        </a>
+      </span>
+    </section>
+  </body>
+</html>

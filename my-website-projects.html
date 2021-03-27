@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="my-website.css" />
+    <script src="./my-website.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <a name="jump-projects"></a>
+      <span id="about-me-header">
+        <a href="index.html#jump-about-me"> About Me</a>
+      </span>
+      <span id="projects-header">
+        <a href="#jump-projects">Projects</a>
+      </span>
+
+      <span id="skills-header">
+        <a href="my-website-skills.html#jum-skills">Skills</a>
+      </span>
+      <span id="contact-header">
+        <a href="my-website-contact.html#jump-contact">Contact</a>
+      </span>
+    </header>
+
+    <section id="projects-section">
+      <span id="adventure-span">
+        <p class="project-name">Choose Your Adventure Project</p>
+        <button id="btn-adventure" type="button">See description</button>
+        <span>
+          <a
+            class="github-link"
+            href="https://github.com/durdonadjalilova/FSW-Text-Based-Adventure" target="_blank" 
+            >Code</a
+          >
+        </span>
+        <p id="descriptionAdventure">
+          Command Line adventure game where the user chooses his/her own
+          adventures. The user was able to make several fun choices throughout
+          his/her journey and was given a chance to restart the game at the end.
+        </p>
+        <section id="adventure-video-section">
+          <video id="adventure-video" width="600" height="450">
+            <source src="text-based-adventure video.mov" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <p id="click-here-adventure">click here to view</p>
+        </section>
+      </span>
+
+      <span id="snowman-span">
+        <p class="project-name">Snowman Project</p>
+        <button id="btn-snowman" type="button">See description</button>
+        <span>
+          <a
+            class="github-link"
+            href="https://github.com/durdonadjalilova/FSW-CLI-Snowman" target="_blank" 
+            >Code</a
+          >
+        </span>
+        <p id="descriptionSnowman">
+          Command Line game where the user tries to guess the word by guessing
+          letters within certain amount of chances. The game gives the user
+          a random word, lets him/her enter guesses,  shows the letters guessed, 
+          informs the user if he/she has won or lost at the end.
+        </p>
+        <section id="snowman-video-section">
+          <video id="snowman-video" width="600" height="450">
+            <source src="snowman video.mov" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <p id="click-here-snowman">click here to view</p>
+        </section>
+      </span>
+    </section>
+  </body>
+</html>

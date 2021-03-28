@@ -45,7 +45,7 @@ section {
 }
 
 .portrait {
-  background-image: url("../images/redlogo2x.png");
+  background-image: url("redlogo2x.png");
   height: 200px;
   width: 200px;
   animation: pulse 2s infinite;

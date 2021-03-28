@@ -1,0 +1,336 @@
+.grid-container {
+  display: grid;
+  grid-template-rows: repeat(9,100vh);
+  grid-template-columns: 140%;
+
+}
+
+body {
+  background-color: #0e1c25;
+}
+
+
+#navbar {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  background-color: #13212a;
+  margin: 0 auto;
+  justify-content: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.navbar-a {
+  color: #f2f2f2;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+#section-1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  background-color: rgb(248, 245, 230);
+  top: 0;
+  grid-row: 1/2;
+  flex-wrap: wrap;
+  font-weight: bold;
+}
+
+#yashiry-azize {
+  height: auto;
+  width: 100%;
+  max-width: 400px;
+}
+
+#title {
+  display: none;
+}
+
+#section-2 {
+  display: flex;
+  background-color: #fc6722;
+  flex-wrap: wrap;
+  justify-content:center;
+}
+
+#myphoto {
+  height: auto;
+  width: 100%;
+} 
+
+#about-lettering {
+  width: 70%;
+  height: 45%;
+}
+#section-3 {
+  background-color: rgb(248, 245, 230);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  padding: 40px;
+
+}
+
+.info p {
+  text-align: justify;
+}
+
+#random-trivia {
+  margin: 10mm;
+  font-weight: bold;
+  font-family: fantasy;
+  font-size: 20px;
+  text-align: center;
+}
+
+#random-trivia p {
+  text-align: center;
+}
+
+#random-q-button {
+  background-color: #4c77af;
+  border: none;
+  color: white;
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin-bottom: 2mm;
+  border-radius: 4px;
+}
+
+#projects-title {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  padding: 4%;
+}
+
+  #section-5 {
+  background-color: rgb(248, 245, 230);
+  text-align: center;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+}
+
+#section-5 p {
+ padding: 3%;
+}
+
+#text-adventure-game {
+  height: 200px;
+  width: 300px;
+}
+
+#text-adventure {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#snowman-game {
+  height: 200px;
+  width: 300px;
+}
+
+#snowman {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.textadventure-link {
+  text-decoration: underline;
+}
+
+.snowman-link {
+  text-decoration: underline;
+}
+
+ #section-4 {
+  display: flex;
+  background-color: rgb(245, 196, 63);
+  justify-content: center;
+  align-items: center;
+}
+
+#section-6 {
+  display: flex;
+  background-color: #fc6722;
+  justify-content: center;
+  align-items: center;
+}
+
+#lettering-skills {
+  width: 100%;
+  height: 60%;
+}
+
+#section-7 {
+  background-color: rgb(248, 245, 230);
+}
+#filter-skills {
+  position: static;
+  top: 5%;
+  left: 8%;
+}
+
+.skills-list {
+  display: grid;
+  grid-template-columns: 23% 23% 23%;
+  grid-template-rows: 50% 50% 50%;
+  grid-gap: 10%;
+  margin: 12%;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 40%;
+} 
+
+
+ #section-8 {
+  background-color: rgb(245, 196, 63);
+}
+
+
+  .links {
+  display: flex;
+  justify-content: center;
+
+}
+
+.links a {
+  width: 120px;
+  height: 120px;
+  padding: 15px;
+  margin-bottom: 10%;
+}
+
+#section-9 {
+  background-color: rgb(248, 245, 230);
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  text-align: left;
+  padding: 4mm;
+}
+
+#contact-info {
+  margin: 20mm;
+  font-size: 18px;
+}
+#my-name {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  text-align: left;
+  font-weight: bold;
+}
+
+.mail-to {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 736px) {
+  .grid-container {
+    display: grid;
+    grid-gap: 4mm;
+    grid-template: 100vh / auto auto;
+  }
+  #section-1 {
+    grid-column: 1/-1;
+    grid-row: 1;
+  }
+  #section-2 {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  #section-3 {
+    grid-column: 2;
+    grid-row: -1;
+  }
+  #section-4 {
+    grid-column: 2;
+    grid-row: 3;
+  }
+
+  #projects-lettering {
+    width: 60%;
+    height: 50%;
+    margin-left: 5%;
+  }
+  
+  #title {
+    color: black;
+    position: relative;
+    top: 25%;
+  }
+  
+  .info {
+    padding: 10px 18px 10px;
+    font-size: 16px;
+    margin: 8mm;
+  }
+  #text-adventure-game {
+    height: 200px;
+    width: 400px;
+  }
+  
+  #snowman-game {
+    height: 200px;
+    width: 400px;
+  }
+  
+  #my-photo {
+    position: relative;
+    bottom: 30%;
+    width: 500px;
+    height: 450px;
+    left: 20%;
+  }
+  .githublink {
+    bottom: 25%;
+    left: 30%;
+    width: 180px;
+    height: 180px;
+  }
+  
+  .githublink {
+    bottom: 25%;
+    left: 30%;
+    width: 180px;
+    height: 180px;
+  }
+  
+  .info p {
+    font-size: 25px;
+  }
+}
+
+
+

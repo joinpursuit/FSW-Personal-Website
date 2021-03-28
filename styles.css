@@ -139,7 +139,7 @@ nav a {
     align-items: center;
     justify-content: space-evenly;
     font-family: "Times New Roman", Times, serif;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     border-bottom: solid black;
   }
   #AboutMe p {
@@ -150,12 +150,13 @@ nav a {
   #Images-container img {
     width: 160px;
     transition: transform 1.5s;
-    margin-top: 20px;
+    margin-top: 15px;
   }
   #Images-container img:hover {
-    transform: scale(2);
+    transform: scale(1.8);
   }
   .Contact-Info {
+    padding: 10px;
     width: 300px;
   }
   .Contact-Info p {
@@ -183,7 +184,7 @@ nav a {
   .Skills-Container img {
     border-radius: 10px;
     height: 50px;
-    width: 100px;
+    width: 90px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -195,11 +196,7 @@ nav a {
   #Snowman-text {
     font-size: 15px;
   }
-
 }
-
-
-
 
 /* to dark mode */
 .dark-mode {

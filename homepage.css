@@ -82,25 +82,22 @@ p {
     background-size: 400% 400%;
     animation: gradient 10s ease infinite;
     color: white;
-
-
   }
   a {
     background: linear-gradient(-45deg, #b2be6b, #021338, #b3d0db, #05352a);
     background-size: 400% 400%;
-    animation: gradient 10s ease infinite;
+    animation: gradient 10s linear infinite;
     color: white;
   }
-
   @keyframes gradient {
     0% {
-      background-position: 0% 50%;
+      background-position: 50% 50%;
     }
     50% {
       background-position: 0% 0%;
     }
     100% {
-      background-position: 50% 0%;
+      background-position: 50% 50%;
     }
   }
   .homepage-div {

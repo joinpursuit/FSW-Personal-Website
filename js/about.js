@@ -29,6 +29,7 @@ checkbox.addEventListener('click', (e) => {
 let transition = () => {
     window.setTimeout(() => {
         header.classList.toggle('transition')
+        main.classList.toggle("transition")
     }, 1000)
 }
 

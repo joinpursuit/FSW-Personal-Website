@@ -79,10 +79,19 @@ header a:hover {
 .logo {
   font-size: 28px;
   font-weight: bold;
+  padding-left: 35px;
 }
 
 .logo a {
   color: var(--logo);
+}
+
+.long{
+  display: block;
+}
+
+.short{
+  display: none;
 }
 
 .menu ul {
@@ -92,6 +101,7 @@ header a:hover {
   display: flex;
   flex-direction: row;
   font-size: 20px;
+  padding-left: 0;
 }
 
 .menu li {
@@ -135,6 +145,7 @@ main div {
   0 20px 80px rgba(0, 0, 0, 0.14);
   margin-top: 85px;
 }
+
 .one img {
   width: 100%;
   height: auto;
@@ -238,7 +249,6 @@ strong {
 }
 
 .contact-two {
-  
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -508,10 +518,28 @@ button:hover, button:focus {
     display: flex;
     justify-content: space-around;
   }
+
+  .contact-two h2{
+    text-align: center;
+  }
+
+  .info {
+    padding-left: 0;
+  }
 }
 
 @media screen and (max-width: 700px) {
   .skills section {
-    font-size: 80px;
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .long{
+    display: none;
+  }
+
+  .short{
+    display: block;
   }
 }

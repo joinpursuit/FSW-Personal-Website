@@ -8,6 +8,9 @@ const descriptionAdventure = document.querySelector("#descriptionAdventure");
 const descriptionSnowman = document.querySelector("#descriptionSnowman");
 const buttonSnowman = document.querySelector("#btn-snowman");
 const buttonAdventure = document.querySelector("#btn-adventure");
+const yourName = document.querySelector("#your-name")
+const email = document.querySelector("#email-address")
+const message = document.querySelector("#message")
 
 clickHereSnowman.addEventListener("click", () => {
   clickHereSnowman.style.display = "none";
@@ -40,3 +43,4 @@ buttonAdventure.addEventListener("click", () => {
     buttonAdventure.textContent = `Show less`;
   }
 });
+

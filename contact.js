@@ -1,17 +1,13 @@
 const button = document.querySelector("#toDarkMode")
 const mode  = localStorage.getItem('mode');
 const body = document.body
-// debugger
 if(mode !== null){
     body.classList.add(mode)
-
 }
-
 button.addEventListener("click", (e) =>{
     body.classList.toggle("dark-mode");
     if(button === "Dark Mode"){
         localStorage.setItem("mode", "dark-mode")
-        
     } else {
         localStorage.setItem ("mode", "body")
     }

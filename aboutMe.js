@@ -1,7 +1,6 @@
 const button = document.querySelector("#toDarkMode")
 const mode  = localStorage.getItem('mode');
 const body = document.body
-debugger
 if(mode !== null){
     body.classList.add(mode)
 }

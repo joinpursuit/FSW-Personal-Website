@@ -1,41 +1,28 @@
 console.log("Hello");
 
-const textAdventure = () => {
-  const showButton = document.getElementById("show-text");
-  const showTextAdventure = document.getElementById("text-adventure");
-  if (showTextAdventure.style.display === "block") {
-    showTextAdventure.style.display = "none";
-    showButton.innerText = "Show more";
-  } else {
-    showTextAdventure.style.display = "block";
-    showButton.innerText = "Hide";
-  }
-};
-const snowman = () => {
-  const snowmanButton = document.getElementById("showBtn");
-  const showSnowman = document.getElementById("Snowman-text");
-  if (showSnowman.style.display === "block") {
-    showSnowman.style.display = "none";
-    snowmanButton.innerText = "Show more";
-  } else {
-    showSnowman.style.display = "block";
-    snowmanButton.innerText = "Hide";
-  }
-};
-
 // Create a button that will change it to dark mode.
 
-const darkMode = () => {
-  const toDarkmode = document.body;
-  const toChange = document.getElementById("toChange");
-  toDarkmode.classList.toggle("dark-mode");
-  if (toChange.innerText === "Light Mode") {
-    toChange.innerText = "Dark Mode";
+const button = document.querySelector("#toDarkMode")
+const mode  = localStorage.getItem('mode');
+const body = document.body
+// debugger
+if(mode !== null){
+    body.classList.add(mode)
+}
+button.addEventListener("click", (e) =>{
+  body.classList.toggle("dark-mode");
+  if(button === "Dark Mode"){
+      localStorage.setItem("mode", "dark-mode")
+      
   } else {
-    toChange.innerText = "Light Mode";
+      localStorage.setItem ("mode", "body")
   }
-};
-
+  if(button.textContent === "Dark Mode"){
+      button.textContent = "Light Mode"
+  }else{
+      button.textContent = "Dark Mode"
+  }
+})
 // create an option the filters the backend, front and etc...
 
 const data = [
@@ -74,14 +61,15 @@ const createOptions = () => {
     option.textContent = skills[i];
     option.value = skills[i];
     select.appendChild(option);
-    debugger
+    // debugger
   }
 };
+
 createOptions();
 
 const filterOption = (e) => {
   e.preventDefault();
-  debugger
+  // debugger
   const toTarget = e.target.value;
   container.innerText = "";
   for (let i = 0; i < data.length; i++) {

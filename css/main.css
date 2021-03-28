@@ -88,10 +88,12 @@ header a:hover {
 
 .long{
   display: block;
+  opacity: 1;
 }
 
 .short{
   display: none;
+  opacity: 0;
 }
 
 .menu ul {
@@ -537,9 +539,11 @@ button:hover, button:focus {
 @media screen and (max-width: 500px) {
   .long{
     display: none;
+    opacity: 0;
   }
 
   .short{
     display: block;
+    opacity: 1;
   }
 }

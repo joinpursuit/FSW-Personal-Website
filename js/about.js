@@ -1,17 +1,29 @@
 const checkbox = document.querySelector('input[name=theme]');
 const header = document.querySelector("header")
 const main = document.querySelector("main")
+// localStorage.clear()
+const userStorage = localStorage
+let currentTheme = userStorage.getItem("theme")
+header.setAttribute("data-theme", currentTheme)
+main.setAttribute("data-theme", currentTheme)
+
+if (currentTheme === "dark") {
+  checkbox.checked = true
+}
 
 checkbox.addEventListener('click', (e) => {
-    if(checkbox.checked) {
-        transition()
-        header.setAttribute('data-theme', 'dark')
-        main.setAttribute('data-theme', 'dark')
-    } else {
-        transition()
-        header.setAttribute('data-theme', 'light')
-        main.setAttribute('data-theme', 'light')
-    }
+  if(checkbox.checked) {
+    transition()
+    header.setAttribute('data-theme', 'dark')
+    main.setAttribute('data-theme', 'dark')
+    userStorage.setItem("theme", "dark")
+  } else {
+    transition()
+    header.setAttribute('data-theme', 'light')
+    main.setAttribute('data-theme', 'light')
+    userStorage.setItem("theme", "light")
+  }
+  console.log(userStorage);
 })
 
 let transition = () => {

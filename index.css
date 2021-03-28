@@ -9,7 +9,6 @@ body {
   background-color: #0e1c25;
 }
 
-
 #navbar {
   display: flex;
   flex-direction: row;
@@ -331,6 +330,3 @@ body {
     font-size: 25px;
   }
 }
-
-
-

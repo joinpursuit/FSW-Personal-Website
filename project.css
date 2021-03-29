@@ -326,7 +326,9 @@ input[type=submit]:hover {
 #linkedIn {
   text-decoration: underline;
 }
-
+#gitHub {
+  text-decoration: underline;
+}
 
 #Projects{
     font-size: 20px;

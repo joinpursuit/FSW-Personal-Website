@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="index.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <!-- <header>
+        <img id="banner" src="BLM.png" alt="List of names of lives lost due to police brutality">
+    </header> -->
+    
+    <nav>
+        <ul class="desktop-nav">
+            <li><a class="navigation-links" href="#homeSection">Home</a></li>
+            <li><a class="navigation-links" href="#projectSection">Projects</a></li>
+            <li><a class="navigation-links" href="#faqSection">FAQs</a></li>
+            <li><a class="navigation-links" href="#contactSection">Contact</a></li>
+            <li><button id="dark-btn" onclick="darkMode()">Dark Mode</button></li>
+         </ul>
+         
+         <ul class="mobile-nav"> 
+             <span class="menu">
+                 <li><a class="navigation-links-1" href="#homeSection">Home</a></li>
+                 <li><a class="navigation-links-1" href="#projectSection">Projects</a></li>
+                 <li><a class="navigation-links-1" href="#faqSection">FAQs</a></li>
+                 <li><a class="navigation-links-1" href="#contactSection">Contact</a></li>
+            </span>
+            <li id="menu-btn">Menu</li>
+        </ul>
+    </nav>
+    
+    
+    
+    
+    <button onclick="topFunction()" id="topBtn" title="Go to top">Back to the Top</button>
+    <hr>
+    <main>
+        <header id="h1Home">
+            <div class="desktop-header">
+                <h1>Greetings, I am Poonam!</h1>
+                <!-- <img src="malcolmX.png" alt="Malcolm X quote">
+                    <img src="noBorders.png" alt="No Borders quote"> -->
+                    <p>Thank you for stopping by.Feel free to scroll down and learn more about me and the work I'd like to offer to the world.</p> 
+                    <button id="dark-mode" onclick="darkMode()">Light Mode</button>
+                <!-- <button onclick="myFunction()">Toggle dark mode</button> -->
+                </div>
+            
+            <span class="mobile-header">
+                <!-- <h1>Greetings, I am Poonam</h1> -->
+                <!-- <p>Greetings, my name is Poonam and thank you for stopping by. Feel free to scroll down and what I'd like to offer to the world</p> -->
+                <img class="malcolm" src="malcolmX.png" alt="Malcolm X quote">
+                <!-- <img src="noBorders.png" alt="No Borders quote"> -->
+                
+                <div class="middle">
+                    <p class="text"> All artwork displayed is by Justseeds Artists' Cooperative, please click to view more 
+                        of their radical artwork
+                    </p>
+                    <div class="just-seeds-button"><a href="https://twitter.com/Justseeds" target="_blank"> View</a></div>
+                </div>
+            </div>
+            
+        </span>
+    </header>
+    
+    <section class="section" id="homeSection">
+        
+        <div class="flex-container1">
+            <button id="dark-mode" onclick="darkMode()">Light Mode</button>
+            <p id="summary">Greetings, thank you for stopping by! </p>
+            <p id="summary2">My name is Poonam Dass and I am passionate about developing tools and programs for working class communities and ensuring data is accessible and user friendly to a wide and diverse net of audiences. </p>
+            <img id="poonam_image" src="Poonam.png" alt="Image of Poonam">
+
+        </div>
+
+        <div class="flex-containerdesk">
+            <div>
+            </div>
+            <p id="summary2">My name is Poonam Dass and I am passionate about developing tools and programs for working class communities and ensuring data is accessible and user friendly to a wide and diverse net of audiences. </p>
+            <img id="poonam_image" src="Poonam.png" alt="Image of Poonam">
+        </div>
+
+        
+    </section>
+    
+    <hr>
+    <section class="section" id="projectSection">
+        <h1 class="headingOfSection"> Projects</h1>
+
+        <div id="flex-container2">
+
+            <div class="flex-container2a">
+                <h2>Text Based Adventure</h2>
+                <img id="project-image1" src="textbasedAdventure.png" alt="Image of Text Based Adventure">
+                <p class="two-p">Skills:JavaScript</p>
+                <p class="two-p">Inspired by my favorite childhood show "The Twilight Zone", this command line based game prompts users to make fairly simple decisions, but there is a caveat to each choice. Enter the "Twilight Zone" via the link below to test your luck!</p>
+               <a class="project-links" href="https://github.com/PoonamDass/FSW-Text-Based-Adventure" target="_blank">Github Repo</a>
+            </div>
+
+            <div class="flex-container2b">
+                <h2>Emoji Story Generator</h2>
+                <img id="project-image2" src="Emoji_Stories_App.png" alt="Image of Emoji Story Game">
+                <p class="two-p">Skills: JavaScript, CSS, HTML</p>
+                <p class="two-p">A user is able to generate random emojis and make meaning of them by writing a descriptive story. They are able to view past stories as well as the number of stories they've written.</p>
+                <a class="project-links" href="https://github.com/PoonamDass/fsw-mid-module-two-practice-assessment" target="_blank">Github Repo</a>
+            </div>
+
+        </div>
+    </section>
+    <hr>
+    <section class="section" id="faqSection">
+        <h1 class="headingOfSection">FAQs Section</h1>
+            <ul class="faq-ul">
+              <!-- <li class="faq-li">What is my favorite quote?</li> -->
+              <li class="faq-li">
+                <div class="square1">
+                  <p>What is my favorite quote?</p>  
+                  <p>"People are like onions, they have layers" - Shrek, the Ogre</p>
+                </div>
+            </li>
+              
+              <li class="faq-li"> What is my favorite meme?</li>
+              <br>
+                <div id="meme">
+                    <img id="meme-image" src="https://static01.nyt.com/images/2016/08/05/us/05onfire1_xp/05onfire1_xp-videoSixteenByNineJumbo1600-v2.jpg">
+                    <button id="show">Show</button>
+                </div>
+                <br>
+
+              <li class="faq-li">Would I rather fight ten chicken-sized horses or 1 horse sized chicken?</li>
+              <div id="box2">
+                <p id="horse">A  horse sized chicken  because it might have an achille's heel and can be defeated with one blow. Plus I can eat the chicken, not the horse.</p>
+            </ul>
+    </section>
+    <hr>
+    <section class="section" id="contactSection">
+        <h1 class="headingOfSection">Contact Section</h1>
+        <div class="connect-icons">
+        <a href="mailto:poonamdass@pursuit.org" class="email">Email</a>
+        <a href ="https://www.linkedin.com/in/poonam-dass/" class="fa fa-linkedin"></a>
+        <a href ="https://github.com/PoonamDass" class="fa fa-github"></a>
+       </div>
+    
+    </section>
+
+
+    </main>
+    <footer>
+        <img id="noBorders" src="noBorders.png" alt="No Borders quote">
+    </footer>
+
+    
+</body>
+</html>

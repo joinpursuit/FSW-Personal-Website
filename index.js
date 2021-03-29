@@ -16,13 +16,13 @@ mobileMenuBtn.addEventListener("click", (e) => {
 
 const darkMode = () =>{
     const body= document.querySelector("body")
-    const button=document.querySelector("#dark-mode")
+    const button=document.querySelector("#dark-btn")
     body.classList.toggle("darkMode")
     
-    if(button.innerText === "Light Mode"){
-        button.innerText = "Dark Mode"
+    if(button.textContent ==="Dark Mode"){
+        button.textContent = "Light Mode"
     } else {
-        button.innerText="Light Mode"
+        button.textContent="Dark Mode"
     }
 
 }

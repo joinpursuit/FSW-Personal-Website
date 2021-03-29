@@ -132,14 +132,22 @@ header{
   min-height: 50%;
 }
 
-#dark-mode{
+/* #dark-mode{
   width:50%;
   margin-left: 25%;
-}
+} */
 
 .darkMode{
   background-color: #eae7dc;
   color:  #123c69;
+}
+
+.darkMode h1{
+  color: #007bb5;
+}
+
+.darkMode hr{
+  border-top: 5px solid #123c69;
 }
 
 .flex-container1{
@@ -229,7 +237,7 @@ justify-content: center;
 }
 
 /* for desktop */
-@media (min-width: 768px){
+@media only screen and (min-width: 768px){
   /* .body{
     display: grid;
     grid-template-columns: repeat(4, 1fr) ;
@@ -402,4 +410,12 @@ header {
 footer >img{
   width:100%;
 }
+}
+
+#dark-btn{
+  margin-right: 10px;
+}
+
+hr{
+   border-top: 1px solid white;
 }

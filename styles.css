@@ -42,6 +42,8 @@ gap: 50px;
   font-size: 20px;
   text-align: left;
   overflow-wrap: break-word;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 .skills-heading {
   text-align: center;
@@ -150,6 +152,8 @@ gap: 50px;
   #AboutMe p {
     font-size: 15px;
     text-align: left;
+    margin-left: 0px;
+    margin-right: 0px;
   }
   #MyPhoto {
     margin-top: 20px;

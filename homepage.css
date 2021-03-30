@@ -98,16 +98,17 @@ p {
 
 @media only screen and (max-width: 700px) {
   body {
-    background: linear-gradient(-45deg, #ee7752, #540825, #23a6d5, #23d5ab);
+    background: linear-gradient(-45deg, #f5a17b, #3d74eb, #23a6d5, #23d5ab);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
     color: white;
   }
   a {
-    background: linear-gradient(-45deg, #b2be6b, #021338, #b3d0db, #05352a);
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
-    color: white;
+  background: linear-gradient(-45deg, #06b6fc, #3863be, #b3d0db, #05352a);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  color: white;
+  margin: 20px 20px 20px 20px;
   }
   @keyframes gradient {
     0% {

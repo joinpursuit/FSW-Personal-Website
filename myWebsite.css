@@ -261,7 +261,7 @@ html {
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
-            height: 100vh;
+            height: 120vh;
             width: 120%;
             margin: 0;
             padding: 0;
@@ -298,7 +298,7 @@ html {
     
     .nav-bar {
             position: absolute;
-            height: 92vh;
+            height: 110vh;
             top: 8vh;
             display: flex;
             flex-direction: column;
@@ -340,7 +340,7 @@ html {
     .about-me {
             background: url("https://i.postimg.cc/wMKkqjwn/victoriano-izquierdo-Hoev-DVvx-Inw-unsplash.jpg") no-repeat;
             background-size: cover;
-            height: 100vh;
+            height: 120vh;
             width: 120%;
             margin: 0;
             padding: 0;
@@ -431,7 +431,7 @@ html {
 
         #projects {
             background: url("https://i.postimg.cc/3R6tBYj9/parker-hilton-n-Lx-UP6g-g-VE-unsplash.jpg") no-repeat;
-            height: 100vh;
+            height: 120vh;
             width: 120%;
             background-size: cover;
             margin: 0;

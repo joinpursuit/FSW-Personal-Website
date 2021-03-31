@@ -1,12 +1,285 @@
-@media only screen and (max-width: 375px) {
+/* MOBILE DEVICE (iPhone 6/7/8): WIDTH at 375px */
+/* HOME PAGE */
+body {
+  background-image: url("./jessy-smith-zFOm6KzA-7g-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f3f1f2;
+  display: flex;
+}
+
+.home-page,
+.about-page,
+.projects-page,
+.contact-page {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+nav {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+}
+
+li {
+  font: bold 18px "Courier New", Courier, monospace;
+  margin: 5px;
+}
+
+li:hover {
+  color: rgba(89, 197, 7, 1);
+}
+
+.quote-li {
+  display: none;
+}
+
+.section {
+  display: flex;
+}
+
+/* .name-mobile-one {
+  font: 16px bold "Courier New", Courier, monospace;
+  color: rgba(255, 255, 255, 1);
+  grid-column: 2/5;
+  grid-row: 2/3;
+  justify-self: center;
+  padding-top: 10px;
+  margin: 0px 25px 0px 0px;
+} */
+
+/* .name-mobile-two {
+  font: 16px bold "Courier New", Courier, monospace;
+  color: rgba(255, 255, 255, 1);
+  grid-column: 2/5;
+  grid-row: 3/4;
+  justify-self: center;
+  align-self: center;
+  margin: 125px 30px 100px 0px;
+}
+
+.name-mobile-three {
+  font: 16px bold "Courier New", Courier, monospace;
+  color: rgba(255, 255, 255, 1);
+  grid-column: 2/5;
+  grid-row: 5/6;
+  margin: 0px 0px 0px 25px;
+} */
+
+.name-mobile:hover {
+  color: rgba(89, 197, 7, 1);
+}
+/* .name-mobile-two:hover {
+  color: rgba(89, 197, 7, 1);
+}
+.name-mobile-three:hover {
+  color: rgba(89, 197, 7, 1);
+} */
+
+.name-mobile {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 35px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 1);
+  grid-column: 1/6;
+  grid-row: 3/5;
+  justify-self: center;
+  align-items: center;
+  padding-top: 90px;
+}
+
+.name {
+  display: none;
+}
+
+/* ABOUT PAGE */
+.pic-of-me {
+  grid-column: 2/5;
+  grid-row: 1/3;
+  width: 30%;
+  align-self: center;
+  justify-self: center;
+  margin: 10px 50px 0px 25px;
+}
+
+.bio {
+  font-family: "Courier New", Courier, monospace;
+  color: rgba(255, 255, 255, 1);
+  grid-column: 2/5;
+  grid-row: 3/4;
+  margin: 180px 50px 0px 15px;
+  /* display: none; */
+}
+
+/* .mobile-bio-one {
+  font-family: "Courier New", Courier, monospace;
+  color: rgba(255, 255, 255, 1);
+  grid-column: 2/5;
+  grid-row: 3/4;
+  margin: 50px 25px 0px 25px;
+} */
+
+/* .mobile-bio-two {
+  font-family: "Courier New", Courier, monospace;
+  color: rgba(255, 255, 255, 1);
+  grid-column: 2/5;
+  grid-row: 4/6;
+  margin: 130px 38px 0px 20px;
+} */
+
+/* PROJECTS PAGE */
+.to-do-list {
+  grid-column: 2/4;
+  grid-row: 1/3;
+}
+
+.to-do-pic {
+  grid-column: 2/4;
+  grid-row: 1/3;
+  justify-self: center;
+  align-self: center;
+  margin: 90px 5px 0px 48px;
+  width: 60%;
+}
+
+.to-do-sum {
+  display: none;
+}
+
+.mobile-to-do-github {
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+  grid-column: 2/4;
+  grid-row: 5/6;
+  color: rgba(255, 255, 255, 1);
+  justify-self: center;
+  margin: 0px 0px 0px 30px;
+}
+
+.mobile-to-do-github:hover {
+  color: rgba(89, 197, 7, 1);
+}
+
+.mobile-emoji-github {
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+  grid-column: 2/4;
+  grid-row: 5/6;
+  color: rgba(255, 255, 255, 1);
+  justify-self: center;
+  align-self: center;
+  margin: 0px 0px 15px 30px;
+}
+
+.mobile-emoji-github:hover {
+  color: rgba(89, 197, 7, 1);
+}
+
+.emoji-story {
+  grid-column: 2/4;
+  grid-row: 3/4;
+}
+
+.emoji-pic {
+  grid-column: 2/4;
+  grid-row: 3/4;
+  width: 65%;
+  margin: 50px 5px 10px 45px;
+}
+
+.emoji-sum {
+  display: none;
+}
+
+/* CONTACT PAGE */
+.contact-me {
+  display: none;
+}
+
+.mobile-contact-me-one {
+  font-family: "Courier New", Courier, monospace;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
+  grid-column: 2/5;
+  grid-row: 1/2;
+  justify-items: center;
+  margin: 90px 15px 0px 15px;
+}
+
+.mobile-contact-me-two {
+  font-family: "Courier New", Courier, monospace;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
+  grid-column: 2/5;
+  grid-row: 3/4;
+  justify-items: center;
+  margin: 40px 5px 0px 20px;
+}
+
+.lets-connect {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  color: rgba(89, 197, 7, 1);
+  text-align: center;
+  grid-column: 2/5;
+  grid-row: 5/6;
+  margin: 40px 30px 0px 10px;
+}
+
+.lets-connect:hover {
+  color: white;
+}
+
+.devicon-linkedin-plain-wordmark {
+  font-size: 30px;
+  margin: 0px 55px 0px 5px;
+}
+
+.devicon-github-original-wordmark {
+  font-size: 100%;
+  margin: 10px 270px 0px 5px;
+}
+
+.icons {
+  grid-column: 2/5;
+  grid-row: 4/6;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 220px;
+}
+
+i:hover {
+  color: rgba(89, 197, 7, 1);
+}
+
+.copyright {
+  font: bold 12px "Courier New", Courier, monospace;
+  grid-column: 2/6;
+  grid-row: -1;
+  align-self: left;
+}
+
+/* iPad*/
+@media only screen and (min-width: 768px) {
   /* HOME PAGE */
   body {
-    background-image: url("./jessy-smith-zFOm6KzA-7g-unsplash.jpg");
-    background-size: contain;
+    /* background-image: url("./jessy-smith-zFOm6KzA-7g-unsplash.jpg"); */
+    /* background-size: 150%; */
     background-repeat: repeat;
-    background-position: center;
+    /* background-position: center bottom; */
     background-color: #f3f1f2;
     display: flex;
+    /* overflow-y: hidden; */
   }
 
   .home-page,
@@ -20,204 +293,194 @@
   }
 
   nav {
-    grid-column: 1/2;
+    grid-column: 1/5;
     grid-row: 1/2;
+    position: fixed;
+    top: 0;
   }
 
   ul {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
   }
 
   li {
-    font: bold 18px "Courier New", Courier, monospace;
-    margin: 5px;
+    color: black;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 30px;
   }
 
   li:hover {
     color: rgba(89, 197, 7, 1);
   }
 
+  #quote-of-the-day {
+    grid-column: 4/6;
+    grid-row: 1/2;
+    justify-self: end;
+  }
+
+  /* Otherwise font will be 30px like other <li> */
   .quote-li {
-    display: none;
-  }
-
-  .section {
-    display: flex;
-  }
-
-  .name-mobile-one {
-    font: 16px bold "Courier New", Courier, monospace;
-    color: rgba(255, 255, 255, 1);
-    grid-column: 2/5;
-    grid-row: 2/3;
-    margin: 0px 0px 0px 25px;
-  }
-
-  .name-mobile-two {
-    font: 16px bold "Courier New", Courier, monospace;
-    color: rgba(255, 255, 255, 1);
-    grid-column: 2/5;
-    grid-row: 3/4;
-    justify-self: center;
-    align-self: center;
-    margin: 125px 30px 100px 0px;
-  }
-
-  .name-mobile-three {
-    font: 16px bold "Courier New", Courier, monospace;
-    color: rgba(255, 255, 255, 1);
-    grid-column: 2/5;
-    grid-row: 5/6;
-    margin: 0px 0px 0px 25px;
-  }
-
-  .name-mobile-one:hover {
-    color: rgba(89, 197, 7, 1);
-  }
-  .name-mobile-two:hover {
-    color: rgba(89, 197, 7, 1);
-  }
-  .name-mobile-three:hover {
-    color: rgba(89, 197, 7, 1);
+    font-size: 21px;
   }
 
   .name {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 45px;
+    font-weight: bold;
+    /* color: rgba(255, 255, 255, 1); */
+    color: black;
+    grid-column: 2/6;
+    grid-row: 5/6;
+    border: solid purple;
+  }
+
+  .name-mobile-one,
+  .name-mobile-two,
+  .name-mobile-three {
     display: none;
   }
 
-  /* ABOUT PAGE */
-  .pic-of-me {
-    grid-column: 2/5;
-    grid-row: 1/3;
-    width: 30%;
-    align-self: center;
-    justify-self: center;
-    margin: 10px 50px 0px 25px;
-  }
-
+  /* ABOUT */
   .bio {
     font-family: "Courier New", Courier, monospace;
+    font-size: 17px;
     color: rgba(255, 255, 255, 1);
-    grid-column: 2/5;
-    grid-row: 3/4;
-    margin: 180px 50px 0px 15px;
-    display: none;
+    grid-column: 5/8;
+    grid-row: 5/10;
   }
 
   .mobile-bio-one {
-    font-family: "Courier New", Courier, monospace;
-    color: rgba(255, 255, 255, 1);
-    grid-column: 2/5;
-    grid-row: 3/4;
-    margin: 50px 25px 0px 25px;
+    display: none;
   }
 
   .mobile-bio-two {
-    font-family: "Courier New", Courier, monospace;
-    color: rgba(255, 255, 255, 1);
-    grid-column: 2/5;
-    grid-row: 4/6;
-    margin: 130px 38px 0px 20px;
+    display: none;
+  }
+
+  .pic-of-me {
+    grid-column: 8/10;
+    grid-row: 5/10;
+    width: 75%;
   }
 
   /* PROJECTS PAGE */
   .to-do-list {
-    grid-column: 2/4;
-    grid-row: 1/3;
+    grid-column: 4/6;
+    grid-row: 5/8;
   }
 
   .to-do-pic {
-    grid-column: 2/4;
-    grid-row: 1/3;
-    justify-self: center;
-    align-self: center;
-    margin: 90px 5px 0px 48px;
-    width: 60%;
+    grid-column: 4/6;
+    grid-row: 5/8;
+    margin-left: 95px;
+  }
+
+  .to-do-list,
+  .emoji-story {
+    position: relative;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 130%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: black;
+  }
+
+  .to-do-list:hover .overlay {
+    opacity: 1;
+  }
+
+  .emoji-story:hover .overlay {
+    opacity: 1;
   }
 
   .to-do-sum {
-    display: none;
-  }
-
-  .mobile-to-do-github {
-    font-weight: bold;
-    font-family: 'Courier New', Courier, monospace;
-    grid-column: 2/4;
-    grid-row: 5/6;
-    color:rgba(255, 255, 255, 1);
-    justify-self: center;
-    margin: 0px 0px 0px 30px;
-  }
-
-  .mobile-to-do-github:hover {
-    color: rgba(89, 197, 7, 1);
-  }
-
-  .mobile-emoji-github {
-    font-weight: bold;
-    font-family: 'Courier New', Courier, monospace;
-    grid-column: 2/4;
-    grid-row: 5/6;
-    color:rgba(255, 255, 255, 1);
-    justify-self: center;
-    align-self: center;
-    margin: 0px 0px 15px 30px;
-  }
-
-  .mobile-emoji-github:hover{
-    color: rgba(89, 197, 7, 1);
-  }
-
-  .emoji-story {
-    grid-column: 2/4;
-    grid-row: 3/4;
+    grid-column: 4/6;
+    grid-row: 8/11;
+    color: white;
+    font: 16px "Courier New", Courier, monospace;
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: left;
   }
 
   .emoji-pic {
-    grid-column: 2/4;
-    grid-row: 3/4;
-    width: 65%;
-    margin: 50px 5px 10px 45px;
+    grid-column: 7/9;
+    grid-row: 5/8;
+    width: 105%;
+    height: 112%;
+    margin-left: 10px;
+    align-items: flex-start;
+    display: block;
   }
 
   .emoji-sum {
+    color: white;
+    font: 16px "Courier New", Courier, monospace;
+    position: absolute;
+    top: 40%;
+    left: 55%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: right;
+  }
+
+  .emoji-story {
+    grid-column: 7/9;
+    grid-row: 5/8;
+    width: 105%;
+    height: 125%;
+    margin-bottom: 60px;
+    align-items: flex-start;
+  }
+
+  .mobile-to-do-github,
+  .mobile-emoji-github {
     display: none;
   }
 
   /* CONTACT PAGE */
   .contact-me {
-    display: none;
-  }
-
-  .mobile-contact-me-one {
     font-family: "Courier New", Courier, monospace;
+    font-size: 21px;
     text-align: left;
     color: rgba(255, 255, 255, 1);
     grid-column: 2/5;
-    grid-row: 1/2;
+    grid-row: 1/4;
     justify-items: center;
-    margin: 90px 15px 0px 15px;
+    align-self: end;
   }
 
+  .mobile-contact-me-one,
   .mobile-contact-me-two {
-    font-family: "Courier New", Courier, monospace;
-    text-align: left;
-    color: rgba(255, 255, 255, 1);
-    grid-column: 2/5;
-    grid-row: 3/4;
-    justify-items: center;
-    margin: 40px 5px 0px 20px;
+    display: none;
   }
 
   .lets-connect {
     font-family: "Courier New", Courier, monospace;
+    /* font-size: 32px; */
     font-weight: bold;
     color: rgba(89, 197, 7, 1);
     text-align: center;
     grid-column: 2/5;
-    grid-row: 5/6;
-    margin: 40px 30px 0px 10px;
+    grid-row: 3/4;
+    align-items: flex-start;
   }
 
   .lets-connect:hover {
@@ -226,21 +489,18 @@
 
   .devicon-linkedin-plain-wordmark {
     font-size: 30px;
-    margin: 0px 55px 0px 5px;
   }
 
   .devicon-github-original-wordmark {
-    font-size: 100%;
-    margin: 10px 270px 0px 5px;
+    font-size: 40px;
   }
 
   .icons {
-    grid-column: 2/5;
-    grid-row: 4/6;
+    grid-column: 5/9;
+    grid-row: 10/11;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    margin: 220px;
   }
 
   i:hover {
@@ -248,12 +508,26 @@
   }
 
   .copyright {
-    font: bold 12px "Courier New", Courier, monospace;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 12px;
+    font-weight: bold;
     grid-column: 2/6;
-    grid-row: 12/13;
+    grid-row: -1;
     align-self: center;
   }
 }
+
+
+ 
+
+
+
+
+
+
+
+
+
 
 /* DESKTOP */
 @media only screen and (min-width: 1366px) {

@@ -1,0 +1,132 @@
+.main-content{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.main-content .my-photo{
+  background-position: top left;
+  border-radius: 50%;
+  /* z-index: -1; */
+  height: 200px;
+  width: 200px;
+}
+
+.main-content .about-me-text{
+  display: flex;
+  flex-wrap: wrap;
+  background-size: contain;
+  z-index: 1;
+  top: 45vh;
+  left:40vw;
+  position:absolute
+}
+
+/* .bio-text{
+  padding: 70px 0px 0px 510px;
+}  */
+
+/* .sub-text{
+  padding: 70px 0px 0px 610px;
+} */
+
+@media screen and (max-width: 700px){
+  body{
+    background: rgb(248, 186, 196);
+  }
+  .main-content .myphoto, .about-me-text{
+    display:flex;
+    justify-content: center;
+  }
+
+}
+
+@media screen and (max-width: 500px){
+  body{
+    background: rgba(10, 10, 209, 0.918);
+    margin: auto;
+  }
+  .main-content .myphoto, .about-me-text{
+    display:flex;
+    justify-content: center;
+    /* margin: auto; */
+  }
+  .about-me-line-1 {
+    display: none;
+  }
+  .about-me-line-2{
+    display:none;
+  }
+  .about-me-rectangle {
+    height: 40%;
+    width: 40%;
+  }
+}
+
+.about-me-oval {
+  position:absolute;
+  width: 300px;
+  height: 150px;
+  background: rgba(240, 174, 2, 0.4);
+  border-radius: 50%;
+  top: 20vw;
+  left: 7vw;
+  z-index: -1;
+} 
+
+.about-me-semi-oval-red {
+  position: absolute;
+  width: 15vw;
+  height: 15vw;
+  border-radius: 125px 125px 0 0;
+  left: 5vw;
+  bottom: 0vw;
+  background: rgba(239, 65, 54, 0.85);
+  transform: rotate(270deg);
+  border-radius: 0 100% 100% 0 / 50%;
+} 
+
+.about-me-semi-oval-blue {
+  position: absolute;
+  width: 13vw;
+  height: 10vw;
+  border-radius: 125px 125px 0 0;
+  left: 10vw;
+  bottom: 5vw;
+  background: rgba(42, 82, 126, 0.75);
+  transform: rotate(270deg);
+  border-radius: 0 100% 100% 0 / 50%; 
+}
+
+.about-me-rectangle {
+  position: absolute;
+  width: 65vw;
+  height: 55vh;
+  right: 60px;
+  bottom: 0;
+  /* top: 25vw; */
+  background: rgba(255, 255, 255, 0.6);
+  transform: rotate(-9.83deg);
+  /* transform: translate(60%, 60% ); */
+}
+
+.about-me-line-1 {
+  position: absolute;
+  width: 50vw;
+  height: 0px;
+  left: 100px;
+  top: 500px;
+  border:5px solid #2a537ee7;
+  transform: rotate(80.69deg);
+}
+
+.about-me-line-2 {
+  position: absolute;
+  width: 500px;
+  height: 0px;
+  left: 200px;
+  top: 350px;
+  border: 10px solid #2a537ee7;
+  transform: rotate(-10.31deg);
+}
+

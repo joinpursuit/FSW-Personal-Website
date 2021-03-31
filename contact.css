@@ -1,0 +1,124 @@
+.contact-me-section {
+ align-content: center;
+ position: absolute;
+ width: 100px;
+ height: 50px;
+ top: 50%;
+ left: 50%;
+} 
+
+#connect {
+  color: white;
+  margin: 0;
+  display: inline;
+  padding-top: 20px;
+}
+
+#circle {
+    height: 150px;
+    width: 150px;
+    background-color: #f0ae02;
+    border-radius: 50%;
+  }
+  
+  #circle #email {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    top: 30%;
+    width: 50px;
+    height: 50px;
+    position: relative;
+  }
+
+#linked-in-square{
+    height: 150px;
+    width: 150px;
+    background-color:rgb(42, 82, 126);
+}
+
+#text{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    top: 10%;
+    width: 50px;
+    height: 50px;
+    position: relative;
+}
+
+/* 
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+textarea{
+    resize:none;
+    border:none
+}
+
+form{
+    flex-direction: column;
+    display: grid;
+    grid-template-rows: 3;
+    grid-template-columns: 9;
+    justify-content: center;
+    grid-gap: 10px;
+    font-family: "IBM Plex Mono", monospace;
+    padding:20px;
+            background-color: #041E41;
+
+
+}
+
+.contact-me-container{
+        background-color: #041E41;
+        width: 50%;
+        max-width:500px;
+        margin: 0 auto;
+        padding: 10px;
+}
+
+.name-box{
+    grid-row:1;
+    grid-column: 1;
+}
+#user-fullname{
+    background-color: #EF4136;    ;
+    padding: 20px;
+    border:none;
+}
+
+#user-email{
+    grid-row:2;
+    grid-column: 1;
+    background-color: #F0AE02; 
+    padding: 20px; 
+    border:none
+}
+.message-box{
+    grid-row:3;
+    grid-column: 1/ span 2;
+}
+
+.btn{
+    width:100%;
+    border:none;
+    outline: none;
+    padding: 20px; 
+    grid-row: 1/ span 2;
+    grid-column: 2;
+    background-color: #2A527E; 
+}
+
+.btn:hover{
+    background-color: #3069a567;
+} */

@@ -1,0 +1,24 @@
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  padding: 0;
+  height: 600px;
+  background: rgba(255, 255, 255, 0.767);
+}
+.icon{
+
+  text-align: center;
+  background:#F0AE02;
+  border-radius: 4px;
+  margin: .25rem;
+  padding: .25rem;
+}
+svg{
+   
+    height: 100px;
+    width: 100px;
+    align-self: center;
+}
+

@@ -50,7 +50,7 @@ section{
     font-size: 20px;
 }
 #About {
-  margin: 100px 20px 0px 0px;
+  margin: 0px 20px 0px 0px;
 }
 #Skills {
     font-size: 20px;
@@ -310,6 +310,10 @@ input[type=submit]:hover {
 #mainPic {
   border-radius: 50%;
   margin: 0px 30px 30px 50px;
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 /* .bannerPic  {
   background-image: url(https://bnetcmsus-a.akamaihd.net/cms/template_resource/ATDGB78UR6T41594224494516.jpg);
@@ -319,10 +323,6 @@ input[type=submit]:hover {
   padding: 0;
 } */
 
-#projectPic {
-  display: block;
-  text-align: center;
-}
 #linkedIn {
   text-decoration: underline;
 }
@@ -331,9 +331,67 @@ input[type=submit]:hover {
 }
 
 #Projects{
-    font-size: 20px;
-    margin: 0px;
+  font-size: 20px;
+  margin: 0px;
 }
 img {
   border: 5px solid #555;
+}
+.projectLinks {
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+#firstInfo {
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+#projectPic {
+  display: block;
+  text-align: center;
+}
+#projectPic {
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+
+@media screen and (max-width: 600px) {
+  #projectPic {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #firstInfo {
+    display: inline;
+    text-align: center;
+  }
+}
+
+#infoIcon{
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 300%;
+}
+.devicon-github-original-wordmark{
+  margin: 0px 10px 10px 10px;
+}
+@media screen and (max-width: 600px) {
+  #infoIcon{
+    display: flex;
+    text-align: center;
+    margin: 10px 10px 0 -15px;
+  }
 }

@@ -41,7 +41,7 @@
     grid-template-columns: 100%;
     grid-template-rows: 400px 200px;
   }
-  
+
   #projects-div > #snowman {
     grid-column-start: 1;
     grid-column-end: 2;
@@ -49,7 +49,7 @@
     grid-row-end: 2;
     margin: auto;
   }
-  
+
   #projects-div > #snowman-text {
     grid-column-start: 1;
     grid-column-end: 2;
@@ -58,7 +58,7 @@
     margin: auto;
     line-height: 2;
   }
-  
+
   #projects-div > #textAdventure {
     grid-column-start: 1;
     grid-column-end: 2;
@@ -66,7 +66,7 @@
     grid-row-end: 2;
     margin: auto;
   }
-  
+
   #projects-div > #textAdventure-text {
     grid-column-start: 1;
     grid-column-end: 2;
@@ -75,7 +75,7 @@
     margin: auto;
     line-height: 2;
   }
-  
+
   #projects-div > #mondrianReplica {
     grid-column-start: 1;
     grid-column-end: 2;
@@ -83,7 +83,7 @@
     grid-row-end: 2;
     margin: auto;
   }
-  
+
   #projects-div > #mondrianReplica-text {
     grid-column-start: 1;
     grid-column-end: 2;
@@ -96,5 +96,4 @@
   body {
     justify-content: center;
   }
-
 }

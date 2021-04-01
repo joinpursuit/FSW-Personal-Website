@@ -199,6 +199,12 @@ footer {
   text-align: center;
 }
 
+#art-ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 @keyframes shake-horizontal {
   0%,
   20%,

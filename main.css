@@ -1,3 +1,7 @@
+#mobileSecondContainer {
+  visibility: hidden;
+}
+
 #secondContainerWrap {
 /* border: 3px solid red; */
 display: flex;
@@ -31,7 +35,7 @@ bottom: 2px; */
 
 .paragraph-text {
   color: white;
-  /* border: 2px solid white; */
+  text-align: left;
 }
 
 

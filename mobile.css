@@ -1,7 +1,7 @@
 @media (max-width: 975px) {
   #mobileSecondContainer {
     visibility: visible;
-    height: 800px;
+    height: 850px;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(10, 1fr);

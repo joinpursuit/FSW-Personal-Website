@@ -1,53 +1,66 @@
-@media (max-width: 1114px) {
+@media (max-width: 975px) {
   #mobileSecondContainer {
     visibility: visible;
+    height: 800px;
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-areas:
+      ". p p p . l l l"
+      ". p p p . l l l"
+      ". p p p . e e e"
+      ". p p p . e e e"
+      ". m m m m m m ."
+      ". m m m m m m ."
+      ". m m m m m m ."
+      ". m m m m m m ."
+      ". m m m m m m ."
+      ". m m m m m m .";
+
     /* border: red 2px solid; */
     grid-gap: 1px;
-    grid-auto-rows: 300px;
+    /* grid-auto-rows: 300px; */
     text-align: center;
     vertical-align: middle;
     line-height: 300px;
     color: white;
   }
 
+  #mobile-profile-photo-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: p;
+  }
+
+  #mobile-linkedin-div {
+    grid-area: l;
+  }
+
+  #mobile-email-div {
+    grid-area: e;
+  }
+
+  #mobile-p-div {
+    padding-top: 0.5rem;
+    padding-left: 5px;
+    text-align: left;
+    vertical-align: middle;
+    /* border: 2px solid red; */
+    line-height: normal;
+    grid-area: m;
+  }
   #mobileProfilePhoto {
     height: 200px;
     width: auto;
   }
 
-  #mobile-p-div {
-    text-align: left;
-    vertical-align: middle;
-    /* border: 2px solid red; */
-    line-height: normal;
-  }
-  
-  #mobile-p-div > p {
-    padding: 3px;
-    height: 1rem;
-  }
-  #mobile-profile-photo-div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #mobile-linkedin-div > p {
-    height: 6rem;
-  }
-
   #mobile-linkedin-icon {
-    height: 5rem;
-  }
-
-  #mobile-email-div > p {
-    height: 6rem;
+    height: 75px;
   }
 
   #mobile-email-icon {
-    height: 5rem;
+    height: 75px;
   }
 
   .project-description-p {
@@ -141,4 +154,21 @@
   .menu-wrap .menu > div {
     background-color: rgba(73, 98, 163, 0.8);
   }
+
+  #projects-div {
+    /* width: 95%; */
+    /* height: 95%; */
+    /* border-style: solid; */
+    /* border-color: white; */
+    display: flex;
+    flex-direction: column;
+    /* align-content: center; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* flex-wrap: wrap; */
+    transition: transform 0.4s;
+  }
+
+
+  
 }

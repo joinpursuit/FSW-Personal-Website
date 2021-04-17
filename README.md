@@ -22,10 +22,10 @@ This sample project is far from perfect. You do not need to copy any specific fe
 For more inspiration, here are some personal sites from alums!
 
 - [Carlos Martinez (he/him)](https://carlosmartinez.dev/)
-- [Uduakabasi Abasiurua (she/her)](www.uduakabasiabasiurua.com)
-- [Isaiah Collazo (he/him)](www.isaiahcollazo.com)
-- [Peter Fiorentino (he/him)](www.peter-fiorentino.com)
-- [Suzette Islam (she/her)](www.suzetteislam.com)
+- [Uduakabasi Abasiurua (she/her)](http://www.uduakabasiabasiurua.com)
+- [Isaiah Collazo (he/him)](https://www.isaiahcollazo.com)
+- [Peter Fiorentino (he/him)](https://www.peter-fiorentino.com)
+- [Suzette Islam (she/her)](https://www.suzetteislam.com)
 - [Owen Jones (he/him)](https://ojonesdev.netlify.app/)
 - [Maria Martinez (she/her)](http://www.marializamartinez.com/)
 - More sites from the Pursuit Community [here](https://gist.github.com/alejo4373/b2d899ecf45fadb564f24a84b9f59a4a)

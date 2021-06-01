@@ -1,0 +1,174 @@
+@media (max-width: 975px) {
+  #mobileSecondContainer {
+    visibility: visible;
+    height: 850px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-areas:
+      ". p p p . l l l"
+      ". p p p . l l l"
+      ". p p p . e e e"
+      ". p p p . e e e"
+      ". m m m m m m ."
+      ". m m m m m m ."
+      ". m m m m m m ."
+      ". m m m m m m ."
+      ". m m m m m m ."
+      ". m m m m m m .";
+
+    /* border: red 2px solid; */
+    grid-gap: 1px;
+    /* grid-auto-rows: 300px; */
+    text-align: center;
+    vertical-align: middle;
+    line-height: 300px;
+    color: white;
+  }
+
+  #mobile-profile-photo-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: p;
+  }
+
+  #mobile-linkedin-div {
+    grid-area: l;
+  }
+
+  #mobile-email-div {
+    grid-area: e;
+  }
+
+  #mobile-p-div {
+    padding-top: 0.5rem;
+    padding-left: 5px;
+    text-align: left;
+    vertical-align: middle;
+    /* border: 2px solid red; */
+    line-height: normal;
+    grid-area: m;
+  }
+  #mobileProfilePhoto {
+    height: 200px;
+    width: auto;
+  }
+
+  #mobile-linkedin-icon {
+    height: 75px;
+  }
+
+  #mobile-email-icon {
+    height: 75px;
+  }
+
+  .project-description-p {
+    font-size: 14px;
+    padding: 2px;
+    margin-bottom: 20px;
+  }
+  .mobileDivs {
+    background-color: black;
+    border: 1px black solid;
+  }
+
+  #secondContainerWrap {
+    visibility: hidden;
+    display: none;
+  }
+
+  #secondContainer {
+    background-color: black;
+    width: 50%;
+    height: 640px;
+    text-align: center;
+    align-items: center;
+    /* border: 2px solid green; */
+    color: white;
+    order: 1;
+    /* flex-direction: row; */
+  }
+  #about-me-div {
+    /* border: 4px solid orchid; */
+    display: inline-block;
+  }
+
+  .paragraph-text {
+    color: white;
+    /* border: 2px solid white; */
+  }
+
+  #profile-photo-div {
+    visibility: hidden;
+  }
+
+  .icon-divs {
+    margin-top: none;
+    /* border: 3px solid white; */
+    height: 200px;
+    width: 200px;
+    visibility: hidden;
+  }
+
+  .paragraph-text {
+    color: white;
+    /* border: 2px solid white; */
+  }
+
+  /* end of second container  */
+
+  .skills-div {
+    display: block;
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+    /* border-style: solid; */
+    background-color: black;
+    color: white;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 6px;
+  }
+
+  .skills-div > img {
+    width: 40%;
+    height: auto;
+  }
+  #fourthContainer {
+    margin-left: 10%;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    /* border-style: solid; */
+    /* border-color: red; */
+    color: black;
+    background-color: black;
+    text-align: center;
+  }
+
+  .menu-wrap .hamburger > div {
+    background-color: white;
+  }
+
+  .menu-wrap .menu > div {
+    background-color: rgba(73, 98, 163, 0.8);
+  }
+
+  #projects-div {
+    /* width: 95%; */
+    /* height: 95%; */
+    /* border-style: solid; */
+    /* border-color: white; */
+    display: flex;
+    flex-direction: column;
+    /* align-content: center; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* flex-wrap: wrap; */
+    transition: transform 0.4s;
+  }
+
+
+  
+}

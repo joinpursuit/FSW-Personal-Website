@@ -1,0 +1,82 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio website - Contact</title>
+    <link rel="stylesheet" type="text/css" href="reset.css" />
+    <link id="style" rel="stylesheet" type="text/css" href="light.css" />
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <button id="css-change">light Mode</button>
+      <img
+        src="https://i.ibb.co/2qwjhnk/Screen-Shot-2021-03-08-at-7-51-14-PM.png"
+        alt="banner"
+        id="banner"
+      />
+      <nav>
+        <a href="./index.html"> Home!</a>
+        <a href="./projects.html">Projects!</a>
+        <a href="./resume.html">Skills!</a>
+        <a href="./contact.html">Contact!</a>
+      </nav>
+    </header>
+    <br />
+    <main>
+      <!-- used the website formspree for the contact form that would email me their message to my personal email -->
+      <form
+        id="form"
+        name="contact-form"
+        accept-charset="utf-8"
+        action="https://formspree.io/f/xjvjbvzo"
+        method="post"
+      >
+        <fieldset id="fs-frm-inputs">
+          <label for="full-name">Full Name</label>
+          <input
+            type="text"
+            name="name"
+            id="full-name"
+            placeholder="Full name"
+            required=""
+          />
+          <label for="email-address">Email Address</label>
+          <input
+            type="email"
+            name="email-address"
+            id="email-address"
+            placeholder="email@domain.tld"
+            required=""
+          />
+          <label for="email-subject">Subject</label>
+          <input
+            type="text"
+            name="_subject"
+            id="email-subject"
+            placeholder="Contact Form Submission"
+          />
+          <label for="message">Message</label>
+          <textarea
+            rows="5"
+            name="message"
+            id="message"
+            placeholder="Enter message here"
+            required=""
+          ></textarea>
+        </fieldset>
+        <input type="submit" value="Submit" />
+      </form>
+    </main>
+
+    <footer id="footer">
+      <a target="_blank" href="https://github.com/itsanasna">
+        <img src="icons/github.png" />
+      </a>
+      <a target="_blank" href="https://www.linkedin.com/in/itsanasna/">
+        <img src="icons/linkedin.png" />
+      </a>
+    </footer>
+  </body>
+</html>

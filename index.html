@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,35 +12,34 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.10.1/devicon.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.10.1/devicon.min.css">
     <title>Carlo Echeverri Personal Website</title>
-
 </head>
+
+<header class="container navbar">
+    <nav>
+        <h1 class="logo"><img src="logo.png" alt=""></img>
+        </h1>
+        <ul>
+            <li><a href="#about">about me</a></li>
+            <li><a href="#skills">skills</a></li>
+            <li><a href="#work">projects</a></li>
+        </ul>
+    </nav>
+</header>
+
 <body>
-    <div class="container navbar"> 
-        <header>
-            <div class="logo">
-                <h1><img src="logo.png" alt=""></img></h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#about">about me</a></li>
-                    <li><a href="#skills">skills</a></li>
-                    <li><a href="#work">projects</a></li>
-                </ul>
-            </nav>
-        </header>
-    </div>
-   
-    <div class="container main-info-section">
+    <section class="container main-info-section">
         <div class="text">
             <h1 class="text-size">
-                <span>N</span>
-                <span class="m-left">a</span>
-                <span class="m-left">m</span>
-                <span class="m-left">a</span>
-                <span class="m-left">s</span>
-                <span class="m-left">t</span>
+                <span>G</span>
+                <span class="m-left">r</span>
                 <span class="m-left">e</span>
-                <span class="m-left">,</span>
+                <span class="m-left">e</span>
+                <span class="m-left">t</span>
+                <span class="m-left">i</span>
+                <span class="m-left">n</span>
+                <span class="m-left">g</span>
+                <span class="m-left">s</span>
+                <span class="m-left">!</span>
                 <br>
                 <span>I</span>
                 <span class="m-left">'</span>
@@ -49,7 +49,7 @@
                 <span class="m-left name">r</span>
                 <span class="m-left name">l</span>
                 <span class="m-left name">o</span>
-                <span class="m-left">!</span>
+                <span class="m-left">,</span>
                 <br>
                 <span>W</span>
                 <span class="m-left">e</span>
@@ -66,103 +66,100 @@
             </h1>
             <p>HTML / CCS / Javascript</p>
             <a href="#contact">contact me</a>
-        </div>
+        </div class="container">
         <div class="profile-image">
-            <img src="carlo-smiley.jpeg" alt=""></img>
+            <img class="pro-img" src="carlo-smiley.jpeg" alt=""></img>
         </div>
-    </div>
-    
-    
-    <div class="container about" id="about">
-        
+    </section>
+
+
+    <section class="container about" id="about">
         <h1>About</h1>
         <div class="about-me-info">
-            <p>My goal is to use technology to solve pressing environmental 
-                issues and complex challenges. I want to advance my career 
-                into the technology sector where I can contribute to the 
-                innovations that will keep advancing humanity. </p>
-                <br>
-                <p>
-                    With a background in environmental science, I have a strong foundation in data analysis. 
-                    In addition, through my many years of experience in sales and account management, my approach
-                    is always client-centered to ensure customer satisfaction and to build positive rapport. </p>
-                    <br>
-                    <p>During my off-time I like to practice different meditation techniques to master the art of the present moment. 
-                        I also enjoy listening and playing electronic music, watching movies that are hard to understand and reasearching 
-                        the cryptopsphere.
-                    </p>
-                </div>   
-            </div>
-            
-            <audio src="Fish Go Deep & Tracey K -The Cure & The Cause (Dennis Ferrer Remix) [Full Length] 2006.mp3" id="audio"></audio>
-            
-            <div class="container skills" id="skills">
-                <h1>Skills</h1>
-                <p class="skills-info icons">
-                    <img src="javascript-39398.png"></img>
+            <p>
+                My goal is to use technology to solve pressing environmental issues and complex challenges. I want to advance my career into the technology sector where I can contribute to the innovations that will keep advancing humanity.
+            </p>
+            <p>
+                With a background in environmental science, I have a strong foundation in data analysis. In addition, through my many years of experience in sales and account management, my approach is always client-centered to ensure customer satisfaction and to build
+                positive rapport.
+            </p>
+            <p>During my off-time I like to practice different meditation techniques to master the art of the present moment. I also enjoy listening and playing electronic music, watching movies that are hard to understand and reasearching the cryptopsphere.
+            </p>
+        </div>
+    </section>
+
+    <audio src="Fish Go Deep & Tracey K -The Cure & The Cause (Dennis Ferrer Remix) [Full Length] 2006.mp3" id="audio"></audio>
+
+    <section class="container skills" id="skills">
+        <h1>Skills</h1>
+        <p class="skills-info icons">
+            <img src="javascript-39398.png"></img>
+        </p>
+    </section>
+
+    <section class="container work" id="work">
+        <h1>Projects</h1>
+        <div class="container work-category">
+            <button id="project1" class="btn" active> Project 1</button>
+            <button id="project2" class="btn">Project 2</button>
+            <button id="project3" class="btn">Project 3</button>
+        </div>
+
+        <div id="videos">
+            <div class="video">
+                <video width="300" height="150" controls>
+                        <source src="text-based-gif.mp4" type="video/mp4">
+                     </video>
+                <p id="video-text">
+                    <strong>Text Based Adventure:</strong> A command line application that plays a text-based adventure game set in an apocalyptic future where the main character tries to fight for his/her humanity.
                 </p>
+                <a href="https://github.com/carloecheverri/FSW-Text-Based-Adventure/commit/62576d60c8fc7ffbdfed95361b74102f60e19e83" alt="" target="_blank">GO TO GITHUB</a>
             </div>
-            
-            <div class="container work" id="work">
-                <h1>Projects</h1> 
-                <div class="work-category">
-                    <button id="project1" class="btn" active> Project 1</button>
-                    <button id="project2" class="btn">Project 2</button>
-                    <button id="project3" class="btn">Project 3</button>
-                </div>
-                
-                <div id="videos">
-                    <section class="video">
-                        <video width="400" height="250" controls>
-                            <source src="text-based-gif.mp4" type="video/mp4">
-                            </video>
-                            <p id="video-text"> <strong>Text Based Adventure:</strong> A command line application that plays a text-based adventure game
-                                set in an apocalyptic future where the main character tries to fight for his/her humanity. </p>
-                                <a href="https://github.com/carloecheverri/FSW-Text-Based-Adventure/commit/62576d60c8fc7ffbdfed95361b74102f60e19e83" alt="" target="_blank" >GO TO GITHUB</a>
-                                
-                            </section>
-                            <section class="video2">
-                                <video width="400" height="250" controls>  
-                                    <source src="snowman.video.mp4" type="video/mp4">
-                                    </video>
-                                    <p id="video-text2"> <strong>Snowman Project: </strong>User will play a traditional game of hangman during winter. Which is known
-                                        as Snowman. Game can be played in the terminal using node. Guess the right letters and win or else melt.
-                                    </p>
-                                    <a href="https://github.com/carloecheverri/FSW-CLI-Snowman/commit/ee1c872622c665213d5e47a6dfb89bedb906e0a1"alt="" target="_blank" >GO TO GITHUB</a>
-                                </section>
-                                
-                                <section class="video3">
-                                    <video width="400" height="250" controls>  
-                                        <source src="Todo-video.mp4" type="video/mp4">
-                                        </video>
-                                        <p id="video-text3"> <strong>To-dos List:</strong> You will no longer have to write down to-do lists in sticky notes. Now you can 
-                                            use this appplication to set your tasks for work or just for regular chores.</p>
-                                            <a href="https://github.com/carloecheverri/Pursuit-Core-Events-Lab/commit/d0e114384dc6529b04fa7a5a15d544d62dcc79af#"alt="" target="_blank" >GO TO GITHUB</a>
-                                        </section>
-                                    </div>
-                                    
-                                </div>
-                                
-                                <div class="container contact" id="contact">
-                                    <h1>Contact</h1>
-                                    <form>
-                                        <input type="text" name="name" placeholder="Full Name">
-                                        <input type="email" placeholder="Email">
-                                        <input type="email" placeholder="carloecheverri@pursuit.org" disabled>
-                                        <textarea name="message" cols="30" rows="10" placeholder="Message"></textarea>
-                                        <input type="submit"></input>
-                                    </form>
-                                </div>
-                                
-                                <footer>
-                                    <p>
-                                        2021 Copyright. All Rights Reserved 
-                                    </p>
-<span>
+
+            <div class="video2">
+                <video width="300" height="150" controls>  
+                        <source src="snowman.video.mp4" type="video/mp4">
+                    </video>
+                <p id="video-text2">
+                    <strong>Snowman Project: </strong> User will play a traditional game of hangman during winter. Which is known as Snowman. Game can be played in the terminal using node. Guess the right letters and win or else melt.
+                </p>
+                <a href="https://github.com/carloecheverri/FSW-CLI-Snowman/commit/ee1c872622c665213d5e47a6dfb89bedb906e0a1" alt="" target="_blank">GO TO GITHUB</a>
+            </div>
+
+            <div class="video3">
+                <video width="300" height="150" controls>  
+                        <source src="Todo-video.mp4" type="video/mp4">
+                    </video>
+                <p id="video-text3">
+                    <strong>To-dos List:</strong> You will no longer have to write down to-do lists in sticky notes. Now you can use this appplication to set your tasks for work or just for regular chores.
+                </p>
+                <a href="https://github.com/carloecheverri/Pursuit-Core-Events-Lab/commit/d0e114384dc6529b04fa7a5a15d544d62dcc79af#" alt="" target="_blank">GO TO GITHUB</a>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="container contact" id="contact">
+        <h1>Contact</h1>
+        <form>
+            <input type="text" name="name" placeholder="Full Name">
+            <input type="email" placeholder="Email">
+            <input type="email" placeholder="carloecheverri@pursuit.org" disabled>
+            <textarea name="message" cols="30" rows="10" placeholder="Message"></textarea>
+            <input type="submit"></input>
+        </form>
+    </section>
+
+    <footer class="container">
+        <p>
+            2021 Copyright. All Rights Reserved
+        </p>
+        <span>
 <a href="https://github.com/carloecheverri" target="_blank" ><i class="devicon-github-original socialmedia"></i></a>
 <a href="https://www.linkedin.com/in/carlo-lopez-bb24a2202/" target="_blank"><i class="devicon-linkedin-plain socialmedia2"></i></a>
 </span>
-</footer>
+    </footer>
+
 </body>
 
 </html>

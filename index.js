@@ -11,7 +11,6 @@ const skillsButton = document.querySelector("#skills-button");
 const themeStylesheet = document.getElementById("theme");
 const themeToggle = document.getElementById("dark-mode-button");
 
-
 const aboutText = [
   `An ecuadorian new yorker from the Harlem area. I enjoy the outdoor activities,
     watching soccer and comdey is my favorite genre.`,
@@ -117,15 +116,13 @@ skillsButton.addEventListener("click", (e) => {
   });
 });
 
-
 themeToggle.addEventListener("click", () => {
-  debugger
-  // if it's light -> go dark
+  debugger;
+
   if (themeStylesheet.href.includes("light")) {
     themeStylesheet.href = "./index.css";
     themeToggle.innerText = "Switch to light mode";
   } else {
-    // if it's dark -> go light
     themeStylesheet.href = "./light-theme.css";
     themeToggle.innerText = "Switch to dark mode";
   }

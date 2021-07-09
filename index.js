@@ -8,6 +8,9 @@ const aboutButton = document.querySelector("#about-button");
 const contactButton = document.querySelector("#contact-button");
 const projectsButton = document.querySelector("#projects-button");
 const skillsButton = document.querySelector("#skills-button");
+const themeStylesheet = document.getElementById("theme");
+const themeToggle = document.getElementById("dark-mode-button");
+
 
 const aboutText = [
   `An ecuadorian new yorker from the Harlem area. I enjoy the outdoor activities,
@@ -49,9 +52,16 @@ const contactObject = [
   { name: "Email Me Here ", href: "mailto:jonathanbedon@pursuit.org" },
 ];
 
+const resetHomePage = () => {
+  aboutSection.innerHTML = "";
+  skills.innerHTML = "";
+  projects.innerHTML = "";
+  contactSection.innerHTML = "";
+};
+
 aboutButton.addEventListener("click", (e) => {
   e.preventDefault;
-  aboutSection.innerHTML = "";
+  resetHomePage();
   const section = document.createElement("section");
   section.id = "about-section";
   const firstPicDiv = document.createElement("div");
@@ -60,24 +70,22 @@ aboutButton.addEventListener("click", (e) => {
   secondPicDiv.innerText = aboutText[1];
   aboutSection.appendChild(firstPicDiv);
   aboutSection.appendChild(secondPicDiv);
-  // crete elements for pics and stuf
 });
 contactButton.addEventListener("click", (e) => {
-  contactSection.innerHTML = "";
+  resetHomePage();
   const label = document.createElement("label");
   label.innerText = "Contanct information";
-contactSection.appendChild(label);
- contactObject.forEach(el =>{
-     const link = document.createElement("a");
-     link.href =el.href
-     link.innerText = el.name;
-     contactSection.appendChild(link);
- })
+  contactSection.appendChild(label);
+  contactObject.forEach((el) => {
+    const link = document.createElement("a");
+    link.href = el.href;
+    link.innerText = el.name;
+    contactSection.appendChild(link);
+  });
 });
 projectsButton.addEventListener("click", (e) => {
-  projects.innerHTML = "";
+  resetHomePage();
   projectsArray.forEach((project) => {
-    // debugger
     const sectionP = document.createElement("section");
     const title = document.createElement("h3");
     title.innerText = project.name;
@@ -96,7 +104,7 @@ projectsButton.addEventListener("click", (e) => {
   });
 });
 skillsButton.addEventListener("click", (e) => {
-  skills.innerHTML = "";
+  resetHomePage();
   const sectiontitle = document.createElement("h3");
   sectiontitle.innerText = "Skills";
   skillsObject.forEach((skill) => {
@@ -107,4 +115,18 @@ skillsButton.addEventListener("click", (e) => {
     skillSection.appendChild(img);
     skills.appendChild(skillSection);
   });
+});
+
+
+themeToggle.addEventListener("click", () => {
+  debugger
+  // if it's light -> go dark
+  if (themeStylesheet.href.includes("light")) {
+    themeStylesheet.href = "./index.css";
+    themeToggle.innerText = "Switch to light mode";
+  } else {
+    // if it's dark -> go light
+    themeStylesheet.href = "./light-theme.css";
+    themeToggle.innerText = "Switch to dark mode";
+  }
 });

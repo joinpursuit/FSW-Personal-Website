@@ -1,7 +1,8 @@
 body {
   background-image: url("./DSC_0248.jpeg");
-
-  color: rgb(71, 71, 105);
+  background-size: 100%;
+  color: #212731;
+  font-size: large;
 }
 #header-section {
   display: grid;
@@ -17,7 +18,7 @@ section {
   margin: 20px;
   /* border: 2px solid red; */
   padding: 10px;
-  background-color: peachpuff;
+  background-color: #666A86;
 }
 
 div {

@@ -12,17 +12,17 @@ const themeStylesheet = document.getElementById("theme");
 const themeToggle = document.getElementById("dark-mode-button");
 
 const aboutText = [
-  `An ecuadorian new yorker from the Harlem area. I enjoy the outdoor activities,
-    watching soccer and comdey is my favorite genre.`,
-  `I enjoy learning about tech on a dailiy basis because of how fast it grows.
-    It is important to understand how this growth affects us since everyday it is more integrated in 
-    our lives. it is a reflection of who we are and that is very intriguining.`,
+  `I am an ecuadorian new yorker raised in Harlem. I enjoy the outdoor activities are my favorite,
+   I also enjoy watching soccer and films with a heavy emphasis in comedy`,
+  `Learning about tech on a dailiy basis is very enjoyable because it's fast growth pushes everything it touches better.
+    It is important to understand how this growth affects us, everyday it is more integrated in 
+    our lives, shaping the way we think.`,
 ];
 const projectsArray = [
   {
     name: "Jokes",
     description:
-      "An app that generates jokes from a random or specified catergory",
+      "An app that generates jokes from a random or specified catergory, by iterating through javasrcipt methods until the desired outcome is rendered.",
     gitLink:
       "https://github.com/bedonjonathan/Pursuit-Core-Web-Promises-Fetch-Lab-v2",
     imgLink: "./jokes.png",
@@ -30,7 +30,7 @@ const projectsArray = [
   {
     name: "Emojis Story Generator",
     description:
-      " An app that generates a specific number of emojis, and allows you to attatch a text to it",
+      " This is an application that renders a specified number of emojis, and allows you to attatch a text to it, as well as log this newwly combined infomation and save it in our local storage and it also displays this newaly formmed array",
     gitLink:
       "https://github.com/bedonjonathan/fsw-mid-module-two-practice-assessment",
     imgLink: "./emojis.png",
@@ -117,8 +117,6 @@ skillsButton.addEventListener("click", (e) => {
 });
 
 themeToggle.addEventListener("click", () => {
-  debugger;
-
   if (themeStylesheet.href.includes("light")) {
     themeStylesheet.href = "./index.css";
     themeToggle.innerText = "Switch to light mode";

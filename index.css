@@ -16,13 +16,11 @@ body {
 
 section {
   margin: 20px;
-  /* border: 2px solid red; */
   padding: 10px;
   background-color: #666A86;
 }
 
 div {
-  /* border: 2px dotted blue; */
   padding: 10px;
 }
 section > h1 {
@@ -36,6 +34,7 @@ section > img {
 }
 #contact-section{
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 

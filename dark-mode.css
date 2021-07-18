@@ -1,6 +1,7 @@
 body {
   font-family: Ubuntu, Roboto, sans-serif;
   display: flexbox;
+  background-color: black;
 }
 
 #intro {
@@ -32,11 +33,13 @@ body {
 
 #firstname {
   text-align: left;
+  color: white;
 }
 
 #lastname {
   padding-top: 95px;
   text-align: right;
+  color: white;
 }
 
 p,
@@ -45,23 +48,24 @@ footer {
   margin: 5%;
   text-align: center;
   font-size: 16px;
+  color: white;
 }
 
 button {
-  font-family: Ubuntu, Roboto, sans-serif;
-  display: flex;
-  color: white;
-  background-color: black;
-  font-size: 24px;
-  border: 3px solid black;
-  justify-content: space-evenly;
-  margin: auto;
-}
-
-#button {
-  grid-column: 1 / span 2;
-  padding: 15px;
-}
+    font-family: Ubuntu, Roboto, sans-serif;
+    display: flex;
+    color: yellow;
+    background-color: red;
+    font-size: 24px;
+    border: 3px solid blue;
+    justify-content: space-evenly;
+    margin: auto;
+  }
+  
+  #button {
+    grid-column: 1 / span 2;
+    padding: 15px;
+  }
 
 #projects-div {
   display: grid;
@@ -141,7 +145,7 @@ button {
 
 .subheader {
   display: flexbox;
-  border: 3px solid black;
+  border: 3px solid white;
   font-size: 25px;
   animation-duration: 3s;
   animation-name: shake-horizontal;
@@ -152,6 +156,7 @@ button {
 #Icons {
   display: flex;
   justify-content: space-evenly;
+  background-color: black;
 }
 
 #JavaScript,
@@ -161,6 +166,7 @@ button {
 #LinkedIn {
   margin: 5%;
   height: 200px;
+  background-color: white;
 }
 
 #about-div {
@@ -185,11 +191,11 @@ form {
 .projects,
 .contact,
 .about {
-  color: yellow;
+  color: white;
   margin: 5%;
   display: flex;
   top: 50px;
-  background-color: red;
+  background-color: black;
 }
 
 #snowman {
@@ -210,7 +216,7 @@ form {
 
 .flex-item > a {
   margin: auto;
-  color: yellow;
+  color: white;
 }
 .flex-item > a:first-child {
   display: none;
@@ -226,12 +232,12 @@ form {
   position: sticky;
   top: 0;
   margin: auto;
-  border: 3px solid black;
+  border: 3px solid white;
   justify-content: space-evenly;
   font-size: 20px;
   height: 60px;
   width: 75%;
-  background-color: blue;
+  background-color: black;
   z-index: 3;
 }
 
@@ -267,8 +273,7 @@ footer {
 
 @media only screen and (max-width: 1170px) {
   body {
-    background-color: orange;
-    justify-content: center;
+    background-color: black;
   }
 
   #intro {
@@ -360,12 +365,15 @@ footer {
     margin: auto;
     line-height: 2;
   }
+
+  body {
+    justify-content: center;
+  }
 }
 
 @media only screen and (max-width: 800px) {
   body {
-    background-color: lightgreen;
-    justify-content: center;
+    background-color: black;
   }
 
   #intro {
@@ -457,12 +465,15 @@ footer {
     margin: auto;
     line-height: 2;
   }
+
+  body {
+    justify-content: center;
+  }
 }
 
 @media only screen and (max-width: 550px) {
   body {
-    background-color: lightslategray;
-    justify-content: center;
+    background-color: black;
   }
 
   .menu {
@@ -572,5 +583,9 @@ footer {
     grid-row-end: 3;
     margin: auto;
     line-height: 2;
+  }
+
+  body {
+    justify-content: center;
   }
 }

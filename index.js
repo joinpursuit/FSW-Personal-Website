@@ -30,4 +30,17 @@ const allArt = async () => {
   }
 };
 
+const themeToggle = document.getElementById("theme-change");
+const themeStylesheet = document.getElementById("theme");
+
+themeToggle.addEventListener("click", () => {
+  if (themeStylesheet.href.includes("dark")) {
+    themeStylesheet.href = "./website.css";
+    themeToggle.innerText = "Switch to dark mode";
+  } else {
+    themeStylesheet.href = "./dark-mode.css";
+    themeToggle.innerText = "Switch to light mode";
+  }
+});
+
 allArt();

@@ -4,17 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="/images/code-solid.svg" />
+    <link rel="icon" href="images/code-solid.svg" />
     <link rel="stylesheet" href="./reset.css" />
-    <link rel="stylesheet" href="./website.css" />
-    <link rel="stylesheet" href="./mobile.css" />
+    <link id="theme" rel="stylesheet" href="./website.css" />
     <script src="./index.js" defer></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
       integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
       crossorigin="anonymous"
     ></script>
-    <title>Personal Website</title>
+    <title>Miguel Garcia</title>
   </head>
   <body>
     <div class="menu">
@@ -37,6 +36,12 @@
         <a href="./index.html">PROJECTS</a>
       </div>
       <div class="flex-item">
+        <a href="#about">
+          <img src="images/user-tie-solid.svg" height="50px" width="50px" />
+        </a>
+        <a href="./index.html">ABOUT</a>
+      </div>
+      <div class="flex-item">
         <a href="#contact">
           <img src="images/address-book-solid.svg" height="50px" width="50px" />
         </a>
@@ -48,6 +53,12 @@
       <div id="name-div">
         <h1 id="firstname">MIGUEL</h1>
         <h1 id="lastname">GARCIA</h1>
+      </div>
+
+      <div id="button">
+        <button id="theme-change">
+Switch To Dark Mode
+        </button>
       </div>
 
       <div id="img-div">
@@ -128,6 +139,36 @@
       </div>
 
       <div>
+        <h2 class="subheader about" id="about">
+          <br /><br /><br />ABOUT
+        </h2>
+        <div id="about-div">
+          <p>
+            I have always liked figuring out how things work. As I have progressed through my life, 
+            my intrigue has directed me towards technology. To satisfy my curiosity in this realm, I enrolled as a fellow at Pursuit and became a Full Stack Software Engineer.
+            I am currently employed as Technical Support Specialist however, I intend on taking my journey in tech even deeper. 
+            My ultimate goal is to transition towards software development.
+          </p>
+          <div id="Icons">
+            <a href="https://www.linkedin.com/in/miguel-garcia-excelsior">
+              <img
+              id="LinkedIn"
+              src="./images/linkedin-brands.svg"
+              alt="LinkedIn Icon"
+              />
+            </a>
+            <a href="https://github.com/garcia13">
+              <img
+              id="GitHub"
+              src="./images/github-brands.svg"
+              alt="GitHub Icon"
+              />
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div>
         <h2 class="subheader contact" id="contact">
           <br /><br /><br />CONTACT
         </h2>
@@ -174,7 +215,10 @@
     </section>
 
     <ul id="art-ul">
-      <p>Here is a random piece of art courtesy of the <a href="https://www.metmuseum.org/">Metropolitan Museum of Art!</a></p>
+      <p>
+        Here is a random piece of art courtesy of the
+        <a href="https://www.metmuseum.org/">Metropolitan Museum of Art!</a>
+      </p>
     </ul>
 
     <footer><br /><br /><br /><br /><br /><br />Thanks For Visiting!</footer>

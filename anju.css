@@ -92,21 +92,49 @@ li:hover {
     border-radius: 5%;
   }
 } */
+@media screen and (min-width: 966px) {
+  li {
+    font-size: 21px;
+  }
 
-li {
-  font-size: 28px;
+  .profile {
+    font-size: 16px;
+    height: 50vh;
+    margin-top: 30vh;
+  }
+
+  .pic-of-me {
+    width: 20%;
+    float: right;
+    padding-left: 60px;
+    padding-right: 60px;
+    border-radius: 50%;
+  }
+
+  .bio {
+    color: rgba(255, 255, 255, 1);
+    font-size: 17px;
+    margin-left: 33%;
+    margin-right: 33%;
+    padding: 10px;
+  }
 }
+@media screen and (min-width: 1290px) {
+  li {
+    font-size: 28px;
+  }
 
-.profile {
-  font-size: 18px;
-  margin: auto;
-  width: 40vw;
-  margin-top: 24vw;
-}
+  .profile {
+    font-size: 18px;
+    margin: auto;
+    width: 40vw;
+    margin-top: 24vw;
+  }
 
-.pic-of-me {
-  width: 45%;
-  float: right;
+  .pic-of-me {
+    width: 45%;
+    float: right;
+  }
 }
 
 /* PROJECTS PAGE */

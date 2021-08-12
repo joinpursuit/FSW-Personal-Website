@@ -1,30 +1,16 @@
-// selectors
-const arrows = document.querySelectorAll(".fa-arrow-right");
-const form = document.querySelector("form");
-
-
-// functions
-const animateForm = (e) => {
-	e.preventDefault();
-	arrows.forEach((arrow) => {
-		const input = arrow.previousElementSibling;
-		const parent = arrow.parentElement;
-		const nextForm = parent.nextElementSibling;
-		debugger
-
-		if (input.type === "text") {
-			nextSlide(parent, nextForm);
-		} else {
-			document.body.style.backgroundColor = "red";
-		}
-	});
+// toggle menu bar
+const toggleMenu = (menu) => {
+	menu.classList.toggle("change");
 };
 
-const nextSlide = (parent, nextForm) => {
-	parent.classList.add("inactive");
-};
+/* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+function openNav() {
+	document.getElementById("mySidenav").style.display = "block";
+	document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
 
-// event Listeners
-// getting error -- arrows... is not a function
-// arrows.addEventListener("click", animateForm);
-form.addEventListener("submit", animateForm);
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+function closeNav() {
+	document.getElementById("mySidenav").style.display = "none";
+	document.body.style.backgroundColor = "#b2b2b2";
+}

@@ -1,683 +1,654 @@
-/* create a variable to change colors 
- * allows you to use a color repeatedly throughout the website
- */
 :root {
-	--mainColor: #787999;
-	--secondaryColor: silver;
+	--mainColor: #1f7a8c;
 
+	--light: #b2b2b2;
 	--subtleAccent: #e5e5e7;
-	--boldAccent: #882ad4;
+	--boldAccent: #82ef68;
+	--purpleAccent: #6e088e;
 	--darkAccent: #1f095a;
 
 	--linkColor: #73869b;
-
 	--borderColor: #c1c1c1;
 }
 
 /* remove all default styles */
-* {
+*,
+*::before,
+*::after {
 	margin: 0px;
 	padding: 0px;
 	box-sizing: border-box;
-	scroll-behavior: smooth;
 }
 
-/* Nav Bar & HEADER styling */
-header {
-	position: sticky;
-	top: 0;
-	background-color: var(--subtleAccent);
-	padding-left: 20px;
-	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
-	/* above everything else on the site */
-	z-index: 999;
-	width: 100%;
-	margin: auto;
-	/* default is 16px so # X 16   */
-	font-size: 0.9rem;
-}
-
-#profile {
-	display: flex;
-	align-items: center;
-}
-#profile-pic {
-	width: 100px;
-	border-radius: 10px;
-	margin: 10px;
-}
-
-/* GLOBAL styles */
-/* images */
-
-
-.thumbnail {
-	width: 250px;
-	border-radius: 10px;
+body {
+	font-weight: 400;
+	font-size: 1.3rem;
+	line-height: 1.6;
+	background: linear-gradient(
+		to right top,
+		var(--linkColor),
+		rgb(85, 153, 175)
+	);
 }
 
 .shadow {
-	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
 }
 
-.flex {
+/* Images */
+img {
+	margin-top: 3rem;
+	border-radius: 10px;
+	/* shrinks the image if the screen becomes smaller than the image size. */
+	max-width: 100%;
+	min-width: 200px;
+}
+
+/* Links */
+a {
+	text-decoration: none;
+	color: var(--darkAccent);
+	border: none;
+}
+
+a:hover {
+	color: var(--subtleAccent);
+}
+
+/* a:visited {
+	 color: var(--mainColor);
+	color: var(--darkAccent);
+} */
+
+/* Buttons */
+button {
+	border: 2px solid #6e088e;
+	color: var(--mainColor);
+	border-radius: 3px;
+	padding: 20px;
+	width: 298px;
+	font-weight: 400;
+	margin: 10px;
+	border-radius: 8px;
+	opacity: 0.5;
+}
+
+button:hover {
+	background-color: var(--boldAccent);
+	opacity: 1;
+}
+
+button a {
+	font-size: 1.2em;
+	letter-spacing: 0.1em;
+}
+
+button a:hover {
+	color: var(--mainColor);
+}
+
+hr {
+	border: 5px solid #1f7a8c;
+}
+
+section {
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+}
+
+section h2 {
+	font-size: 1.4em;
+	color: var(--mainColor);
+	letter-spacing: 0.1em;
+	margin-bottom: 30px;
+	border-bottom: 3px solid var(--subtleAccent);
+}
+
+.container {
+	/* left and right ONLY ==> same as  margin: 0 auto;*/
+	margin-inline: auto;
+	/* min-width and max-width ==> stops growing at large screens*/
+	width: min(90%, 70.5rem);
+	/* height: 90vh; */
+}
+
+/* G L A S S EFFECT */
+.glass {
 	display: flex;
 	justify-content: center;
-	align-content: center;
+	align-items: center;
+	background-color: #fff;
+	/* width: 90vw; */
+	/* height: 100vh; */
+	background: linear-gradient(
+		to right bottom,
+		rgba(255, 255, 255, 0.7),
+		rgba(223, 221, 221, 0.2)
+	);
+	border-radius: 1.5rem;
+	z-index: 3;
+	backdrop-filter: blur(1rem);
+	box-shadow: inset 0 0 10px #a5a2a2;
+}
+
+.circle1,
+.circle2 {
+	background-color: #fff;
+	background: linear-gradient(
+		to right bottom,
+		rgba(255, 255, 255, 0.8),
+		rgba(255, 255, 255, 0.3)
+	);
+	height: 10rem;
+	width: 10rem;
+	position: absolute;
+	border-radius: 50%;
+}
+
+.circle3 {
+	background-color: var(--linkColor);
+	background: linear-gradient(
+		to left top,
+		rgba(255, 255, 255, 0.8),
+		rgba(255, 255, 255, 0.3)
+	);
+	height: 7rem;
+	width: 7rem;
+	position: absolute;
+	border-radius: 50%;
+}
+
+.circle1 {
+	top: 25%;
+	right: 10%;
+}
+
+.circle2 {
+	bottom: 1%;
+	left: 40%;
+}
+
+.circle3 {
+	bottom: 7%;
+	right: 10%;
 }
 
 .fun-text {
-	/* font-size: 30px; */
 	font-weight: bold;
-	background: linear-gradient(
-		45deg,
-		var(--boldAccent),
-		var(--darkAccent),
-		var(--boldAccent)
-	);
+	background: linear-gradient(45deg, var(--darkAccent), var(--purpleAccent));
 	background-clip: text;
 	color: transparent;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
 
-h1,
-h5,
-#name-title {
-	color: #73869b;
-}
-
-/* NAV BAR */
-nav {
-	min-height: 10vh;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	margin: 0 auto;
-	z-index: 1;
-	/* responsive -- no bigger than 1300px*/
-	max-width: 1300px;
-}
-
-nav h1 {
-	margin-bottom: 7px;
-}
-
-.nav-links {
-	display: flex;
-	align-items: center;
-	justify-content: space-evenly;
-	list-style: none;
-	align-items: center;
-	flex: 1;
-}
-
-.nav-links a {
-	text-decoration: none;
-	color: #73869b;
-	font-size: 1.5em;
-	/* transition: all 0.5s ease; */
-}
-
-/* hover effects */
-h2:hover,
-.nav-links a:hover {
-	font-weight: bold;
-	color: var(--boldAccent);
-	border-bottom: 3px solid var(--boldAccent);
-	transition: all 0.5s ease;
-}
-
-body {
-	min-height: 100vh;
-	margin: 0px;
-	background-color: #89909f;
-}
-
-/* displays one section on the page at a time */
-section {
-	min-height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-/* iPad Pro */
-@media screen and (max-width: 1024px) {
-}
-
-/* iPhone 6/7/8 Plus */
-@media screen and (max-width: 414px) {
-	nav {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-
-	.nav-links {
-		display: none;
-	}
-
-	section {
-		display: grid;
-		flex-direction: column;
-	}
-
-	.about-me {
-		height: fit-content;
-	}
-
-	.home-i {
-	font-size: 30px;
-	color: var(--boldAccent);
-	margin: 20px;
-}
-
-	.skills-card {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		height: fit-content;
-		margin: 10px 0;
-		padding: 10px 10px;
-		/* max-width: ; */
-	}
-}
-
-/* ***---->  A B O U T   <---*** */
-#about {
-	display: grid;
-	/* responsive at 414px: stack to 1 column */
-	grid-template-columns: repeat(auto-fit, minmax(414px, 1fr));
-	gap: 10px;
-	align-items: center;
+/* ********** END GLOBAL STYLES ******************* */
+/*    HEADER   */
+header {
+	background-color: var(--mainColor);
+	position: sticky;
+	top: 0vh;
+	height: 5vh;
+	max-width: 100vw;
+	font-size: 1.5rem;
 	color: var(--subtleAccent);
-	height: 110vh;
-
-}
-
-/* left */
-.about-me {
-	margin-left: 50px;
-	border: 1px solid var(--subtleAccent);
-	padding: 50px;
-}
-
-.about-me h2 {
-	display: inline-block;
-	margin-bottom: 40px;
-	color: rgb(31, 9, 90);
-}
-
-p {
-	line-height: 1.6em;
-	font-size: 24px;
-}
-
-/* right */
-
-
-#about-h2r {
-	/* display: block; */
-	font-size: 30px;
-}
-
-#about-img {
-margin-bottom: 5px;
-}
-
-
-/* ***---->  P R O J E C T S   <---*** */
-
-.proj-git-link {
-background-color: var(--subtleAccent);
-margin: 10px 0;
-border-radius: 10px;
-padding: 10px;
-height: 50px;
-}
-
-.proj-text {
-padding: 10px;
-}
-
-.videos {
-	width: 300px;
-}
-
-/* DEV ED -- flip card -- https://www.youtube.com/watch?v=y_6fVz9jPWA */
-.container {
-	width: 100%;
-	height: 130vh;
 	display: flex;
-	justify-content: center;
+	justify-content: flex-end;
 	align-items: center;
+	z-index: 99;
 }
 
-.card-container {
-	width: 300px;
-	height: 200px;
+/* BURGER icon */
+.fa-bars:before {
+	content: "\f0c9";
+	margin-right: 2rem;
+	color: var(--darkAccent);
 	cursor: pointer;
 }
 
-/* not working transform-style */
-.card {
-	width: 100%;
-	height: 100%;
-	transition: transform 1s ease-in-out;
-	transform-style: preserve-3d;
-	
+.fa-bars:hover::before {
+	color: var(--subtleAccent);
 }
 
-/* to keep that crazy shake from happening -- not working now*/
-.card-container:hover .card {
-	transform: rotateY(180deg);
-}
-
-.card figure {
-	width: 100%;
-	height: 100%;
-	border-radius: 10px;
-	/* stack the front and back */
-	position: absolute;
-	flex-direction: column;
-	text-align: center;
-	
-}
-
-.card .front,
-.card .front2,
-.card .front3 {
-	/* background: #b6d1db; */
-	background: var(--mainColor);
-	transform: rotateY(180deg);
-}
-
-.card .back,
-.card .back2,
-.card .back3 {
-	background: rgb(114, 155, 189);
-	/* why is crazy shake happening when I add this? 
-	also won't show the other side of the card anymore*/
-	transform: rotateY(-180deg);
-}
-
-/* **********____END_________***********____PROJECTS______************** */
-
-/* ***---->  E X P E R I E N C E   <---*** */
-#experience {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	/* display: grid;
-	grid-template-columns: 1fr 1fr minmax(); */
-}
-
-#resume-link {
-	font-size: 24px;
-	margin-bottom: 30px;
-}
-
-#resume-link a {
-	text-decoration: none;
-	font-size: 30px;
-	border: 1px solid purple;
-	background-color: var(--subtleAccent);
-	border-radius: 10px;
-	padding: 20px;
-	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
-}
-#resume-link:hover {
-	transform: scale(1.1);
-	border-bottom: 2px solid purple;
-}
-
-.skills-card {
-	/* change so that it adapts to the content */
-	/* min-width: 400px; */
-	height: fit-content;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	padding: 20px 50px;
-	border: 1.5px solid rgb(60, 60, 90);
-	border-radius: 15px;
-	/* to set the dots in the corners and not the page  -- to PARENT */
-	position: relative;
-	background-color: #948ecc;
-}
-
-.skills-card ul{
-list-style: none;
-display: flex;
-flex-wrap: wrap;
-flex-direction: column;
-align-items: left;
-justify-content: center;
-margin:15px;
-}
-
-.skills-card li{
-list-style: none;
-
-}
-
-/* right */
-#skill-links {
-	/* change so that it adapts to the content */
-	font-size: 24px;
-}
-
-#skill-links a {
-	color: silver;
-	text-decoration: none;
-}
-
-/* dots at the corners */
-.corner,
-.corner-proj {
-	width: 10px;
-	height: 10px;
-	border-radius: 50%;
-	border: 1.5px solid rgb(60, 60, 90);
-	background-color: #fff;
-	/* to set the dots in the preview corners and not the page  CHILD*/
-	position: absolute;
-}
-
-#corner-tl,
-#corner-tl-proj {
-	top: 10px;
-	left: 10px;
-}
-
-#corner-tr,
-#corner-tr-proj {
-	top: 10px;
-	right: 10px;
-}
-
-#corner-bl,
-#corner-bl-proj {
-	bottom: 10px;
-	left: 10px;
-}
-#corner-br,
-#corner-br-proj {
-	bottom: 10px;
-	right: 10px;
-}
-
-/* ************************************** */
-
-#projects {
-	background-color: #3e688b;
-}
-
-#about,
-#experience,
-#education {
-	background-color: #787999;
-	padding: 15px;
-	margin-bottom: 10px;
-	/* height: 100vh; */
-}
-
-/* form  */
-#contact-form {
-	display: block;
-	/* responsive @ 600px */
-	max-width: 600px;
-	/* center the form  -- not working with 0 auto */
-	margin: 0 auto;
-	border: 1px solid var(--borderColor);
-	padding: 15px;
-	border-radius: 15px;
-	background-color: var(--mainColor);
-	margin: 50px 0;
-}
-
-.input-field {
-	width: 100%;
-	padding: 10px 0;
-	background-color: var(--secondaryColor);
-	border-radius: 7px;
-	border: 1px solid var(--borderColor);
-	font-size: 14px;
-}
-
-#contact-form label {
-	line-height: 2.7em;
-}
-
-#contact-form textarea {
-	min-height: 40px;
-	font-size: 14px;
-}
-
-#submit-btn {
-	margin-top: 10px;
-	width: 100%;
-	padding: 10px 0;
-	color: #fff;
-	background-color: var(--darkAccent);
-	border: none;
-}
-
-.home-i {
-	font-size: 70px;
-	color: lawngreen;
-	margin: 20px;
-}
-.home-i2 {
-	font-size: 40px;
-	color:var(--darkAccent);
-	margin: 20px;
-}
-
-
-/* **********_____________***********__________************** */
-/* DEV ED -- contact form animation -- https://www.youtube.com/watch?v=wc5k2AMPED0 */
-/* --not working cannot get the event lister to listen to the arrow icon */
-
-/* to stack the fields PARENT */
-/* #main-container {
-	height: 100vh;
-	transition: background 0.5s ease;
-	position: relative;
-} */
-
-/* !!! fix the position to above the form inputs */
-/* #contact h1 {
-	color: var(--darkAccent);
-	position: absolute;
-	left: 20%;
-} */
-
-/* stack CHILD  use position absolute
-/* align-items: center not working -- why? */*/
-/* .subject-field,
-.name-field,
-.email-field,
-.message-field,
-.finish {
-	position: absolute;
-	transform: translate(-50%, -50%);
-	border: 1px solid var(--borderColor);
-	background-color: white;
-	height: 80px;
-	width: 400px;
-	border-radius: 7px;
-	transition: all 0.5s ease;
+/* NAVBAR */
+nav {
 	display: flex;
 	justify-content: space-between;
-	
 	align-items: center;
-} */
-
-/* .name-field i,
-.subject-field i,
-.email-field i,
-.message-field i,
-.finish i {
-	padding: 10px;
-	color: var(--boldAccent);
-} 
-
-.name-field input,
-.subject-field input,
-.email-field input,
-.message-field {
-	width: 100%;
-	height: 100%;
-	border: none;
-	font-size: 18px;
-	outline-color: var(--borderColor);
+	width: 60vw;
+	margin-right: 80px;
 }
- */
- /* have to fix so it stays on this part of the form */
-/* div.inactive {
-	opacity: 0;
-	pointer-events: none;
-	transform: translate(-50%, 50%);
-} */
 
-/* div.active {
-	opacity: 1;
-	pointer-events: all;
-	transform: translate(-50%, -50%);
-} */
+.nav-links {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
 
-/* **********____END_________***********____CONTACT FORM______************** */
-/* style footer  */
-/* form  */
-/* #contact h1 {
+header a {
+	text-decoration: none;
+	color: var(--subtleAccent);
+}
+
+#menu {
+	color: lightgrey;
+	font-size: 2.2rem;
+}
+
+/* hover effects  */
+header a:hover {
+	border-bottom: 5px solid var(--darkAccent);
+	transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 375px) {
+	nav {
+		display: none;
+	}
+	#mySidenav {
+		margin-right: 20px;
+		display: block;
+	}
+}
+
+#mySidenav {
+	margin-top: 8vh;
+	display: none;
+}
+
+/* SLIDE IN MENU */
+.sidenav {
+	height: 100vh;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	right: 0;
+	background-color: var(--subtleAccent);
+	overflow-x: hidden;
+	transition: 0.5s;
+}
+
+/* The navigation menu links */
+.sidenav a {
+	padding: 20px 50px;
+	text-decoration: none;
+	font-size: 0.9em;
 	color: var(--darkAccent);
-	position: absolute;
-	left: 30%;
-} */
+	display: block;
+	transition: 0.3s;
+	border-bottom: 1px solid var(--linkColor);
+}
 
-/* #contact-form {
-	display: block; */
-/* responsive @ 600px */
-/* max-width: 600px; */
-/* center the form  -- not working with 0 auto */
-/* margin: 0 auto;
-	border: 1px solid var(--borderColor);
+.sidenav a:hover {
+	background-color: var(--light);
+}
+
+@media screen and (max-height: 450px) {
+	.sidenav {
+		padding-top: 15px;
+	}
+	.sidenav a {
+		font-size: 18px;
+	}
+}
+
+/* ***************************** */
+/* H O M E */
+#home {
+	text-align: center;
+	min-height: 100vh;
+	background: linear-gradient(
+		to right top,
+		var(--linkColor),
+		rgb(85, 153, 175)
+	);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#home img {
+	margin-bottom: 15px;
+	min-width: 300px;
+}
+
+#home p {
+	font-size: 1em;
+	padding: 5px;
+	margin-bottom: 5px;
+	opacity: 0;
+	transform: translateY(3rem);
+	animation: fadeIn 2s ease 1s forwards;
+}
+/* fade in quote */
+@keyframes fadeIn {
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+#home h2 {
+	border: none;
+	position: relative;
+	padding: 10px 0;
+}
+
+/* animated line  */
+#home h2::before,
+#home h2::after {
+	content: "";
+	width: 100%;
+	height: 5px;
+	display: inline-block;
+	position: absolute;
+	opacity: 0.5;
+}
+
+h2::before {
+	top: -2px;
+	left: -2px;
+	background: transparent;
+	border: 3px solid #fff;
+	animation: animate 2s linear forwards;
+}
+
+h2::after {
+	top: -2px;
+	left: -2px;
+	background: transparent;
+	border: 3px solid #fff;
+	/* animation: animate 1s linear forwards; */
+	transform-origin: left;
+	transform: scaleX(0);
+}
+
+@keyframes animate {
+	0% {
+		width: 0;
+		height: 0;
+		border-top-color: #fff;
+		border-right-color: transparent;
+		border-bottom-color: transparent;
+		border-left-color: transparent;
+	}
+	50% {
+		width: 100%;
+		height: 0;
+		border-top-color: #fff;
+		border-right-color: transparent;
+		border-bottom-color: transparent;
+		border-left-color: transparent;
+	}
+	100% {
+		width: 100%;
+		height: 100%;
+		border-top-color: #fff;
+		border-right-color: transparent;
+		border-bottom-color: #fff;
+		border-left-color: transparent;
+	}
+}
+
+#home .right p,
+h2 {
+	margin: 4rem 0;
+}
+
+#skills h2 {
+	margin: 1.2rem;
+}
+
+/* ***************************** */
+/* S K I L L S */
+#skills {
+	min-height: 100vh;
+	background: linear-gradient(
+		to right top,
+		var(--linkColor),
+		rgb(85, 153, 175)
+	);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+ul {
+	list-style: none;
+}
+
+#skills p,
+#skills li {
+	color: var(--darkAccent);
+	margin: 0.5rem;
+	opacity: 0.7;
+}
+
+.card-container {
+	background: linear-gradient(
+		to right top,
+		var(--linkColor),
+		rgba(85, 153, 175, 0.5)
+	);
+	border-radius: 1.5rem;
+}
+
+.card-container .card {
+	height: fit-content;
+}
+
+/* CARD */
+.card {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(
+		to left top,
+		rgba(255, 255, 255, 0.8),
+		rgba(255, 255, 255, 0.3)
+	);
+	border-radius: 1rem;
+	margin: 2rem 0;
+	padding: 2rem;
+	box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.7);
+	height: 70vh;
+}
+
+.card h3 {
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	border-bottom: 3px solid var(--subtleAccent);
+	margin-bottom: 1rem;
+	color: #658ec6;
+	opacity: 0.7;
+}
+
+/* ***************************** */
+/* P R O J E C T S */
+.bg-light {
+	background: linear-gradient(
+		to right top,
+		var(--linkColor),
+		rgb(85, 153, 175)
+	);
+}
+
+.bg-dark {
+	background-color: var(--mainColor);
+	color: var(--subtleAccent);
+}
+
+.bg-light h3,
+.bg-dark h3 {
+	text-transform: uppercase;
+}
+
+/* gitHub icon */
+
+.proj-git-link {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: baseline;
+	margin-top: 1.5rem;
+}
+
+.proj-git-link i {
+	font-size: 2rem;
+	margin-top: 1rem;
+}
+
+.proj-git-link i:hover {
+	background: linear-gradient(180deg, var(--purpleAccent), var(--subtleAccent));
+
+	background-clip: text;
+	color: transparent;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+video {
+	margin: 0 auto;
+	border: 10px inset #ddd;
+}
+
+/* ***************************** */
+/* A B O U T  */
+#about,
+#skills,
+#home {
+	height: fit-content;
+}
+
+#about-img {
+	height: 350px;
+	max-width: 100%;
+	min-width: 250px;
+}
+
+/* ***************************** */
+/* F O R M */
+#contact-form {
 	padding: 15px;
 	border-radius: 15px;
-	background-color: #787999;
-	margin: 20px 0;
+	background-color: rgba(178, 178, 178, 0.3);
+	margin: 50px 0;
+	width: 100%;
+	color: var(--subtleAccent);
 	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
-} */
+	letter-spacing: 0.1em;
+}
 
-/* .input-field {
+#contact h2,
+#about h2,
+#projects h2 {
+	color: var(--subtleAccent);
+	font-size: 2.5rem;
+	opacity: 0.7;
+}
+
+input {
 	width: 100%;
-	padding: 10px 0;
-	background-color: var(--secondaryColor);
-	border-radius: 7px;
-	border: 1px solid var(--borderColor);
-	font-size: 14px;
-} */
-
-/* #contact-form label {
-	line-height: 2.7em;
-} */
-
-/* #contact-form textarea {
-	min-height: 40px;
-	font-size: 14px;
-} */
-
-/* #submit-btn {
-	margin-top: 10px;
-	width: 100%;
-	padding: 10px 0;
-	color: #fff;
-	background-color: var(--darkAccent);
+	padding: 12px 20px;
+	margin: 8px 0;
+	outline: none;
 	border: none;
-}  */
+	border-bottom: 2px solid var(--mainColor);
+	border-radius: 4px;
+	color: var(--darkAccent);
+	opacity: 0.6;
+	font-size: 1em;
+}
 
-/* make responsive */
-/* @media screen and (max-width: 960px) { */
-/* navbar container */
-/* nav {
-		display: flex;
-		justify-content: space-between;
-		height: 80px;
-		z-index: 1;
-		width: 100%;
-		max-width: 1300px;
-		padding: 0;
-	} */
-/* nav menu */
-/* .nav-links {
-		display: grid;
-		grid-template-columns: auto;
-		margin: 0;
-		width: 100%;
-		take it odd the screen
-		position: absolute;
-		top: -1000px;
-		opacity: 1;
-		z-index: -1;
-		transition: all 0.5s ease;
+input[type="text"]:focus {
+	border: 3px solid var(--mainColor);
+}
+
+input[type="submit"] {
+	background-color: var(--mainColor);
+	border: 1px solid #fff;
+	border-radius: 4px;
+	color: white;
+	padding: 16px 32px;
+	text-decoration: none;
+	margin: 4px 2px;
+	cursor: pointer;
+	font-size: 1.3rem;
+	letter-spacing: 0.1em;
+	opacity: 0.7;
+}
+
+input[type="submit"]:hover {
+	color: var(--darkAccent);
+	background-color: var(--subtleAccent);
+	border: 3px solid var(--mainColor);
+	opacity: 0.7;
+}
+
+textarea {
+	width: 100%;
+	height: 100px;
+	padding: 12px 20px;
+	box-sizing: border-box;
+	outline: none;
+	border: none;
+	resize: none;
+	border-bottom: 2px solid var(--mainColor);
+	border-radius: 4px;
+	opacity: 0.6;
+}
+
+.text-center {
+	text-align: center;
+}
+
+/* ***************************** */
+/* FOOTER */
+footer {
+	background-color: var(--mainColor);
+	color: var(--subtleAccent);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0.7;
+}
+
+/* ***************************** */
+/* RESPONISEVE FOR LARGE SCREENS  */
+/* 1 col to 2 cols */
+.split {
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+}
+
+@media (min-width: 50em) {
+	.split {
+		flex-direction: row;
 	}
 
-.nav-links.active {
-	top: 100%;
-	opacity: 1;
-		z-index: 99;
-		
-font-size: 1.2rem;
-height: 60vh;
+	/* all the children have equal spacing */
+	.split > * {
+		flex-basis: 100%;
+	}
+
+	/* any element with a sibling BEFORE it */
+	.split > * + * {
+		margin-left: 2em;
+	}
+
+	section,
+	header {
+		padding: 2rem 0;
+	}
+
+	#about,
+	#skills,
+	#home {
+		margin: 4rem 0;
+	}
 }
 
-.burger {
-	width: 25px;
-	height: 3px;
-	margin: 5px auto;
-	transition: all 0.5s ease-in-out;
-	background: purple;
-}
-
-
-
-} */
-
-
-
-
-/* style projects section  */
-/* #projects {
-	display: flex;
-} */
-
-/* #projects h1 {
-	color: #a9bcd0;
-	margin-top: 30px;
-} */
-
-/* div.card {
-	width: 250px; */
-/* box-shadow: 10px 10px 5px rgb(96, 93, 117); */
-/* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0, 6px 20px 0 rgba(0, 0, 0, 0.19); */
-/* text-align: center;
-	margin: 10px;
-} */
-
-/* div.image {
-	height: 150px;
-	font-size: 40px;
-	padding: 10px;
-	background-color: rgb(148, 144, 172);
-} */
-
-/* div.para {
-	padding: 10px;
-	background-color: white;
-} */
-
-/* ****************************** */
-
+/* ***************************** */

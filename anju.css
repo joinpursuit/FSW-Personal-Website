@@ -92,7 +92,8 @@ li:hover {
     border-radius: 5%;
   }
 } */
-@media screen and (min-width: 966px) {
+
+/* @media screen and (min-width: 966px) {
   li {
     font-size: 21px;
   }
@@ -118,7 +119,8 @@ li:hover {
     margin-right: 33%;
     padding: 10px;
   }
-}
+} */
+
 @media screen and (min-width: 1290px) {
   li {
     font-size: 28px;
@@ -134,6 +136,40 @@ li:hover {
   .pic-of-me {
     width: 45%;
     float: right;
+  }
+}
+
+@media screen and (max-width: 1289px) {
+  body {
+    background-image: none;
+  }
+
+  .bio {
+    color: black;
+  }
+
+  .profile {
+    font-size: 18px;
+    margin: auto;
+    width: 50vw;
+    margin-top: 24vw;
+  }
+
+  .pic-of-me {
+    width: 45%;
+    float: right;
+  }
+}
+
+@media screen and (max-width: 1289px) {
+  li {
+    font-size: 26px;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  li {
+    font-size: 18px;
   }
 }
 

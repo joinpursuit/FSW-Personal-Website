@@ -301,10 +301,30 @@ i:hover {
   .to-do-list {
     grid-row: 6/10;
   }
+  
+  .to-do-overlay {
+    height: 100%;
+  }
+
+  .to-do-sum {
+    top: 48%;
+    left: 35%;
+    text-align: left;
+  }
 
   .emoji-story {
     grid-row: 6/9;
     margin-top: 4vw;
+  }
+
+  .emoji-overlay {
+    height: 65%;
+  }
+
+  .emoji-sum {
+    top: 30%;
+    left: 35%;
+    text-align: left;
   }
 }
 
@@ -354,12 +374,32 @@ i:hover {
     width: 45%;
     float: right;
   }
+
+  .to-do-overlay {
+    height: 120%;
+  }
+
+  .emoji-overlay {
+    height: 100%;
+  }
+
+  .emoji-sum {
+    top: 50%;
+  }
 }
 
 @media screen and (max-width: 1125px) {
   .quote-li {
     margin-top: 15vw;
     font-size: 25px;
+  }
+
+  .to-do-overlay {
+    height: 160%;
+  }
+
+  .emoji-overlay {
+    height: 135%;
   }
 }
 

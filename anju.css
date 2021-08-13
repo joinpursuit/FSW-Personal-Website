@@ -90,7 +90,7 @@ li:hover {
 } */
 
 /* ABOUT */
-
+/* see media queries below for bio and image*/
 /* @media screen and (min-width: 1310px) {
   .bio {
     font-size: 17px;
@@ -137,19 +137,17 @@ li:hover {
   }
 } */
 
-
-
 /* PROJECTS PAGE */
 .to-do-list {
   grid-column: 4/6;
   grid-row: 5/8;
+  margin-top: 5vw;
 }
 
 .to-do-pic {
   grid-column: 4/6;
   grid-row: 5/8;
   margin-left: 95px;
-  /* display: none; */
 }
 
 .to-do-list,
@@ -157,24 +155,37 @@ li:hover {
   position: relative;
 }
 
-.overlay {
+.to-do-overlay {
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  height: 130%;
+  height: 155%;
   width: 100%;
   opacity: 0;
   transition: 0.5s ease;
   background-color: black;
 }
 
-.to-do-list:hover .overlay {
+.emoji-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 93%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: black;
+}
+
+.to-do-list:hover .to-do-overlay {
   opacity: 1;
 }
 
-.emoji-story:hover .overlay {
+.emoji-story:hover .emoji-overlay {
   opacity: 1;
 }
 
@@ -190,6 +201,16 @@ li:hover {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: left;
+}
+
+.emoji-story {
+  grid-column: 7/9;
+  grid-row: 5/8;
+  width: 105%;
+  height: 125%;
+  margin-bottom: 60px;
+  align-items: flex-start;
+  margin-top: 3vw;
 }
 
 .emoji-pic {
@@ -214,19 +235,10 @@ li:hover {
   text-align: right;
 }
 
-.emoji-story {
-  grid-column: 7/9;
-  grid-row: 5/8;
-  width: 105%;
-  height: 125%;
-  margin-bottom: 60px;
-  align-items: flex-start;
-}
-
-.mobile-to-do-github,
+/* .mobile-to-do-github,
 .mobile-emoji-github {
   display: none;
-}
+} */
 
 /* CONTACT PAGE */
 .contact-me {
@@ -238,10 +250,10 @@ li:hover {
   align-self: end;
 }
 
-.mobile-contact-me-one,
+/* .mobile-contact-me-one,
 .mobile-contact-me-two {
   display: none;
-}
+} */
 
 .lets-connect {
   font-size: 32px;
@@ -285,6 +297,17 @@ i:hover {
 }
 
 /* RESPONSIVENESS/MEDIA QUERIES */
+@media screen and (max-width: 1439px) {
+  .to-do-list {
+    grid-row: 6/10;
+  }
+
+  .emoji-story {
+    grid-row: 6/9;
+    margin-top: 4vw;
+  }
+}
+
 @media screen and (min-width: 1290px) {
   li {
     font-size: 28px;
@@ -308,6 +331,10 @@ i:hover {
     background-image: none;
   }
 
+  li {
+    font-size: 25px;
+  }
+
   .name {
     color: black;
   }
@@ -329,16 +356,55 @@ i:hover {
   }
 }
 
-@media screen and (max-width: 1289px) {
-  li {
-    font-size: 25px;
-  }
-}
-
 @media screen and (max-width: 1125px) {
   .quote-li {
     margin-top: 15vw;
     font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  .to-do-list {
+    grid-column: 6/9;
+    grid-row: 2/6;
+    width: 74%;
+  }
+
+  .to-do-overlay {
+    width: 150%;
+    height: 110%;
+  }
+
+  to-do-sum {
+    top: 45%;
+    left: 45%;
+  }
+  /* .to-do-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 155%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: black;
+  } */
+
+  .emoji-story {
+    grid-row: 6/9;
+  }
+
+  .emoji-overlay {
+    width: 145%;
+    height: 130%;
+  }
+
+  .emoji-sum {
+    top: 50%;
+    left: 45%;
+    text-align: left;
   }
 }
 
@@ -349,5 +415,35 @@ i:hover {
 
   .quote-li {
     font-size: 18px;
+  }
+
+  .to-do-list {
+    grid-column: 5/8;
+  }
+
+  .to-do-overlay {
+    width: 320%;
+    height: 90%;
+  }
+
+  .to-do-sum {
+    top: 45%;
+    left: 35%;
+    text-align: left;
+  }
+
+  .emoji-story {
+    grid-row: 5/8;
+  }
+
+  .emoji-overlay {
+    width: 275%;
+    height: 120%;
+  }
+
+  .emoji-sum {
+    top: 48%;
+    left: 35%;
+    text-align: left;
   }
 }

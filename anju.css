@@ -250,11 +250,6 @@ li:hover {
   align-self: end;
 }
 
-/* .mobile-contact-me-one,
-.mobile-contact-me-two {
-  display: none;
-} */
-
 .lets-connect {
   font-size: 32px;
   font-weight: bold;
@@ -302,7 +297,7 @@ i:hover {
   .to-do-list {
     grid-row: 6/10;
   }
-  
+
   .to-do-overlay {
     height: 100%;
   }
@@ -326,6 +321,41 @@ i:hover {
     top: 30%;
     left: 35%;
     text-align: left;
+  }
+
+  .contact-me {
+    grid-row: 7/11;
+  }
+
+  .lets-connect {
+    grid-row: 12/13;
+    /* padding: 5vh; */
+  }
+
+  .icons {
+    grid-row: 13/14;
+    padding-bottom: 5vh;
+  }
+
+  .devicon-linkedin-plain-wordmark {
+    font-size: 54px;
+    /* color: rgba(89, 197, 7, 1); */
+  }
+
+  .devicon-github-original-wordmark {
+    font-size: 27px;
+  }
+
+  .copyright {
+    grid-column: 10/14;
+    grid-row: 13/14;
+  }
+}
+
+@media screen and (max-width: 1360px) {
+  .lets-connect {
+    grid-row: 11/12;
+    font-size: 30px;
   }
 }
 
@@ -387,6 +417,25 @@ i:hover {
   .emoji-sum {
     top: 50%;
   }
+
+  .contact-me {
+    color: black;
+    grid-row: 3/7;
+  }
+
+  .lets-connect {
+    grid-row: 8/12;
+  }
+
+  .icons {
+    grid-row: 8/9;
+    /* padding-bottom: 5vh; */
+  }
+
+  .copyright {
+    grid-column: 5/9;
+    grid-row: 9/10;
+  }
 }
 
 @media screen and (max-width: 1125px) {
@@ -401,6 +450,22 @@ i:hover {
 
   .emoji-overlay {
     height: 135%;
+  }
+
+  .contact-me {
+    font-size: 18px;
+  }
+
+  .lets-connect {
+    font-size: 25px;
+  }
+
+  .devicon-linkedin-plain-wordmark {
+    font-size: 54px;
+  }
+
+  .devicon-github-original-wordmark {
+    font-size: 30px;
   }
 }
 
@@ -420,7 +485,8 @@ i:hover {
     top: 45%;
     left: 45%;
   }
-  /* .to-do-overlay {
+
+  .to-do-overlay {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -431,7 +497,7 @@ i:hover {
     opacity: 0;
     transition: 0.5s ease;
     background-color: black;
-  } */
+  }
 
   .emoji-story {
     grid-row: 6/9;
@@ -446,6 +512,44 @@ i:hover {
     top: 50%;
     left: 45%;
     text-align: left;
+  }
+
+  /* .lets-connect {
+    font-size: 23px;
+  } */
+
+  .icons {
+    grid-column: 4/10;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .contact-me {
+    font-size: 16px;
+    /* grid-column: 4/10; */
+  }
+
+  .lets-connect {
+    font-size: 21px;
+  }
+
+  .devicon-linkedin-plain-wordmark {
+    font-size: 45px;
+  }
+
+  .devicon-github-original-wordmark {
+    font-size: 21px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  li {
+    font-size: 21px;
+  }
+
+  .contact-me {
+    font-size: 16px;
+    grid-column: 4/10;
   }
 }
 

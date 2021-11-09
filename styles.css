@@ -372,7 +372,6 @@ body {
 }
 
 .media-icons {
-	/* margin-top: 10px; */
 	width: 100px;
 }
 
@@ -386,9 +385,9 @@ body {
 	margin-top: 30px;
 }
 @media screen and (max-width: 736px) {
-	/* .media-icons {
+	.media-icons {
 		display: flex;
-	} */
+	}
 	header .brand {
 		font-size: 1.2rem;
 	}

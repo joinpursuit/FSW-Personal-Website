@@ -13,353 +13,363 @@
 		<title>Marsha P. Hall</title>
 	</head>
 	<body>
-		<header class="shadow">
-			<!-- NAV BAR
-			<nav>
-				<ul class="nav-links">
-					<a href="#home">Home</a>
-					<a href="#skills">Skills</a>
-					<a href="#projects">Projects</a>
-					<a href="#about">About</a>
-					<a href="#contact">Contact</a>
-				</ul>
-			</nav> -->
-			<!-- slide menu -->
-			<div id="mySidenav" class="sidenav shadow">
-				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
-					&times;
-				</a>
-				<a href="#home">Home</a>
-				<a href="#skills">Skills</a>
-				<a href="#projects">Projects</a>
-				<a href="#about">About</a>
-				<a href="#contact">Contact</a>
+		<div class="scrollToTop-btn">
+			<i class="fas fa-angle-up"></i>
+		</div>
+
+		<header>
+			<!-- LOGO -->
+			<!-- my photo -->
+			<div>
+				<img
+					class="thumbnail shadow"
+					id="profile-pic"
+					src="./images/Marsha-Miami.jpeg"
+					alt="Marsha"
+				/>
 			</div>
-			<div id="menu" onclick="openNav()"><i class="fas fa-bars"></i></div>
+			<a href="#" class="brand">Marsha P. Hall</a>
+			<div class="menu-btn"></div>
+
+			<!-- BURGER MENU -->
+			<!-- navbar toggle -->
+			<div class="burger" id="mobile-menu">
+				<div class="bar"></div>
+				<div class="bar"></div>
+				<div class="bar"></div>
+			</div>
+
+			<!-- NAV BAR LINKS -->
+			<!-- <nav class="navbar-menu"> -->
+			<nav>
+				<a class="active" href="#main">Home</a>
+				<a href="#about">About</a>
+				<a href="#skills">Skills</a>
+				<a href="#services">Services</a>
+				<a href="#projects">Projects</a>
+				<a href="#contact">Contact</a>
+			</nav>
 		</header>
 
-		<!-- H O M E -->
-		<section id="home">
-			<div id="profile" class="container glass shadow">
-				<div id="main" class="split">
-					<div>
-						<img
-							id="profile-pic"
-							src="./images/Marsha-Profile.png"
-							alt="profile"
-						/>
+		<!-- landing page -->
+		<section data-index="0" class="main landing" id="main">
+			<div class="content">
+				<h2>
+					Hi, I'm <br />
+					<span>Marsha</span>
+				</h2>
+				<div class="animated-text">
+					<h3>Full Stack</h3>
+					<h3>Web Developer</h3>
+					<h4>"Dreams do not have expiration dates."</h4>
+				</div>
+				<a href="#projects" class="btn">See My Work</a>
+				<div class="media-icons">
+					<a href="./Marsha Hall Resume.pdf" target="_blank"
+						><i class="far fa-file"></i
+					></a>
+					<a href="https://www.linkedin.com/in/marshaphall315/" target="_blank"
+						><i class="fab fa-linkedin"></i
+					></a>
+					<a href="https://github.com/mphall77" target="_blank"
+						><i class="fab fa-github"></i
+					></a>
+				</div>
+			</div>
+		</section>
+
+		<!-- About -->
+		<section data-index="1" class="about" id="about">
+			<div class="title">
+				<h2 class="section-title">About Me</h2>
+			</div>
+			<div class="content">
+				<div class="column col-left">
+					<div class="img-card">
+						<img src="images/Carnival.png" alt="Marsha-Miami" />
 					</div>
+				</div>
+				<div class="column col-right">
+					<h2 class="content-title">Who is Marsha Hall?</h2>
+					<p class="para-text about-para-text">
+						Born in the Caribbean and transplanted in NYC at age 10. I have had
+						the opportunity to see a lot of this vast country but there's no
+						place like Brooklyn, NY. I am a die hard Brooklynite and a forever
+						New Yorker.
+						<br />
+						<br />
+						Being a Web Developer is a dream that I never gave up on and now I
+						have finally accomplished that dream. It has been a long hard fought
+						battle but it only makes my arrival into this realm sweeter.
+						<br />
+						<br />
+						<span class="more-text">
+							The world is changing at lightning speed and I want to contribute
+							to the Smart City Sector of our Industry. I don't know what the
+							road ahead looks like or how turbulent it might be. I do know that
+							I won't find out unless I begin.
+						</span>
+						<strong>See you at the top</strong>.
+					</p>
+					<button class="btn read-more-btn">Read More</button>
+				</div>
+			</div>
+		</section>
 
-					<div class="right">
-						<h2>MARSHA P. HALL</h2>
-						<p>"Dreams do not have expiration dates"</p>
-						<!-- <button onclick="handleMore()" id="moreBtn">Read more</button> -->
-
-						<!-- resume link -->
-						<button>
-							<a target="_blank" href="./Marsha Hall Resume.pdf">Resume </a>
-						</button>
-						<button><a href="#contact">Let's get to Work!</a></button>
+		<!-- Skills -->
+		<section data-index="3" class="skills" id="skills">
+			<div class="title">
+				<h2 class="section-title-light">What I Do</h2>
+			</div>
+			<div class="content">
+				<div class="column col-left">
+					<h2 class="content-title">Skills & Experiences</h2>
+					<p class="para-text">
+						I build excting Apps using APIs, JavaScript, React, Express, Node.js
+						to name a few. JavaScript is an exciting framework to play in
+						because it is challenging and helps me push my limits. I have
+						experience working with a variety of technologies and tools such as
+						Postgres, Object Oriented Programming, and Agile Methodology to name
+						a few.
+					</p>
+					<br />
+					<h2 class="content-title">Where I am going</h2>
+					<p class="para-text">
+						I am excited about the power of technology and all the possibilities
+						it creates for us to do better especially in the PropTech Sector.
+						Being in an industry where we are always adapting and learning makes
+						me a forever learner. I look forward to the challenge.
+					</p>
+				</div>
+				<div class="column col-right">
+					<div class="bar">
+						<div class="info">
+							<span>JavaScript</span>
+							<span>90%</span>
+						</div>
+						<div class="line javascript"></div>
+					</div>
+					<div class="bar">
+						<div class="info">
+							<span>React</span>
+							<span>90%</span>
+						</div>
+						<div class="line react"></div>
+					</div>
+					<div class="bar">
+						<div class="info">
+							<span>HTML</span>
+							<span>90%</span>
+						</div>
+						<div class="line html"></div>
+					</div>
+					<div class="bar">
+						<div class="info">
+							<span>CSS</span>
+							<span>85%</span>
+						</div>
+						<div class="line css"></div>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<!-- S K I L L S-->
-		<section id="skills">
-			<div id="profile" class="container glass shadow">
-				<div class="split shadow card-container">
+		<!-- Services -->
+		<section data-index="4" class="services" id="services">
+			<div class="title">
+				<div class="section-title">
+					<p>Languages</p>
+				</div>
+				<div class="content">
 					<div class="card">
-						<h2 class="text-center">What I do</h2>
-						<p>
-							I build excting Apps using APIs, JavaScript, Express and React to
-							name a few. JavaScript is an exciting framework to play in because
-							it is challenging and helps me push my limits.
-						</p>
-						<p>
-							I have experience working with a variety of technologies such as
-							APIs, JavaScript, Express and React to name a few.
-						</p>
-						<h2 class="text-center">Where I am going</h2>
-						<p>
-							I am excited about the power of technology and all the
-							possibilities it creates for us to do better especially in the
-							PropTech Sector.
-						</p>
-						<p>
-							Being in an industry where we are always adapting and learning
-							makes me a forever learner. I look forward to the challenge.
-						</p>
-					</div>
-					<div>
-						<div class="card">
-							<h3>Frontend</h3>
-							<ul>
-								<li>JavaScript</li>
-								<li>React</li>
-								<li>HTML/CSS</li>
-								<li>SQL</li>
-								<li>Node.js</li>
-								<li>Python</li>
-							</ul>
+						<div class="service-icon">
+							<i class="fas fa-file-code"></i>
 						</div>
-						<div class="card shadow">
-							<h3>Backend</h3>
-							<ul>
-								<li>API Creation/ Implementation</li>
-								<li>Heroku</li>
-								<li>Postgres</li>
-								<li>Express</li>
-								<li>Redux</li>
-							</ul>
+						<div class="info">
+							<h3>FrontEnd</h3>
+							<p>JavaScript</p>
+							<p>React</p>
+							<p>HTML/CSS <i class="fab fa-css3-alt"></i></p>
+							<p>SQL</p>
+							<p>Node.js</p>
+							<p>Python</p>
+						</div>
+					</div>
+					<div class="card">
+						<div class="service-icon">
+							<i class="fas fa-save"></i>
+						</div>
+						<div class="info">
+							<h3>BackEnd</h3>
+							<p>API Creation/ Implementation</p>
+							<p>Heroku</p>
+							<p>Postgres</p>
+							<p>Express</p>
+							<p>Redux</p>
+						</div>
+					</div>
+					<div class="card">
+						<div class="service-icon">
+							<i class="fab fa-mixcloud"></i>
+						</div>
+						<div class="info">
+							<h3>Future Interests</h3>
+							<p>AI</p>
+							<p>Machine Learning</p>
+							<p>SolarPunk Movement</p>
+							<p>Smart City Technology</p>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<!-- P R O J E C T S -->
-		<!-- #1 -->
-		<section id="projects" class="bg-dark">
-			<h2 class="text-center">Stuff I can do</h2>
-			<div class="container">
-				<div class="glass shadow card split">
-					<div>
-						<h3 class="text-center fun-text">Text Adventure Game</h3>
-						<p>
-							A personalized game that takes the user on an adventure where they
-							choose the path that the story takes based on prompts in the
-							console.
-						</p>
-						<div class="proj-git-link">
-							<a
-								href="https://github.com/mphall77/FSW-Text-Based-Adventure"
-								target="_blank"
-								rel="noopener noreferrer"
-								><i class="fab fa-github fun-text"></i
-							></a>
-						</div>
-					</div>
-
-					<div>
-						<video
-							class="shadow"
-							width="400"
-							src="./videos/Text Adventure.mov"
-							controls
-						></video>
-					</div>
-				</div>
+		<!-- Projects -->
+		<section data-index="5" class="projects" id="projects">
+			<div class="title">
+				<h2 class="section-title-light">Projects</h2>
 			</div>
-		</section>
-
-		<!-- #2 -->
-		<section class="bg-light">
-			<div class="container">
-				<div class="glass card split">
-					<div>
-						<video
-							class="shadow"
-							width="400"
-							src="./videos/Smowman Game.mov"
-							controls
-						></video>
-					</div>
-					<div>
-						<h3 class="text-center fun-text">Snowman Game</h3>
-						<p>
-							A recreation of a childhood guessing game that runs in the
-							Console. The user has to guess the letters in the mystery word
-							before their chances run out. User interacts through the command
-							line to interact with the game.
-						</p>
-						<!-- git link to code -->
-						<div class="proj-git-link">
-							<a
-								href="https://github.com/mphall77/FSW-CLI-Snowman"
-								target="_blank"
-								rel="noopener noreferrer"
-								><i class="fab fa-github fun-text"></i
-							></a>
+			<div class="content">
+				<div>
+					<div class="card">
+						<div class="card-img shadow">
+							<img
+								src="./images/Pursuit-Marsha.jpg"
+								alt="project 2"
+								class="thumbnail"
+							/>
 						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<!-- #3 -->
-		<section class="bg-dark">
-			<div class="container">
-				<div class="glass shadow card split">
-					<div>
-						<h3 class="text-center fun-text">To Do App</h3>
-						<p>
-							Works the same as a note taking app. Incorporates responsive
-							design to create a better user experience.
-						</p>
-						<!-- git link to code -->
-						<div class="proj-git-link">
-							<a
-								href="https://github.com/mphall77/Pursuit-Core-Events-Lab"
-								target="_blank"
-								rel="noopener noreferrer"
-								><i class="fab fa-github fun-text"></i
-							></a>
-						</div>
-					</div>
-
-					<div>
-						<img class="shadow" src="./images/ToDo Lab.png" alt="To Do App" />
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<!-- #4 -->
-		<section class="bg-light">
-			<div class="container">
-				<div class="glass shadow card split">
-					<div>
-						<img
-							class="shadow"
-							src="./images/Budgeting App FE.png"
-							alt="Budgeting App"
-						/>
-					</div>
-					<div>
-						<h3 class="text-center fun-text">Budgeting App</h3>
-						<p>
-							B/E is created with Express and Node.js. Heroku was used to
-							deploy. <br />F/E is created with React and deployed with Netlify
-							<a
-								href="https://marsha-hall-budgeting-app.netlify.app/"
-								class="fun-text"
-								>here</a
-							>.
-						</p>
-
-						<!-- git link to code -->
-						<div class="proj-git-link">
-							<h5>FRONTEND:</h5>
-							<a
-								href="https://github.com/mphall77/Budget-App-Express-Frontend"
-								target="_blank"
-								rel="noopener noreferrer"
-							>
-								<i class="fab fa-github fun-text"></i
-							></a>
-							<h5>BACKEND:</h5>
-							<a
-								href="https://github.com/mphall77/Budget-App-Express-Backend"
-								target="_blank"
-								rel="noopener noreferrer"
-							>
-								<i class="fab fa-github fun-text"></i
-							></a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<!--  A B O U T -->
-		<section id="about">
-			<div class="container">
-				<h2 class="text-center">Who I am</h2>
-				<div class="split">
-					<!-- left -- More about me -->
-					<div>
-						<div class="card glass shadow">
-							<p>
-								Born in the Caribbean and transplanted in NYC at age 10. I have
-								had the opportunity to see a lot of this vast country but
-								there's no place like Brooklyn, NY. I am a die hard Brooklynite
-								and a forever New Yorker.
-								<br />
-								<br />
-								Being a Web Developer is a dream career that I never gave up on,
-								and now I have finally accomplished that dream. It has been a
-								long hard fought battle but I only makes my arrival into this
-								realm even sweeter.
-								<br />
-								<br />
-								The world is changing at lightning speed and I want to
-								contribute to the Smart City Sector of our Industry. I don't
-								know what the road ahead looks like or how turbulent it might
-								be. I do know that I won't find out unless I begin.
-								<strong class="fun-text">See you at the top</strong>.
+						<div class="project-preview">
+							<h4 class="project-title">Project 1</h4>
+							<p class="project-text">
+								Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+								Repellendus, sint.
 							</p>
 						</div>
-						<h2 class="text-center fun-text">THE FUN STUFF</h2>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-img shadow">
+						<img src="images/Miami-sky.JPG" alt="Budgeting App" />
+					</div>
+					<div class="project-preview">
+						<h4 class="project-title">Project 2</h4>
+						<p class="project-text">
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+							Repellendus, sint.
+						</p>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-img shadow">
+						<img src="images/Budgeting App FE.png" alt="Budgeting App" />
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-img">
+						<img src="images/Budgeting App FE.png" alt="Budgeting App" />
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-img">
+						<img src="images/Budgeting App FE.png" alt="Budgeting App" />
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-img">
+						<img src="images/Budgeting App FE.png" alt="Budgeting App" />
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-img">
+						<img src="images/Budgeting App FE.png" alt="Budgeting App" />
+					</div>
+				</div>
+				<div class="title">
+					<a href="#" class="btn">See All</a>
+				</div>
+			</div>
+		</section>
 
-						<div class="split">
-							<div class="card glass shadow split">
-								<p>
-									For fun my gal-pals and I "play mass" at Carnival. Our
-									favorite spot for years running is Miami Carnival. Hopefully
-									we can get back to this kind of fun post COVID-19.
-								</p>
-
-								<!-- ABOUT image -->
-
-								<img
-									id="about-img"
-									class="shadow"
-									src="./images/Carnival.png"
-									alt="Carnival costume"
-								/>
+		<!-- Contact -->
+		<section data-index="6" class="contact" id="contact">
+			<div class="title">
+				<h2 class="section-title">Let's Get to Work</h2>
+			</div>
+			<div class="content">
+				<div class="row">
+					<!-- <div class="card">
+						<div class="column col-left">
+							<div class="img-card">
+								<img src="images/Marsha-Miami.jpeg" alt="Marsha profile" />
 							</div>
 						</div>
+					</div> -->
+					<div class="card">
+						<div class="contact-icon">
+							<i class="fas fa-map-marker-alt"></i>
+						</div>
+						<div class="info">
+							<h3>Address</h3>
+							<span>Brooklyn, NY </span>
+						</div>
+					</div>
+					<div class="card">
+						<div class="contact-icon">
+							<i class="fas fa-phone"></i>
+						</div>
+						<div class="info">
+							<h3>Phone</h3>
+							<span>123.456.7890</span>
+						</div>
+					</div>
+					<div class="card">
+						<div class="contact-icon">
+							<i class="fas fa-envelope"></i>
+						</div>
+						<div class="info">
+							<h3>Email</h3>
+							<span>marshahall@pursuit.org </span>
+						</div>
+					</div>
+					<div class="row">
+						<!-- <div class="column col-left">
+							<div class="img-card">
+								<img src="images/Marsha-Miami.jpeg" alt="Marsha profile" />
+							</div>
+						</div> -->
+						<form class="contact-form shadow-dark">
+							<h3>Keep In touch</h3>
+
+							<div class="input-box">
+								<i class="fas fa-user"></i>
+								<input type="text" placeholder="Your Name" />
+							</div>
+							<div class="input-box">
+								<i class="far fa-envelope"></i>
+								<input type="email" placeholder="Email" />
+							</div>
+							<div class="input-box">
+								<!-- <i class="far fa-address-card"></i> -->
+								<textarea
+									name="name"
+									cols="60"
+									rows="8"
+									placeholder="Message"
+								></textarea>
+							</div>
+							<div class="input-box">
+								<input type="submit" value="Send" class="send-btn" />
+							</div>
+						</form>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<!-- C O N T A C T -->
-		<section id="contact">
-			<h2 class="text-center">Let me do stuff for you</h2>
-			<div class="container">
-				<form id="contact-form">
-					<label for="name">Name</label>
-					<input type="text" name="name" class="input-field" />
-
-					<label for="subject">Subject</label>
-					<input type="text" name="subject" class="input-field" />
-
-					<label for="email">Email</label>
-					<input type="email" name="email" class="input-field" />
-
-					<label for="message">Message</label>
-					<textarea name="message" class="input-field"> </textarea>
-
-					<input id="submit-btn" type="submit" value="SEND" />
-				</form>
-			</div>
-		</section>
-		<!-- CIRCLES -->
-		<div class="circle1"></div>
-		<div class="circle4"></div>
-		<div class="circle2"></div>
-		<div class="circle3"></div>
-		<footer><p>&copy Marsha Hall 2021</p></footer>
+		<footer>
+			<span class="footer-title">Marsha P. Hall</span>
+			<p>&copy 2021 All Rights Reserved</p>
+		</footer>
 	</body>
 </html>
-
-<!-- SCRAP -->
-<!-- <nav>
-				<ul class="nav-links">
-					<li><a href="#top">Home</a></li>
-					<li><a href="#about">About</a></li>
-					<li><a href="#projects">Projects</a></li>
-					<li><a href="#contact">Contact</a></li>
-				</ul>
-			</nav> -->
-
-<!-- MENU -->
-<!-- <div onclick="openNav()">
-				<div class="menu-container" onclick="toggleMenu(this)">
-					<div class="bar1"></div>
-					<div class="bar2"></div>
-					<div class="bar3"></div>
-				</div>
-			</div> -->

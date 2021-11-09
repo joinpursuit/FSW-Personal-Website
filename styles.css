@@ -384,6 +384,7 @@ body {
 .media-icons i {
 	margin-top: 30px;
 }
+
 @media screen and (max-width: 736px) {
 	.media-icons {
 		display: flex;

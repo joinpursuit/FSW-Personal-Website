@@ -89,101 +89,7 @@ section {
 }
 /* end global styles */
 
-/* HOME */
-.landing {
-	padding: 60px;
-}
-
-.main {
-	position: relative;
-	width: 100%;
-	min-height: 100vh;
-	display: flex;
-	align-items: center;
-	background: url(images/jocelyn-morales-WMi_7XsOT64-unsplash.jpg) no-repeat;
-	background-size: cover;
-	background-position: 30% 25%;
-	background-attachment: fixed;
-}
-
-.main .content {
-	max-width: 800px;
-}
-
-.main .content h2 {
-	color: var(--lightWhite);
-	font-size: 2em;
-	font-weight: 500;
-	padding-bottom: 20px;
-}
-
-.main .content h4 {
-	font-size: 1.2em;
-}
-
-.main .content h2 span {
-	font-size: 1.6em;
-	font-weight: 600;
-}
-
-.animated-text {
-	position: relative;
-	height: 70px;
-	overflow: hidden;
-}
-
-.animated-text h3 {
-	color: orangered;
-	font-size: 3em;
-	font-weight: 700;
-	line-height: 70px;
-	letter-spacing: 1px;
-}
-
-.animated-text h4 {
-	color: orangered;
-	font-size: 3em;
-	font-weight: 500;
-	line-height: 70px;
-	letter-spacing: 2px;
-	padding: 0 10px;
-}
-
-.animated-text h3:nth-child(1) {
-	animation: text-move 10s infinite;
-}
-
-@keyframes text-move {
-	0% {
-		margin-top: 0;
-	}
-	25% {
-		margin-top: -70px;
-	}
-	50% {
-		margin-top: -140px;
-	}
-	100% {
-		margin-top: 0;
-	}
-}
-
-.media-icons {
-	margin-top: 50px;
-	width: 100px;
-}
-
-.media-icons a {
-	color: var(--lightWhite);
-	font-size: 35px;
-	margin-right: 30px;
-}
-
-.media-icons i {
-	margin-top: 30px;
-}
-/* end HOME */
-
+/* ............... */
 /* navBar ==> logo/brand */
 header {
 	z-index: 999;
@@ -386,6 +292,114 @@ body {
 }
 /* END sections and section titles  */
 
+/* HOME */
+.landing {
+	padding: 60px;
+}
+
+.main {
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	background: url(images/jocelyn-morales-WMi_7XsOT64-unsplash.jpg) no-repeat;
+	background-size: cover;
+	background-position: 30% 25%;
+	background-attachment: fixed;
+}
+
+.main .content {
+	max-width: 800px;
+}
+
+.main .content h2 {
+	color: var(--lightWhite);
+	font-size: 2em;
+	font-weight: 500;
+	padding-bottom: 20px;
+}
+
+.main .content h4 {
+	font-size: 1.2em;
+}
+
+.main .content h2 span {
+	font-size: 1.6em;
+	font-weight: 600;
+}
+
+.animated-text {
+	position: relative;
+	height: 70px;
+	overflow: hidden;
+}
+
+.animated-text h3 {
+	color: orangered;
+	font-size: 3em;
+	font-weight: 700;
+	line-height: 70px;
+	letter-spacing: 1px;
+}
+
+.animated-text h4 {
+	color: orangered;
+	font-size: 3em;
+	font-weight: 500;
+	line-height: 70px;
+	letter-spacing: 2px;
+	padding: 0 10px;
+}
+
+.animated-text h3:nth-child(1) {
+	animation: text-move 10s infinite;
+}
+
+@keyframes text-move {
+	0% {
+		margin-top: 0;
+	}
+	25% {
+		margin-top: -70px;
+	}
+	50% {
+		margin-top: -140px;
+	}
+	100% {
+		margin-top: 0;
+	}
+}
+
+.media-icons {
+	margin-top: 50px;
+	width: 100px;
+}
+
+.media-icons a {
+	color: var(--lightWhite);
+	font-size: 35px;
+	margin-right: 30px;
+}
+
+.media-icons i {
+	margin-top: 30px;
+}
+@media screen and (max-width: 736px) {
+	/* .media-icons {
+		display: flex;
+	} */
+	header .brand {
+		font-size: 1.2rem;
+	}
+
+	.main .content h2 span {
+		font-size: 1em;
+		font-weight: 600;
+	}
+}
+/* end HOME */
+
 /* ABOUT */
 .about .content {
 	position: relative;
@@ -408,7 +422,6 @@ body {
 .about .content .col-left .img-card {
 	position: relative;
 	width: 100%;
-	min-height: 450px;
 }
 
 .about .content .col-left .img-card img {
@@ -703,6 +716,12 @@ body {
 .contact .content .row .card .info span {
 	color: var(--lightWhite);
 	font-weight: 500;
+}
+
+.contact .content .row .card .info a {
+	font-size: 2rem;
+	color: var(--lightWhite);
+	margin: 10px;
 }
 
 .contact .content .img-card img {

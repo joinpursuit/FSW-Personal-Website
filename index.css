@@ -174,24 +174,24 @@ body {
   }
 
   /* projects section */
-  #snowman-section,
-  #emoji-section,
+  #tieIn-section,
+  #aHealthyBite-section,
   #contact-btn {
     grid-column: 2/12;
   }
 
-  #snowman-section {
+  #tieIn-section {
     grid-row: 4;
   }
-  #emoji-section {
+  #aHealthyBite-section {
     grid-row: 8;
   }
   #contact-btn {
     grid-row: 10;
   }
 
-  #snowman-section,
-  #emoji-section {
+  #tieIn-section,
+  #aHealthyBite-section {
     display: flex;
     flex-direction: column;
   }
@@ -569,7 +569,7 @@ body {
   }
 
   /* Style Projects Setion */
-  #snowman-section {
+  #tieIn-section {
     grid-column: 2/6;
     grid-row: 3/11;
 
@@ -578,7 +578,7 @@ body {
     grid-template-rows: repeat(8, 1fr);
   }
 
-  #emoji-section {
+  #aHealthyBite-section {
     grid-column: 8/12;
     grid-row: 3/11;
 
@@ -587,8 +587,8 @@ body {
     grid-template-rows: repeat(8, 1fr);
   }
 
-  #snowman-header,
-  #emoji-header {
+  #tieIn-header,
+  #aHealthyBite-header {
     grid-column: 1/5;
     grid-row: 1;
     justify-self: center;
@@ -596,15 +596,15 @@ body {
     font-weight: bold;
   }
 
-  #snowman-summary,
-  #emoji--summary {
+  #tieIn-summary,
+  #aHealthyBite--summary {
     grid-column: 1/5;
     grid-row: 7;
     justify-self: center;
   }
 
-  #snowman-gif,
-  #emoji-gif {
+  #tieIn-gif,
+  #aHealthyBite-gif {
     width: 100%;
     grid-column: 1/5;
     grid-row: 2/7;
